@@ -1,0 +1,43 @@
+# sources.yml — 自動収集ソース定義（spec23 §2）
+# 追加後1週間は出力を目視確認すること（spec23 §9）
+- name: PR TIMES ビューティー
+  rss_url: https://prtimes.jp/rdf/beauty_new_info.rdf
+  category_rules:
+    lip:
+      - リップ
+      - 口紅
+      - ティント
+      - ルージュ
+      - グロス
+      - リップスティック
+      - リップカラー
+      - リップクリーム
+    eye:
+      - アイシャドウ
+      - アイシャドー
+      - マスカラ
+      - アイライナー
+      - アイブロウ
+      - 眉マスカラ
+    cheek:
+      - チーク
+      - ブラッシュ
+      - ハイライター
+    base:
+      - ファンデーション
+      - ファンデ
+      - 下地
+      - BBクリーム
+      - CCクリーム
+      - コンシーラー
+      - パウダー
+    skincare:
+      - 乳液
+      - 化粧水
+      - 美容液
+      - クリーム
+      - セラム
+      - 保湿
+      - UVケア
+      - 日焼け止め
+  fallback_category: info

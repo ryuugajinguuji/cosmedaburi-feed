@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "generated_at": "2026-06-12T12:00:00Z",
+  "items": [
+    {
+      "id": "2026-0612-nars-afterglow-287a",
+      "brand": "NARS",
+      "product_line": "アフターグロー リップシャイン",
+      "color_code": "287A",
+      "color_name": "NEW DAWN",
+      "hex": "E88898",
+      "hex_origin": "estimated",
+      "released_at": "2026-06-12",
+      "source_url": "https://www.cosme.com/products/detail.php?product_id=413191",
+      "ogp_image_url": "https://www.cosme.com/upload/save_image/product//00/41/31/90/413190_1.jpg?06121321",
+      "note": "ロージーピンク。ミラーのような光沢感のグロス（限定パッケージ）。"
+    },
+    {
+      "id": "2026-0606-pyt-genba-07",
+      "brand": "Pyt",
+      "product_line": "GENBAリップティント",
+      "color_code": "07",
+      "color_name": "シナモン",
+      "hex": "B87060",
+      "hex_origin": "estimated",
+      "released_at": "2026-06-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
+      "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。"
+    },
+    {
+      "id": "2026-0606-pyt-genba-09",
+      "brand": "Pyt",
+      "product_line": "GENBAリップティント",
+      "color_code": "09",
+      "color_name": "シュガーローズ",
+      "hex": "C07080",
+      "hex_origin": "estimated",
+      "released_at": "2026-06-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
+      "note": "グレイッシュで甘さ控えめのミュートローズ。色持ち重視のティント。"
+    },
+    {
+      "id": "2026-0531-canmake-muchipuru-08",
+      "brand": "CANMAKE",
+      "product_line": "むちぷるティント",
+      "color_code": "08",
+      "color_name": "サクラロール",
+      "hex": "EFA0B0",
+      "hex_origin": "estimated",
+      "released_at": "2026-05-31",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000250.000019685.html",
+      "note": "白みを含むやわらかなミルキーピンク。むっちりボリューム感の出るティント。"
+    },
+    {
+      "id": "2026-0527-opera-glowtint-413",
+      "brand": "OPERA",
+      "product_line": "グロウリップティント",
+      "color_code": "413",
+      "color_name": "バニラベージュ",
+      "hex": "D4A98A",
+      "hex_origin": "estimated",
+      "released_at": "2026-05-27",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
+      "note": "低彩度のヌーディベージュ。パール入りの水光ツヤティント。"
+    },
+    {
+      "id": "2026-0527-opera-glowtint-414",
+      "brand": "OPERA",
+      "product_line": "グロウリップティント",
+      "color_code": "414",
+      "color_name": "プラムドロップ",
+      "hex": "8A6B7A",
+      "hex_origin": "estimated",
+      "released_at": "2026-05-27",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
+      "note": "低彩度の夏プラム。シルバーラメがきらめく軽やかな水光ティント。"
+    },
+    {
+      "id": "2026-0523-kate-lipmonster-ex13",
+      "brand": "KATE",
+      "product_line": "リップモンスター",
+      "color_code": "EX-13",
+      "color_name": "常夏の宝石",
+      "hex": "E8806A",
+      "hex_origin": "estimated",
+      "released_at": "2026-05-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000896.000016220.html",
+      "note": "コーラルピンク系。角度で表情が変わる色化けパール入りの落ちにくいスティック。"
+    },
+    {
+      "id": "2026-0523-kate-lipmonster-ex14",
+      "brand": "KATE",
+      "product_line": "リップモンスター",
+      "color_code": "EX-14",
+      "color_name": "水面の光跡",
+      "hex": "D9604A",
+      "hex_origin": "estimated",
+      "released_at": "2026-05-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000896.000016220.html",
+      "note": "サーモンレッド系。青・緑の色化けパールがきらめく落ちにくいスティック。"
+    }
+  ]
+}

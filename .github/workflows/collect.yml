@@ -1,0 +1,118 @@
+# .github/workflows/collect.yml — 自動収集パイプライン（spec23 §2 Phase B）
+#
+# cron: 毎日JST朝9時（UTC 0時）実行 + 手動dispatch
+# Node 20 / 依存ゼロ（npm install不要）
+# note非空 → CI fail（spec23 §8）
+
+name: collect-news
+
+on:
+  schedule:
+    # JST 09:00 = UTC 00:00
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "ドライラン（ファイルを変更しない）"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: テスト実行（品質ゲート）
+        run: node --test scripts/collect.test.mjs
+        # テスト失敗 → collect を実行しない
+
+      - name: 収集実行
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "[CI] ドライランモードで実行"
+            node -e "
+              import('./scripts/collect.mjs').then(m =>
+                m.collect({ dryRun: true }).then(r => {
+                  console.log('[CI] dryRun結果:', JSON.stringify(r));
+                  process.exit(0);
+                })
+              ).catch(e => { console.error(e); process.exit(1); });
+            "
+          else
+            node scripts/collect.mjs
+          fi
+
+      - name: note 非空チェック（CI fail guard）
+        run: |
+          # 生成されたnews.jsonのnoteが全て空文字であることを検証（spec23 §8）
+          node -e "
+            import { readFileSync } from 'node:fs';
+            const data = JSON.parse(readFileSync('v1/news.json', 'utf8'));
+            const badItems = data.items.filter(it => it.note !== '' && it.note !== undefined);
+            if (badItems.length > 0) {
+              console.error('FATAL: note が空でないアイテムが存在します:');
+              badItems.forEach(it => console.error(' id=' + it.id + ' note=' + it.note));
+              process.exit(1);
+            }
+            console.log('[CI] note チェック OK: 全' + data.items.length + '件が空文字');
+          "
+
+      - name: 変更確認
+        id: check_changes
+        run: |
+          if git diff --quiet v1/news.json v1/manifest.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "[CI] 変更なし — スキップ"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "[CI] 変更あり — コミット予定"
+          fi
+
+      - name: コミット & プッシュ
+        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "cosmedaburi-bot"
+          git config user.email "bot@cosmedaburi-feed"
+          git add v1/news.json v1/manifest.json
+          VERSION=$(node -e "const m=require('./v1/manifest.json'); console.log(m.version);")
+          git commit -m "chore: auto collect news v${VERSION} [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 結果サマリ
+        if: always()
+        run: |
+          echo "## 収集結果" >> "$GITHUB_STEP_SUMMARY"
+          node -e "
+            import { readFileSync } from 'node:fs';
+            try {
+              const d = JSON.parse(readFileSync('v1/news.json', 'utf8'));
+              const m = JSON.parse(readFileSync('v1/manifest.json', 'utf8'));
+              console.log('| 項目 | 値 |');
+              console.log('|---|---|');
+              console.log('| version | ' + m.version + ' |');
+              console.log('| 総アイテム数 | ' + d.items.length + ' |');
+              console.log('| generated_at | ' + m.generated_at + ' |');
+            } catch(e) { console.log('ファイル読み込みエラー: ' + e.message); }
+          " >> "$GITHUB_STEP_SUMMARY"
