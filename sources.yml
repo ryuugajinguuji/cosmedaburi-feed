@@ -1,7 +1,21 @@
 # sources.yml — 自動収集ソース定義（spec23 §2）
 # 追加後1週間は出力を目視確認すること（spec23 §9）
-- name: PR TIMES ビューティー
-  rss_url: https://prtimes.jp/rdf/beauty_new_info.rdf
+#
+# PR TIMES の美容専用RSS(rdf/beauty_new_info.rdf)は404のため、
+# 全業種混載の index.rdf を require_match ゲートでフィルタして使用する。
+#   require_match=true: category_rules（lip/eye/...）にも
+#   admission_info_keywords（コスメ/美容/...）にも一致しないアイテムは skip。
+#   → 無関係な業種（IT・不動産等）のプレスリリースを除外する安全弁。
+- name: PR TIMES（全業種・コスメ/美容フィルタ）
+  rss_url: https://prtimes.jp/index.rdf
+  require_match: true
+  # 「美容」「メイク」「ビューティ」は美容サロン経営/美容医療/セミナー等の
+  # サービス系PRを大量に拾うため除外。色物製品に直結する語に絞る（spec23 §9 調整）。
+  # 具体カテゴリ（リップ/アイ/チーク/ベース/スキンケア）は category_rules が拾う。
+  admission_info_keywords:
+    - コスメ
+    - 化粧品
+    - 新色
   category_rules:
     lip:
       - リップ

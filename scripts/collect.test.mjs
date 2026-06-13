@@ -28,6 +28,7 @@ import {
   parsePubDate,
   parseRss,
   detectCategory,
+  admissionGate,
   brandSlug,
   extractBrand,
   fetchOgpImage,
@@ -269,6 +270,70 @@ describe("カテゴリ判定（detectCategory）", () => {
   });
   test("未分類はfallback", () => {
     assert.equal(detectCategory("新作スキンケア発売", rules, "info"), "info");
+  });
+});
+
+// ---- 入場ゲートテスト（admissionGate・spec23 §2） ----
+describe("入場ゲート（admissionGate）", () => {
+  const source = {
+    require_match: true,
+    category_rules: { lip: ["リップ", "ティント"], eye: ["アイシャドウ"] },
+    fallback_category: "info",
+    admission_info_keywords: ["コスメ", "化粧品", "新色", "美容"],
+  };
+
+  test("category_rulesヒット → pass=true・該当category", () => {
+    const r = admissionGate("新作リップ発売", source);
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "lip");
+  });
+
+  test("admission_info_keywordsヒット → pass=true・category=info", () => {
+    const r = admissionGate("人気コスメブランドが周年イベント開催", source);
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "info");
+  });
+
+  test("無関係（不動産PR）→ pass=false（skip）", () => {
+    const r = admissionGate("新築分譲マンション販売開始のお知らせ", source);
+    assert.equal(r.pass, false);
+    assert.equal(r.category, "");
+  });
+
+  test("category_rules が info語より優先", () => {
+    const r = admissionGate("新色リップティント登場", source);
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "lip");
+  });
+
+  test("require_match=false → 常にpass・detectCategoryにフォールバック", () => {
+    const loose = {
+      require_match: false,
+      category_rules: { lip: ["リップ"] },
+      fallback_category: "info",
+    };
+    const r = admissionGate("新築マンション分譲", loose);
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "info");
+  });
+
+  test("require_match未指定 → 既存挙動（pass・fallback）", () => {
+    const r = admissionGate("不動産ニュース", {
+      category_rules: { lip: ["リップ"] },
+      fallback_category: "info",
+    });
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "info");
+  });
+
+  test("require_match が文字列trueでもゲート有効（parseYaml対策）", () => {
+    const r = admissionGate("新築マンション分譲", {
+      require_match: "true",
+      category_rules: { lip: ["リップ"] },
+      fallback_category: "info",
+      admission_info_keywords: ["コスメ"],
+    });
+    assert.equal(r.pass, false);
   });
 });
 

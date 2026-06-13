@@ -11,8 +11,8 @@
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { dirname, join, resolve } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -317,6 +317,55 @@ export function detectCategory(title, categoryRules, fallback) {
   return fallback || "info";
 }
 
+// ---- 入場ゲート ----
+
+/**
+ * 入場ゲート判定（spec23 §2 安全側設計）
+ *
+ * require_match=true のソースに対して:
+ *   1. category_rules のいずれかのキーワードに一致 → その category で採用
+ *   2. admission_info_keywords のいずれかに一致    → category='info' で採用
+ *   3. どちらにも一致しない                        → skip（null を返す）
+ *
+ * require_match=false/未指定 → 既存挙動（detectCategory にフォールバック）
+ *
+ * @param {string} title
+ * @param {{ require_match?: boolean, category_rules?: Record<string, string[]>, fallback_category?: string, admission_info_keywords?: string[] }} source
+ * @returns {{ pass: boolean, category: string }}
+ */
+export function admissionGate(title, source) {
+  const {
+    require_match = false,
+    category_rules = {},
+    fallback_category = "info",
+    admission_info_keywords = [],
+  } = source;
+
+  // require_match=false: 既存挙動
+  if (!require_match) {
+    const category = detectCategory(title, category_rules, fallback_category);
+    return { pass: true, category };
+  }
+
+  // require_match=true: ゲートあり
+  // 1. category_rules にヒット
+  for (const [cat, keywords] of Object.entries(category_rules)) {
+    if (keywords.some((kw) => title.includes(kw))) {
+      return { pass: true, category: cat };
+    }
+  }
+
+  // 2. admission_info_keywords にヒット → category='info' で採用
+  if (admission_info_keywords.length > 0) {
+    if (admission_info_keywords.some((kw) => title.includes(kw))) {
+      return { pass: true, category: "info" };
+    }
+  }
+
+  // 3. どちらにもヒットしない → skip
+  return { pass: false, category: "" };
+}
+
 // ---- ID 生成 ----
 
 /**
@@ -420,8 +469,13 @@ export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
       // 既存IDスキップ
       if (existingIds.has(id)) continue;
 
-      // カテゴリ判定
-      const category = detectCategory(title, category_rules || {}, fallback_category || "info");
+      // 入場ゲート判定（require_match=true の場合、未一致はskip）
+      const gate = admissionGate(title, source);
+      if (!gate.pass) {
+        console.log(`[collect] ゲートskip: "${title}"`);
+        continue;
+      }
+      const category = gate.category;
 
       // 価格抽出
       const priceResult = extractPrice(title);
@@ -505,10 +559,11 @@ export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
 
 // import.meta.url がメインスクリプトなら実行
 const isMain = process.argv[1] &&
-  fileURLToPath(import.meta.url) === process.argv[1].replace(/\\/g, "/");
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
 
 if (isMain) {
-  collect().catch((err) => {
+  const dryRun = process.argv.includes("--dry-run");
+  collect({ dryRun }).catch((err) => {
     console.error("[collect] 予期しないエラー:", err);
     process.exit(1);
   });
