@@ -1,7 +1,17 @@
 {
-  "version": 2,
-  "generated_at": "2026-06-12T12:00:00Z",
+  "version": 3,
+  "generated_at": "2026-06-14T03:51:05.396Z",
   "items": [
+    {
+      "id": "2026-06-14-unknown-d77c41ae",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-14",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000021.000095920.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/95920/21/95920-21-e1dc29a3b931572269d919d0680633a7-3900x2816.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-0612-nars-afterglow-287a",
       "brand": "NARS",
