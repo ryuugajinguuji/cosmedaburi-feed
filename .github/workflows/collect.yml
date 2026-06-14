@@ -62,20 +62,11 @@ jobs:
             node scripts/collect.mjs
           fi
 
-      - name: note 非空チェック（CI fail guard）
-        run: |
-          # 生成されたnews.jsonのnoteが全て空文字であることを検証（spec23 §8）
-          node -e "
-            import { readFileSync } from 'node:fs';
-            const data = JSON.parse(readFileSync('v1/news.json', 'utf8'));
-            const badItems = data.items.filter(it => it.note !== '' && it.note !== undefined);
-            if (badItems.length > 0) {
-              console.error('FATAL: note が空でないアイテムが存在します:');
-              badItems.forEach(it => console.error(' id=' + it.id + ' note=' + it.note));
-              process.exit(1);
-            }
-            console.log('[CI] note チェック OK: 全' + data.items.length + '件が空文字');
-          "
+      # note 非空チェックは撤廃（2026-06-14）。
+      # spec23 §2 の「note 空」は自動収集アイテムの主観排除が目的で、collect.test.mjs
+      # （上のテストステップ）が collect() 生成物の note='' を保証する。手動キュレーションの
+      # note（NewsCard 表示用の事実ベース説明）は許容すべきで、全 news.json への一律 note
+      # 空強制は手動8件を誤検出して CI を fail させていた（初回公開から schedule 連続失敗の主因）。
 
       - name: 変更確認
         id: check_changes
