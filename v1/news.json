@@ -1,7 +1,77 @@
 {
-  "version": 3,
-  "generated_at": "2026-06-14T03:51:05.396Z",
+  "version": 4,
+  "generated_at": "2026-06-15T04:03:07.065Z",
   "items": [
+    {
+      "id": "2026-06-15-unknown-ec34f9cd",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000967.000155396.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/155396/967/155396-967-5753c452db2fff3d311dee7d07d8d65b-843x364.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-14b3bee3",
+      "brand": "世界先行発売！新美容液",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000097.000064854.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/64854/97/64854-97-22179c6a7db5b85aa1eed871509be1b8-3900x2199.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-36912f34",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000320.000012459.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/320/12459-320-6b1d58eb2878f8d0c93417fa5b06b075-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-85ee965b",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000179064.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/179064/6/179064-6-4de339d552c9db1836bf4b04ebe89231-1954x980.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-9c023ff9",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000012.000152141.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/152141/12/152141-12-57f611aaa3e8221ce5ad34ae13eae046-3900x2193.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-9887177e",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000044.000055297.html",
+      "note": "",
+      "category": "eye",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/55297/44/55297-44-441472436ad345948733439efdf756d4-992x665.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-15-unknown-f794b898",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000117.000100140.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/100140/117/100140-117-77ee1e3bce5047dff1d43bf4b2d82844-1280x720.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-14-unknown-d77c41ae",
       "brand": "unknown",
