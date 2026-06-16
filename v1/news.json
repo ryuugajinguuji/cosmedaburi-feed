@@ -1,7 +1,57 @@
 {
-  "version": 4,
-  "generated_at": "2026-06-15T04:03:07.065Z",
+  "version": 5,
+  "generated_at": "2026-06-16T03:53:34.579Z",
   "items": [
+    {
+      "id": "2026-06-16-unknown-a9fffd3c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000484.000055543.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/55543/484/55543-484-9b8078a7a54f28b5221885a8ff9c303e-1200x675.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-16-unknown-124a872f",
+      "brand": "肌本来の力に着目した“レスキューセラム”",
+      "product_line": "",
+      "released_at": "2026-06-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000007.000162303.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/162303/7/162303-7-bbe8526d39afe2352410cc6502fc15ac-470x675.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-16-unknown-5ecd8377",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-06-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000321.000012459.html",
+      "note": "",
+      "category": "lip",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/321/12459-321-e6c2155078a11e75423f481aacb23b1a-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-16-unknown-f0297d94",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000441.000002235.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2235/441/2235-441-d457faf370ffa62fae4109225a77a753-1200x1200.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-16-unknown-e678003c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000476.000000263.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/263/476/263-476-70788e3e5af0a29b3bf2b394c60d5c55-1500x1125.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-15-unknown-ec34f9cd",
       "brand": "unknown",
