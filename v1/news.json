@@ -1,7 +1,27 @@
 {
-  "version": 9,
-  "generated_at": "2026-06-20T03:28:24.640Z",
+  "version": 10,
+  "generated_at": "2026-06-21T03:58:36.541Z",
   "items": [
+    {
+      "id": "2026-06-21-unknown-4e22c2a0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000029.000160405.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/160405/29/160405-29-d1ded98084532701149bbd1949f534bf-1280x720.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-21-unknown-c03f00a0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000055.000145909.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/145909/55/145909-55-c3ac9451f92cf41c0b31702567f115e5-600x450.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-20-unknown-4e22c2a0",
       "brand": "unknown",
