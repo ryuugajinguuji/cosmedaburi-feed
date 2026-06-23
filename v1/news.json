@@ -1,7 +1,37 @@
 {
-  "version": 11,
-  "generated_at": "2026-06-22T03:59:59.484Z",
+  "version": 12,
+  "generated_at": "2026-06-23T02:58:06.637Z",
   "items": [
+    {
+      "id": "2026-06-23-unknown-cc5b431d",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000103.000103350.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/103350/103/103350-103-72699a2d6c282d4dbe1eeb5ca5ec12d1-1920x1280.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-23-unknown-925b7808",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000223.000083551.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/83551/223/83551-223-1996489367e5df9318188c4157e5f8e7-1200x800.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-23-unknown-ad47a6ef",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000778.000041232.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/41232/778/41232-778-20d31e23d2803ddedb104ca1f007a9dc-3900x2756.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-22-vim-89056630",
       "brand": "＜vim",
