@@ -1,7 +1,47 @@
 {
-  "version": 12,
-  "generated_at": "2026-06-23T02:58:06.637Z",
+  "version": 13,
+  "generated_at": "2026-06-24T03:23:08.793Z",
   "items": [
+    {
+      "id": "2026-06-24-unknown-84d1ee8c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000190.000092303.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/92303/190/92303-190-95c048ef333675f5ba455601d5f70cc9-2212x1823.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-24-unknown-e5a4cf7c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000741.000036737.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/36737/741/36737-741-369605dfbd66471cb3664897e46167f9-1182x550.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-24-unknown-c7e3de50",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000066.000024836.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24836/66/24836-66-6c87ba50853c0019ed1682504c47a569-1731x1154.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-24-unknown-66db8b86",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000128.000055763.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/55763/128/55763-128-bbbf9e8b307246794cec05b8710df288-3900x2600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-23-unknown-cc5b431d",
       "brand": "unknown",
