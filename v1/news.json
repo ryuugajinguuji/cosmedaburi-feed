@@ -1,7 +1,27 @@
 {
-  "version": 13,
-  "generated_at": "2026-06-24T03:23:08.793Z",
+  "version": 14,
+  "generated_at": "2026-06-25T02:58:17.983Z",
   "items": [
+    {
+      "id": "2026-06-25-unknown-bea71db9",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000157421.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/157421/15/157421-15-5f6c2e45e6db7542774d19d1a29b5fa8-1200x800.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-25-unknown-e9f0ef14",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000040.000086073.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/40/86073-40-8178d15c8cc9ee74d1dd9f34111ecf70-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-24-unknown-84d1ee8c",
       "brand": "unknown",
