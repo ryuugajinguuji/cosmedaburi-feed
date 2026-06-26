@@ -1,7 +1,37 @@
 {
-  "version": 14,
-  "generated_at": "2026-06-25T02:58:17.983Z",
+  "version": 15,
+  "generated_at": "2026-06-26T03:29:31.573Z",
   "items": [
+    {
+      "id": "2026-06-26-unknown-c720844d",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-26",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000026.000117088.html",
+      "note": "",
+      "category": "cheek",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/117088/26/117088-26-c80cc1a22bcdb6c18b6bf8da5ac564e8-825x584.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-26-unknown-b95d27ac",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-26",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000055.000009645.html",
+      "note": "",
+      "category": "eye",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/9645/55/9645-55-f66ae13fcfb06b9151ca5707ed883f34-2133x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-26-unknown-a5b0630c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-26",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000165933.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/165933/31/165933-31-f7d538fd156f9f810f32340f32c85c3f-1536x1024.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-25-unknown-bea71db9",
       "brand": "unknown",
