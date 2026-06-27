@@ -1,7 +1,27 @@
 {
-  "version": 15,
-  "generated_at": "2026-06-26T03:29:31.573Z",
+  "version": 16,
+  "generated_at": "2026-06-27T02:53:15.516Z",
   "items": [
+    {
+      "id": "2026-06-27-unknown-ff0d8e60",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-27",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000071.000042522.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/42522/71/42522-71-0005e1adc8ab09d43ea6ad4c3e6a49d9-1509x1127.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-26-cgdawn-6e517130",
+      "brand": "群馬発CG長編映画『DAWN",
+      "product_line": "",
+      "released_at": "2026-06-26",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000132616.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/132616/6/132616-6-a65bf2f44619bca3cab1256a265da21b-1672x941.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-26-unknown-c720844d",
       "brand": "unknown",
