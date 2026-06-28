@@ -1,7 +1,17 @@
 {
-  "version": 16,
-  "generated_at": "2026-06-27T02:53:15.516Z",
+  "version": 17,
+  "generated_at": "2026-06-28T03:35:30.351Z",
   "items": [
+    {
+      "id": "2026-06-28-828andtech-33ffa1ae",
+      "brand": "8月28日(火)AndTech",
+      "product_line": "",
+      "released_at": "2026-06-28",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001709.000080053.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/80053/1709/80053-1709-28e2251948d43293b1a21a3541efbf8c-1920x1005.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-27-unknown-ff0d8e60",
       "brand": "unknown",
