@@ -1,7 +1,37 @@
 {
-  "version": 17,
-  "generated_at": "2026-06-28T03:35:30.351Z",
+  "version": 18,
+  "generated_at": "2026-06-29T03:40:08.600Z",
   "items": [
+    {
+      "id": "2026-06-29-unknown-097f3331",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-29",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000016.000121268.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/121268/16/121268-16-2c0b85ef77f10378f00f0aea161f9e12-1536x1024.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-29-unknown-88897f97",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-29",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000048.000129853.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/129853/48/129853-48-791240be03be66a055d02fb0ebc51ca8-1080x1440.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-29-unknown-353d3335",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-29",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000024.000159777.html",
+      "note": "",
+      "category": "lip",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/159777/24/159777-24-4915db5932ff00416f8677c5b90ddf75-1143x745.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-28-828andtech-33ffa1ae",
       "brand": "8月28日(火)AndTech",
