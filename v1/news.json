@@ -1,7 +1,17 @@
 {
-  "version": 18,
-  "generated_at": "2026-06-29T03:40:08.600Z",
+  "version": 19,
+  "generated_at": "2026-06-30T03:27:48.806Z",
   "items": [
+    {
+      "id": "2026-06-30-unknown-dda83222",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-30",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000245.000054426.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/54426/245/54426-245-ed596dac5896a13caed38b0c8ddca062-960x692.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-29-unknown-097f3331",
       "brand": "unknown",
