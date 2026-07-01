@@ -1,7 +1,37 @@
 {
-  "version": 19,
-  "generated_at": "2026-06-30T03:27:48.806Z",
+  "version": 20,
+  "generated_at": "2026-07-01T03:36:08.502Z",
   "items": [
+    {
+      "id": "2026-07-01-unknown-2eda1ade",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000072.000127263.html",
+      "note": "",
+      "category": "skincare",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/127263/72/127263-72-3fe2d0d2b7daab121692c26c97b4f732-1350x1000.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-07-01-unknown-8a86cf0f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000140675.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/140675/15/140675-15-b9f0ef568bc0b866665857a9d5b5d8a3-1600x900.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-07-01-unknown-c02a51ed",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000005.000179639.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/179639/5/179639-5-933a1c6b9eea653f9366869cb6e6f6c9-3900x2600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-06-30-unknown-dda83222",
       "brand": "unknown",
@@ -161,6 +191,16 @@
       "note": "",
       "category": "skincare",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/55763/128/55763-128-bbbf9e8b307246794cec05b8710df288-3900x2600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-23-unknown-d8f0a25c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-23",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000002063.000002439.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2439/2063/2439-2063-4263c0d6b5681a5fe804595449a0c3ae-750x565.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-06-23-unknown-cc5b431d",
