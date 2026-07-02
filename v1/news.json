@@ -1,6 +1,6 @@
 {
-  "version": 23,
-  "generated_at": "2026-07-02T14:20:00.000Z",
+  "version": 24,
+  "generated_at": "2026-07-02T14:23:06.473Z",
   "items": [
     {
       "id": "2026-07-02-unknown-7d2664b0",
@@ -47,7 +47,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-06-06",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
-      "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。"
+      "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0606-pyt-genba-09",
@@ -59,7 +60,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-06-06",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
-      "note": "グレイッシュで甘さ控えめのミュートローズ。色持ち重視のティント。"
+      "note": "グレイッシュで甘さ控えめのミュートローズ。色持ち重視のティント。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0531-canmake-muchipuru-08",
@@ -71,7 +73,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-05-31",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000250.000019685.html",
-      "note": "白みを含むやわらかなミルキーピンク。むっちりボリューム感の出るティント。"
+      "note": "白みを含むやわらかなミルキーピンク。むっちりボリューム感の出るティント。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/19685/250/19685-250-83525d6e9defadc9237c6bde8a44027a-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0527-opera-glowtint-413",
@@ -83,7 +86,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-05-27",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
-      "note": "低彩度のヌーディベージュ。パール入りの水光ツヤティント。"
+      "note": "低彩度のヌーディベージュ。パール入りの水光ツヤティント。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0527-opera-glowtint-414",
@@ -95,7 +99,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-05-27",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
-      "note": "低彩度の夏プラム。シルバーラメがきらめく軽やかな水光ティント。"
+      "note": "低彩度の夏プラム。シルバーラメがきらめく軽やかな水光ティント。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0523-kate-lipmonster-ex13",
@@ -107,7 +112,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-05-23",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000896.000016220.html",
-      "note": "コーラルピンク系。角度で表情が変わる色化けパール入りの落ちにくいスティック。"
+      "note": "コーラルピンク系。角度で表情が変わる色化けパール入りの落ちにくいスティック。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16220/896/16220-896-14944f35dce305a552f0aa1be2a67995-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     },
     {
       "id": "2026-0523-kate-lipmonster-ex14",
@@ -119,7 +125,8 @@
       "hex_origin": "estimated",
       "released_at": "2026-05-23",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000896.000016220.html",
-      "note": "サーモンレッド系。青・緑の色化けパールがきらめく落ちにくいスティック。"
+      "note": "サーモンレッド系。青・緑の色化けパールがきらめく落ちにくいスティック。",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16220/896/16220-896-14944f35dce305a552f0aa1be2a67995-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
     }
   ]
 }
