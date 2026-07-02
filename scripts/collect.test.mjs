@@ -34,6 +34,9 @@ import {
   fetchOgpImage,
   collect,
   parseYaml,
+  isKnownBrand,
+  isDisplayQuality,
+  COLOR_CATEGORIES,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -489,6 +492,34 @@ describe("brandSlug", () => {
   test("日本語ブランド", () => {
     const s = brandSlug("セザンヌ");
     assert.ok(typeof s === "string" && s.length > 0);
+  });
+});
+
+// ---- 表示品質バー（isDisplayQuality・2026-07-02実機スモークで導入） ----
+describe("表示品質バー（isDisplayQuality）", () => {
+  test("手動キュレーション済み（color_name あり）は無条件で通す", () => {
+    assert.ok(isDisplayQuality({ brand: "unknown", category: "info", color_name: "NEW DAWN" }));
+  });
+  test("既知ブランド×色カテゴリの自動収集分は通す", () => {
+    assert.ok(isDisplayQuality({ brand: "ソフィーナ", category: "base" }));
+    assert.ok(isDisplayQuality({ brand: "NARS", category: "lip" }));
+  });
+  test("brand=unknown は落とす（作業手袋PR等の混入対策）", () => {
+    assert.ok(!isDisplayQuality({ brand: "unknown", category: "lip" }));
+  });
+  test("タイトル断片の誤抽出ブランドは落とす（辞書ヒットのみ許可）", () => {
+    assert.ok(!isDisplayQuality({ brand: "群馬発CG長編映画『DAWN", category: "lip" }));
+    assert.ok(!isKnownBrand("8月28日(火)AndTech"));
+  });
+  test("skincare / info カテゴリは落とす（色比較の対象外）", () => {
+    assert.ok(!isDisplayQuality({ brand: "ランコム", category: "skincare" }));
+    assert.ok(!isDisplayQuality({ brand: "ランコム", category: "info" }));
+  });
+  test("COLOR_CATEGORIES は色物4カテゴリ", () => {
+    assert.deepEqual(COLOR_CATEGORIES, ["lip", "eye", "cheek", "base"]);
+  });
+  test("color_name が空文字なら自動収集扱い（品質バー適用）", () => {
+    assert.ok(!isDisplayQuality({ brand: "unknown", category: "lip", color_name: "" }));
   });
 });
 

@@ -246,6 +246,32 @@ export function extractBrand(title) {
 }
 
 /**
+ * ブランドが既知辞書ヒットか（先頭語フォールバック抽出はタイトル断片の
+ * 誤抽出が多く表示品質に耐えない＝実機確認 2026-07-02）
+ */
+export function isKnownBrand(brand) {
+  return KNOWN_BRANDS.includes(brand);
+}
+
+// ---- 表示品質バー（spec23 §2 実機スモーク 2026-07-02 で導入） ----
+
+/** 色ダブりに直結するカテゴリのみ表示（skincare/info は色比較対象外） */
+export const COLOR_CATEGORIES = ["lip", "eye", "cheek", "base"];
+
+/**
+ * フィードに載せる表示品質バー。
+ * - 手動キュレーション済み（color_name あり）は常に通す
+ * - 自動収集分は「既知ブランド辞書ヒット AND 色カテゴリ」のみ通す
+ *   （brand=unknown の作業手袋・映画PR等が新色語だけで混入した実害への対策）
+ * 収集時の新規追加と、既存フィードの毎回プルーン（自己修復）の両方で使う。
+ * @param {{ brand?: string, category?: string, color_name?: string }} item
+ */
+export function isDisplayQuality(item) {
+  if (typeof item.color_name === "string" && item.color_name.length > 0) return true;
+  return isKnownBrand(item.brand) && COLOR_CATEGORIES.includes(item.category);
+}
+
+/**
  * ブランド名 → URL安全なスラッグ
  */
 export function brandSlug(brand) {
@@ -514,17 +540,30 @@ export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
         process.exit(1);
       }
 
+      // 表示品質バー（既知ブランド×色カテゴリのみ・2026-07-02）
+      if (!isDisplayQuality(item)) {
+        console.log(`[collect] 品質バーskip: brand=${item.brand} category=${item.category} "${title}"`);
+        continue;
+      }
+
       newItems.push(item);
     }
   }
 
-  if (newItems.length === 0) {
+  // 既存フィードの自己修復プルーン（過去に品質バー未満で入ったアイテムを除去）
+  const keptExisting = existing.items.filter(isDisplayQuality);
+  const prunedCount = existing.items.length - keptExisting.length;
+  if (prunedCount > 0) {
+    console.log(`[collect] 品質バープルーン: 既存${prunedCount}件を除去`);
+  }
+
+  if (newItems.length === 0 && prunedCount === 0) {
     console.log("[collect] 新規アイテムなし。変更しません。");
     return { added: 0, total: existing.items.length };
   }
 
   // マージ: 新規アイテムを先頭に追加
-  const merged = [...newItems, ...existing.items];
+  const merged = [...newItems, ...keptExisting];
 
   // 上限200（古い順間引き）— released_at 降順ソート後に先頭200件
   merged.sort((a, b) => (b.released_at > a.released_at ? 1 : b.released_at < a.released_at ? -1 : 0));
