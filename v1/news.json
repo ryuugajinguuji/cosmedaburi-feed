@@ -1,17 +1,7 @@
 {
-  "version": 22,
-  "generated_at": "2026-07-02T14:01:18.952Z",
+  "version": 23,
+  "generated_at": "2026-07-02T14:20:00.000Z",
   "items": [
-    {
-      "id": "2026-07-02-unknown-9e717cc6",
-      "brand": "エスト",
-      "product_line": "",
-      "released_at": "2026-07-02",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000016.000169103.html",
-      "note": "",
-      "category": "base",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/169103/16/169103-16-cfe6e90f7a537172f76271115445fc01-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
-    },
     {
       "id": "2026-07-02-unknown-7d2664b0",
       "brand": "ソフィーナ",

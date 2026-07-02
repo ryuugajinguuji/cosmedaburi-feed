@@ -37,6 +37,7 @@ import {
   isKnownBrand,
   isDisplayQuality,
   COLOR_CATEGORIES,
+  brandOccursAsWord,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -520,6 +521,30 @@ describe("表示品質バー（isDisplayQuality）", () => {
   });
   test("color_name が空文字なら自動収集扱い（品質バー適用）", () => {
     assert.ok(!isDisplayQuality({ brand: "unknown", category: "lip", color_name: "" }));
+  });
+});
+
+// ---- ブランド境界マッチ（brandOccursAsWord・2026-07-02誤抽出対策） ----
+describe("ブランド境界マッチ（brandOccursAsWord / extractBrand）", () => {
+  test("「クエスト」は「エスト」にマッチしない（カタカナ境界）", () => {
+    assert.ok(!brandOccursAsWord("超能力推理クエスト、新作パウダー付き特装版", "エスト"));
+    assert.notEqual(extractBrand("超能力推理クエスト 新作発表"), "エスト");
+  });
+  test("「リクエスト」も「エスト」にマッチしない", () => {
+    assert.ok(!brandOccursAsWord("ご要望リクエスト受付中", "エスト"));
+  });
+  test("独立した「エスト」はマッチする", () => {
+    assert.ok(brandOccursAsWord("エスト、夏の新色ファンデーションを発売", "エスト"));
+    assert.equal(extractBrand("エスト、夏の新色ファンデーションを発売"), "エスト");
+  });
+  test("SKATE は KATE にマッチしない（ASCII境界）", () => {
+    assert.ok(!brandOccursAsWord("SKATE BOARD NEW COLOR", "KATE"));
+  });
+  test("独立した KATE はマッチする", () => {
+    assert.equal(extractBrand("KATE リップモンスター新色"), "KATE");
+  });
+  test("2度目の出現が独立ならマッチする", () => {
+    assert.ok(brandOccursAsWord("リクエスト多数！エスト 新色下地", "エスト"));
   });
 });
 

@@ -232,12 +232,44 @@ const KNOWN_BRANDS = [
   "ローラ メルシエ", "ナーズ", "ランコム", "イプサ",
 ];
 
+function isKatakanaChar(ch) {
+  return ch >= "゠" && ch <= "ヿ";
+}
+
+function isAsciiWordChar(ch) {
+  return /[A-Za-z0-9&]/.test(ch);
+}
+
 /**
- * タイトルからブランド名を機械的に抽出（既知ブランド優先）
+ * タイトル中のブランド出現が「単語として独立」しているか（境界チェック）。
+ * カタカナブランドは前後がカタカナだと別語の一部（例:「クエスト」⊃「エスト」誤判定
+ * =実機確認 2026-07-02）。ASCIIブランドは前後が英数字だと別語の一部（例: SKATE⊃KATE）。
+ */
+export function brandOccursAsWord(title, brand) {
+  const brandIsKatakana = /^[゠-ヿ]+$/.test(brand);
+  const brandIsAscii = /^[\x21-\x7E\s]+$/.test(brand);
+  let idx = title.indexOf(brand);
+  while (idx !== -1) {
+    const before = idx > 0 ? title[idx - 1] : "";
+    const after = idx + brand.length < title.length ? title[idx + brand.length] : "";
+    let ok = true;
+    if (brandIsKatakana) {
+      if ((before && isKatakanaChar(before)) || (after && isKatakanaChar(after))) ok = false;
+    } else if (brandIsAscii) {
+      if ((before && isAsciiWordChar(before)) || (after && isAsciiWordChar(after))) ok = false;
+    }
+    if (ok) return true;
+    idx = title.indexOf(brand, idx + 1);
+  }
+  return false;
+}
+
+/**
+ * タイトルからブランド名を機械的に抽出（既知ブランド優先・境界チェック付き）
  */
 export function extractBrand(title) {
   for (const brand of KNOWN_BRANDS) {
-    if (title.includes(brand)) return brand;
+    if (brandOccursAsWord(title, brand)) return brand;
   }
   // 「ブランド名」 の形式を探す
   const m = title.match(/^([^\s　「」【】（）\[\]]{2,20}?)[　\s]/);
