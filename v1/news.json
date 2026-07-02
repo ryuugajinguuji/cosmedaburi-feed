@@ -1,7 +1,51 @@
 {
-  "version": 20,
-  "generated_at": "2026-07-01T03:36:08.502Z",
+  "version": 21,
+  "generated_at": "2026-07-02T03:21:37.918Z",
   "items": [
+    {
+      "id": "2026-07-02-unknown-7d2664b0",
+      "brand": "ソフィーナ",
+      "product_line": "",
+      "hex": "B57EDC",
+      "hex_origin": "estimated",
+      "released_at": "2026-07-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000285.000072864.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/285/72864-285-6c13b94251f22a9404d757995d1fdd51-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-07-02-unknown-a76b4b72",
+      "brand": "unknown",
+      "product_line": "",
+      "hex": "F4A7B9",
+      "hex_origin": "estimated",
+      "released_at": "2026-07-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000286.000072864.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/286/72864-286-5852bf37cce77d4954ea779fbeb579a3-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-07-02-unknown-54d1e3c0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000013.000134635.html",
+      "note": "",
+      "category": "info",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/134635/13/134635-13-80f62db923a11ecf321dc311b67e189c-1350x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-07-02-unknown-9a4505a1",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000221.000120394.html",
+      "note": "",
+      "category": "base",
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/120394/221/120394-221-91b36ee03c131ab6edc2e6e9e74b6430-500x340.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
     {
       "id": "2026-07-01-unknown-2eda1ade",
       "brand": "unknown",
