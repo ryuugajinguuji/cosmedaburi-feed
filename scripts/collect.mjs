@@ -477,23 +477,32 @@ export async function fetchRss(url, fetchFn) {
 
 // ---- メイン処理 ----
 
+// 1実行の新規採用上限（OGP直列取得×3回/日でtimeout-minutes:15を守る・spec25 §1.2）
+export const MAX_NEW_PER_RUN = 20;
+
 /**
  * メインコレクター
- * @param {{ fetchFn?: Function, dryRun?: boolean }} opts
+ * @param {{ fetchFn?: Function, dryRun?: boolean, sourcesYaml?: string, existing?: { version: number, items: object[] } }} opts
+ *   sourcesYaml / existing はテスト用注入（未指定なら sources.yml / v1/news.json を読む）
  */
-export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
+export async function collect({
+  fetchFn = fetch,
+  dryRun = false,
+  sourcesYaml,
+  existing: injectedExisting,
+} = {}) {
   const newsJsonPath = join(ROOT, "v1", "news.json");
   const manifestPath = join(ROOT, "v1", "manifest.json");
   const sourcesPath = join(ROOT, "sources.yml");
   const colorDictPath = join(ROOT, "color_dict.yml");
 
-  // 既存データ読み込み
-  const existing = JSON.parse(readFileSync(newsJsonPath, "utf8"));
+  // 既存データ読み込み（テスト注入があればそれを使う）
+  const existing = injectedExisting ?? JSON.parse(readFileSync(newsJsonPath, "utf8"));
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
   const existingIds = new Set(existing.items.map((it) => it.id));
 
   // sources.yml / color_dict.yml 読み込み
-  const sourcesText = readFileSync(sourcesPath, "utf8");
+  const sourcesText = sourcesYaml ?? readFileSync(sourcesPath, "utf8");
   const colorDictText = readFileSync(colorDictPath, "utf8");
 
   const sources = parseYaml(sourcesText);
@@ -516,7 +525,12 @@ export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
     const rssItems = parseRss(xml);
     console.log(`[collect] ${rssItems.length}件取得`);
 
+    let adoptedForSource = 0;
+
     for (const rssItem of rssItems) {
+      // 1実行の新規採用上限（spec25 §1.2）
+      if (newItems.length >= MAX_NEW_PER_RUN) break;
+
       const { title, link, pubDate } = rssItem;
       if (!title || !link) continue;
 
@@ -579,7 +593,11 @@ export async function collect({ fetchFn = fetch, dryRun = false } = {}) {
       }
 
       newItems.push(item);
+      existingIds.add(id); // run内dedupe: 同一実行内の後続ソースが同じidを再採用しない（spec25 §1.2）
+      adoptedForSource++;
     }
+
+    console.log(`[collect] source=${name} fetched=${rssItems.length} adopted=${adoptedForSource}`);
   }
 
   // 既存フィードの自己修復プルーン（過去に品質バー未満で入ったアイテムを除去）

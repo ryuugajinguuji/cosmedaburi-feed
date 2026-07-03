@@ -38,6 +38,7 @@ import {
   isDisplayQuality,
   COLOR_CATEGORIES,
   brandOccursAsWord,
+  MAX_NEW_PER_RUN,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -422,6 +423,47 @@ describe("collect() 統合テスト（ネットワーク不使用）", () => {
     // 新規アイテムが生成されること（既存IDがなければ2件）
     assert.ok(result.added >= 0, "addedが数値であること");
     assert.ok(result.total > 0, "totalが1以上であること");
+  });
+
+  // spec25 §1.2: run内dedupe（同一実行内の複数ソースで同じidを二重採用しない）
+  // 注: collect.mjs の最小YAMLパーサーはネストブロック後の複数ソースを扱えないため
+  // フラット形式（fallback_category: lip）でカテゴリを与える
+  const LIP_SOURCES_YAML = (names) =>
+    names
+      .map((n) => `- name: ${n}\n  rss_url: https://${n}.example/rss\n  fallback_category: lip\n`)
+      .join("");
+
+  test("同一実行内で同じidが2ソースから来ても1件しか採用しない", async () => {
+    const rss = `<?xml version="1.0"?><rss><channel>
+      <item><title>コーセー ヴィセ リップ 新色「01 ローズ」発売</title>
+      <link>https://example.com/a</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>
+      </channel></rss>`;
+    const fetchFn = async () => ({ ok: true, status: 200, text: async () => rss });
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML(["s1", "s2"]),
+      existing: { version: 1, items: [] },
+    });
+    assert.equal(result.added, 1); // 2ソース×同一item→1件
+  });
+
+  test("1実行の新規採用はMAX_NEW_PER_RUN件で打ち止め", async () => {
+    const items = Array.from(
+      { length: 25 },
+      (_, i) =>
+        `<item><title>コーセー ヴィセ リップ 新色「${String(i + 1).padStart(2, "0")} ローズ」発売</title><link>https://example.com/${i}</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>`
+    ).join("");
+    const rss = `<?xml version="1.0"?><rss><channel>${items}</channel></rss>`;
+    const fetchFn = async () => ({ ok: true, status: 200, text: async () => rss });
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML(["s1"]),
+      existing: { version: 1, items: [] },
+    });
+    assert.equal(MAX_NEW_PER_RUN, 20);
+    assert.equal(result.added, MAX_NEW_PER_RUN); // 25件→20件で打ち止め
   });
 
   test("noteが空でなければ例外（CIガード）", () => {
