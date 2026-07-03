@@ -100,7 +100,7 @@ jobs:
           git config user.email "bot@cosmedaburi-feed"
           git add v1/news.json v1/manifest.json
           VERSION=$(node -e "const m=require('./v1/manifest.json'); console.log(m.version);")
-          git commit -m "chore: auto collect news v${VERSION} [skip ci]"
+          git commit -m "chore: auto collect news v${VERSION}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
