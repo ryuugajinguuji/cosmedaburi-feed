@@ -8,8 +8,10 @@ name: collect-news
 
 on:
   schedule:
-    # JST 09:00 = UTC 00:00
+    # JST 09:00 / 12:30 / 18:00（spec25 §1.1・1日3回）
     - cron: "0 0 * * *"
+    - cron: "30 3 * * *"
+    - cron: "0 9 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -20,6 +22,10 @@ on:
         options:
           - "false"
           - "true"
+
+concurrency:
+  group: collect
+  cancel-in-progress: false   # 直列化のみ（実行中runは完走させる）
 
 permissions:
   contents: write
