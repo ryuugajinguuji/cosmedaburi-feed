@@ -592,3 +592,55 @@ describe("ブランド境界マッチ（brandOccursAsWord / extractBrand）", ()
 
 // ---- テスト結果サマリ出力 ----
 // node:testが自動で集計するため追加不要
+
+// ---- parseYaml ネスト付き配列要素の後続エントリ（Task 2.5 バグ修正） ----
+describe("parseYaml（ネストブロック付き配列の複数エントリ）", () => {
+  test("2ソース×category_rulesネスト → 2件とも完全パース", () => {
+    const yaml = `sources:
+  - name: s1
+    rss_url: https://a.example/rss
+    category_rules:
+      lip: 口紅
+      eye: アイシャドウ
+  - name: s2
+    rss_url: https://b.example/rss
+    category_rules:
+      lip: リップ
+      cheek: チーク
+`;
+    const parsed = parseYaml(yaml);
+    assert.equal(parsed.sources.length, 2);
+    assert.equal(parsed.sources[0].name, "s1");
+    assert.deepEqual(parsed.sources[0].category_rules, { lip: "口紅", eye: "アイシャドウ" });
+    assert.equal(parsed.sources[1].name, "s2");
+    assert.equal(parsed.sources[1].rss_url, "https://b.example/rss");
+    assert.deepEqual(parsed.sources[1].category_rules, { lip: "リップ", cheek: "チーク" });
+  });
+  test("3ソース・ネスト深さ混在（リスト値ネスト含む）→ 3件とも保持", () => {
+    const yaml = `sources:
+  - name: s1
+    category_rules:
+      lip:
+        - リップ
+        - 口紅
+      eye:
+        - アイシャドウ
+    fallback_category: info
+  - name: s2
+    rss_url: https://b.example/rss
+    admission_info_keywords:
+      - コスメ
+      - 新色
+  - name: s3
+    rss_url: https://c.example/rss
+`;
+    const parsed = parseYaml(yaml);
+    assert.equal(parsed.sources.length, 3);
+    assert.deepEqual(parsed.sources[0].category_rules.lip, ["リップ", "口紅"]);
+    assert.deepEqual(parsed.sources[0].category_rules.eye, ["アイシャドウ"]);
+    assert.equal(parsed.sources[0].fallback_category, "info");
+    assert.deepEqual(parsed.sources[1].admission_info_keywords, ["コスメ", "新色"]);
+    assert.equal(parsed.sources[2].name, "s3");
+    assert.equal(parsed.sources[2].rss_url, "https://c.example/rss");
+  });
+});

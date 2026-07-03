@@ -90,18 +90,9 @@ function parseYamlLines(lines, startIndex, baseIndent) {
     } else {
       const kv = parseKeyValue(line);
       if (kv) {
-        if (kv.value === null) {
-          // ブロック値
-          const sub = parseYamlLines(lines, i + 1, indent + 2);
-          const obj = {};
-          obj[kv.key] = sub.value;
-          i = sub.nextIndex;
-          // キーと値の辞書として返す場合
-          return { value: buildDict(lines, startIndex, baseIndent), nextIndex: lines.length };
-        } else {
-          // フラットな辞書として収集
-          return { value: buildDict(lines, startIndex, baseIndent), nextIndex: lines.length };
-        }
+        // 辞書ブロック — buildDict が自分のインデント範囲だけ消費し、
+        // 消費し終えた位置(nextIndex)をそのまま返す（末尾まで飲み込まない）
+        return buildDict(lines, startIndex, baseIndent);
       } else {
         i++;
       }
@@ -146,7 +137,7 @@ function buildDict(lines, startIndex, baseIndent) {
       i++;
     }
   }
-  return dict;
+  return { value: dict, nextIndex: i };
 }
 
 // ---- RSS パーサー（正規表現・DOMParser不使用） ----
