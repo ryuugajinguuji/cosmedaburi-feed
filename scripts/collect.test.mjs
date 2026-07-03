@@ -40,6 +40,8 @@ import {
   COLOR_CATEGORIES,
   brandOccursAsWord,
   MAX_NEW_PER_RUN,
+  OGP_UA,
+  OGP_BACKFILL_PER_RUN,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -383,6 +385,110 @@ describe("OGP画像取得（fetchOgpImage）", () => {
     const result = await fetchOgpImage("http://example.com", mockFetch);
     assert.equal(result, null);
     assert.equal(called, false);
+  });
+
+  test("OGP取得はブラウザ系UA（OGP_UA）で行われる", async () => {
+    let capturedOpts = null;
+    const mockFetch = async (url, opts) => {
+      capturedOpts = opts;
+      return {
+        ok: true,
+        text: async () =>
+          '<html><head><meta property="og:image" content="https://example.com/img.jpg"></head></html>',
+      };
+    };
+    const result = await fetchOgpImage("https://example.com", mockFetch);
+    assert.equal(result, "https://example.com/img.jpg");
+    assert.ok(OGP_UA.startsWith("Mozilla/5.0"), "OGP_UAはブラウザ系であること");
+    assert.equal(capturedOpts.headers["User-Agent"], OGP_UA);
+  });
+});
+
+// ---- OGPバックフィル（画像なし項目の自動再試行・恒久対策） ----
+describe("OGPバックフィル（collect統合・ネットワーク不使用）", () => {
+  const EMPTY_RSS = '<?xml version="1.0"?><rss><channel></channel></rss>';
+  const SOURCES_YAML =
+    "- name: s1\n  rss_url: https://s1.example/rss\n  fallback_category: lip\n";
+
+  /** 品質バーを通る既存アイテム（ogp_image_url=null）を n 件生成 */
+  const makeNullImageItems = (n) =>
+    Array.from({ length: n }, (_, i) => ({
+      id: `2026-06-0${(i % 9) + 1}-nars-hash${i}`,
+      brand: "NARS",
+      product_line: "",
+      released_at: `2026-06-0${(i % 9) + 1}`,
+      source_url: `https://example.com/press/${i}`,
+      note: "",
+      category: "lip",
+      ogp_image_url: null,
+    }));
+
+  /** RSSは空・OGPはog:imageを返すモック。OGP呼び出し回数を数える */
+  const makeMockFetch = (counter) => async (url, opts) => {
+    if (url.includes("s1.example")) {
+      return { ok: true, status: 200, text: async () => EMPTY_RSS };
+    }
+    counter.ogpCalls++;
+    counter.ogpUrls.push(url);
+    return {
+      ok: true,
+      text: async () =>
+        '<html><head><meta property="og:image" content="https://example.com/og-backfill.jpg"></head></html>',
+    };
+  };
+
+  test("null画像2件が両方更新され、versionバンプされる", async () => {
+    const counter = { ogpCalls: 0, ogpUrls: [] };
+    const items = makeNullImageItems(2);
+    const result = await collect({
+      fetchFn: makeMockFetch(counter),
+      dryRun: true,
+      sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(result.added, 0);
+    assert.equal(result.backfilled, 2, "2件ともバックフィルされること");
+    assert.ok(result.version !== undefined, "バックフィル更新>0ならversionバンプ対象");
+    // 対象アイテム自体が更新されていること（同一参照）
+    for (const it of items) {
+      assert.equal(it.ogp_image_url, "https://example.com/og-backfill.jpg");
+    }
+  });
+
+  test("null画像7件でも試行はOGP_BACKFILL_PER_RUN=5件まで", async () => {
+    const counter = { ogpCalls: 0, ogpUrls: [] };
+    const result = await collect({
+      fetchFn: makeMockFetch(counter),
+      dryRun: true,
+      sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items: makeNullImageItems(7) },
+    });
+    assert.equal(OGP_BACKFILL_PER_RUN, 5);
+    assert.equal(counter.ogpCalls, 5, "OGP再取得は5件のみ試行");
+    assert.equal(result.backfilled, 5);
+  });
+
+  test("バックフィル0・新規0・プルーン0ならversion据え置き（既存挙動維持）", async () => {
+    // OGP取得も全滅（ok=false）にする
+    const mockFetch = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => EMPTY_RSS };
+      }
+      return { ok: false };
+    };
+    const items = makeNullImageItems(2);
+    const result = await collect({
+      fetchFn: mockFetch,
+      dryRun: true,
+      sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(result.added, 0);
+    assert.equal(result.backfilled, 0);
+    assert.equal(result.version, undefined, "変更なしならversion据え置き");
+    for (const it of items) {
+      assert.equal(it.ogp_image_url, null, "取得失敗時はnullのまま");
+    }
   });
 });
 

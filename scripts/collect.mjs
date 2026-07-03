@@ -430,6 +430,11 @@ export function generateId(releasedAt, brand, title) {
 
 // ---- OGP画像取得 ----
 
+// OGP取得用のブラウザ系UA（bot UAはCDN/WAFに403で弾かれるサイトが多いため。
+// RSS取得側のUA＝ソース別 user_agent 機構はこの定数の対象外）
+export const OGP_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
+
 /**
  * URLのHTMLからog:imageを抽出（httpsのみ）
  * @param {string} url
@@ -440,7 +445,7 @@ export async function fetchOgpImage(url, fetchFn) {
   if (!url.startsWith("https://")) return null;
   try {
     const res = await fetchFn(url, {
-      headers: { "User-Agent": "CosmeDaburiBot/1.0" },
+      headers: { "User-Agent": OGP_UA },
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) return null;
@@ -472,6 +477,9 @@ export async function fetchRss(url, fetchFn, userAgent) {
 
 // 1実行の新規採用上限（OGP直列取得×3回/日でtimeout-minutes:15を守る・spec25 §1.2）
 export const MAX_NEW_PER_RUN = 20;
+
+// OGPバックフィルの1実行あたり再試行上限（実行時間ガード）
+export const OGP_BACKFILL_PER_RUN = 5;
 
 /**
  * メインコレクター
@@ -600,13 +608,29 @@ export async function collect({
     console.log(`[collect] 品質バープルーン: 既存${prunedCount}件を除去`);
   }
 
-  if (newItems.length === 0 && prunedCount === 0) {
-    console.log("[collect] 新規アイテムなし。変更しません。");
-    return { added: 0, total: existing.items.length };
-  }
-
   // マージ: 新規アイテムを先頭に追加
   const merged = [...newItems, ...keptExisting];
+
+  // OGPバックフィル: 画像なし項目（null または未設定）を再試行（上限 OGP_BACKFILL_PER_RUN 件/run）
+  // 収集時に1回失敗すると永久に画像なしのままだった問題への恒久対策
+  const backfillTargets = merged.filter((it) => it.ogp_image_url == null);
+  let backfilledCount = 0;
+  for (const it of backfillTargets.slice(0, OGP_BACKFILL_PER_RUN)) {
+    const img = await fetchOgpImage(it.source_url, fetchFn);
+    if (img) {
+      it.ogp_image_url = img;
+      backfilledCount++;
+      if (dryRun) {
+        console.log(`[collect] ogp-backfill(dryRun): 更新予定 id=${it.id} → ${img}`);
+      }
+    }
+  }
+  console.log(`[collect] ogp-backfill: 対象${backfillTargets.length}件中 ${backfilledCount}件取得`);
+
+  if (newItems.length === 0 && prunedCount === 0 && backfilledCount === 0) {
+    console.log("[collect] 新規アイテムなし。変更しません。");
+    return { added: 0, total: existing.items.length, backfilled: 0 };
+  }
 
   // 上限200（古い順間引き）— released_at 降順ソート後に先頭200件
   merged.sort((a, b) => (b.released_at > a.released_at ? 1 : b.released_at < a.released_at ? -1 : 0));
@@ -634,7 +658,7 @@ export async function collect({
     console.log(`[collect] dryRun: +${newItems.length}件追加予定`);
   }
 
-  return { added: newItems.length, total: trimmed.length, version: newVersion };
+  return { added: newItems.length, total: trimmed.length, version: newVersion, backfilled: backfilledCount };
 }
 
 // ---- CLI エントリポイント ----
