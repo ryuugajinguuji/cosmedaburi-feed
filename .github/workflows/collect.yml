@@ -54,6 +54,7 @@ jobs:
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: |
+          set -o pipefail
           if [ "$DRY_RUN" = "true" ]; then
             echo "[CI] ドライランモードで実行"
             node -e "
@@ -63,9 +64,16 @@ jobs:
                   process.exit(0);
                 })
               ).catch(e => { console.error(e); process.exit(1); });
-            "
+            " 2>&1 | tee collect.log
           else
-            node scripts/collect.mjs
+            node scripts/collect.mjs 2>&1 | tee collect.log
+          fi
+
+      - name: 採用件数を Summary へ出力
+        if: always()
+        run: |
+          if [ -f collect.log ]; then
+            grep -E "\[collect\] (完了|source=)" collect.log >> "$GITHUB_STEP_SUMMARY" || true
           fi
 
       # note 非空チェックは撤廃（2026-06-14）。

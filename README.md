@@ -102,7 +102,7 @@ OGP画像やアイテム情報に関して削除要請があった場合:
 
 毎週1回、以下を確認して表に1行追記する。
 
-- **新着の健全性**: 直近7日の自動commit（`+N件`）が毎日あるか。48時間commitが無い場合は Actions ログの `[collect] source=<name> fetched=<n> adopted=<m>` 行で全ソースを確認（全ソース失敗でもworkflowは緑のまま＝ログでしか分からない）
+- **新着の健全性**: 直近7日、Actions実行一覧の各run Summaryに `+N件追加`（N≥1）が毎日あるか（commitメッセージに件数は出ない・プルーンのみでもcommitされる点に注意）。48時間 N=0 の場合は Actions ログの `[collect] source=<name> fetched=<n> adopted=<m>` 行で全ソースを確認（全ソース失敗でもworkflowは緑のまま＝Summary/ログでしか分からない）
 - **ソース別採用**: 直近14日で adopted が全run 0 のソースは削除候補（sources.yml からエントリ削除のみ・過去採用分はフィードに残る）
 - **新ソース追加時**: sources.yml のキーは `name`/`rss_url`/`require_match`/`admission_info_keywords`/`category_rules`/`fallback_category`/`user_agent`（任意・bot UAが403のサイト用）。手動確認は workflow_dispatch の dry_run=true で（フィードを書き換えずログだけ確認できる）
 
