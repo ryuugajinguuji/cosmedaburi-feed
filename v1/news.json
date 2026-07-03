@@ -1,6 +1,6 @@
 {
-  "version": 30,
-  "generated_at": "2026-07-03T02:50:00.000Z",
+  "version": 31,
+  "generated_at": "2026-07-03T11:31:25.534Z",
   "items": [
     {
       "id": "2026-07-02-unknown-7d2664b0",
@@ -13,6 +13,33 @@
       "note": "",
       "category": "base",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/285/72864-285-6c13b94251f22a9404d757995d1fdd51-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+    },
+    {
+      "id": "2026-06-25-rmk-0ba7371d",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://www.wwdjapan.com/articles/2433550",
+      "note": "",
+      "category": "base"
+    },
+    {
+      "id": "2026-06-25-unknown-c1ce7d50",
+      "brand": "イプサ",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://www.wwdjapan.com/articles/2430989",
+      "note": "",
+      "category": "base"
+    },
+    {
+      "id": "2026-06-24-rmk-1519f167",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://www.wwdjapan.com/articles/2397793",
+      "note": "",
+      "category": "lip"
     },
     {
       "id": "2026-06-16-unknown-5ecd8377",
