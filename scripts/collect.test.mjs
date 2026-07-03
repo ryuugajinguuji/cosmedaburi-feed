@@ -32,6 +32,7 @@ import {
   brandSlug,
   extractBrand,
   fetchOgpImage,
+  fetchRss,
   collect,
   parseYaml,
   isKnownBrand,
@@ -642,5 +643,134 @@ describe("parseYaml（ネストブロック付き配列の複数エントリ）"
     assert.deepEqual(parsed.sources[1].admission_info_keywords, ["コスメ", "新色"]);
     assert.equal(parsed.sources[2].name, "s3");
     assert.equal(parsed.sources[2].rss_url, "https://c.example/rss");
+  });
+});
+
+// ---- fetchRss UA対応（spec25 Task3・WWDJAPANはブラウザ系UA必須） ----
+describe("fetchRss User-Agent対応", () => {
+  const RSS = '<?xml version="1.0"?><rss><channel></channel></rss>';
+
+  test("user_agent指定時はその値がヘッダに渡る", async () => {
+    let capturedOpts = null;
+    const fetchFn = async (url, opts) => {
+      capturedOpts = opts;
+      return { ok: true, status: 200, text: async () => RSS };
+    };
+    const ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0.0.0";
+    await fetchRss("https://example.com/feed", fetchFn, ua);
+    assert.equal(capturedOpts.headers["User-Agent"], ua);
+  });
+
+  test("user_agent未指定時は既定のCosmeDaburiBot UA", async () => {
+    let capturedOpts = null;
+    const fetchFn = async (url, opts) => {
+      capturedOpts = opts;
+      return { ok: true, status: 200, text: async () => RSS };
+    };
+    await fetchRss("https://example.com/feed", fetchFn);
+    assert.equal(capturedOpts.headers["User-Agent"], "CosmeDaburiBot/1.0");
+  });
+});
+
+// ---- 新ソース入場ゲート/品質バー（25-appendix-sources.md 実例タイトル） ----
+describe("新ソース入場ゲート（sources.yml実設定×appendix実例）", () => {
+  const sources = parseYaml(readFileSync(join(ROOT, "sources.yml"), "utf8"));
+  const byName = (prefix) => {
+    const s = sources.find((src) => src.name.startsWith(prefix));
+    assert.ok(s, `sources.yml に ${prefix} が存在すること`);
+    return s;
+  };
+
+  test("sources.yml は6ソース定義（PR TIMES＋新5ソース）", () => {
+    assert.equal(sources.length, 6);
+  });
+
+  test("WWDJAPAN: user_agentキーが設定されている（CloudFront 403対策）", () => {
+    const s = byName("WWDJAPAN");
+    assert.ok(typeof s.user_agent === "string" && s.user_agent.includes("Mozilla"));
+  });
+
+  test("WWDJAPAN: 採用例（キュレル オイル美容液 発売）→ pass", () => {
+    const r = admissionGate(
+      "「キュレル」がオイル美容液を発売　ブランド初、オイル製剤とセラミドケア技術を融合",
+      byName("WWDJAPAN"),
+    );
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "skincare");
+  });
+
+  test("WWDJAPAN: 除外例（業界ニュース）→ skip", () => {
+    const r = admissionGate("百貨店の秋冬展示会が開幕　業界関係者が来場", byName("WWDJAPAN"));
+    assert.equal(r.pass, false);
+  });
+
+  test("ELLE: 採用例（バレンシアガ 香水コレクション）→ pass=info", () => {
+    const r = admissionGate(
+      "「バレンシアガ」10種の香水コレクションが集結！ 国内初のポップアップOPEN",
+      byName("ELLE"),
+    );
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "info");
+  });
+
+  test("ELLE: 除外例（セレブ記事）→ skip", () => {
+    const r = admissionGate("セレブの最新ヘアアレンジ特集", byName("ELLE"));
+    assert.equal(r.pass, false);
+  });
+
+  test("CanCam: 採用例（ランコム 7/3発売 美容液）→ pass", () => {
+    const r = admissionGate(
+      "【ランコム・7/3発売】名品「ジェニフィック」から“塗るフィラー”発想の美容液が誕生！",
+      byName("CanCam"),
+    );
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "skincare");
+  });
+
+  test("CanCam: 除外例（エンタメ記事）→ skip", () => {
+    const r = admissionGate("人気俳優インタビュー　夏ドラマの見どころを語る", byName("CanCam"));
+    assert.equal(r.pass, false);
+  });
+
+  test("Oggi: 採用例（日焼け止め3選）→ pass", () => {
+    const r = admissionGate(
+      "焼かないだけじゃない！シーン別に使い分けたい【おすすめ日焼け止め3選】",
+      byName("Oggi"),
+    );
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "skincare");
+  });
+
+  test("Oggi: 除外例（ファッション記事）→ skip", () => {
+    const r = admissionGate("夏の通勤コーデ、きれいめ見えの正解は？", byName("Oggi"));
+    assert.equal(r.pass, false);
+  });
+
+  test("マイナビウーマン: 採用例（コスメオタクのベースコスメ）→ pass=info", () => {
+    const r = admissionGate(
+      "どんなに暑くてもメイク崩れを防止したい！　コスメオタクが選ぶ鉄壁ベース一軍コスメ35選",
+      byName("マイナビウーマン"),
+    );
+    assert.equal(r.pass, true);
+    assert.equal(r.category, "info");
+  });
+
+  test("マイナビウーマン: 除外例（キャリア記事）→ skip", () => {
+    const r = admissionGate("職場の人間関係に悩んだら？　先輩に聞く対処法", byName("マイナビウーマン"));
+    assert.equal(r.pass, false);
+  });
+});
+
+describe("新ソース品質バー（appendix実例の最終採否）", () => {
+  test("ランコムのskincare（CanCam実例）は色カテゴリ外 → 表示しない", () => {
+    assert.equal(isDisplayQuality({ brand: "ランコム", category: "skincare" }), false);
+  });
+
+  test("未知ブランドのinfo（マイナビ実例まとめ記事）→ 表示しない", () => {
+    assert.equal(isDisplayQuality({ brand: "unknown", category: "info" }), false);
+  });
+
+  test("既知ブランド×lip（メディア発の新色記事想定）→ 表示する", () => {
+    assert.equal(isDisplayQuality({ brand: "ランコム", category: "lip" }), true);
   });
 });

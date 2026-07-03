@@ -457,9 +457,11 @@ export async function fetchOgpImage(url, fetchFn) {
 
 // ---- RSS フェッチ ----
 
-export async function fetchRss(url, fetchFn) {
+export async function fetchRss(url, fetchFn, userAgent) {
   const res = await fetchFn(url, {
-    headers: { "User-Agent": "CosmeDaburiBot/1.0" },
+    // ソース側で user_agent 指定があればそれを使う（WWDJAPAN は CloudFront が
+    // bot風UAに403を返すためブラウザ系UA必須 — spec25 appendix §3）
+    headers: { "User-Agent": userAgent || "CosmeDaburiBot/1.0" },
     signal: AbortSignal.timeout(15000),
   });
   if (!res.ok) throw new Error(`RSS fetch failed: ${res.status} ${url}`);
@@ -502,12 +504,12 @@ export async function collect({
   const newItems = [];
 
   for (const source of sources) {
-    const { name, rss_url, category_rules, fallback_category } = source;
+    const { name, rss_url, user_agent } = source;
     console.log(`[collect] フェッチ: ${name} (${rss_url})`);
 
     let xml;
     try {
-      xml = await fetchRss(rss_url, fetchFn);
+      xml = await fetchRss(rss_url, fetchFn, user_agent);
     } catch (err) {
       console.error(`[collect] RSS取得失敗: ${name} — ${err.message}`);
       continue;
