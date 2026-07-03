@@ -435,28 +435,49 @@ export function generateId(releasedAt, brand, title) {
 export const OGP_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 
+/** og:xxx の meta content を抽出（property/content の属性順は両対応） */
+function extractMetaContent(html, property) {
+  const m =
+    html.match(new RegExp(`<meta[^>]+property=["']${property}["'][^>]+content=["']([^"']+)["']`, "i")) ||
+    html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+property=["']${property}["']`, "i"));
+  return m ? m[1] : null;
+}
+
+/** OGPテキスト正規化: エンティティデコード（既存decodeHtmlEntities再利用）→trim→maxLen超は切り詰め＋「…」。空はnull */
+function normalizeOgpText(raw, maxLen) {
+  if (raw == null) return null;
+  const s = decodeHtmlEntities(raw).trim();
+  if (s === "") return null;
+  return s.length > maxLen ? s.slice(0, maxLen) + "…" : s;
+}
+
 /**
- * URLのHTMLからog:imageを抽出（httpsのみ）
+ * URLのHTMLからOGPメタ（og:image / og:title / og:description）を1回のfetchで抽出
+ * - imageUrl: httpsのみ採用（従来のfetchOgpImage互換）
+ * - title: 120字で切り詰め / description: 200字で切り詰め（超過時は末尾「…」）
  * @param {string} url
  * @param {Function} fetchFn
- * @returns {Promise<string | null>}
+ * @returns {Promise<{ imageUrl: string|null, title: string|null, description: string|null }>}
  */
-export async function fetchOgpImage(url, fetchFn) {
-  if (!url.startsWith("https://")) return null;
+export async function fetchOgpMeta(url, fetchFn) {
+  const empty = { imageUrl: null, title: null, description: null };
+  if (!url.startsWith("https://")) return empty;
   try {
     const res = await fetchFn(url, {
       headers: { "User-Agent": OGP_UA },
       signal: AbortSignal.timeout(8000),
     });
-    if (!res.ok) return null;
+    if (!res.ok) return empty;
     const html = await res.text();
-    const m = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)
-      || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
-    if (!m) return null;
-    const imgUrl = m[1].trim();
-    return imgUrl.startsWith("https://") ? imgUrl : null;
+    const rawImg = extractMetaContent(html, "og:image");
+    const imgUrl = rawImg ? rawImg.trim() : null;
+    return {
+      imageUrl: imgUrl && imgUrl.startsWith("https://") ? imgUrl : null,
+      title: normalizeOgpText(extractMetaContent(html, "og:title"), 120),
+      description: normalizeOgpText(extractMetaContent(html, "og:description"), 200),
+    };
   } catch {
-    return null;
+    return empty;
   }
 }
 
@@ -556,8 +577,8 @@ export async function collect({
       // 色語辞書ヒット
       const hexValue = lookupColor(title, colorDict);
 
-      // OGP画像取得
-      const ogpImageUrl = await fetchOgpImage(link, fetchFn);
+      // OGPメタ取得（画像＋リンクプレビュー用title/description・1回のfetch）
+      const ogpMeta = await fetchOgpMeta(link, fetchFn);
 
       // アイテム生成 — note は常に '' （spec23 §2）
       const item = {
@@ -572,7 +593,9 @@ export async function collect({
         source_url: link,
         note: "",             // 常に空文字（非空ならCIでfail）
         category,
-        ...(ogpImageUrl ? { ogp_image_url: ogpImageUrl } : {}),
+        ...(ogpMeta.imageUrl ? { ogp_image_url: ogpMeta.imageUrl } : {}),
+        ogp_title: ogpMeta.title,
+        ogp_description: ogpMeta.description,
         ...(priceResult ? { price_jpy: priceResult.price_jpy, price_label: priceResult.price_label } : {}),
       };
 
@@ -611,25 +634,39 @@ export async function collect({
   // マージ: 新規アイテムを先頭に追加
   const merged = [...newItems, ...keptExisting];
 
-  // OGPバックフィル: 画像なし項目（null または未設定）を再試行（上限 OGP_BACKFILL_PER_RUN 件/run）
-  // 収集時に1回失敗すると永久に画像なしのままだった問題への恒久対策
-  const backfillTargets = merged.filter((it) => it.ogp_image_url == null);
+  // OGPバックフィル: image/title/description のいずれかが欠けた項目を再試行（上限 OGP_BACKFILL_PER_RUN 件/run）
+  // 収集時に1回失敗すると永久に欠落したままだった問題への恒久対策。取得できたフィールドだけ埋め、既存値は上書きしない
+  const backfillTargets = merged.filter(
+    (it) => it.ogp_image_url == null || it.ogp_title == null || it.ogp_description == null
+  );
   let backfilledCount = 0;
   for (const it of backfillTargets.slice(0, OGP_BACKFILL_PER_RUN)) {
-    const img = await fetchOgpImage(it.source_url, fetchFn);
-    if (img) {
-      it.ogp_image_url = img;
+    const meta = await fetchOgpMeta(it.source_url, fetchFn);
+    let updated = false;
+    if (it.ogp_image_url == null && meta.imageUrl) {
+      it.ogp_image_url = meta.imageUrl;
+      updated = true;
+    }
+    if (it.ogp_title == null && meta.title) {
+      it.ogp_title = meta.title;
+      updated = true;
+    }
+    if (it.ogp_description == null && meta.description) {
+      it.ogp_description = meta.description;
+      updated = true;
+    }
+    if (updated) {
       backfilledCount++;
       if (dryRun) {
-        console.log(`[collect] ogp-backfill(dryRun): 更新予定 id=${it.id} → ${img}`);
+        console.log(`[collect] ogp-backfill(dryRun): 更新予定 id=${it.id}`);
       }
     }
   }
-  console.log(`[collect] ogp-backfill: 対象${backfillTargets.length}件中 ${backfilledCount}件取得`);
+  console.log(`[collect] ogp-backfill: 対象${backfillTargets.length}件中 ${backfilledCount}件更新`);
 
   if (newItems.length === 0 && prunedCount === 0 && backfilledCount === 0) {
     console.log("[collect] 新規アイテムなし。変更しません。");
-    return { added: 0, total: existing.items.length, backfilled: 0 };
+    return { added: 0, total: existing.items.length, backfilled: 0, items: existing.items };
   }
 
   // 上限200（古い順間引き）— released_at 降順ソート後に先頭200件
@@ -658,7 +695,7 @@ export async function collect({
     console.log(`[collect] dryRun: +${newItems.length}件追加予定`);
   }
 
-  return { added: newItems.length, total: trimmed.length, version: newVersion, backfilled: backfilledCount };
+  return { added: newItems.length, total: trimmed.length, version: newVersion, backfilled: backfilledCount, items: trimmed };
 }
 
 // ---- CLI エントリポイント ----

@@ -31,7 +31,7 @@ import {
   admissionGate,
   brandSlug,
   extractBrand,
-  fetchOgpImage,
+  fetchOgpMeta,
   fetchRss,
   collect,
   parseYaml,
@@ -345,45 +345,117 @@ describe("入場ゲート（admissionGate）", () => {
   });
 });
 
-// ---- OGP画像取得テスト（fetchモック） ----
-describe("OGP画像取得（fetchOgpImage）", () => {
-  test("og:imageが取れる", async () => {
-    const mockFetch = async () => ({
-      ok: true,
-      text: async () =>
-        '<html><head><meta property="og:image" content="https://example.com/img.jpg"></head></html>',
-    });
-    const result = await fetchOgpImage("https://example.com", mockFetch);
-    assert.equal(result, "https://example.com/img.jpg");
+// ---- OGPメタ取得テスト（fetchモック） ----
+describe("OGPメタ取得（fetchOgpMeta）", () => {
+  const pageWith = (head) => async () => ({
+    ok: true,
+    text: async () => `<html><head>${head}</head></html>`,
   });
 
-  test("og:imageがhttpの場合はnull（httpsのみ）", async () => {
-    const mockFetch = async () => ({
-      ok: true,
-      text: async () =>
-        '<html><head><meta property="og:image" content="http://example.com/img.jpg"></head></html>',
+  test("og:image/og:title/og:descriptionの3点が取れる", async () => {
+    const mockFetch = pageWith(
+      '<meta property="og:image" content="https://example.com/img.jpg">' +
+      '<meta property="og:title" content="新色リップ発売">' +
+      '<meta property="og:description" content="ローズ系の新色が登場">'
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.deepEqual(result, {
+      imageUrl: "https://example.com/img.jpg",
+      title: "新色リップ発売",
+      description: "ローズ系の新色が登場",
     });
-    const result = await fetchOgpImage("https://example.com", mockFetch);
-    assert.equal(result, null);
   });
 
-  test("fetchエラー時はnull", async () => {
+  test("content先行の属性順でも抽出できる", async () => {
+    const mockFetch = pageWith(
+      '<meta content="タイトルA" property="og:title">' +
+      '<meta content="説明B" property="og:description">'
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, "タイトルA");
+    assert.equal(result.description, "説明B");
+  });
+
+  test("HTMLエンティティがデコードされる（主要5種）", async () => {
+    const mockFetch = pageWith(
+      '<meta property="og:title" content="A &amp; B &lt;C&gt;">' +
+      '<meta property="og:description" content="&quot;D&quot; と &#39;E&#39;">'
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, "A & B <C>");
+    assert.equal(result.description, '"D" と \'E\'');
+  });
+
+  test("titleは120字で切り詰め＋末尾…", async () => {
+    const long = "あ".repeat(130);
+    const mockFetch = pageWith(`<meta property="og:title" content="${long}">`);
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, "あ".repeat(120) + "…");
+  });
+
+  test("descriptionは200字で切り詰め＋末尾…", async () => {
+    const long = "い".repeat(210);
+    const mockFetch = pageWith(`<meta property="og:description" content="${long}">`);
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.description, "い".repeat(200) + "…");
+  });
+
+  test("ちょうど120字/200字は切り詰めない", async () => {
+    const t = "う".repeat(120);
+    const d = "え".repeat(200);
+    const mockFetch = pageWith(
+      `<meta property="og:title" content="${t}"><meta property="og:description" content="${d}">`
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, t);
+    assert.equal(result.description, d);
+  });
+
+  test("タグ欠落時は各フィールドnull", async () => {
+    const result = await fetchOgpMeta("https://example.com", pageWith(""));
+    assert.deepEqual(result, { imageUrl: null, title: null, description: null });
+  });
+
+  test("空白のみのtitle/descriptionはnull", async () => {
+    const mockFetch = pageWith(
+      '<meta property="og:title" content="   "><meta property="og:description" content="">'
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, null);
+    assert.equal(result.description, null);
+  });
+
+  test("前後空白はtrimされる", async () => {
+    const mockFetch = pageWith('<meta property="og:title" content="  新色  ">');
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.title, "新色");
+  });
+
+  test("og:imageがhttpの場合はimageUrl=null（httpsのみ）", async () => {
+    const mockFetch = pageWith(
+      '<meta property="og:image" content="http://example.com/img.jpg">'
+    );
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.imageUrl, null);
+  });
+
+  test("fetchエラー時は全フィールドnull", async () => {
     const mockFetch = async () => { throw new Error("Network error"); };
-    const result = await fetchOgpImage("https://example.com", mockFetch);
-    assert.equal(result, null);
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.deepEqual(result, { imageUrl: null, title: null, description: null });
   });
 
-  test("fetch失敗（ok=false）はnull", async () => {
+  test("fetch失敗（ok=false）は全フィールドnull", async () => {
     const mockFetch = async () => ({ ok: false });
-    const result = await fetchOgpImage("https://example.com", mockFetch);
-    assert.equal(result, null);
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.deepEqual(result, { imageUrl: null, title: null, description: null });
   });
 
   test("httpのURLは即null（fetchしない）", async () => {
     let called = false;
     const mockFetch = async () => { called = true; return { ok: true, text: async () => "" }; };
-    const result = await fetchOgpImage("http://example.com", mockFetch);
-    assert.equal(result, null);
+    const result = await fetchOgpMeta("http://example.com", mockFetch);
+    assert.deepEqual(result, { imageUrl: null, title: null, description: null });
     assert.equal(called, false);
   });
 
@@ -397,8 +469,8 @@ describe("OGP画像取得（fetchOgpImage）", () => {
           '<html><head><meta property="og:image" content="https://example.com/img.jpg"></head></html>',
       };
     };
-    const result = await fetchOgpImage("https://example.com", mockFetch);
-    assert.equal(result, "https://example.com/img.jpg");
+    const result = await fetchOgpMeta("https://example.com", mockFetch);
+    assert.equal(result.imageUrl, "https://example.com/img.jpg");
     assert.ok(OGP_UA.startsWith("Mozilla/5.0"), "OGP_UAはブラウザ系であること");
     assert.equal(capturedOpts.headers["User-Agent"], OGP_UA);
   });
@@ -490,6 +562,74 @@ describe("OGPバックフィル（collect統合・ネットワーク不使用）
       assert.equal(it.ogp_image_url, null, "取得失敗時はnullのまま");
     }
   });
+
+  test("画像ありでもtitle/description欠落なら対象・欠けたフィールドだけ埋める（既存値は上書きしない）", async () => {
+    const items = [
+      {
+        id: "2026-06-01-nars-hasimg",
+        brand: "NARS",
+        product_line: "",
+        released_at: "2026-06-01",
+        source_url: "https://example.com/press/img-only",
+        note: "",
+        category: "lip",
+        ogp_image_url: "https://example.com/existing.jpg", // 既存画像あり
+        // ogp_title / ogp_description 欠落
+      },
+    ];
+    const mockFetch = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => EMPTY_RSS };
+      }
+      return {
+        ok: true,
+        text: async () =>
+          '<html><head>' +
+          '<meta property="og:image" content="https://example.com/NEW.jpg">' +
+          '<meta property="og:title" content="バックフィルタイトル">' +
+          '<meta property="og:description" content="バックフィル説明文">' +
+          "</head></html>",
+      };
+    };
+    const result = await collect({
+      fetchFn: mockFetch,
+      dryRun: true,
+      sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(result.backfilled, 1);
+    assert.equal(items[0].ogp_image_url, "https://example.com/existing.jpg", "既存画像は上書きしない");
+    assert.equal(items[0].ogp_title, "バックフィルタイトル");
+    assert.equal(items[0].ogp_description, "バックフィル説明文");
+  });
+
+  test("画像・title・description全て揃った項目はバックフィル対象外", async () => {
+    const counter = { ogpCalls: 0, ogpUrls: [] };
+    const items = [
+      {
+        id: "2026-06-01-nars-full",
+        brand: "NARS",
+        product_line: "",
+        released_at: "2026-06-01",
+        source_url: "https://example.com/press/full",
+        note: "",
+        category: "lip",
+        ogp_image_url: "https://example.com/existing.jpg",
+        ogp_title: "既存タイトル",
+        ogp_description: "既存説明",
+      },
+    ];
+    const result = await collect({
+      fetchFn: makeMockFetch(counter),
+      dryRun: true,
+      sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(counter.ogpCalls, 0, "全フィールド揃いはOGP再取得しない");
+    assert.equal(result.backfilled, 0);
+    assert.equal(items[0].ogp_title, "既存タイトル");
+    assert.equal(items[0].ogp_description, "既存説明");
+  });
 });
 
 // ---- collectメイン統合テスト（フィクスチャ駆動・ネットワーク不使用） ----
@@ -553,6 +693,66 @@ describe("collect() 統合テスト（ネットワーク不使用）", () => {
       existing: { version: 1, items: [] },
     });
     assert.equal(result.added, 1); // 2ソース×同一item→1件
+  });
+
+  test("新規採用itemに ogp_title / ogp_description が入る（取れない場合はnull明示）", async () => {
+    const rss = `<?xml version="1.0"?><rss><channel>
+      <item><title>コーセー ヴィセ リップ 新色「01 ローズ」発売</title>
+      <link>https://example.com/a</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>
+      </channel></rss>`;
+    const fetchFn = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => rss };
+      }
+      return {
+        ok: true,
+        text: async () =>
+          '<html><head>' +
+          '<meta property="og:image" content="https://example.com/og.jpg">' +
+          '<meta property="og:title" content="リンクプレビュー用タイトル">' +
+          '<meta property="og:description" content="リンクプレビュー用の説明文">' +
+          "</head></html>",
+      };
+    };
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML(["s1"]),
+      existing: { version: 1, items: [] },
+    });
+    assert.equal(result.added, 1);
+    const item = result.items.find((it) => it.source_url === "https://example.com/a");
+    assert.ok(item, "採用アイテムがresult.itemsに含まれる");
+    assert.equal(item.ogp_title, "リンクプレビュー用タイトル");
+    assert.equal(item.ogp_description, "リンクプレビュー用の説明文");
+    assert.equal(item.ogp_image_url, "https://example.com/og.jpg");
+  });
+
+  test("OGPメタが取れない新規itemはogp_title/ogp_description=null明示", async () => {
+    const rss = `<?xml version="1.0"?><rss><channel>
+      <item><title>コーセー ヴィセ リップ 新色「02 コーラル」発売</title>
+      <link>https://example.com/b</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>
+      </channel></rss>`;
+    const fetchFn = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => rss };
+      }
+      return { ok: false };
+    };
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML(["s1"]),
+      existing: { version: 1, items: [] },
+    });
+    assert.equal(result.added, 1);
+    const item = result.items.find((it) => it.source_url === "https://example.com/b");
+    assert.ok(item);
+    assert.ok("ogp_title" in item, "ogp_titleキーが存在（null明示）");
+    assert.ok("ogp_description" in item, "ogp_descriptionキーが存在（null明示）");
+    assert.equal(item.ogp_title, null);
+    assert.equal(item.ogp_description, null);
+    assert.ok(!("ogp_image_url" in item), "画像は従来通り取得失敗時は省略");
   });
 
   test("1実行の新規採用はMAX_NEW_PER_RUN件で打ち止め", async () => {
