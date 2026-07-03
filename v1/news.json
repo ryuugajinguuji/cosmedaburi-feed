@@ -1,6 +1,6 @@
 {
-  "version": 31,
-  "generated_at": "2026-07-03T11:31:25.534Z",
+  "version": 32,
+  "generated_at": "2026-07-03T12:22:27.194Z",
   "items": [
     {
       "id": "2026-07-02-unknown-7d2664b0",
@@ -21,7 +21,8 @@
       "released_at": "2026-06-25",
       "source_url": "https://www.wwdjapan.com/articles/2433550",
       "note": "",
-      "category": "base"
+      "category": "base",
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25132330/og_rmk20160618-1.jpg"
     },
     {
       "id": "2026-06-25-unknown-c1ce7d50",
@@ -30,7 +31,8 @@
       "released_at": "2026-06-25",
       "source_url": "https://www.wwdjapan.com/articles/2430989",
       "note": "",
-      "category": "base"
+      "category": "base",
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23132208/20260623_ipsa_og.jpg"
     },
     {
       "id": "2026-06-24-rmk-1519f167",
@@ -39,7 +41,8 @@
       "released_at": "2026-06-24",
       "source_url": "https://www.wwdjapan.com/articles/2397793",
       "note": "",
-      "category": "lip"
+      "category": "lip",
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18115417/07_Lip-Makeup-3.jpg"
     },
     {
       "id": "2026-06-16-unknown-5ecd8377",
