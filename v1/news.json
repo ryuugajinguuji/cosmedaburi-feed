@@ -1,7 +1,20 @@
 {
-  "version": 36,
-  "generated_at": "2026-07-04T08:17:22.757Z",
+  "version": 37,
+  "generated_at": "2026-07-04T10:53:51.566Z",
   "items": [
+    {
+      "id": "2026-07-04-ysl-07353f1a",
+      "brand": "YSL",
+      "product_line": "",
+      "released_at": "2026-07-04",
+      "source_url": "https://cancam.jp/archives/1741635",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/04/ysltop.jpg",
+      "ogp_title": "【YSL BEAUTY・7/24全国発売】全色推せる♡歴代のランウェイ着想の新作コレクション",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月24日（金） ブランド：YSL 商品名：クチュール ミニ"
+    },
     {
       "id": "2026-07-02-unknown-7d2664b0",
       "brand": "ソフィーナ",
@@ -18,6 +31,19 @@
       "tier": 1
     },
     {
+      "id": "2026-07-01-unknown-6c125e5e",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-01",
+      "source_url": "https://www.wwdjapan.com/articles/2439455",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/30165449/main-130.jpg",
+      "ogp_title": "「シンピュルテ」がブランド初のカラーメイクを発売　レモンケーキの香りをまとった“とろ蜜”オイルティント全5色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「シンピュルテ（SINN PURETE）」は9月14日、艶、発色、色持、・潤いをかなえる“とろ蜜”オイルティント“リップスタッチ オイルティント”全5色を発売する。百貨店や美容室サロン、そのほか取扱店舗で販売する。同ブランドがカラーメイクを販売するのは初めて。7月30日から「シンピュルテ」公式オンラインストアおよび伊勢丹新宿本店で先行予約を実施するほか、8月7日に伊勢丹新宿本店、プラザ（PLAZA…"
+    },
+    {
       "id": "2026-07-01-unknown-5ed57361",
       "brand": "シャネル",
       "product_line": "",
@@ -31,6 +57,32 @@
       "ogp_description": "ちゃんみなさんによる一夜限りのライブパフォーマンスも！ 小松菜奈さんや橋本愛さんら豪華セレブが来場した「シャネル」限定イベントの全貌に接近。"
     },
     {
+      "id": "2026-06-30-unknown-b1eaf9af",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-30",
+      "source_url": "https://www.wwdjapan.com/articles/2437934",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/29163013/OG-221.jpg",
+      "ogp_title": "「ヴァレンティノ ビューティ」が光を拡大する艶玉リップ“スパイク ヴァレンティノ シャイン”全7色を発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ヴァレンティノ ビューティ（VALENTINO BEAUTY）」は7月8日、朝露の水滴が持つ光を拡散・拡大する“マグニファイング効果”に着想を得たフォーミュラを採用した“スパイク ヴァレンティノ シャイン”（全7色、各7480円）を発売する。光を美しく捉えて増幅させることで濡れ艶感をもたらし、唇のボリューム感と色彩を同時に高める独自の多層構造パール“ローマライトコンプレックス”を配合。内側から光…"
+    },
+    {
+      "id": "2026-06-28-unknown-beb8e0f9",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-06-28",
+      "source_url": "https://www.wwdjapan.com/articles/2334263",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/26101614/OG-266.jpg",
+      "ogp_title": "「ランコム」「アディクション」「ボタニスト」「プレディア」で梅雨に負けない肌と髪を育む！　今週発売のビューティーアイテム16選(6/29〜7/5） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は6月29〜7月5日に発売するアイテムを紹介します。梅雨真っ只中のこの時期は、髪の膨張やうねり、肌のベタつきや皮脂過多、インナードライなどが起こりがち。また、低気圧の影響で心身に不調が出やすい時でもあります。そんな時こそビューティアイテムでサポートを。今週は「ランコム（LANCOME）」の“ジェニフィック アドバンスト”シ…"
+    },
+    {
       "id": "2026-06-28-unknown-1b9c3756",
       "brand": "レブロン",
       "product_line": "",
@@ -42,6 +94,60 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/26162123/reburonn%E3%81%8Ag.jpg",
       "ogp_title": "「レブロン」が自分に合う肌色にブレンドできるコンシーラーパレットを発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「レブロン」は7月13日、自分に合う肌色にブレンドできる高密着コンシーラーパレット“レブロン カラーステイ ロングウエア コンシーラー パレット”（全3色、1760円）を発売する。"
+    },
+    {
+      "id": "2026-06-27-unknown-88372afc",
+      "brand": "unknown",
+      "product_line": "",
+      "hex": "F4A7B9",
+      "hex_origin": "estimated",
+      "released_at": "2026-06-27",
+      "source_url": "https://www.wwdjapan.com/articles/2433005",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25081414/%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A-1-3.jpg",
+      "ogp_title": "【2026年秋コスメ】「MIMC」が限定チークや新色リップなどを発売　ソフトなピンク＆ブラウンで“愛”を描く　 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「MIMC（エムアイエムシー）」は8月6日、2026年秋冬メイクアップコレクション“サークル オブ ラブ（Circle of Love）”を発売する。今季は“愛の循環”をテーマに、愛のぬくもりをソフトなピンクとブラウンで表現。定番アイテムである2色アイシャドウパレットとリップエッセンスの新色に加え、ペンシルアイライナーとパウダーチークの限定色をラインアップする。"
+    },
+    {
+      "id": "2026-06-26-unknown-e4cbea24",
+      "brand": "アンドビー",
+      "product_line": "",
+      "released_at": "2026-06-26",
+      "source_url": "https://www.wwdjapan.com/articles/2435470",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/26134717/%EF%BC%86be-og.jpg",
+      "ogp_title": "「アンドビー」が「ハリー・ポッター」とのコラボコレクションを限定発売　モチーフは第一作の“賢者の石” - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "ヘアメ―クアップアーティストの河北裕介が手掛けるコスメブランド「アンドビー（&BE）」は7月1日、映画「ハリーポッター」との初コラボアイテムを発売する。ロフト（LOFT）、プラザ（PLAZA）など一部店舗除く全国のバラエティーショップで取り扱う。"
+    },
+    {
+      "id": "2026-06-25-unknown-64c71397",
+      "brand": "ケイト",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://www.wwdjapan.com/articles/2433871",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25152124/20260625_kate_og.jpg",
+      "ogp_title": "「ケイト」が“0.06mm極細繊維”ブラシを発売　マツキヨココカラ＆公式限定品 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "グローバルメイクアップブランド「ケイト（KATE）」は7月25日、骨格陰影ブラシシリーズから、フェイスパウダー＆パウダーファンデーション用の“パウダーブラシ”（全1種、1980円※編集部調べ）を発売した。毛穴の約3分の1サイズである0.06mmの極細繊維を採用し、パウダーを毛穴に密着させ、ひと塗りでつるりと均一な肌に補整する。全国のマツモトキヨシグループ・ココカラファイングループの店舗とマツキヨコ…"
+    },
+    {
+      "id": "2026-06-25-unknown-3ecbfaae",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-25",
+      "source_url": "https://www.wwdjapan.com/articles/2431210",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23142151/20260623_Her-lip-to-BEAUTY_og.jpg",
+      "ogp_title": "【2026年夏コスメ】「ハーリップトゥ ビューティ」が“アーリー モーニング”の香りを冷感ボディーミストに　数量限定発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "小嶋陽菜が手がける「ハーリップトゥ ビューティ（HER LIP TO BEAUTY）」は6月27日、同ブランドで人気の香り“アーリー モーニング（EARLY MMORNING）”を取り入れた冷感ボディーミスト“アイシー ミスト -アーリー モーニング-（ICY MIST -EARLY MORNING-）”（50mL、2940円）を数量限定で発売する。公式オンラインストア、表参道の旗艦店ハウス オブ…"
     },
     {
       "id": "2026-06-25-rmk-0ba7371d",
@@ -133,6 +239,32 @@
       "ogp_title": "本当に売れたコスメ発表！リップ部門・総合1位は「シャネル」「ケイト」「RMK」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフで首位に輝いた「シャネル（CHANEL）」“ル ルージュ デュオ ウルトラ トゥニュ”は、リップカラーとグロスを1本に備えた2in1リキッドリップカラー。これまで一部店舗・EC限定で展開されてきたが、昨年6月に全店舗での販売を開始すると瞬く間に人気に。「食事をしても落ちない」とSNSでバズが起こり、店頭での欠品が続いた。ドラッグ＆バラエティー…",
       "tier": 1
+    },
+    {
+      "id": "2026-06-23-unknown-ab2fcd19",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-06-23",
+      "source_url": "https://www.elle.com/jp/beauty/a71657056/chanel-radio-shine-fm-event-2606/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/dcf02b36-4afc-4803-b252-9eb9d9b38fed.png?crop=0.984xw:0.984xh;0,0&amp;resize=1200:*",
+      "ogp_title": "「シャネル」の期間限定「CHANEL RADIO SHINE FM」とは？ J-WAVE（81.3 FM）で豪華ゲストを迎えた特別ラジオ番組もOA！",
+      "ogp_description": "「シャネル」アンバサダーの小松菜奈さんや小田切ヒロさんなど、豪華ゲストを迎えた特別ラジオ番組も J-WAVEでオンエア！ 表参道に期間限定「CHANEL RADIO SHINE FM」が登場。"
+    },
+    {
+      "id": "2026-06-22-unknown-a078934e",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-22",
+      "source_url": "https://www.wwdjapan.com/articles/2429437",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22122458/2an.jpg",
+      "ogp_title": "セブン-イレブン限定「2aN」ミニコスメ第2弾　新色アイパレット＆ハート型2色チークが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "韓国発のカラーメイクブランド「トゥーエーエヌ（2aN）」は6月27日、セブン‐イレブン限定ライン“フロム トゥーエーエヌ（from 2aN）”の第2弾アイテムを発売する。全国のセブン‐イレブン店舗で取り扱い、数量限定で販売する。持ち運びやすいミニアイパレットの新色と、2色入りのミニデュアルチークが登場する。"
     },
     {
       "id": "2026-06-22-unknown-31890d68",
