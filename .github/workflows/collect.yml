@@ -74,7 +74,7 @@ jobs:
         if: always()
         run: |
           if [ -f collect.log ]; then
-            grep -E "\[collect\] (完了|source=)" collect.log >> "$GITHUB_STEP_SUMMARY" || true
+            grep -E "\[collect\] (完了|source=|tiers:)" collect.log >> "$GITHUB_STEP_SUMMARY" || true
           fi
 
       # note 非空チェックは撤廃（2026-06-14）。

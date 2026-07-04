@@ -285,6 +285,48 @@ export function isDisplayQuality(item) {
   return isKnownBrand(item.brand) && COLOR_CATEGORIES.includes(item.category);
 }
 
+// ---- ティア制入場（spec27 §1.1・2026-07-04） ----
+
+// 1実行あたりの採用目標（保証ではない・T2/T3補充の閾値）
+export const RUN_TARGET = 10;
+
+// フィード保持上限（既存 slice(0,200) の定数化＝挙動不変・spec27 §1.4）
+export const MAX_FEED_ITEMS = 200;
+
+// T2判定: 既知ブランド × コスメ文脈語（色カテゴリ語なしでも可）
+export const T2_CONTEXT_WORDS = ["限定", "復刻", "ベスコス", "ベストコスメ", "コレクション", "コフレ", "コラボ", "新作", "発売"];
+
+// T2/T3判定にのみ適用する除外語（T1・手動キュレーションには不適用＝互換性維持）
+export const T3_EXCLUDE_WORDS = ["スキンケア", "化粧水", "美容液", "クリーム", "ヘア", "シャンプー", "香水", "フレグランス", "サプリ", "ダイエット", "医療", "クリニック", "脱毛", "整形"];
+
+// T3判定用の色カテゴリ語（sources.yml の category_rules と独立＝ソース設定に依存しない）
+export const COLOR_CATEGORY_WORDS = ["リップ", "ルージュ", "ティント", "アイシャドウ", "チーク", "ネイル", "マスカラ", "アイライナー", "グロス"];
+
+/** タイトルに色カテゴリ語を含むか（T3判定用） */
+export function hasColorCategoryWord(title) {
+  return COLOR_CATEGORY_WORDS.some((w) => title.includes(w));
+}
+
+/**
+ * ティア判定（spec27 §1.1 擬似コード・上から順に評価が正）。
+ * - T1 = 現行 isDisplayQuality と完全同一（手動キュレーション or 既知ブランド×色カテゴリ）
+ * - 除外語は T2/T3 判定にのみ適用（「リップクリーム」等の既知ブランド品がT1に入る互換性）
+ * - 中立性（NFR6）: 判定入力は brand/category/title/color_name のみ（報酬・広告項なし）
+ * @param {{ brand?: string, category?: string, color_name?: string, title?: string, ogp_title?: string }} item
+ * @returns {1|2|3|null} null=不採用
+ */
+export function classifyTier(item) {
+  const title = item.title ?? item.ogp_title ?? "";
+  if (typeof item.color_name === "string" && item.color_name.length > 0) return 1; // 手動キュレーション=無条件T1
+  const known = isKnownBrand(item.brand);
+  const hasColorCategory = COLOR_CATEGORIES.includes(item.category);
+  if (known && hasColorCategory) return 1;                                  // 現行品質バーと完全同一
+  if (T3_EXCLUDE_WORDS.some((w) => title.includes(w))) return null;         // 除外語はここから下のみ
+  if (known && T2_CONTEXT_WORDS.some((w) => title.includes(w))) return 2;
+  if (hasColorCategory || hasColorCategoryWord(title)) return 3;
+  return null;
+}
+
 /**
  * ブランド名 → URL安全なスラッグ
  */
@@ -521,7 +563,9 @@ export async function collect({
   const sources = parseYaml(sourcesText);
   const colorDict = parseYaml(colorDictText);
 
-  const newItems = [];
+  // --- Phase 1: 全RSSを tier 判定して3候補リストに分類（spec27 §1.2） ---
+  const tierCandidates = { 1: [], 2: [], 3: [] };
+  const sourceStats = []; // { name, fetched } — 採用数は充足後に集計
 
   for (const source of sources) {
     const { name, rss_url, user_agent } = source;
@@ -537,24 +581,13 @@ export async function collect({
 
     const rssItems = parseRss(xml);
     console.log(`[collect] ${rssItems.length}件取得`);
-
-    let adoptedForSource = 0;
+    sourceStats.push({ name, fetched: rssItems.length });
 
     for (const rssItem of rssItems) {
-      // 1実行の新規採用上限（spec25 §1.2）
-      if (newItems.length >= MAX_NEW_PER_RUN) break;
-
       const { title, link, pubDate } = rssItem;
       if (!title || !link) continue;
 
-      const releasedAt = parsePubDate(pubDate);
-      const brand = extractBrand(title);
-      const id = generateId(releasedAt, brand, title);
-
-      // 既存IDスキップ
-      if (existingIds.has(id)) continue;
-
-      // 入場ゲート判定（require_match=true の場合、未一致はskip）
+      // 入場ゲート判定（全ティア共通・require_match=true の場合、未一致はskip）
       const gate = admissionGate(title, source);
       if (!gate.pass) {
         console.log(`[collect] ゲートskip: "${title}"`);
@@ -562,64 +595,120 @@ export async function collect({
       }
       const category = gate.category;
 
-      // 価格抽出
-      const priceResult = extractPrice(title);
+      const releasedAt = parsePubDate(pubDate);
+      const extracted = extractBrand(title);
 
-      // 色語辞書ヒット
-      const hexValue = lookupColor(title, colorDict);
-
-      // OGPメタ取得（画像＋リンクプレビュー用title/description・1回のfetch）
-      const ogpMeta = await fetchOgpMeta(link, fetchFn);
-
-      // アイテム生成 — note は常に '' （spec23 §2）
-      const item = {
-        id,
-        brand,
-        product_line: "",    // タイトルから機械的に確定できない場合は空
-        color_code: null,
-        color_name: null,
-        hex: hexValue || null,
-        hex_origin: hexValue ? "estimated" : null,
-        released_at: releasedAt,
-        source_url: link,
-        note: "",             // 常に空文字（非空ならCIでfail）
-        category,
-        ...(ogpMeta.imageUrl ? { ogp_image_url: ogpMeta.imageUrl } : {}),
-        ogp_title: ogpMeta.title,
-        ogp_description: ogpMeta.description,
-        ...(priceResult ? { price_jpy: priceResult.price_jpy, price_label: priceResult.price_label } : {}),
-      };
-
-      // null フィールド削除（オプショナル列）
-      for (const key of ["color_code", "color_name", "hex", "hex_origin"]) {
-        if (item[key] === null) delete item[key];
-      }
-
-      // note が空でないならCI fail（spec23 §8）
-      if (item.note !== "") {
-        console.error(`[collect] FATAL: note が空でないアイテムが生成されました: id=${id}`);
-        process.exit(1);
-      }
-
-      // 表示品質バー（既知ブランド×色カテゴリのみ・2026-07-02）
-      if (!isDisplayQuality(item)) {
-        console.log(`[collect] 品質バーskip: brand=${item.brand} category=${item.category} "${title}"`);
+      // ティア判定（T1=現行品質バーと完全同一・除外語はT2/T3のみ）
+      const tier = classifyTier({ brand: extracted, category, title });
+      if (tier === null) {
+        console.log(`[collect] tier不採用: brand=${extracted} category=${category} "${title}"`);
         continue;
       }
 
-      newItems.push(item);
-      existingIds.add(id); // run内dedupe: 同一実行内の後続ソースが同じidを再採用しない（spec25 §1.2）
-      adoptedForSource++;
-    }
+      // T3 の brand は 'unknown' 固定（辞書外の先頭語フォールバックは表示品質に耐えない・spec27 §1.3b）
+      const brand = tier === 3 ? "unknown" : extracted;
+      const id = generateId(releasedAt, brand, title);
 
-    console.log(`[collect] source=${name} fetched=${rssItems.length} adopted=${adoptedForSource}`);
+      // 既存IDスキップ
+      if (existingIds.has(id)) continue;
+      existingIds.add(id); // run内dedupe: 同一実行内の後続ソースが同じidを再採用しない（spec25 §1.2）
+
+      tierCandidates[tier].push({ sourceName: name, title, link, releasedAt, brand, category, tier, id });
+    }
   }
 
-  // 既存フィードの自己修復プルーン（過去に品質バー未満で入ったアイテムを除去）
-  const keptExisting = existing.items.filter(isDisplayQuality);
-  const prunedCount = existing.items.length - keptExisting.length;
+  // --- Phase 2: 充足（T1全件→RUN_TARGETまでT2新しい順→T3新しい順→MAX_NEW_PER_RUN上限） ---
+  // 中立性（NFR6）: 補充順は tier と released_at のみで決める（広告・報酬・特定ブランド優遇なし）
+  const byNewest = (a, b) => (b.releasedAt > a.releasedAt ? 1 : b.releasedAt < a.releasedAt ? -1 : 0);
+  tierCandidates[1].sort(byNewest);
+  tierCandidates[2].sort(byNewest);
+  tierCandidates[3].sort(byNewest);
+
+  const selected = tierCandidates[1].slice(0, MAX_NEW_PER_RUN);
+  if (selected.length < RUN_TARGET) {
+    for (const cand of tierCandidates[2]) {
+      if (selected.length >= RUN_TARGET) break;
+      selected.push(cand);
+    }
+  }
+  if (selected.length < RUN_TARGET) {
+    for (const cand of tierCandidates[3]) {
+      if (selected.length >= MAX_NEW_PER_RUN) break;
+      selected.push(cand);
+    }
+  }
+
+  // --- Phase 3: 採用アイテム生成（価格・色語・OGPは選抜後のみ＝OGP取得は最大20件/run） ---
+  const newItems = [];
+  const adoptedBySource = new Map();
+
+  for (const cand of selected) {
+    const { title, link, releasedAt, brand, category, tier, id } = cand;
+
+    // 価格抽出
+    const priceResult = extractPrice(title);
+
+    // 色語辞書ヒット
+    const hexValue = lookupColor(title, colorDict);
+
+    // OGPメタ取得（画像＋リンクプレビュー用title/description・1回のfetch）
+    const ogpMeta = await fetchOgpMeta(link, fetchFn);
+
+    // アイテム生成 — note は常に '' （spec23 §2）
+    const item = {
+      id,
+      brand,
+      product_line: "",    // タイトルから機械的に確定できない場合は空
+      color_code: null,
+      color_name: null,
+      hex: hexValue || null,
+      hex_origin: hexValue ? "estimated" : null,
+      released_at: releasedAt,
+      source_url: link,
+      note: "",             // 常に空文字（非空ならCIでfail）
+      category,
+      tier,
+      ...(ogpMeta.imageUrl ? { ogp_image_url: ogpMeta.imageUrl } : {}),
+      ogp_title: ogpMeta.title,
+      ogp_description: ogpMeta.description,
+      ...(priceResult ? { price_jpy: priceResult.price_jpy, price_label: priceResult.price_label } : {}),
+    };
+
+    // null フィールド削除（オプショナル列）
+    for (const key of ["color_code", "color_name", "hex", "hex_origin"]) {
+      if (item[key] === null) delete item[key];
+    }
+
+    // note が空でないならCI fail（spec23 §8）
+    if (item.note !== "") {
+      console.error(`[collect] FATAL: note が空でないアイテムが生成されました: id=${id}`);
+      process.exit(1);
+    }
+
+    newItems.push(item);
+    adoptedBySource.set(cand.sourceName, (adoptedBySource.get(cand.sourceName) || 0) + 1);
+  }
+
+  for (const { name, fetched } of sourceStats) {
+    console.log(`[collect] source=${name} fetched=${fetched} adopted=${adoptedBySource.get(name) || 0}`);
+  }
+
+  // 既存フィードの自己修復プルーン（tier基準・spec27 §1.1 改修方針2）
+  // tier付きで採用した項目はT2/T3でも正規メンバーとして保持。
+  // tier欠落は classifyTier で再判定し、null=除去・非null=tier付与して保存。
+  const keptExisting = [];
+  let prunedCount = 0;
+  for (const it of existing.items) {
+    const tier = it.tier ?? classifyTier(it);
+    if (tier === null) {
+      prunedCount++;
+      continue;
+    }
+    if (it.tier == null) it.tier = tier;
+    keptExisting.push(it);
+  }
   if (prunedCount > 0) {
-    console.log(`[collect] 品質バープルーン: 既存${prunedCount}件を除去`);
+    console.log(`[collect] tierプルーン: 既存${prunedCount}件を除去`);
   }
 
   // マージ: 新規アイテムを先頭に追加
@@ -655,14 +744,19 @@ export async function collect({
   }
   console.log(`[collect] ogp-backfill: 対象${backfillTargets.length}件中 ${backfilledCount}件更新`);
 
+  // このrunの採用内訳（Summary観測用・spec27 §1.5）
+  const tierCounts = { 1: 0, 2: 0, 3: 0 };
+  for (const it of newItems) tierCounts[it.tier]++;
+  console.log(`[collect] tiers: tier1=${tierCounts[1]} tier2=${tierCounts[2]} tier3=${tierCounts[3]}`);
+
   if (newItems.length === 0 && prunedCount === 0 && backfilledCount === 0) {
     console.log("[collect] 新規アイテムなし。変更しません。");
     return { added: 0, total: existing.items.length, backfilled: 0, items: existing.items };
   }
 
-  // 上限200（古い順間引き）— released_at 降順ソート後に先頭200件
+  // 保持上限（古い順間引き）— released_at 降順ソート後に先頭 MAX_FEED_ITEMS 件（spec27 §1.4・挙動不変）
   merged.sort((a, b) => (b.released_at > a.released_at ? 1 : b.released_at < a.released_at ? -1 : 0));
-  const trimmed = merged.slice(0, 200);
+  const trimmed = merged.slice(0, MAX_FEED_ITEMS);
 
   const newVersion = (manifest.version || 0) + 1;
   const generatedAt = new Date().toISOString();

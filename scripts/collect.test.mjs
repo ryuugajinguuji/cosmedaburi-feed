@@ -42,6 +42,12 @@ import {
   MAX_NEW_PER_RUN,
   OGP_UA,
   OGP_BACKFILL_PER_RUN,
+  classifyTier,
+  hasColorCategoryWord,
+  RUN_TARGET,
+  MAX_FEED_ITEMS,
+  T2_CONTEXT_WORDS,
+  T3_EXCLUDE_WORDS,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -1157,5 +1163,215 @@ describe("ブランド辞書（brands.mjs分離）", () => {
     assert.ok(brandOccursAsWord("ゲラン、秋の新色リップを発表", "ゲラン"));
     assert.ok(brandOccursAsWord("スック 2026秋冬コレクション", "スック"));
     assert.ok(brandOccursAsWord("3CE新作アイシャドウパレット", "3CE"));
+  });
+});
+
+// ---- ティア制入場（classifyTier・spec27 §1.1 Task2） ----
+describe("classifyTier（spec27 §1.1 擬似コード準拠）", () => {
+  const mk = (over) => ({ brand: "unknown", color_name: "", title: "", category: "info", ...over });
+
+  test("手動キュレーション（color_name非空）は無条件T1（除外語があってもT1）", () => {
+    assert.equal(classifyTier(mk({ color_name: "ローズ", title: "リップクリーム美容液" })), 1);
+  });
+
+  test("既知ブランド×色カテゴリ語=T1（現行isDisplayQualityと同一・除外語不適用）", () => {
+    assert.equal(classifyTier(mk({ brand: "セザンヌ", category: "lip" })), 1);
+    // 除外語「クリーム」はT1判定に不適用（互換性）
+    assert.equal(classifyTier(mk({ brand: "セザンヌ", category: "lip", title: "リップクリーム新発売" })), 1);
+  });
+
+  test("T2/T3判定では除外語で不採用", () => {
+    assert.equal(classifyTier(mk({ brand: "セザンヌ", category: "info", title: "限定スキンケアセット" })), null);
+    assert.equal(classifyTier(mk({ title: "夏のリップ特集と美容液の話" })), null); // T3候補だが除外語
+  });
+
+  test("既知ブランド×コスメ文脈語=T2", () => {
+    assert.equal(classifyTier(mk({ brand: "セザンヌ", category: "info", title: "セザンヌ限定コフレ登場" })), 2);
+  });
+
+  test("ブランド不問×色カテゴリ語=T3", () => {
+    assert.equal(classifyTier(mk({ title: "今季トレンドのリップ10選" })), 3);
+  });
+
+  test("どれにも該当しなければnull", () => {
+    assert.equal(classifyTier(mk({ title: "新社屋移転のお知らせ" })), null);
+  });
+
+  test("T1回帰: isDisplayQualityの真偽と classifyTier===1 が完全一致（固定マトリクス）", () => {
+    const fixtures = [
+      { brand: "unknown", category: "info", color_name: "NEW DAWN" },
+      { brand: "ソフィーナ", category: "base" },
+      { brand: "NARS", category: "lip" },
+      { brand: "ランコム", category: "lip" },
+      { brand: "unknown", category: "lip" },
+      { brand: "群馬発CG長編映画『DAWN", category: "lip" },
+      { brand: "ランコム", category: "skincare" },
+      { brand: "ランコム", category: "info" },
+      { brand: "unknown", category: "info" },
+      { brand: "unknown", category: "lip", color_name: "" },
+      { brand: "セザンヌ", category: "eye" },
+      { brand: "セザンヌ", category: "cheek" },
+    ];
+    for (const fx of fixtures) {
+      assert.equal(
+        classifyTier({ title: "", ...fx }) === 1,
+        isDisplayQuality(fx),
+        JSON.stringify(fx)
+      );
+    }
+  });
+
+  test("定数と語彙集合（中立性: 判定入力は brand/category/title/color_name のみ）", () => {
+    assert.equal(RUN_TARGET, 10);
+    assert.equal(MAX_FEED_ITEMS, 200);
+    assert.ok(T2_CONTEXT_WORDS.includes("限定"));
+    assert.ok(T3_EXCLUDE_WORDS.includes("スキンケア"));
+    assert.ok(hasColorCategoryWord("秋のネイル特集"));
+    assert.ok(!hasColorCategoryWord("秋の展示会"));
+  });
+});
+
+// ---- 充足ロジック（T1全採用→RUN_TARGETまでT2→T3補充・上限20） ----
+describe("充足ロジック（T1全採用→10件までT2→T3補充・上限20）", () => {
+  // ネスト付きソース定義（category_rules.lip=リップ → T1/T3 の色カテゴリ源）
+  const TIER_SOURCES_YAML =
+    "- name: s1\n" +
+    "  rss_url: https://s1.example/rss\n" +
+    "  category_rules:\n" +
+    "    lip:\n" +
+    "      - リップ\n" +
+    "  fallback_category: info\n";
+
+  const itemXml = (title, i, day) =>
+    `<item><title>${title}</title><link>https://example.com/t/${i}</link>` +
+    `<pubDate>2026-07-${String(day).padStart(2, "0")}T00:00:00Z</pubDate></item>`;
+
+  const rssOf = (entries) =>
+    `<?xml version="1.0"?><rss><channel>${entries.join("")}</channel></rss>`;
+
+  /** RSS=指定xml・OGPは常に失敗（null）のモック */
+  const mockFetch = (xml) => async (url) => {
+    if (url.includes("s1.example")) return { ok: true, status: 200, text: async () => xml };
+    return { ok: false };
+  };
+
+  const run = (xml) =>
+    collect({
+      fetchFn: mockFetch(xml),
+      dryRun: true,
+      sourcesYaml: TIER_SOURCES_YAML,
+      existing: { version: 1, items: [] },
+    });
+
+  const t1Title = (i) => `セザンヌ リップ 新色 ${String(i).padStart(2, "0")}`;       // 既知ブランド×lip
+  const t2Title = (i) => `セザンヌ 限定コフレ ${String(i).padStart(2, "0")}`;        // 既知ブランド×文脈語
+  const t3Title = (i) => `夏のネイル特集 ${String(i).padStart(2, "0")}`;             // ブランド不問×色カテゴリ語
+
+  test("T1が12件あればT2/T3は採らない", async () => {
+    const entries = [
+      ...Array.from({ length: 12 }, (_, i) => itemXml(t1Title(i), `a${i}`, (i % 9) + 1)),
+      ...Array.from({ length: 5 }, (_, i) => itemXml(t2Title(i), `b${i}`, (i % 9) + 1)),
+    ];
+    const result = await run(rssOf(entries));
+    assert.equal(result.added, 12);
+    assert.equal(result.items.length, 12);
+    assert.ok(result.items.every((it) => it.tier === 1), "全件tier1であること");
+  });
+
+  test("T1=3件ならT2から7件補充して10件（新しい順）", async () => {
+    const entries = [
+      ...Array.from({ length: 3 }, (_, i) => itemXml(t1Title(i), `a${i}`, 15)),
+      // T2は10件・日付 2026-07-01〜10（新しい7件=04〜10が選ばれるべき）
+      ...Array.from({ length: 10 }, (_, i) => itemXml(t2Title(i), `b${i}`, i + 1)),
+    ];
+    const result = await run(rssOf(entries));
+    assert.equal(result.added, 10);
+    const t1s = result.items.filter((it) => it.tier === 1);
+    const t2s = result.items.filter((it) => it.tier === 2);
+    assert.equal(t1s.length, 3);
+    assert.equal(t2s.length, 7);
+    const t2Dates = t2s.map((it) => it.released_at).sort();
+    assert.deepEqual(t2Dates, ["2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10"]);
+  });
+
+  test("T1+T2で足りなければT3補充・全体上限20", async () => {
+    const entries = [
+      ...Array.from({ length: 2 }, (_, i) => itemXml(t1Title(i), `a${i}`, 15)),
+      ...Array.from({ length: 3 }, (_, i) => itemXml(t2Title(i), `b${i}`, 14)),
+      ...Array.from({ length: 30 }, (_, i) => itemXml(t3Title(i), `c${i}`, (i % 9) + 1)),
+    ];
+    const result = await run(rssOf(entries));
+    assert.equal(result.added, 20); // 2+3+15=20（MAX_NEW_PER_RUN上限）
+    assert.equal(result.items.filter((it) => it.tier === 1).length, 2);
+    assert.equal(result.items.filter((it) => it.tier === 2).length, 3);
+    assert.equal(result.items.filter((it) => it.tier === 3).length, 15);
+  });
+
+  test("T3採用itemの brand は 'unknown' 固定（spec27 §1.3b）", async () => {
+    const result = await run(rssOf([itemXml(t3Title(0), "c0", 1)]));
+    assert.equal(result.added, 1);
+    const t3 = result.items.find((it) => it.tier === 3);
+    assert.ok(t3);
+    assert.equal(t3.brand, "unknown");
+  });
+});
+
+// ---- プルーンのtier対応（spec27 §1.1 改修方針2） ----
+describe("プルーンのtier対応（spec27 §1.1改修方針2）", () => {
+  const EMPTY_RSS = '<?xml version="1.0"?><rss><channel></channel></rss>';
+  const SOURCES_YAML =
+    "- name: s1\n  rss_url: https://s1.example/rss\n  fallback_category: info\n";
+  const mockFetch = async (url) => {
+    if (url.includes("s1.example")) return { ok: true, status: 200, text: async () => EMPTY_RSS };
+    return { ok: false };
+  };
+  const base = (over) => ({
+    id: "2026-07-01-x-abcd1234",
+    brand: "unknown",
+    product_line: "",
+    released_at: "2026-07-01",
+    source_url: "https://example.com/x",
+    note: "",
+    category: "info",
+    ogp_title: "既存タイトル",
+    ogp_description: "既存説明",
+    ogp_image_url: "https://example.com/i.jpg",
+    ...over,
+  });
+
+  test("tier=2/3の既存項目はプルーンで消えない", async () => {
+    const items = [
+      base({ id: "id-t2", tier: 2, brand: "セザンヌ" }),
+      base({ id: "id-t3", tier: 3 }),
+    ];
+    const result = await collect({
+      fetchFn: mockFetch, dryRun: true, sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    const ids = result.items.map((it) => it.id);
+    assert.ok(ids.includes("id-t2"), "tier2が残存");
+    assert.ok(ids.includes("id-t3"), "tier3が残存");
+  });
+
+  test("tier欠落かつclassifyTier=nullの旧junk項目は除去される", async () => {
+    const items = [base({ id: "id-junk", brand: "unknown", category: "info" })];
+    const result = await collect({
+      fetchFn: mockFetch, dryRun: true, sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(result.added, 0);
+    assert.ok(!result.items.some((it) => it.id === "id-junk"), "junkは除去");
+    assert.ok(result.version !== undefined, "プルーン発生でversionバンプ");
+  });
+
+  test("tier欠落でもclassifyTier=1相当（既知ブランド×色カテゴリ）は残りtier=1が付与される", async () => {
+    const items = [base({ id: "id-legacy", brand: "NARS", category: "lip" })];
+    const result = await collect({
+      fetchFn: mockFetch, dryRun: true, sourcesYaml: SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    const kept = result.items.find((it) => it.id === "id-legacy");
+    assert.ok(kept, "残存すること");
+    assert.equal(kept.tier, 1, "tier=1が付与されること");
   });
 });
