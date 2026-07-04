@@ -1,6 +1,6 @@
 {
-  "version": 35,
-  "generated_at": "2026-07-03T14:20:58.866Z",
+  "version": 36,
+  "generated_at": "2026-07-04T08:17:22.757Z",
   "items": [
     {
       "id": "2026-07-02-unknown-7d2664b0",
@@ -14,7 +14,34 @@
       "category": "base",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/285/72864-285-6c13b94251f22a9404d757995d1fdd51-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "SOFINA Primavistaの「角層ケア*¹下地」からくすみをカバーし明るい印象へ導く、新色登場「ソフィーナ　プリマヴィスタ　角層保水プライマー（クリアラベンダー）」",
-      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年7月2日 11時00分）SOFINA Primavistaの「角層ケア*¹下地」からくすみをカバーし明るい印象へ導く、新色登場「ソフィーナ　プリマヴィスタ　角層保水プライマー（クリアラベンダー）」"
+      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年7月2日 11時00分）SOFINA Primavistaの「角層ケア*¹下地」からくすみをカバーし明るい印象へ導く、新色登場「ソフィーナ　プリマヴィスタ　角層保水プライマー（クリアラベンダー）」",
+      "tier": 1
+    },
+    {
+      "id": "2026-07-01-unknown-5ed57361",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-07-01",
+      "source_url": "https://www.elle.com/jp/beauty/a71789488/chanel-radio-shine-fm-event-2607/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/8784d193-f621-4652-a9d1-7b20cb6c9f8f.png?crop=0.984xw:0.984xh;0,0&amp;resize=1200:*",
+      "ogp_title": "小松菜奈さんなど豪華セレブが集結！「シャネル」限定イベント「CHANEL RADIO SHINE FM」に密着",
+      "ogp_description": "ちゃんみなさんによる一夜限りのライブパフォーマンスも！ 小松菜奈さんや橋本愛さんら豪華セレブが来場した「シャネル」限定イベントの全貌に接近。"
+    },
+    {
+      "id": "2026-06-28-unknown-1b9c3756",
+      "brand": "レブロン",
+      "product_line": "",
+      "released_at": "2026-06-28",
+      "source_url": "https://www.wwdjapan.com/articles/2435606",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/26162123/reburonn%E3%81%8Ag.jpg",
+      "ogp_title": "「レブロン」が自分に合う肌色にブレンドできるコンシーラーパレットを発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「レブロン」は7月13日、自分に合う肌色にブレンドできる高密着コンシーラーパレット“レブロン カラーステイ ロングウエア コンシーラー パレット”（全3色、1760円）を発売する。"
     },
     {
       "id": "2026-06-25-rmk-0ba7371d",
@@ -26,7 +53,8 @@
       "category": "base",
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25132330/og_rmk20160618-1.jpg",
       "ogp_title": "「RMK」から新ルースパウダーが登場　なりたい肌印象で選べる4種をラインアップ - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「RMK」は９月4日、新ルースパウダーを発売する。色と質感でなりたい肌印象をかなえる4種（各4400円、リフィル 3300円）をラインアップする。"
+      "ogp_description": "「RMK」は９月4日、新ルースパウダーを発売する。色と質感でなりたい肌印象をかなえる4種（各4400円、リフィル 3300円）をラインアップする。",
+      "tier": 1
     },
     {
       "id": "2026-06-25-unknown-c1ce7d50",
@@ -38,7 +66,60 @@
       "category": "base",
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23132208/20260623_ipsa_og.jpg",
       "ogp_title": "「イプサ」から肌悩みに着目した美容液ファンデーションが登場　うる艶肌を演出 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「イプサ（IPSA）」は9月3日、毛穴、肌荒れ、乾燥などの肌悩みに着想した“セラム ファウンデイション” ［SPF30・PA＋＋＋］（全4色、各30mL、各6600円※編集部調べ）を発売する。同ブランドのスキンケア技術とメイクを融合し、」肌悩みにゆらぐ気持ちに寄り添う。"
+      "ogp_description": "「イプサ（IPSA）」は9月3日、毛穴、肌荒れ、乾燥などの肌悩みに着想した“セラム ファウンデイション” ［SPF30・PA＋＋＋］（全4色、各30mL、各6600円※編集部調べ）を発売する。同ブランドのスキンケア技術とメイクを融合し、」肌悩みにゆらぐ気持ちに寄り添う。",
+      "tier": 1
+    },
+    {
+      "id": "2026-06-24-unknown-29e2b53a",
+      "brand": "シュウ ウエムラ",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://www.wwdjapan.com/articles/2432734",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/24203227/20260624_lsyuuemura_og.jpg",
+      "ogp_title": "「シュウ ウエムラ」が“疑似肌パウダー”を発売　肌とメイクの一体化を追求したテクノロジーを採用 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「シュウ ウエムラ（SHU UEMURA）」は9月4日、肌に吸い付き一体化する“新感覚 疑似肌パウダー”と銘打った“アンリミテッド セラム スムース パウダー”（全4色、各7480円）を全国で発売する。7月31日からアマゾン（AMAZON）で、8月28日からシュウ ウエムラ公式オンラインショップとアットコスメトーキョー（@COSMETOKYO）で、9月1日にはアットコスメショッピング（@COSME…"
+    },
+    {
+      "id": "2026-06-24-unknown-8255cee8",
+      "brand": "ケイト",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://www.wwdjapan.com/articles/2397790",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18110138/07_Lip-Makeup-1.jpg",
+      "ogp_title": "本当に売れたコスメ発表！リップ部門・新商品1位は「ディオール」「ケイト」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとEC1位は「ディオール（DIOR）」“ディオール アディクト リップ グロウ オイル”。豊富なカラー展開のリップオイルが登場し、発売前から問い合わせが相次いだ。ケアと艶を両立する処方が購買意欲を引き出した。ドラッグ＆バラエティーストア1位は「ケイト（KATE）」“リップモンスター”。「落ちにくい」と定評のあるロングセラーに新色が加わり、SNSでの…"
+    },
+    {
+      "id": "2026-06-24-unknown-88b9dcb2",
+      "brand": "キャンメイク",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://www.wwdjapan.com/articles/2397803",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18140321/08_BLUSH.jpg",
+      "ogp_title": "本当に売れたコスメ発表！チーク部門・新商品1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとECで1位に輝いたのは「スック（SUQQU）」“コンプレクション フェイス カラー”。複数のオイルと水分が織りなす湿感テクスチャーが注目を集め、指でなじませる手軽さとリキッドチークの潮流が重なって支持された。ドラッグ＆バラエティーストア1位は「キャンメイク（CANMAKE）」“グラデーションチークス”。990円という手の届きやすい価格で、血色感と…"
+    },
+    {
+      "id": "2026-06-24-unknown-b41f4ad7",
+      "brand": "キャンメイク",
+      "product_line": "",
+      "released_at": "2026-06-24",
+      "source_url": "https://www.wwdjapan.com/articles/2397807",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/23111356/08_BLUSH-2.jpg",
+      "ogp_title": "本当に売れたコスメ発表！チーク部門・総合1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフとECで首位に輝いた「スック（SUQQU）」“ブラーリング カラー ブラッシュ”は、するする広がる微細な粉体とオイリーレス処方により滑らかなグラデーションをかなえると好評だ。ドラッグ＆バラエティーストア1位は、「キャンメイク（CANMAKE）」“クリームチーク（クリアタイプ）”。これまでにも支持されてきた、通常の“クリームチーク”や“パウダー…"
     },
     {
       "id": "2026-06-24-rmk-1519f167",
@@ -50,7 +131,60 @@
       "category": "lip",
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18115417/07_Lip-Makeup-3.jpg",
       "ogp_title": "本当に売れたコスメ発表！リップ部門・総合1位は「シャネル」「ケイト」「RMK」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフで首位に輝いた「シャネル（CHANEL）」“ル ルージュ デュオ ウルトラ トゥニュ”は、リップカラーとグロスを1本に備えた2in1リキッドリップカラー。これまで一部店舗・EC限定で展開されてきたが、昨年6月に全店舗での販売を開始すると瞬く間に人気に。「食事をしても落ちない」とSNSでバズが起こり、店頭での欠品が続いた。ドラッグ＆バラエティー…"
+      "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフで首位に輝いた「シャネル（CHANEL）」“ル ルージュ デュオ ウルトラ トゥニュ”は、リップカラーとグロスを1本に備えた2in1リキッドリップカラー。これまで一部店舗・EC限定で展開されてきたが、昨年6月に全店舗での販売を開始すると瞬く間に人気に。「食事をしても落ちない」とSNSでバズが起こり、店頭での欠品が続いた。ドラッグ＆バラエティー…",
+      "tier": 1
+    },
+    {
+      "id": "2026-06-22-unknown-31890d68",
+      "brand": "キャンメイク",
+      "product_line": "",
+      "released_at": "2026-06-22",
+      "source_url": "https://www.wwdjapan.com/articles/2428988",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22002441/20260622_canmake_og.jpg",
+      "ogp_title": "【2026年夏コスメ】「キャンメイク」夏限定3アイテムが登場　“むにゅっと”生チークや再販“ジューシー涙袋”パレットなど - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「キャンメイク（CANMAKE）」は7月下旬、夏の肌を彩る限定アイテムを発売する。2024年2月下旬に限定発売し支持を集めた涙袋用アイシャドウパレット“プランぷくコーデアイズ”（限定1種、792円）の限定色を再販するほか、ネイルカラー“カラフルネイルズ”（限定3色、各396円）の限定カラー、秋に発売予定の“クリームチーク（パールタイプ）”から先行カラーを用意する。"
+    },
+    {
+      "id": "2026-06-21-ysl-babc238e",
+      "brand": "YSL",
+      "product_line": "",
+      "released_at": "2026-06-21",
+      "source_url": "https://www.wwdjapan.com/articles/2428911",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21233303/20260621_YSL_og.jpg",
+      "ogp_title": "「YSL」が多幸感あふれる“ラブライト コレクション”を限定発売　限定デザインのアイシャドウ＆クッションファンデ＆リップ - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「イヴ・サンローラン（YVES SAINT LAURENT）」（以下、YSL）は8月21日、メイクアップコレクション“YSL ラブライトコレクション”を全国で限定発売する。12日jから表参道フラッグシップ ブティックと公式オンラインブティックで先行発売を行う。ラインアップは、“クチュール ミニ クラッチ〈コレクター〉”（全1色、1万1660円）、“ザ インクス ヴィニルクリーム〈コレクター〉”（全…"
+    },
+    {
+      "id": "2026-06-21-unknown-bd9e7aa9",
+      "brand": "ラネージュ",
+      "product_line": "",
+      "released_at": "2026-06-21",
+      "source_url": "https://www.wwdjapan.com/articles/2334159",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/19105113/og2228.jpg",
+      "ogp_title": "「YSL」も「トーン」も「ラネージュ」も！リップアイテムに注目！　今週発売のビューティーアイテム11選（6/22〜6/28） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は6月22〜28日に発売するアイテムを紹介します。今週はリップアイテムが続々。「イヴ・サンローラン（YVES SAINT LAURENT）」は、人気の“ラブシャイン”からキャンディーストアのショーケースのようなスイートなリップカラーを、「トーン（TO/ONE）」は、ヘアメイクアップアーティストの福岡玲衣とコラボレーションし…"
+    },
+    {
+      "id": "2026-06-21-unknown-0f297b59",
+      "brand": "エクセル",
+      "product_line": "",
+      "released_at": "2026-06-21",
+      "source_url": "https://www.wwdjapan.com/articles/2428768",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21162720/20260621_EXCEL_og.jpg",
+      "ogp_title": "「エクセル」が“ノーミス眉マスカラ”を発売　ふんわり軽やか、失敗知らずの全4色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "常盤薬品工業のメイクアップブランド「エクセル（EXCEL）」は8月4日、失敗知らずの極軽仕上げ眉マスカラ“フェードブロウマスカラ”（全4種、各1320円）をバラエティーショップ、ドラッグストア、量販店などで発売する。7月14日から「エクセル」公式オンラインショップとアマゾン（AMAZON）で先行販売を行う。カラーは定番で使いやすいブラウン系の“FB01（ナチュラルブラウン）”、“FB02（キャメル…"
     },
     {
       "id": "2026-06-16-unknown-5ecd8377",
@@ -62,7 +196,8 @@
       "category": "lip",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/321/12459-321-e6c2155078a11e75423f481aacb23b1a-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレーズ ティンテーション』",
-      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年6月16日 11時00分）【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレーズ ティンテーション』"
+      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年6月16日 11時00分）【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレーズ ティンテーション』",
+      "tier": 1
     },
     {
       "id": "2026-0612-nars-afterglow-287a",
@@ -77,7 +212,8 @@
       "ogp_image_url": "https://www.cosme.com/upload/save_image/product//00/41/31/90/413190_1.jpg?06121321",
       "note": "ロージーピンク。ミラーのような光沢感のグロス（限定パッケージ）。",
       "ogp_title": "アフターグロー リップシャイン / NARS(ナーズ)(リップグロス, メイクアップ)の通販 - アットコスメ公式通販【アットコスメショッピング】",
-      "ogp_description": "NARS(ナーズ)のリップグロス, メイクアップ「アフターグロー リップシャイン / 287A NEW DAWN / 5.5mL」を購入できる@cosme公式通販サイト@cosme SHOPPINGです。@cosme（アットコスメ）の人気やクチコミを参考に、安心してお買い物して頂けます。"
+      "ogp_description": "NARS(ナーズ)のリップグロス, メイクアップ「アフターグロー リップシャイン / 287A NEW DAWN / 5.5mL」を購入できる@cosme公式通販サイト@cosme SHOPPINGです。@cosme（アットコスメ）の人気やクチコミを参考に、安心してお買い物して頂けます。",
+      "tier": 1
     },
     {
       "id": "2026-0606-pyt-genba-07",
@@ -92,7 +228,8 @@
       "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
-      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場"
+      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
+      "tier": 1
     },
     {
       "id": "2026-0606-pyt-genba-09",
@@ -107,7 +244,8 @@
       "note": "グレイッシュで甘さ控えめのミュートローズ。色持ち重視のティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
-      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場"
+      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
+      "tier": 1
     },
     {
       "id": "2026-0531-canmake-muchipuru-08",
@@ -122,7 +260,8 @@
       "note": "白みを含むやわらかなミルキーピンク。むっちりボリューム感の出るティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/19685/250/19685-250-83525d6e9defadc9237c6bde8a44027a-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "【キャンメイク】高カバー×薄膜感！美肌仕上げリキッドコンシーラーが新登場！むっちりボリュームUP※×艶ティント「むちぷるティント」のやわらかミルキーな新色も2026年5月下旬より発売",
-      "ogp_description": "株式会社 井田ラボラトリーズのプレスリリース（2026年5月21日 10時00分）【キャンメイク】高カバー×薄膜感！美肌仕上げリキッドコンシーラーが新登場！むっちりボリュームUP※×艶ティント「むちぷるティント」のやわらかミルキーな新色も2026年5月下旬より発売"
+      "ogp_description": "株式会社 井田ラボラトリーズのプレスリリース（2026年5月21日 10時00分）【キャンメイク】高カバー×薄膜感！美肌仕上げリキッドコンシーラーが新登場！むっちりボリュームUP※×艶ティント「むちぷるティント」のやわらかミルキーな新色も2026年5月下旬より発売",
+      "tier": 1
     },
     {
       "id": "2026-0527-opera-glowtint-413",
@@ -137,7 +276,8 @@
       "note": "低彩度のヌーディベージュ。パール入りの水光ツヤティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
-      "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。"
+      "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
+      "tier": 1
     },
     {
       "id": "2026-0527-opera-glowtint-414",
@@ -152,7 +292,8 @@
       "note": "低彩度の夏プラム。シルバーラメがきらめく軽やかな水光ティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
-      "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。"
+      "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
+      "tier": 1
     },
     {
       "id": "2026-0523-kate-lipmonster-ex13",
@@ -167,7 +308,8 @@
       "note": "コーラルピンク系。角度で表情が変わる色化けパール入りの落ちにくいスティック。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16220/896/16220-896-14944f35dce305a552f0aa1be2a67995-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！",
-      "ogp_description": "株式会社カネボウ化粧品のプレスリリース（2026年5月19日 10時00分）KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！"
+      "ogp_description": "株式会社カネボウ化粧品のプレスリリース（2026年5月19日 10時00分）KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！",
+      "tier": 1
     },
     {
       "id": "2026-0523-kate-lipmonster-ex14",
@@ -182,7 +324,8 @@
       "note": "サーモンレッド系。青・緑の色化けパールがきらめく落ちにくいスティック。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16220/896/16220-896-14944f35dce305a552f0aa1be2a67995-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！",
-      "ogp_description": "株式会社カネボウ化粧品のプレスリリース（2026年5月19日 10時00分）KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！"
+      "ogp_description": "株式会社カネボウ化粧品のプレスリリース（2026年5月19日 10時00分）KATE‟リップモンスターシリーズ“から、はじける水しぶきのようなツヤ＆きらめきの夏限定色登場！",
+      "tier": 1
     }
   ]
 }
