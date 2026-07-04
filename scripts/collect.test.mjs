@@ -1294,17 +1294,24 @@ describe("充足ロジック（T1全採用→10件までT2→T3補充・上限20
     assert.deepEqual(t2Dates, ["2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10"]);
   });
 
-  test("T1+T2で足りなければT3補充・全体上限20", async () => {
+  test("T1+T2で足りなければT3補充・T3もRUN_TARGET(10)まで（spec §1.2・T2と対称）", async () => {
     const entries = [
       ...Array.from({ length: 2 }, (_, i) => itemXml(t1Title(i), `a${i}`, 15)),
       ...Array.from({ length: 3 }, (_, i) => itemXml(t2Title(i), `b${i}`, 14)),
       ...Array.from({ length: 30 }, (_, i) => itemXml(t3Title(i), `c${i}`, (i % 9) + 1)),
     ];
     const result = await run(rssOf(entries));
-    assert.equal(result.added, 20); // 2+3+15=20（MAX_NEW_PER_RUN上限）
+    assert.equal(result.added, 10); // 2+3+5=10（T3は目標10の補充要員・20まで埋めない=T3比率警戒と整合）
     assert.equal(result.items.filter((it) => it.tier === 1).length, 2);
     assert.equal(result.items.filter((it) => it.tier === 2).length, 3);
-    assert.equal(result.items.filter((it) => it.tier === 3).length, 15);
+    assert.equal(result.items.filter((it) => it.tier === 3).length, 5);
+  });
+
+  test("T1だけで10超なら20まで採用（MAX_NEW_PER_RUNはT1にのみ実質作用）", async () => {
+    const entries = Array.from({ length: 25 }, (_, i) => itemXml(t1Title(i), `d${i}`, (i % 27) + 1));
+    const result = await run(rssOf(entries));
+    assert.equal(result.added, 20); // T1は品質最上位のため上限20まで
+    assert.equal(result.items.filter((it) => it.tier === 1).length, 20);
   });
 
   test("T3採用itemの brand は 'unknown' 固定（spec27 §1.3b）", async () => {

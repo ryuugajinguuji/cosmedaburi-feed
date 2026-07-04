@@ -633,7 +633,7 @@ export async function collect({
   }
   if (selected.length < RUN_TARGET) {
     for (const cand of tierCandidates[3]) {
-      if (selected.length >= MAX_NEW_PER_RUN) break;
+      if (selected.length >= RUN_TARGET) break; // T3もRUN_TARGETまで（spec §1.2・T2と対称。最終レビュー確認済み）
       selected.push(cand);
     }
   }
