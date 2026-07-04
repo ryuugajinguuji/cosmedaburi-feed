@@ -1080,3 +1080,82 @@ describe("新ソース品質バー（appendix実例の最終採否）", () => {
     assert.equal(isDisplayQuality({ brand: "ランコム", category: "lip" }), true);
   });
 });
+
+// ---- ブランド辞書（brands.mjs分離・spec27 §1.3 Task1） ----
+import { KNOWN_BRANDS } from "./brands.mjs";
+
+describe("ブランド辞書（brands.mjs分離）", () => {
+  test("辞書は100語以上・重複なし", () => {
+    assert.ok(KNOWN_BRANDS.length >= 100, `語数=${KNOWN_BRANDS.length}`);
+    assert.equal(new Set(KNOWN_BRANDS).size, KNOWN_BRANDS.length);
+  });
+
+  test("既存35語が全て残っている（後方互換）", () => {
+    const legacy35 = [
+      "NARS", "CANMAKE", "KATE", "OPERA", "Pyt",
+      "セザンヌ", "ちふれ", "エテュセ", "UZU", "rom&nd",
+      "CEZANNE", "INTEGRATE", "REVLON", "MAC", "RMK",
+      "LUNASOL", "ADDICTION", "SUQQU", "PAUL & JOE",
+      "THREE", "DECORTE", "CHICCA", "JILL STUART",
+      "アンプリチュード", "リンメル", "コーセー", "資生堂",
+      "花王", "ソフィーナ", "マキアージュ", "エスト",
+      "ローラ メルシエ", "ナーズ", "ランコム", "イプサ",
+    ];
+    for (const b of legacy35) assert.ok(KNOWN_BRANDS.includes(b), b);
+    // 計画で参照されるカタカナ表記も登録されていること
+    for (const b of ["セザンヌ", "キャンメイク", "ちふれ", "RMK", "イプサ", "オペラ", "ケイト"]) {
+      assert.ok(KNOWN_BRANDS.includes(b), b);
+    }
+  });
+
+  test("拡充語が辞書ヒットになる（isKnownBrand / extractBrand）", () => {
+    for (const b of ["シャネル", "ディオール", "クリオ", "ロムアンド", "メイベリン", "コスメデコルテ"]) {
+      assert.ok(isKnownBrand(b), b);
+    }
+    assert.equal(extractBrand("シャネルの新作リップが登場"), "シャネル");
+    assert.equal(extractBrand("クリオのキルカバーファンデに新色"), "クリオ");
+  });
+
+  // 3文字以下・一般語衝突リスク語の誤爆防止（境界チェック回帰）。
+  // タイトルは実在しうる文（一部はカタカナ境界回帰用の合成語）。
+  test("短い語・一般語衝突リスク語の誤爆防止（境界チェック）", () => {
+    assert.equal(extractBrand("クエストの新作イベント開催"), "unknown"); // エスト⊄クエスト（既存回帰）
+    const cases = [
+      // [誤爆させたいタイトル, 辞書語]
+      ["フィギュアスケートの祭典", "ケイト"],
+      ["オペラグラスで観劇", "オペラ"],
+      ["クリオネの生態観察", "クリオ"],
+      ["アラカルトメニューが充実", "ラカ"],
+      ["ゲランドの塩を使ったレシピ", "ゲラン"],
+      ["ポーラースターの輝き", "ポーラ"],
+      ["ミシャグジ様の伝承", "ミシャ"],          // ミシャ+グ（カタカナ隣接）
+      ["マヒンスキーの逸話", "ヒンス"],          // 合成語（カタカナ境界回帰）
+      ["レスックルの紹介", "スック"],            // 合成語（カタカナ境界回帰）
+      ["オサジャンプ大会", "オサジ"],            // 合成語（カタカナ境界回帰）
+      ["エチュードプレリュード集", "エチュード"], // 合成語（カタカナ境界回帰）
+      ["エクセルシオールカフェ巡り", "エクセル"],
+      ["excellentな仕上がり", "excel"],
+      ["ベスト3CEO達の講演", "3CE"],
+      ["DVDLabelの印刷", "VDL"],
+      ["SYSLOG監視ツール", "YSL"],
+      ["DHCP設定の手順", "DHC"],
+      ["ONYX素材の腕時計", "NYX"],
+      ["ファッション&beautyの祭典", "&be"],
+      ["MACBOOK発表", "MAC"],
+      ["FORMKITの紹介", "RMK"],
+      ["YUZU味のグミ", "UZU"],
+      ["Python講座", "Pyt"],
+    ];
+    for (const [title, brand] of cases) {
+      assert.ok(KNOWN_BRANDS.includes(brand), `辞書に${brand}が存在すること`);
+      assert.ok(!brandOccursAsWord(title, brand), `${title} ⊅ ${brand}`);
+      assert.equal(extractBrand(title), "unknown", title);
+    }
+  });
+
+  test("独立出現なら拡充語もマッチする（正例）", () => {
+    assert.ok(brandOccursAsWord("ゲラン、秋の新色リップを発表", "ゲラン"));
+    assert.ok(brandOccursAsWord("スック 2026秋冬コレクション", "スック"));
+    assert.ok(brandOccursAsWord("3CE新作アイシャドウパレット", "3CE"));
+  });
+});

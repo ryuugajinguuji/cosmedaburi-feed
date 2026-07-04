@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join, resolve } from "node:path";
+import { KNOWN_BRANDS } from "./brands.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -211,17 +212,7 @@ function todayStr() {
 
 // ---- ブランド・slug 抽出 ----
 
-// 日本コスメ頻出ブランド名（スラッグ生成用）
-const KNOWN_BRANDS = [
-  "NARS", "CANMAKE", "KATE", "OPERA", "Pyt",
-  "セザンヌ", "ちふれ", "エテュセ", "UZU", "rom&nd",
-  "CEZANNE", "INTEGRATE", "REVLON", "MAC", "RMK",
-  "LUNASOL", "ADDICTION", "SUQQU", "PAUL & JOE",
-  "THREE", "DECORTE", "CHICCA", "JILL STUART",
-  "アンプリチュード", "リンメル", "コーセー", "資生堂",
-  "花王", "ソフィーナ", "マキアージュ", "エスト",
-  "ローラ メルシエ", "ナーズ", "ランコム", "イプサ",
-];
+// 日本コスメ頻出ブランド名は scripts/brands.mjs に分離（spec27 §1.3）
 
 function isKatakanaChar(ch) {
   return ch >= "゠" && ch <= "ヿ";
