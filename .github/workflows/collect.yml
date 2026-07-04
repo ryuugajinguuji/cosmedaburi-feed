@@ -29,6 +29,7 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   collect:
@@ -121,3 +122,10 @@ jobs:
               console.log('| generated_at | ' + m.generated_at + ' |');
             } catch(e) { console.log('ファイル読み込みエラー: ' + e.message); }
           " >> "$GITHUB_STEP_SUMMARY"
+
+      # 連続pushでPagesビルドが競合・欠落した場合の自己回復（2026-07-04: v35デプロイ欠落の再発防止）
+      - name: Pagesビルドを明示要求
+        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
