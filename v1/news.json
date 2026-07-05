@@ -1,7 +1,22 @@
 {
-  "version": 37,
-  "generated_at": "2026-07-04T10:53:51.566Z",
+  "version": 38,
+  "generated_at": "2026-07-05T02:51:37.822Z",
   "items": [
+    {
+      "id": "2026-07-04-unknown-48fe0ce7",
+      "brand": "ソフィーナ",
+      "product_line": "",
+      "hex": "B57EDC",
+      "hex_origin": "estimated",
+      "released_at": "2026-07-04",
+      "source_url": "https://www.wwdjapan.com/articles/2442146",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/03162842/ssk.jpg",
+      "ogp_title": "「ソフィーナ プリマヴィスタ」の化粧下地“角層保水プライマー”、新色のクリアラベンダーが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "花王の「プリマヴィスタ（PRIMAVISTA）」と「ソフィーナ（SOFINA）」の技術を融合したベースメイクブランド「ソフィーナ プリマヴィスタ（SOFINA PRIMAVISTA）」は9月12日、2026年3月に発売した化粧下地“角層保水プライマー”［SPF50・PA +++］（25g、3520円）から新色のクリアラベンダーを発売する。"
+    },
     {
       "id": "2026-07-04-ysl-07353f1a",
       "brand": "YSL",
@@ -346,6 +361,19 @@
       "ogp_title": "アフターグロー リップシャイン / NARS(ナーズ)(リップグロス, メイクアップ)の通販 - アットコスメ公式通販【アットコスメショッピング】",
       "ogp_description": "NARS(ナーズ)のリップグロス, メイクアップ「アフターグロー リップシャイン / 287A NEW DAWN / 5.5mL」を購入できる@cosme公式通販サイト@cosme SHOPPINGです。@cosme（アットコスメ）の人気やクチコミを参考に、安心してお買い物して頂けます。",
       "tier": 1
+    },
+    {
+      "id": "2026-06-11-unknown-ac46cd6b",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-06-11",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/a71533613/yoggycosme-sumer-lip-26-06/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f0f9842d-78c3-452a-b6c3-038891761698.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【エディターYOGGYの勝手にアゲコスメ！】夏らしさ満点のサマーリップを楽しみたい ！",
+      "ogp_description": "トレンド感を手っ取り早くかなえるなら、やっぱりリップは欠かせない！ 今季も質感やケア効果にこだわった優秀なアイテムがより取り見取り。『エル・ジャポン』7月号より。"
     },
     {
       "id": "2026-0606-pyt-genba-07",
