@@ -715,7 +715,8 @@ export async function collect({
   const keptExisting = [];
   let prunedCount = 0;
   for (const it of existing.items) {
-    if (isNonCosmetic(it.title ?? it.ogp_title ?? "")) {
+    const isCurated = typeof it.color_name === "string" && it.color_name.length > 0;
+    if (!isCurated && isNonCosmetic(it.title ?? it.ogp_title ?? "")) {
       prunedCount++;
       continue;
     }

@@ -1391,25 +1391,25 @@ describe("非コスメ除外denylist（spec32）", () => {
   const sourcesYamlText = readFileSync(join(ROOT, "sources.yml"), "utf8");
   const prTimesSource = parseYaml(sourcesYamlText)[0]; // PR TIMES（require_match=true・実運用の category_rules/admission_info_keywords）
 
-  const KNOWN_NON_COSMETIC_IDS = [
-    "2026-07-06-unknown-b4c072fa", // ハンディファン（「マルチクリップ」誤爆）
-    "2026-07-06-unknown-c8c8bae4", // WAGYU JAPAN（「クラウドファンディング」誤爆）
-    "2026-07-05-unknown-762a283d", // ファンケル和アフタヌーンティー（飲食記事）
-  ];
-
-  test("① 全v1/news.json回帰: isNonCosmetic該当3件以外はcategory/tierが現ファイルと一致（降格ゼロ）", () => {
+  test("① 全v1/news.json回帰: isNonCosmetic該当0件かつcategory/tierが現ファイルと一致（降格ゼロ）", () => {
     let checked = 0;
     for (const it of newsData.items) {
       const title = it.title ?? it.ogp_title ?? "";
-      if (KNOWN_NON_COSMETIC_IDS.includes(it.id)) {
-        assert.equal(isNonCosmetic(title), true, `${it.id} はisNonCosmetic該当のはず`);
-        continue;
-      }
       assert.equal(isNonCosmetic(title), false, `${it.id} は非コスメ非該当のはず: ${title}`);
       assert.equal(classifyTier(it), it.tier, `${it.id} のtierが変化（降格）: ${title}`);
       checked++;
     }
-    assert.ok(checked >= 30, "十分な母数（既知3件除く全item）を回帰確認できていること");
+    assert.ok(checked >= 30, "十分な母数を回帰確認できていること");
+  });
+
+  test("①' 既知非コスメの検出（凍結フィクスチャ）: 一掃済み3件はisNonCosmetic該当", () => {
+    const fixturePath = join(__dirname, "__fixtures__", "known-noncosmetic.json");
+    const fixture = JSON.parse(readFileSync(fixturePath, "utf8"));
+    assert.ok(fixture.items.length === 3, "凍結フィクスチャは3件であること");
+    for (const it of fixture.items) {
+      const title = it.title ?? it.ogp_title ?? "";
+      assert.equal(isNonCosmetic(title), true, `${it.id} はisNonCosmetic該当のはず: ${title}`);
+    }
   });
 
   test("① 正当複合語（category語の内部形態素）はisNonCosmetic非該当のまま", () => {
