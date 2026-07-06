@@ -1,7 +1,20 @@
 {
-  "version": 40,
-  "generated_at": "2026-07-05T11:03:53.496Z",
+  "version": 41,
+  "generated_at": "2026-07-06T02:57:54.439Z",
   "items": [
+    {
+      "id": "2026-07-06-unknown-b4c072fa",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000071.000099873.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/99873/71/99873-71-6c2ed57bab2f330d06046cb457e5ffaf-1500x1000.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "全10色の推しカラーでイベントを彩る！冷却プレート付きハンディファン「iFan Pico Freeze 26」とマルチクリップ発売",
+      "ogp_description": "エレス株式会社のプレスリリース（2026年7月6日 09時00分）全10色の推しカラーでイベントを彩る！冷却プレート付きハンディファン「iFan Pico Freeze 26」とマルチクリップ発売"
+    },
     {
       "id": "2026-07-05-unknown-a5469d64",
       "brand": "シャネル",
