@@ -48,6 +48,8 @@ import {
   MAX_FEED_ITEMS,
   T2_CONTEXT_WORDS,
   T3_EXCLUDE_WORDS,
+  isNonCosmetic,
+  NON_COSMETIC_EXCLUDE_WORDS,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -332,7 +334,7 @@ describe("入場ゲート（admissionGate）", () => {
   });
 
   test("require_match未指定 → 既存挙動（pass・fallback）", () => {
-    const r = admissionGate("不動産ニュース", {
+    const r = admissionGate("スポーツニュース", {
       category_rules: { lip: ["リップ"] },
       fallback_category: "info",
     });
@@ -1380,5 +1382,92 @@ describe("プルーンのtier対応（spec27 §1.1改修方針2）", () => {
     const kept = result.items.find((it) => it.id === "id-legacy");
     assert.ok(kept, "残存すること");
     assert.equal(kept.tier, 1, "tier=1が付与されること");
+  });
+});
+
+// ---- 非コスメ除外denylist（spec32） ----
+describe("非コスメ除外denylist（spec32）", () => {
+  const newsData = JSON.parse(readFileSync(join(ROOT, "v1", "news.json"), "utf8"));
+  const sourcesYamlText = readFileSync(join(ROOT, "sources.yml"), "utf8");
+  const prTimesSource = parseYaml(sourcesYamlText)[0]; // PR TIMES（require_match=true・実運用の category_rules/admission_info_keywords）
+
+  const KNOWN_NON_COSMETIC_IDS = [
+    "2026-07-06-unknown-b4c072fa", // ハンディファン（「マルチクリップ」誤爆）
+    "2026-07-06-unknown-c8c8bae4", // WAGYU JAPAN（「クラウドファンディング」誤爆）
+    "2026-07-05-unknown-762a283d", // ファンケル和アフタヌーンティー（飲食記事）
+  ];
+
+  test("① 全v1/news.json回帰: isNonCosmetic該当3件以外はcategory/tierが現ファイルと一致（降格ゼロ）", () => {
+    let checked = 0;
+    for (const it of newsData.items) {
+      const title = it.title ?? it.ogp_title ?? "";
+      if (KNOWN_NON_COSMETIC_IDS.includes(it.id)) {
+        assert.equal(isNonCosmetic(title), true, `${it.id} はisNonCosmetic該当のはず`);
+        continue;
+      }
+      assert.equal(isNonCosmetic(title), false, `${it.id} は非コスメ非該当のはず: ${title}`);
+      assert.equal(classifyTier(it), it.tier, `${it.id} のtierが変化（降格）: ${title}`);
+      checked++;
+    }
+    assert.ok(checked >= 30, "十分な母数（既知3件除く全item）を回帰確認できていること");
+  });
+
+  test("① 正当複合語（category語の内部形態素）はisNonCosmetic非該当のまま", () => {
+    const titles = [
+      "リキッドリップの新色発売",
+      "アイシャドウパレット限定コレクション",
+      "コンシーラーパレット新作",
+      "ルースパウダー発売",
+      "マットハイライター限定",
+      "リップグロス新色追加",
+      "リップティント発売",
+    ];
+    for (const title of titles) {
+      assert.equal(isNonCosmetic(title), false, title);
+    }
+  });
+
+  test("② 誤収集skip: ハンディファン/WAGYUはadmissionGate skipかつclassifyTier=null", () => {
+    // v1/news.jsonから一掃済みの実際の誤収集タイトルを固定フィクスチャとして再現（spec32 §0/§2.3）
+    const handyFanItem = {
+      brand: "unknown",
+      category: "lip",
+      ogp_title: "全10色の推しカラーでイベントを彩る！冷却プレート付きハンディファン「iFan Pico Freeze 26」とマルチクリップ発売",
+    };
+    const wagyuItem = {
+      brand: "unknown",
+      category: "base",
+      ogp_title: "農水省認定の和牛輸出スタートアップ「WAGYU JAPAN」、FUNDINNOで株式投資型クラウドファンディングを開始。タイ外食50社の販路を基盤に、バンコク近郊に「和牛総合研究所」を設立へ",
+    };
+    for (const it of [handyFanItem, wagyuItem]) {
+      const title = it.title ?? it.ogp_title ?? "";
+      const gate = admissionGate(title, prTimesSource);
+      assert.equal(gate.pass, false, title);
+      assert.equal(classifyTier(it), null, title);
+    }
+  });
+
+  test("③ isNonCosmetic単体", () => {
+    assert.equal(isNonCosmetic("扇風機の新作が発売"), true);
+    assert.equal(isNonCosmetic("冷却プレート付きハンディファンとマルチクリップ発売"), true);
+    assert.equal(isNonCosmetic("株式投資型クラウドファンディングを開始"), true);
+    assert.equal(isNonCosmetic("夏限定の和アフタヌーンティー"), true);
+    assert.equal(isNonCosmetic("リップグロスの新色発売"), false);
+    assert.equal(isNonCosmetic("ファンケルの新色リップ発売"), false);
+    assert.equal(isNonCosmetic("クッションファンデーション新発売"), false);
+    assert.equal(isNonCosmetic(""), false);
+    assert.equal(isNonCosmetic(undefined), false);
+    assert.equal(isNonCosmetic(null), false);
+  });
+
+  test("④ classifyTier経路: admission_info_keywords「発売」該当タイトルでも非コスメ語含みはnull", () => {
+    const item = { brand: "unknown", category: "info", title: "扇風機の新作が発売" };
+    assert.equal(classifyTier(item), null);
+  });
+
+  test("NON_COSMETIC_EXCLUDE_WORDSは厳選8語のみ", () => {
+    assert.deepEqual(NON_COSMETIC_EXCLUDE_WORDS, [
+      "扇風機", "ハンディファン", "家電", "ガジェット", "クラウドファンディング", "和牛", "不動産", "アフタヌーンティー",
+    ]);
   });
 });

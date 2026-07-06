@@ -307,6 +307,19 @@ export function hasColorCategoryWord(title) {
   return COLOR_CATEGORY_WORDS.some((w) => title.includes(w));
 }
 
+// 非コスメ除外語（spec32 §1.1・厳選8語＋部分文字列誤マッチ対策のdenylist）
+export const NON_COSMETIC_EXCLUDE_WORDS = ["扇風機", "ハンディファン", "家電", "ガジェット", "クラウドファンディング", "和牛", "不動産", "アフタヌーンティー"];
+
+/**
+ * タイトルが明確な非コスメ記事か（spec32 §2.1・NFKC正規化はローカル比較用のみ）
+ * @param {string} title
+ * @returns {boolean}
+ */
+export function isNonCosmetic(title) {
+  const t = (title ?? "").normalize("NFKC");
+  return NON_COSMETIC_EXCLUDE_WORDS.some((w) => w.length > 0 && t.includes(w));
+}
+
 /**
  * ティア判定（spec27 §1.1 擬似コード・上から順に評価が正）。
  * - T1 = 現行 isDisplayQuality と完全同一（手動キュレーション or 既知ブランド×色カテゴリ）
@@ -318,6 +331,7 @@ export function hasColorCategoryWord(title) {
 export function classifyTier(item) {
   const title = item.title ?? item.ogp_title ?? "";
   if (typeof item.color_name === "string" && item.color_name.length > 0) return 1; // 手動キュレーション=無条件T1
+  if (isNonCosmetic(title)) return null; // 非コスメ除外（spec32 §2.2②）
   const known = isKnownBrand(item.brand);
   const hasColorCategory = COLOR_CATEGORIES.includes(item.category);
   if (known && hasColorCategory) return 1;                                  // 現行品質バーと完全同一
@@ -422,6 +436,8 @@ export function admissionGate(title, source) {
     fallback_category = "info",
     admission_info_keywords = [],
   } = source;
+
+  if (isNonCosmetic(title)) return { pass: false, category: "" }; // 非コスメ除外（spec32 §2.2①）
 
   // require_match=false: 既存挙動
   if (!require_match) {
@@ -699,6 +715,10 @@ export async function collect({
   const keptExisting = [];
   let prunedCount = 0;
   for (const it of existing.items) {
+    if (isNonCosmetic(it.title ?? it.ogp_title ?? "")) {
+      prunedCount++;
+      continue;
+    }
     const tier = it.tier ?? classifyTier(it);
     if (tier === null) {
       prunedCount++;
