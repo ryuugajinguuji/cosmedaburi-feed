@@ -1,7 +1,20 @@
 {
-  "version": 42,
-  "generated_at": "2026-07-06T08:00:01.102Z",
+  "version": 43,
+  "generated_at": "2026-07-06T12:45:46.506Z",
   "items": [
+    {
+      "id": "2026-07-06-unknown-50bc8ed0",
+      "brand": "デジャヴュ",
+      "product_line": "",
+      "released_at": "2026-07-06",
+      "source_url": "https://cancam.jp/archives/1746736",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/06/30/0d40a5e4a645fc6b96e767d64ac0878e.jpg",
+      "ogp_title": "【デジャヴュお試し】気温30度で検証。最新マスカラ下地で“まつパ級のカール”をキープできるのか！？",
+      "ogp_description": "まつ毛パーマのような美カールが続く最新マスカラ下地 ↑もともと短い中央の毛もしっかり上がった！ 全体的に"
+    },
     {
       "id": "2026-07-06-unknown-017e0255",
       "brand": "アンドビー",
