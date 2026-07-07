@@ -50,6 +50,7 @@ import {
   T3_EXCLUDE_WORDS,
   isNonCosmetic,
   NON_COSMETIC_EXCLUDE_WORDS,
+  dedupeBySourceUrl,
 } from "./collect.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -1351,7 +1352,7 @@ describe("プルーンのtier対応（spec27 §1.1改修方針2）", () => {
   test("tier=2/3の既存項目はプルーンで消えない", async () => {
     const items = [
       base({ id: "id-t2", tier: 2, brand: "セザンヌ" }),
-      base({ id: "id-t3", tier: 3 }),
+      base({ id: "id-t3", tier: 3, source_url: "https://example.com/y" }), // URL重複dedupe対象にならないよう別URL
     ];
     const result = await collect({
       fetchFn: mockFetch, dryRun: true, sourcesYaml: SOURCES_YAML,
@@ -1469,5 +1470,128 @@ describe("非コスメ除外denylist（spec32）", () => {
     assert.deepEqual(NON_COSMETIC_EXCLUDE_WORDS, [
       "扇風機", "ハンディファン", "家電", "ガジェット", "クラウドファンディング", "和牛", "不動産", "アフタヌーンティー",
     ]);
+  });
+});
+
+// ---- source_url 重複dedupe（自己修復プルーン＋入場ゲート） ----
+describe("source_url 重複dedupe", () => {
+  const LIP_SOURCES_YAML =
+    "- name: s1\n  rss_url: https://s1.example/rss\n  fallback_category: lip\n";
+
+  /** 品質バー（T1）を通る既存アイテムを生成 */
+  const makeItem = (over = {}) => ({
+    id: "2026-06-01-nars-hash0",
+    brand: "NARS",
+    product_line: "",
+    released_at: "2026-06-01",
+    source_url: "https://example.com/press/dup",
+    note: "",
+    category: "lip",
+    tier: 1,
+    ogp_title: "既存タイトル",
+    ogp_description: "既存説明",
+    ogp_image_url: "https://example.com/og.jpg",
+    ...over,
+  });
+
+  test("dedupeBySourceUrl: 同一URLの重複は情報量が多い1件だけ残る", () => {
+    const rich = makeItem({ id: "2026-06-01-nars-rich" });
+    const poor = makeItem({ id: "2026-06-01-nars-poor", ogp_title: null, tier: null });
+    const other = makeItem({ id: "2026-06-02-kate-other", source_url: "https://example.com/press/other" });
+    // 情報量の少ない方が先頭でも、多い方（rich）が勝つ
+    const result = dedupeBySourceUrl([poor, rich, other]);
+    assert.equal(result.length, 2);
+    assert.ok(result.includes(rich), "情報量が多い方が残る");
+    assert.ok(!result.includes(poor), "情報量が少ない方は除去");
+    assert.ok(result.includes(other), "URL非重複は保持");
+  });
+
+  test("dedupeBySourceUrl: 情報量が同点なら先勝ち（配列先頭側を残す）", () => {
+    const first = makeItem({ id: "2026-06-01-nars-first" });
+    const second = makeItem({ id: "2026-06-01-nars-second" });
+    const result = dedupeBySourceUrl([first, second]);
+    assert.equal(result.length, 1);
+    assert.equal(result[0], first);
+  });
+
+  test("dedupeBySourceUrl: 手動キュレーション（color_nameあり）は同一URLでも全件保持（1プレス=複数色）", () => {
+    // 実データ例: OPERA グロウリップティント 413/414 は同一プレスリリースURLの別色
+    const color413 = makeItem({ id: "2026-0527-opera-413", color_code: "413", color_name: "バニラベージュ" });
+    const color414 = makeItem({ id: "2026-0527-opera-414", color_code: "414", color_name: "プラムドロップ" });
+    const result = dedupeBySourceUrl([color413, color414]);
+    assert.equal(result.length, 2, "キュレーション済み複数色は両方残る");
+  });
+
+  test("dedupeBySourceUrl: キュレーション済みURLと同一URLの自動収集分は冗長として除去", () => {
+    const curated = makeItem({ id: "2026-0527-opera-413", color_code: "413", color_name: "バニラベージュ" });
+    const auto = makeItem({ id: "2026-05-27-opera-autohash" }); // color_nameなし=自動収集
+    const result = dedupeBySourceUrl([auto, curated]);
+    assert.equal(result.length, 1);
+    assert.equal(result[0], curated, "キュレーション済みが残り自動収集分が除去される");
+  });
+
+  test("collect: 既存itemsのURL重複がプルーンされversionバンプされる", async () => {
+    const EMPTY_RSS = '<?xml version="1.0"?><rss><channel></channel></rss>';
+    const fetchFn = async () => ({ ok: true, status: 200, text: async () => EMPTY_RSS });
+    const items = [
+      makeItem({ id: "2026-06-01-nars-a" }),
+      makeItem({ id: "2026-06-01-nars-b" }), // 同一source_url
+      makeItem({ id: "2026-06-02-kate-c", source_url: "https://example.com/press/uniq" }),
+    ];
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML,
+      existing: { version: 1, items },
+    });
+    assert.equal(result.added, 0);
+    assert.equal(result.total, 2, "重複1件が除去され2件になる");
+    assert.ok(result.version !== undefined, "プルーン発生時はversionバンプ");
+    const urls = result.items.map((it) => it.source_url);
+    assert.equal(new Set(urls).size, urls.length, "source_urlが一意");
+  });
+
+  test("collect: 新規候補のlinkが既存source_urlと一致なら不採用", async () => {
+    const rss = `<?xml version="1.0"?><rss><channel>
+      <item><title>コーセー ヴィセ リップ 新色「01 ローズ」発売</title>
+      <link>https://example.com/press/dup</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>
+      </channel></rss>`;
+    const fetchFn = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => rss };
+      }
+      return { ok: false };
+    };
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML,
+      existing: { version: 1, items: [makeItem()] }, // source_url=…/press/dup が既存
+    });
+    assert.equal(result.added, 0, "既存とURL一致の新規候補は不採用");
+    assert.equal(result.total, 1);
+  });
+
+  test("collect: 同一run内で別id・同一linkの候補は1件しか採用しない", async () => {
+    // 同一link・ブランド語が異なるタイトル → idは別になるがURLで弾く
+    const rss = `<?xml version="1.0"?><rss><channel>
+      <item><title>コーセー ヴィセ リップ 新色「01 ローズ」発売</title>
+      <link>https://example.com/samelink</link><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate></item>
+      <item><title>ケイト リップモンスター 新色リップ発売</title>
+      <link>https://example.com/samelink</link><pubDate>Wed, 01 Jul 2026 01:00:00 GMT</pubDate></item>
+      </channel></rss>`;
+    const fetchFn = async (url) => {
+      if (url.includes("s1.example")) {
+        return { ok: true, status: 200, text: async () => rss };
+      }
+      return { ok: false };
+    };
+    const result = await collect({
+      fetchFn,
+      dryRun: true,
+      sourcesYaml: LIP_SOURCES_YAML,
+      existing: { version: 1, items: [] },
+    });
+    assert.equal(result.added, 1, "同一linkは1件のみ採用");
   });
 });

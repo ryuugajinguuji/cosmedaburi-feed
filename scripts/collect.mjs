@@ -552,6 +552,38 @@ export const MAX_NEW_PER_RUN = 20;
 export const OGP_BACKFILL_PER_RUN = 5;
 
 /**
+ * source_url 重複プルーン（自己修復）— 自動収集分の同一 source_url は1件だけ残す。
+ * 残す基準:
+ * - 手動キュレーション（color_name あり）は常に保持（1プレスリリース=複数色エントリが正規データのため対象外）
+ * - キュレーション済みURLと重複する自動収集分は冗長として除去
+ * - 自動収集分同士の同一URLは情報量（ogp_title/category/tier の充足数）が多い方を優先・同点は配列の先頭側（先勝ち）
+ * 元の配列順は保持する。source_url を持たない項目は対象外（そのまま保持）。
+ * @param {object[]} items
+ * @returns {object[]}
+ */
+export function dedupeBySourceUrl(items) {
+  const isCurated = (it) => typeof it.color_name === "string" && it.color_name.length > 0;
+  const infoScore = (it) =>
+    ["ogp_title", "category", "tier"].reduce((n, k) => n + (it[k] != null && it[k] !== "" ? 1 : 0), 0);
+  const curatedUrls = new Set();
+  const winners = new Map(); // source_url -> 残す自動収集item（参照比較で filter する）
+  for (const it of items) {
+    if (!it.source_url) continue;
+    if (isCurated(it)) {
+      curatedUrls.add(it.source_url);
+      continue;
+    }
+    const prev = winners.get(it.source_url);
+    if (!prev || infoScore(it) > infoScore(prev)) winners.set(it.source_url, it);
+  }
+  return items.filter((it) => {
+    if (!it.source_url || isCurated(it)) return true;
+    if (curatedUrls.has(it.source_url)) return false; // キュレーション済みと同一URLの自動収集分は冗長
+    return winners.get(it.source_url) === it;
+  });
+}
+
+/**
  * メインコレクター
  * @param {{ fetchFn?: Function, dryRun?: boolean, sourcesYaml?: string, existing?: { version: number, items: object[] } }} opts
  *   sourcesYaml / existing はテスト用注入（未指定なら sources.yml / v1/news.json を読む）
@@ -571,6 +603,7 @@ export async function collect({
   const existing = injectedExisting ?? JSON.parse(readFileSync(newsJsonPath, "utf8"));
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
   const existingIds = new Set(existing.items.map((it) => it.id));
+  const existingUrls = new Set(existing.items.map((it) => it.source_url));
 
   // sources.yml / color_dict.yml 読み込み
   const sourcesText = sourcesYaml ?? readFileSync(sourcesPath, "utf8");
@@ -628,6 +661,11 @@ export async function collect({
       // 既存IDスキップ
       if (existingIds.has(id)) continue;
       existingIds.add(id); // run内dedupe: 同一実行内の後続ソースが同じidを再採用しない（spec25 §1.2）
+
+      // 入場時URL dedupe: 既存items・同一run内の先行候補と source_url が一致する候補は不採用
+      // （idはブランド/タイトル差で別になり得るため、URL一致を独立に弾く＝重複カード防止）
+      if (existingUrls.has(link)) continue;
+      existingUrls.add(link);
 
       tierCandidates[tier].push({ sourceName: name, title, link, releasedAt, brand, category, tier, id });
     }
@@ -732,8 +770,16 @@ export async function collect({
     console.log(`[collect] tierプルーン: 既存${prunedCount}件を除去`);
   }
 
+  // source_url 重複プルーン（自己修復）: 過去runで混入した同一URL重複を1件に統合
+  const dedupedExisting = dedupeBySourceUrl(keptExisting);
+  const urlPrunedCount = keptExisting.length - dedupedExisting.length;
+  if (urlPrunedCount > 0) {
+    console.log(`[collect] URL重複プルーン: 既存${urlPrunedCount}件を除去`);
+    prunedCount += urlPrunedCount;
+  }
+
   // マージ: 新規アイテムを先頭に追加
-  const merged = [...newItems, ...keptExisting];
+  const merged = [...newItems, ...dedupedExisting];
 
   // OGPバックフィル: image/title/description のいずれかが欠けた項目を再試行（上限 OGP_BACKFILL_PER_RUN 件/run）
   // 収集時に1回失敗すると永久に欠落したままだった問題への恒久対策。取得できたフィールドだけ埋め、既存値は上書きしない
