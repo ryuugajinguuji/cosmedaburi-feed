@@ -1,7 +1,33 @@
 {
-  "version": 43,
-  "generated_at": "2026-07-06T12:45:46.506Z",
+  "version": 45,
+  "generated_at": "2026-07-07T02:52:08.108Z",
   "items": [
+    {
+      "id": "2026-07-07-etvos-d436e7d2",
+      "brand": "ETVOS",
+      "product_line": "",
+      "released_at": "2026-07-07",
+      "source_url": "https://woman.mynavi.jp/article/260707_12000673-3/",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/001-6.jpg",
+      "ogp_title": "赤みが出た日も、カサつく日も。ETVOSの新作化粧下地で肌がゆらぐ日のメイクに前向きになれた話",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-07-06-unknown-d167ee72",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-06",
+      "source_url": "https://www.wwdjapan.com/articles/2426376",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/06201620/20260707_three_01.jpg",
+      "ogp_title": "【2026年秋コスメ】「スリー」が秋コレクション全3型を発売　カトラリー着想のアプリケーターを搭載したリップが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「スリー（THREE）」は8月7日、2026年秋コレクション“センス オブ ザ スカイ”を発売する。空の持つ余白を独自の解釈で提案する今回のコレクションは新たにメイクアッププロダクトへの精油配合を実現し、すべてのアイテムにオリジナル国産ゼラニウム精油を配合した。ラインアップは、新製品となるカトラリー着想のメタルアプリケーターを搭載したプランプリップ“メロウメルトデュー”（全6色うち限定1色、各38…"
+    },
     {
       "id": "2026-07-06-unknown-50bc8ed0",
       "brand": "デジャヴュ",
