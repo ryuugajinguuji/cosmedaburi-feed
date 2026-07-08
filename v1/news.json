@@ -1,7 +1,33 @@
 {
-  "version": 47,
-  "generated_at": "2026-07-07T11:49:43.713Z",
+  "version": 48,
+  "generated_at": "2026-07-08T02:29:06.190Z",
   "items": [
+    {
+      "id": "2026-07-08-unknown-abcf88f0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000018.000059398.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/59398/18/59398-18-f0434cdc4eb14e25879b4fc3fbd065e8-2339x1654.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "全米市場を席巻するAI/ARフォトブース「THE MIRROR」がついに日本初上陸！ “集客イベント” を収益とファンデータが残る資産へ。",
+      "ogp_description": "株式会社明来エンタープライズのプレスリリース（2026年7月8日 10時00分）全米市場を席巻するAI/ARフォトブース「THE MIRROR」がついに日本初上陸！ “集客イベント” を収益とファンデータが残る資産へ。"
+    },
+    {
+      "id": "2026-07-07-unknown-643fd7f5",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-07",
+      "source_url": "https://cancam.jp/archives/1743519",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/08/434491b115f01f590980668f4d4472a3.jpg",
+      "ogp_title": "【コスメデコルテ・7/16発売】名品「ルージュデコルテ」にソフトマットな上品リップが仲間入り！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月16日（木） ブランド：コスメデコルテ 商品名：ルージュ"
+    },
     {
       "id": "2026-07-07-unknown-da50d8d6",
       "brand": "unknown",
