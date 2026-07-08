@@ -1,7 +1,20 @@
 {
-  "version": 49,
-  "generated_at": "2026-07-08T06:11:16.223Z",
+  "version": 50,
+  "generated_at": "2026-07-08T11:03:19.236Z",
   "items": [
+    {
+      "id": "2026-07-08-unknown-6c216509",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000323.000037333.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/37333/323/37333-323-9886c64be14dcbd15fbcaf2a507bc848-2048x1152.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "約9万人をノーファンデーションの素肌に導いた「ドクターリセラ」の本社直営サロン Salon de Recellaが、リニューアルオープン！",
+      "ogp_description": "ドクターリセラ株式会社のプレスリリース（2026年7月8日 18時04分）約9万人をノーファンデーションの素肌に導いた「ドクターリセラ」の本社直営サロン Salon de Recellaが、リニューアルオープン！"
+    },
     {
       "id": "2026-07-08-unknown-541efbcd",
       "brand": "ロムアンド",
