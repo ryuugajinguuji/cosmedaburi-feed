@@ -1,7 +1,59 @@
 {
-  "version": 48,
-  "generated_at": "2026-07-08T02:29:06.190Z",
+  "version": 49,
+  "generated_at": "2026-07-08T06:11:16.223Z",
   "items": [
+    {
+      "id": "2026-07-08-unknown-541efbcd",
+      "brand": "ロムアンド",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://www.wwdjapan.com/articles/2442692",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/06073400/%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A-2.jpg",
+      "ogp_title": "「ロムアンド」韓国で話題の“豆乳エディション”が日本上陸　眉マスカラやリップの限定色を発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ロムアンド（ROM&ND）」は、韓国で話題を集めた限定コレクション“豆乳エディション”を日本で数量限定発売する。8月29日に全国のロフト（LOFT）、プラザ（PLAZA）、アットコスメ（＠COSME）で先行発売し、9月11日から全国のバラエティーショップおよびGMSで順次販売する。"
+    },
+    {
+      "id": "2026-07-08-unknown-091de2b1",
+      "brand": "ケイト",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://www.wwdjapan.com/articles/2445357",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/08113040/20260708_kate_og.jpg",
+      "ogp_title": "「ケイト」が歌舞伎とコラボ　尾上右近起用で“陰影メイク”アピール＆新製品も発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "グローバルメイクブランド「ケイト（KATE）」は7月8日から、日本の伝統芸能である歌舞伎の思想に共鳴したグローバルプロモーション“KABUKE 型破りであれ。”をスタートした。日本独自の美意識から生まれた“陰影メイク”の価値をグローバルへ発信するもので、日本を含むアジア各国・地域で展開。歌舞伎役者の尾上右近を起用したキービジュアルを制作したほか、25日からは新製品として“ケイト スムースフィットプ…"
+    },
+    {
+      "id": "2026-07-08-unknown-584eb090",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000226.000111353.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/111353/226/111353-226-e69fa804fe7df8e99aae814b12284a4a-3468x2601.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【名鉄小牧ホテル】 あの熱狂が蘇る！『 DISCO REVIVAL！ 80年代にタイムスリップ！！ 』を開催！",
+      "ogp_description": "株式会社名鉄ホテルホールディングスのプレスリリース（2026年7月8日 14時26分）【名鉄小牧ホテル】 あの熱狂が蘇る！『 DISCO REVIVAL！ 80年代にタイムスリップ！！ 』を開催！"
+    },
+    {
+      "id": "2026-07-08-unknown-17bd1190",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-08",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000040.000138734.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/138734/40/138734-40-8eac70dd47a37bfa68712698593b2c89-1747x685.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "「LUNA」から新作のチークとリップティントが登場！『メルテッドチークバーム』と『シロップグロウティント』発売開始",
+      "ogp_description": "Aekyung Ind. Co.,Ltd.のプレスリリース（2026年7月8日 13時00分）「LUNA」から新作のチークとリップティントが登場！『メルテッドチークバーム』と『シロップグロウティント』発売開始"
+    },
     {
       "id": "2026-07-08-unknown-abcf88f0",
       "brand": "unknown",
