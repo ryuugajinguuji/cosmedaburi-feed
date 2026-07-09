@@ -1,7 +1,33 @@
 {
-  "version": 51,
-  "generated_at": "2026-07-09T02:45:13.689Z",
+  "version": 52,
+  "generated_at": "2026-07-09T06:59:37.784Z",
   "items": [
+    {
+      "id": "2026-07-09-unknown-aab61dd3",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-09",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000058.000120680.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/120680/58/120680-58-486648885015324426e60102fc88935d-1920x1280.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "シグニファイ、日本市場初フィリップスLED シーリングライト新発売",
+      "ogp_description": "シグニファイジャパン合同会社のプレスリリース（2026年7月9日 11時00分）シグニファイ、日本市場初フィリップスLED シーリングライト新発売"
+    },
+    {
+      "id": "2026-07-09-unknown-41aaa117",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-09",
+      "source_url": "https://www.wwdjapan.com/articles/2446360",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/08195739/20260708_CLARINS_og.jpg",
+      "ogp_title": "「クラランス」が“リップコンフォートオイル”のミラーチャームセットを限定発売　ハチミツやチョコレートなど全4種 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「クラランス（CLARINS）」は8月1日、メイクアップとリップケアを両立するダブルパフォーマンスが特徴のアイコンリップ“リップコンフォートオイル”にミラー付きチャームを付けた“リップオイル ミラーチャームセット”（全4種、各5170円）を限定発売する。7月29日からクラランス公式オンラインショッピングで先行販売を行う。お菓子のような愛らしいパッケージデザインを採用し、限定チャームは、“リップコン…"
+    },
     {
       "id": "2026-07-09-unknown-1626705a",
       "brand": "ヴィセ",
