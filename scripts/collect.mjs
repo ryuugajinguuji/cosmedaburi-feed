@@ -246,6 +246,46 @@ export function brandOccursAsWord(title, brand) {
   return false;
 }
 
+// 小書き仮名・長音符（前の文字と同じモーラ/語幹を継続する記号）。
+// この直後にキーワードが終わる場合は「そこで語が切れていない」＝別語の可能性が高い
+// （例:「ファンデ」+「ィ」＝ファンディ選手／「ファンデ」+「ー」＝ファンデータ）。
+// 一方で通常サイズの仮名が続く場合は複合語の可能性が高く許容する
+// （例:「アイシャドウ」+「パ」＝アイシャドウパレット）。
+const SMALL_KANA_OR_CHOONPU = new Set([..."ァィゥェォヵヶッャュョヮー"]);
+
+/**
+ * category_rules のキーワードがタイトル中で「単語として独立」しているか
+ * （brandOccursAsWord と同型・spec32続報 2026-07-09）。
+ * - カタカナ語: 前方は brandOccursAsWord と同じ厳格判定（直前がカタカナなら除外＝
+ *   例「フィリップス」⊅「リップ」「タイムスリップ」⊅「リップ」）。後方は小書き仮名・
+ *   長音符が続く場合のみ除外し、通常サイズの仮名が続く複合語は許容する。
+ *   sources.yml の category_rules は「ファンデーション」等の拡張形も別キーワードとして
+ *   個別収録済みのため、短縮語（「ファンデ」等）側の後方境界を厳格化しても
+ *   正当な複合語（「ファンデーション」）の取りこぼしは起きない
+ *   （「ファンデーション」キーワード自体が独立にマッチするため）。
+ * - 英数語: brandOccursAsWord と同じ（前後どちらも英数字なら除外）。
+ * - 漢字・ひらがな・混在語: 従来通り境界チェックなし（部分一致のまま）。
+ */
+export function categoryKeywordOccursAsWord(title, keyword) {
+  const isKatakana = /^[゠-ヿ]+$/.test(keyword);
+  const isAscii = /^[\x21-\x7E\s]+$/.test(keyword);
+  let idx = title.indexOf(keyword);
+  while (idx !== -1) {
+    const before = idx > 0 ? title[idx - 1] : "";
+    const after = idx + keyword.length < title.length ? title[idx + keyword.length] : "";
+    let ok = true;
+    if (isKatakana) {
+      if (before && isKatakanaChar(before)) ok = false;
+      if (after && SMALL_KANA_OR_CHOONPU.has(after)) ok = false;
+    } else if (isAscii) {
+      if ((before && isAsciiWordChar(before)) || (after && isAsciiWordChar(after))) ok = false;
+    }
+    if (ok) return true;
+    idx = title.indexOf(keyword, idx + 1);
+  }
+  return false;
+}
+
 /**
  * タイトルからブランド名を機械的に抽出（既知ブランド優先・境界チェック付き）
  */
@@ -307,6 +347,13 @@ export function hasColorCategoryWord(title) {
   return COLOR_CATEGORY_WORDS.some((w) => title.includes(w));
 }
 
+// base category は COLOR_CATEGORY_WORDS に語が収録されておらず、admissionGate が
+// category_rules（ファンデ/下地/パウダー等の4文字以下の短縮語を含む）だけでcategory='base'
+// を確定させるため、brand=unknown の T3 判定で category フラグ単独を信用すると
+// 短縮語の部分一致（例:「ファンデ」⊂「ファンデータ」）に弱い（spec32続報 2026-07-09）。
+// 長く確実な語（このタイトルなら誤爆リスクがほぼ無い語）に限り単独証拠として許容する。
+const RELIABLE_BASE_WORDS = ["ファンデーション", "コンシーラー", "BBクリーム", "CCクリーム"];
+
 // 非コスメ除外語（spec32 §1.1・厳選8語＋部分文字列誤マッチ対策のdenylist）
 export const NON_COSMETIC_EXCLUDE_WORDS = ["扇風機", "ハンディファン", "家電", "ガジェット", "クラウドファンディング", "和牛", "不動産", "アフタヌーンティー"];
 
@@ -337,7 +384,17 @@ export function classifyTier(item) {
   if (known && hasColorCategory) return 1;                                  // 現行品質バーと完全同一
   if (T3_EXCLUDE_WORDS.some((w) => title.includes(w))) return null;         // 除外語はここから下のみ
   if (known && T2_CONTEXT_WORDS.some((w) => title.includes(w))) return 2;
-  if (hasColorCategory || hasColorCategoryWord(title)) return 3;
+  if (hasColorCategoryWord(title)) return 3;                                // 色カテゴリ語の直接一致は許容
+  // brand=unknown の入場強化（spec32続報）: category フラグのみの証拠は、
+  // base（COLOR_CATEGORY_WORDS未収録＝短縮語の部分一致に弱い）に限り
+  // 長く確実な語での裏付けを必須とする。lip/eye/cheek は口紅/下地等の
+  // 漢字語（衝突リスクなし）を維持するため従来通り許容する。
+  if (hasColorCategory) {
+    if (item.category === "base") {
+      return RELIABLE_BASE_WORDS.some((w) => title.includes(w)) ? 3 : null;
+    }
+    return 3;
+  }
   return null;
 }
 
@@ -408,7 +465,7 @@ export function lookupColor(text, colorDict) {
  */
 export function detectCategory(title, categoryRules, fallback) {
   for (const [cat, keywords] of Object.entries(categoryRules)) {
-    if (keywords.some((kw) => title.includes(kw))) return cat;
+    if (keywords.some((kw) => categoryKeywordOccursAsWord(title, kw))) return cat;
   }
   return fallback || "info";
 }
@@ -446,9 +503,9 @@ export function admissionGate(title, source) {
   }
 
   // require_match=true: ゲートあり
-  // 1. category_rules にヒット
+  // 1. category_rules にヒット（境界チェック付き・spec32続報）
   for (const [cat, keywords] of Object.entries(category_rules)) {
-    if (keywords.some((kw) => title.includes(kw))) {
+    if (keywords.some((kw) => categoryKeywordOccursAsWord(title, kw))) {
       return { pass: true, category: cat };
     }
   }

@@ -44,6 +44,7 @@ import {
   OGP_BACKFILL_PER_RUN,
   classifyTier,
   hasColorCategoryWord,
+  categoryKeywordOccursAsWord,
   RUN_TARGET,
   MAX_FEED_ITEMS,
   T2_CONTEXT_WORDS,
@@ -1474,6 +1475,66 @@ describe("非コスメ除外denylist（spec32）", () => {
 });
 
 // ---- source_url 重複dedupe（自己修復プルーン＋入場ゲート） ----
+// ---- カテゴリ語境界チェック（spec32続報 2026-07-09・非コスメ混入4件対策） ----
+// 実証済み混入: 「ファンデ」⊂「ファンディ」(選手名)/「ファンデータ」(ARフォトブース)、
+// 「リップ」⊂「フィリップス」(LED照明)/「タイムスリップ」(ホテルイベント)。
+// 原因はcategory_rulesキーワード一致が境界チェックなしの部分文字列一致だったこと。
+describe("カテゴリ語境界チェック（categoryKeywordOccursAsWord / spec32続報）", () => {
+  const prTimesSource = parseYaml(readFileSync(join(ROOT, "sources.yml"), "utf8"))[0];
+
+  test("① 混入4件の実タイトルはadmissionGateを通らない（2026-07-09実証・修正前は誤混入）", () => {
+    const titles = [
+      "イクサン ファンディ選手 完全移籍加入のお知らせ",
+      "全米市場を席巻するAI/ARフォトブース「THE MIRROR」がついに日本初上陸！ “集客イベント” を収益とファンデータが残る資産へ。",
+      "シグニファイ、日本市場初フィリップスLED シーリングライト新発売",
+      "【名鉄小牧ホテル】 あの熱狂が蘇る！『 DISCO REVIVAL！ 80年代にタイムスリップ！！ 』を開催！",
+    ];
+    for (const title of titles) {
+      const gate = admissionGate(title, prTimesSource);
+      assert.equal(gate.pass, false, title);
+    }
+  });
+
+  test("② 正当ケース: 「ファンデーション」「リップスティック」を含む実在風タイトルは通る", () => {
+    const cases = [
+      { title: "SUQQU、艶輝くうるみ肌をつくる新色ファンデーションを発売", category: "base" },
+      { title: "MAC、鮮やかな発色が続く新色リップスティックを発売", category: "lip" },
+    ];
+    for (const { title, category } of cases) {
+      const gate = admissionGate(title, prTimesSource);
+      assert.equal(gate.pass, true, title);
+      assert.equal(gate.category, category, title);
+    }
+  });
+
+  test("③ categoryKeywordOccursAsWord: 短縮語は複合語（別語）内で境界越えしない", () => {
+    assert.ok(!categoryKeywordOccursAsWord("イクサン ファンディ選手 完全移籍加入のお知らせ", "ファンデ"));
+    assert.ok(!categoryKeywordOccursAsWord("収益とファンデータが残る資産へ", "ファンデ"));
+    assert.ok(!categoryKeywordOccursAsWord("シグニファイ、日本市場初フィリップスLED シーリングライト新発売", "リップ"));
+    assert.ok(!categoryKeywordOccursAsWord("80年代にタイムスリップ！！", "リップ"));
+  });
+
+  test("④ categoryKeywordOccursAsWord: 正当な複合語・独立語は引き続きマッチする（回帰）", () => {
+    assert.ok(categoryKeywordOccursAsWord("新色ファンデーションを発売", "ファンデーション"));
+    assert.ok(categoryKeywordOccursAsWord("アイシャドウパレット限定コレクション", "アイシャドウ"));
+    assert.ok(categoryKeywordOccursAsWord("新作リップ発売", "リップ"));
+    assert.ok(categoryKeywordOccursAsWord("ケイト リップモンスター新色リップ発売", "リップ"));
+  });
+
+  test("⑤ classifyTier: brand=unknown×baseは長い確実語（RELIABLE_BASE_WORDS）の裏付けが必須（多層防御）", () => {
+    // 境界チェックをすり抜けたと仮定しても、色語一致も長い確実語もなければT3不採用
+    assert.equal(
+      classifyTier({ brand: "unknown", category: "base", title: "収益とファンデータが残る資産へ" }),
+      null
+    );
+    // 「ファンデーション」等の長い確実語があれば従来通り採用
+    assert.equal(
+      classifyTier({ brand: "unknown", category: "base", title: "ノーファンデーションの素肌を目指すサロン" }),
+      3
+    );
+  });
+});
+
 describe("source_url 重複dedupe", () => {
   const LIP_SOURCES_YAML =
     "- name: s1\n  rss_url: https://s1.example/rss\n  fallback_category: lip\n";
