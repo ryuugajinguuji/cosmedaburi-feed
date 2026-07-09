@@ -1,7 +1,20 @@
 {
-  "version": 50,
-  "generated_at": "2026-07-08T11:03:19.236Z",
+  "version": 51,
+  "generated_at": "2026-07-09T02:45:13.689Z",
   "items": [
+    {
+      "id": "2026-07-09-unknown-1626705a",
+      "brand": "ヴィセ",
+      "product_line": "",
+      "released_at": "2026-07-09",
+      "source_url": "https://www.wwdjapan.com/articles/2428538",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21095312/OG3%E6%9E%9A-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-3.jpg",
+      "ogp_title": "【2026年秋コスメ】「ヴィセ」の“ネンマクフェイク ルージュ”に限定色が登場　“生艶肌”バームファンデは進化 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ヴィセ（VISEE）」は8月21日、2026年秋メイクアップコレクションを発売する。新作のバームファンデーションをはじめ、アイブロウカラーコンシーラー、アイブロウマスカラの限定色、“ネンマクフェイク ルージュ”の限定色をラインアップする。"
+    },
     {
       "id": "2026-07-08-unknown-6c216509",
       "brand": "unknown",
