@@ -1,7 +1,59 @@
 {
-  "version": 53,
-  "generated_at": "2026-07-09T11:01:30.507Z",
+  "version": 54,
+  "generated_at": "2026-07-10T02:48:13.729Z",
   "items": [
+    {
+      "id": "2026-07-10-unknown-3b727ace",
+      "brand": "ゲラン",
+      "product_line": "",
+      "released_at": "2026-07-10",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000341.000018096.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/18096/341/18096-341-fcc220e67c3679ab33118fa9ef3a5d38-2065x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【ゲラン】〈パリュール ゴールド〉シリーズから、ブラックビーハニー*を配合した待望の美容液ファンデーションが発売。",
+      "ogp_description": "ゲラン株式会社のプレスリリース（2026年7月10日 11時00分）【ゲラン】〈パリュール ゴールド〉シリーズから、ブラックビーハニー*を配合した待望の美容液ファンデーションが発売。"
+    },
+    {
+      "id": "2026-07-10-unknown-e98dcc73",
+      "brand": "エスティ ローダー",
+      "product_line": "",
+      "released_at": "2026-07-10",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000079.000018737.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/18737/79/18737-79-55b0fc624e35ce09f28005e18f80436a-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【2026年7月10日(金)発売】エスティ ローダーの「ダブル ウェア」から、80％スキンケア成分配合の新クッション ファンデーション「ダブル ウェア スキンフィット クッション」が登場",
+      "ogp_description": "ELCジャパン合同会社のプレスリリース（2026年7月10日 11時00分）【2026年7月10日(金)発売】エスティ ローダーの「ダブル ウェア」から、80％スキンケア成分配合の新クッション ファンデーション「ダブル ウェア スキンフィット クッション」が登場"
+    },
+    {
+      "id": "2026-07-10-nars-8b9c95eb",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-07-10",
+      "source_url": "https://woman.mynavi.jp/article/260709-2_12300425/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/d160a53f71104dc4e5ed3c300ba3ba79.jpg",
+      "ogp_title": "志尊淳がNARSの新作朝クレンジングを体感！　「水を500～750ml飲む」毎朝のルーティーンも明かす",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-07-09-unknown-0c8acd94",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-09",
+      "source_url": "https://oggi.jp/7889937",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/eyeblow-cosme1.jpg",
+      "ogp_title": "今っぽい「眉メイク」は〝描く前〟に秘訣あり！ プロが教えるアイブロウテクニック | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-09-unknown-41aaa117",
       "brand": "unknown",
