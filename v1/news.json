@@ -1,7 +1,20 @@
 {
-  "version": 56,
-  "generated_at": "2026-07-10T11:51:24.242Z",
+  "version": 57,
+  "generated_at": "2026-07-11T02:27:01.134Z",
   "items": [
+    {
+      "id": "2026-07-10-unknown-c89293cc",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-10",
+      "source_url": "https://www.elle.com/jp/beauty/cosme/g71847194/blush-2026fw/",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/12df7917-8ad0-43d3-83d4-2e554ef758f2.png?crop=1.00xw:0.503xh;0,0.204xh&amp;resize=1200:*",
+      "ogp_title": "人気ブランドの新作チーク【2026秋冬】",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-10-unknown-ef2aa2dc",
       "brand": "ケイト",
