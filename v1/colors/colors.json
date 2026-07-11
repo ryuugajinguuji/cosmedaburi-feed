@@ -1,1 +1,38 @@
-{ "version": 1, "colors": [] }
+{
+  "version": 2,
+  "colors": [
+    {
+      "brand": "OPERA",
+      "product_line": "リップティント N",
+      "color_code": "05",
+      "color_name": "コーラルピンク",
+      "hex": "#E3737C",
+      "texture": null,
+      "shimmer_intensity": null,
+      "hex_origin": "estimated",
+      "category": "lip"
+    },
+    {
+      "brand": "CEZANNE",
+      "product_line": "ラスティングリップカラーN",
+      "color_code": "503",
+      "color_name": "ローズ系",
+      "hex": "#B0455B",
+      "texture": null,
+      "shimmer_intensity": null,
+      "hex_origin": "estimated",
+      "category": "lip"
+    },
+    {
+      "brand": "OPI",
+      "product_line": "ネイルラッカー",
+      "color_code": "NL N25",
+      "color_name": "ビッグアップルレッド",
+      "hex": "#BE0F34",
+      "texture": null,
+      "shimmer_intensity": null,
+      "hex_origin": "estimated",
+      "category": "nail"
+    }
+  ]
+}
