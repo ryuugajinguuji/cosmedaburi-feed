@@ -1,6 +1,8 @@
 // tools/validate-colors.mjs — colors.json の配信前検証（設計2026-07-11 §1.2）
 // 必須: 照合キー②(category,brand,color_code,color_name) の一意性 / 5,000件・500KB 予算 /
 //       hex形式 / category・hex_origin(swatch|estimated) 列挙 / 文字列長。違反があれば exit 1。
+// * version の単調増加は前回公開値との比較が必要なため本スクリプトでは検証しない（月次運用で確認）
+// * hex は大文字 #RRGGBB を正準形として強制
 import { readFileSync, statSync } from 'node:fs';
 
 const COLORS = 'v1/colors/colors.json';
@@ -12,10 +14,22 @@ const HEX_RE = /^#[0-9A-F]{6}$/;
 const TEXTURES = new Set(['matte', 'cream', 'satin', 'sheer', 'gloss', 'shimmer']);
 
 const errors = [];
-const colorsRaw = readFileSync(COLORS, 'utf8');
-if (statSync(COLORS).size > MAX_BYTES) errors.push(`size > ${MAX_BYTES} bytes`);
-const body = JSON.parse(colorsRaw);
-const manifest = JSON.parse(readFileSync(MANIFEST, 'utf8'));
+let body, manifest;
+try {
+  const colorsRaw = readFileSync(COLORS, 'utf8');
+  if (statSync(COLORS).size > MAX_BYTES) errors.push(`size > ${MAX_BYTES} bytes`);
+  body = JSON.parse(colorsRaw);
+} catch (e) {
+  console.error(`Failed to read/parse ${COLORS}: ${e.message}`);
+  process.exit(1);
+}
+try {
+  const manifestRaw = readFileSync(MANIFEST, 'utf8');
+  manifest = JSON.parse(manifestRaw);
+} catch (e) {
+  console.error(`Failed to read/parse ${MANIFEST}: ${e.message}`);
+  process.exit(1);
+}
 if (!Number.isInteger(body.version) || body.version !== manifest.version)
   errors.push(`version mismatch: colors=${body.version} manifest=${manifest.version}`);
 if (!Array.isArray(body.colors)) errors.push('colors is not an array');
@@ -27,12 +41,12 @@ else {
     const at = `colors[${i}]`;
     if (typeof c.brand !== 'string' || c.brand.length === 0 || c.brand.length > 64) errors.push(`${at}.brand invalid`);
     if (typeof c.color_name !== 'string' || c.color_name.length === 0 || c.color_name.length > 64) errors.push(`${at}.color_name invalid`);
-    if (c.color_code !== null && (typeof c.color_code !== 'string' || c.color_code.length > 32)) errors.push(`${at}.color_code invalid`);
+    if (c.color_code !== null && (typeof c.color_code !== 'string' || c.color_code.length === 0 || c.color_code.length > 32)) errors.push(`${at}.color_code invalid`);
     if (typeof c.hex !== 'string' || !HEX_RE.test(c.hex)) errors.push(`${at}.hex invalid (want #RRGGBB upper)`);
     if (c.category !== 'lip' && c.category !== 'nail') errors.push(`${at}.category invalid`);
     if (c.hex_origin !== 'swatch' && c.hex_origin !== 'estimated') errors.push(`${at}.hex_origin invalid`);
     if (c.texture !== null && !TEXTURES.has(c.texture)) errors.push(`${at}.texture invalid`);
-    const nk = JSON.stringify([c.category, c.brand, c.color_code ?? '', c.color_name]);
+    const nk = JSON.stringify([c.category, c.brand, c.color_code === null ? ' ' : c.color_code, c.color_name]);
     if (nameKeys.has(nk)) errors.push(`${at} duplicate key(2): ${nk}`); // 照合キー②一意性（設計§1.2 必須）
     nameKeys.add(nk);
   });
