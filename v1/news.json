@@ -1,7 +1,35 @@
 {
-  "version": 57,
-  "generated_at": "2026-07-11T02:27:01.134Z",
+  "version": 58,
+  "generated_at": "2026-07-12T02:32:02.580Z",
   "items": [
+    {
+      "id": "2026-07-12-unknown-a734e155",
+      "brand": "デジャヴュ",
+      "product_line": "",
+      "hex": "F4A7B9",
+      "hex_origin": "estimated",
+      "released_at": "2026-07-12",
+      "source_url": "https://www.wwdjapan.com/articles/2446997",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/09153405/87c3edaf-5be0-42d4-847c-4e0fbfeab951.jpg",
+      "ogp_title": "「デジャヴュ」の眉マスカラ初の限定色“シアーピンク”が登場　主張しすぎないピンクニュアンス - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「デジャヴュ（DEJAVU）」は7月10日、シアーな色づきとパサつかないしっとり質感をかなえる眉マスカラ“シアーカラーブロウ”初の限定色、“シアーピンク”（990円）を数量限定で発売した。彩度を抑えた肌なじみの良いブラウンに加え、甘さ控えめなピンクでどんなメイクにも使用できる。全国のバラエティーストア、イミュ公式オンラインストアで取り扱っている。"
+    },
+    {
+      "id": "2026-07-11-unknown-d2313a79",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-11",
+      "source_url": "https://oggi.jp/7890519",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/8526941.jpg",
+      "ogp_title": "リップメイクは〝土台と口角への気配り〟で「好印象が宿る唇」 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-10-unknown-c89293cc",
       "brand": "unknown",
