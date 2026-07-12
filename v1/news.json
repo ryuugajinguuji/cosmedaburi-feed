@@ -1,7 +1,20 @@
 {
-  "version": 58,
-  "generated_at": "2026-07-12T02:32:02.580Z",
+  "version": 59,
+  "generated_at": "2026-07-12T06:16:44.746Z",
   "items": [
+    {
+      "id": "2026-07-12-unknown-612091be",
+      "brand": "ラネージュ",
+      "product_line": "",
+      "released_at": "2026-07-12",
+      "source_url": "https://www.wwdjapan.com/articles/2448011",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/10160846/laneige-og.jpg",
+      "ogp_title": "「ラネージュ」の人気リップケアから“ちいかわ”デザインのパッケージが数量限定で登場　フタに貼れるステッカー付き - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ラネージュ（LANEIGE）」は7月16日、“マツキヨココカラ ちいかわとびきりサマーキャンペーン”に連動し、 “リップスリーピングマスク”（全3種、20g、2150円）の“ちいかわ”デザインパッケージを数量限定で発売する。一部店舗除く全国のマツモトキヨシグループおよびココカラファイングループで取り扱う。ラインアップは、“ベリー（ちいかわ）”、“グレープフルーツ（ハチワレ）”、“バニラ（うさぎ）…"
+    },
     {
       "id": "2026-07-12-unknown-a734e155",
       "brand": "デジャヴュ",
