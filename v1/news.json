@@ -1,7 +1,20 @@
 {
-  "version": 59,
-  "generated_at": "2026-07-12T06:16:44.746Z",
+  "version": 60,
+  "generated_at": "2026-07-12T10:26:40.805Z",
   "items": [
+    {
+      "id": "2026-07-12-unknown-47d246f0",
+      "brand": "コスメデコルテ",
+      "product_line": "",
+      "released_at": "2026-07-12",
+      "source_url": "https://www.wwdjapan.com/articles/2334270",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/10104301/0710OG.jpg",
+      "ogp_title": "「セルヴォーク」×「スター・ウォーズ」や「コスメデコルテ」新ルージュなど！　今週発売のビューティーアイテム８選(7/13〜7/19） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は7月13〜19日に発売するアイテムを紹介します。毎週さまざまなコラボコレクションが登場していますが、今週は「セルヴォーク（CELVOKE）」と「スター・ウォーズ」の限定コレクションが発売に。ユニセックスで使いやすいカラー＆パッケージが特徴です。「コスメデコルテ（DECORTE）」の新ルージュや「アンドビー（&BE）」初の…"
+    },
     {
       "id": "2026-07-12-unknown-612091be",
       "brand": "ラネージュ",
