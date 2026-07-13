@@ -1,7 +1,33 @@
 {
-  "version": 62,
-  "generated_at": "2026-07-13T06:36:44.169Z",
+  "version": 63,
+  "generated_at": "2026-07-13T12:03:32.618Z",
   "items": [
+    {
+      "id": "2026-07-13-unknown-01cc0f50",
+      "brand": "スック",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://www.wwdjapan.com/articles/2448480",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/12073403/OG3%E6%9E%9A-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.jpg",
+      "ogp_title": "【2026年秋コスメ】「スック」は“螺鈿”の多彩なきらめきを表現　新作リップや限定アイカラーなど - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「スック（SUQQU）」は7月17日、2026年秋カラーコレクションを発売する。新作リキッドリップをはじめ、アイシャドウ、ブラッシュ、フェイスカラー、ネイルカラーの新色や限定色をラインアップ。予約は7月10日に開始した。"
+    },
+    {
+      "id": "2026-07-13-unknown-d6374136",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://www.elle.com/jp/beauty/a71911616/cocomademoiselle-crush-absolu-26-07/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/e27647ed-fc35-47ae-8ad1-c891e80476a2.png?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "「シャネル」の名香“ココ マドモアゼル”の新作が誕生!",
+      "ogp_description": "2026年8月19日に新たに登場するのは、“ココ マドモアゼル クラッシュ アプソリュ”。五感と感情を揺さぶる、鮮烈な香りをチェック。"
+    },
     {
       "id": "2026-07-13-unknown-1bcbed81",
       "brand": "ティルティル",
@@ -93,6 +119,19 @@
       "tier": 3,
       "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/8526941.jpg",
       "ogp_title": "リップメイクは〝土台と口角への気配り〟で「好印象が宿る唇」 | Oggi.jp",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-07-10-jill-stuart-effab217",
+      "brand": "JILL STUART",
+      "product_line": "",
+      "released_at": "2026-07-10",
+      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828539/jill-stuart-beauty-cosme-2026fw/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/29ad76bc-10cf-4617-a5f1-ff362258f0b5.png?crop=0.998xw:0.500xh;0.00163xw,0.197xh&amp;resize=1200:*",
+      "ogp_title": "ジル スチュアート ビューティ（JILL STUART BEAUTY）新作コスメ【2026秋冬】",
       "ogp_description": null
     },
     {
