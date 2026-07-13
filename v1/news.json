@@ -1,7 +1,33 @@
 {
-  "version": 61,
-  "generated_at": "2026-07-13T02:33:34.097Z",
+  "version": 62,
+  "generated_at": "2026-07-13T06:36:44.169Z",
   "items": [
+    {
+      "id": "2026-07-13-unknown-1bcbed81",
+      "brand": "ティルティル",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://www.wwdjapan.com/articles/2448740",
+      "note": "",
+      "category": "skincare",
+      "tier": 2,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/13111120/OG-53.jpg",
+      "ogp_title": "「ティルティル」が皮脂テカリを抑え潤いを与えるセラムパウダーを発売　クリアとパールの2タイプ　 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ティルティル（TIRTIR）」は7月24日、皮脂テカリを抑え、つけている間も潤いが続く“ティルティル ハイドラヴェール セラムパウダー”（全2種、各10g、各2300円）を順次発売する。全国のバラエティーストア、ドラッグストアおよびキューテン（QOO10）、楽天、アマゾン（AMAZON）、ゾゾタウン（ZOZOTOWN）で取り扱う。"
+    },
+    {
+      "id": "2026-07-13-unknown-8664792b",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000119860.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/119860/31/119860-31-57a651dc34052f2c6f52a34ac82bcc45-640x417.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売",
+      "ogp_description": "日仏商事株式会社のプレスリリース（2026年7月13日 15時00分）レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売"
+    },
     {
       "id": "2026-07-13-unknown-37f6e3db",
       "brand": "花王",
