@@ -1,7 +1,20 @@
 {
-  "version": 60,
-  "generated_at": "2026-07-12T10:26:40.805Z",
+  "version": 61,
+  "generated_at": "2026-07-13T02:33:34.097Z",
   "items": [
+    {
+      "id": "2026-07-13-unknown-37f6e3db",
+      "brand": "花王",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000663.000070897.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/70897/663/70897-663-640de89fd81199ad493d26f0a47daa17-1519x823.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ　ティントカラージェル』 『リーゼ　泡カラー』新発売",
+      "ogp_description": "花王株式会社のプレスリリース（2026年7月13日 10時40分）花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ　ティントカラージェル』 『リーゼ　泡カラー』新発売"
+    },
     {
       "id": "2026-07-12-unknown-47d246f0",
       "brand": "コスメデコルテ",
