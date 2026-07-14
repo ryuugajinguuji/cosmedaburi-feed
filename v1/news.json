@@ -1,7 +1,20 @@
 {
-  "version": 63,
-  "generated_at": "2026-07-13T12:03:32.618Z",
+  "version": 64,
+  "generated_at": "2026-07-14T02:12:52.745Z",
   "items": [
+    {
+      "id": "2026-07-13-suqqu-fbe5627a",
+      "brand": "SUQQU",
+      "product_line": "",
+      "released_at": "2026-07-13",
+      "source_url": "https://cancam.jp/archives/1743537",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/14/suqtop.jpg",
+      "ogp_title": "【SUQQU・7/17一部限定発売】貝殻の神秘的な輝きを閉じ込めた秋コレクションが美しい♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月17日（金） ブランド：SUQQU 商品名：ブラー リク"
+    },
     {
       "id": "2026-07-13-unknown-01cc0f50",
       "brand": "スック",
@@ -407,6 +420,19 @@
       "tier": 2,
       "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/d160a53f71104dc4e5ed3c300ba3ba79.jpg",
       "ogp_title": "志尊淳がNARSの新作朝クレンジングを体感！　「水を500～750ml飲む」毎朝のルーティーンも明かす",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-07-09-tom-ford-f984a464",
+      "brand": "TOM FORD",
+      "product_line": "",
+      "released_at": "2026-07-09",
+      "source_url": "https://www.elle.com/jp/beauty/cosme/g71830268/tom-ford-beauty-cosme-2026fw/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/1656dfde-9b93-445d-bed4-b02066f05a57.png?crop=1.00xw:0.502xh;0,0.244xh&amp;resize=1200:*",
+      "ogp_title": "トム フォード ビューティ（TOM FORD BEAUTY）新作コスメ【2026秋冬】",
       "ogp_description": null
     },
     {
