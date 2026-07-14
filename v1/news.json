@@ -1,7 +1,20 @@
 {
-  "version": 64,
-  "generated_at": "2026-07-14T02:12:52.745Z",
+  "version": 65,
+  "generated_at": "2026-07-14T10:44:43.145Z",
   "items": [
+    {
+      "id": "2026-07-14-unknown-cb8063de",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-07-14",
+      "source_url": "https://oggi.jp/7894420",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/260713chatop.jpg",
+      "ogp_title": "シャネル｜ゲーム着想の限定ウォッチ4モデル、ピクセルキャラクターやトランプなどをモチーフにブラック＆ホワイトで表現 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-13-suqqu-fbe5627a",
       "brand": "SUQQU",
