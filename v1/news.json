@@ -1,7 +1,20 @@
 {
-  "version": 65,
-  "generated_at": "2026-07-14T10:44:43.145Z",
+  "version": 66,
+  "generated_at": "2026-07-15T02:11:08.770Z",
   "items": [
+    {
+      "id": "2026-07-14-unknown-6ba428a3",
+      "brand": "ちふれ",
+      "product_line": "",
+      "released_at": "2026-07-14",
+      "source_url": "https://www.wwdjapan.com/articles/2450378",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/14214000/20260713_CHIFURE_og.jpg",
+      "ogp_title": "「ちふれ」が“女子高生”との接点強化　マツキヨココカラ限定のチーク投入、ルースパウダーを刷新 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "ちふれ化粧品は今秋、主力ブランド「ちふれ（CHIFURE）」からチーク、ルースパウダー、マットリップを発売する。8月10日にマツキヨココカラ＆カンパニー限定の“チーク プライマー”、9月1日には約8年ぶりに刷新する“ルース パウダー”と、新たにマットタイプを追加した“ラスティング リップスティック”を投入する。"
+    },
     {
       "id": "2026-07-14-unknown-cb8063de",
       "brand": "シャネル",
