@@ -1,7 +1,20 @@
 {
-  "version": 66,
-  "generated_at": "2026-07-15T02:11:08.770Z",
+  "version": 67,
+  "generated_at": "2026-07-15T05:45:18.460Z",
   "items": [
+    {
+      "id": "2026-07-15-unknown-a835afb2",
+      "brand": "ソフィーナ",
+      "product_line": "",
+      "released_at": "2026-07-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000288.000072864.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/288/72864-288-b21fe02105324da90d74c795be2483e8-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "生肌質感ハイカバーつづく。キメの形を美しく再現し、生き生きとした肌仕上がりを叶えるファンデーション登場「ソフィーナ　プリマヴィスタ　生肌カバーバーム　ファンデーション」",
+      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年7月15日 11時00分）生肌質感ハイカバーつづく。キメの形を美しく再現し、生き生きとした肌仕上がりを叶えるファンデーション登場「ソフィーナ　プリマヴィスタ　生肌カバーバーム　ファンデーション」"
+    },
     {
       "id": "2026-07-14-unknown-6ba428a3",
       "brand": "ちふれ",
