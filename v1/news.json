@@ -1,7 +1,20 @@
 {
-  "version": 67,
-  "generated_at": "2026-07-15T05:45:18.460Z",
+  "version": 68,
+  "generated_at": "2026-07-15T10:48:47.037Z",
   "items": [
+    {
+      "id": "2026-07-15-unknown-b399ec82",
+      "brand": "エトヴォス",
+      "product_line": "",
+      "released_at": "2026-07-15",
+      "source_url": "https://www.wwdjapan.com/articles/2450631",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/15120824/og26luscious_sample_layout_16_9_yoko.jpg",
+      "ogp_title": "「エトヴォス」が化粧下地とハイライトをリニューアル　潤いあふれる艶肌に - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「エトヴォス（ETVOS）」は9月2日、主力の化粧下地とハイライトバームをリニューアルし、“ミネラルリペアベース”［SPF35・PA+++］（全4色、各5445円）と“ミネラルラディアントスキンスティック”（全2色、各4840円）として発売する。"
+    },
     {
       "id": "2026-07-15-unknown-a835afb2",
       "brand": "ソフィーナ",
