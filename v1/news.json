@@ -1,7 +1,33 @@
 {
-  "version": 69,
-  "generated_at": "2026-07-16T02:23:51.340Z",
+  "version": 70,
+  "generated_at": "2026-07-16T05:58:31.811Z",
   "items": [
+    {
+      "id": "2026-07-16-laneige-12134c7f",
+      "brand": "LANEIGE",
+      "product_line": "",
+      "released_at": "2026-07-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000367.000021350.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/21350/367/21350-367-3e65dd585866c925dcc8949e86d30bb4-2030x1254.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "[LANEIGE]人気リップケアシリーズより、アサイー＆マンゴーをミックスした限定フレーバー「アサイーマンゴースムージー」シリーズが登場！",
+      "ogp_description": "アモーレパシフィックジャパン株式会社のプレスリリース（2026年7月16日 11時00分）[LANEIGE]人気リップケアシリーズより、アサイー＆マンゴーをミックスした限定フレーバー「アサイーマンゴースムージー」シリーズが登場！"
+    },
+    {
+      "id": "2026-07-16-unknown-478527db",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000074.000127263.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/127263/74/127263-74-7cc19b5e81de16ee30b2663a1b031b58-1772x1772.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "『雪肌精』から、ファンデもコンシーラーも、1つで叶うスマートファンシーラー「雪肌精 クリアウェルネス　エアリースキンヴェール ファンシーラー」が登場",
+      "ogp_description": "株式会社コーセー（コンシューマーブランド事業部）のプレスリリース（2026年7月16日 11時00分）『雪肌精』から、ファンデもコンシーラーも、1つで叶うスマートファンシーラー「雪肌精 クリアウェルネス　エアリースキンヴェール ファンシーラー」が登場"
+    },
     {
       "id": "2026-07-15-nars-af9071ed",
       "brand": "NARS",
