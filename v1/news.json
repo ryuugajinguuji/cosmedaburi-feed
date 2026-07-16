@@ -1,7 +1,20 @@
 {
-  "version": 68,
-  "generated_at": "2026-07-15T10:48:47.037Z",
+  "version": 69,
+  "generated_at": "2026-07-16T02:23:51.340Z",
   "items": [
+    {
+      "id": "2026-07-15-nars-af9071ed",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-07-15",
+      "source_url": "https://cancam.jp/archives/1743545",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/16/th_narstop.jpg",
+      "ogp_title": "【NARS・7/17一部限定発売】ブランド初のクレンジングオイルは朝使いもおすすめ！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月17日（金） ブランド：NARS 商品名：NARSski"
+    },
     {
       "id": "2026-07-15-unknown-b399ec82",
       "brand": "エトヴォス",
