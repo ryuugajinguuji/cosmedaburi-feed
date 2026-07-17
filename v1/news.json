@@ -1,7 +1,33 @@
 {
-  "version": 71,
-  "generated_at": "2026-07-17T02:27:14.055Z",
+  "version": 72,
+  "generated_at": "2026-07-17T05:59:00.340Z",
   "items": [
+    {
+      "id": "2026-07-17-unknown-b30a46d0",
+      "brand": "ラネージュ",
+      "product_line": "",
+      "released_at": "2026-07-17",
+      "source_url": "https://www.wwdjapan.com/articles/2452301",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/16171017/228e0cb4-6617-4173-84c9-2bb8b778222c.jpg",
+      "ogp_title": "「ラネージュ」が限定フレーバー“アサイーマンゴースムージー”を発売　リップスリーピングマスクとリップグロウィバームの2種 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "アモーレパシフィックジャパンのグローバルビューティーブランド「ラネージュ（LANEIGE）」は、人気リップケアシリーズから限定フレーバー“アサイーマンゴースムージー”を数量限定で発売する。8月7日からプラザ（PLAZA）、28日からキューテン（QOO10）で先行発売を行う。 ラインアップは睡眠中に唇を集中ケアし潤いを与える“リップスリーピングマスク”（20g、2530円）と、日中のリップケアとして…"
+    },
+    {
+      "id": "2026-07-17-unknown-cbb0a8f4",
+      "brand": "アルマーニ ビューティ",
+      "product_line": "",
+      "released_at": "2026-07-17",
+      "source_url": "https://www.wwdjapan.com/articles/2452171",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/16163722/20260716%E3%82%A2%E3%83%AB%E3%83%9E%E3%83%BC%E3%83%8Bog.jpg",
+      "ogp_title": "「アルマーニ ビューティ」がチークにもリップにも使える新作を発売　ポケットサイズで日中の化粧直しにも - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「アルマーニ ビューティ（ARMANI BEAUTY）」は8月7日、チークにもリップにも使える“ドルチ ブラッシュ”（全5色、各8g、各5940円）を発売する。肌に触れた瞬間にさらっとしたパウダーへと変化し、フィルターをかけたかのようなソフトマットな仕上がりが実現する。環境に配慮したアップサイクル洋梨とみずみずしく芳醇なイチジクの甘美な香りも添えた。"
+    },
     {
       "id": "2026-07-17-unknown-e7d56bdf",
       "brand": "unknown",
