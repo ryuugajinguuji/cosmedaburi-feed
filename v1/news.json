@@ -1,7 +1,33 @@
 {
-  "version": 70,
-  "generated_at": "2026-07-16T05:58:31.811Z",
+  "version": 71,
+  "generated_at": "2026-07-17T02:27:14.055Z",
   "items": [
+    {
+      "id": "2026-07-17-unknown-e7d56bdf",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-17",
+      "source_url": "https://www.wwdjapan.com/articles/2452051",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/16154218/20260716%E9%9B%AA%E8%82%8C%E7%B2%BEog.jpg",
+      "ogp_title": "「雪肌精」からファンデーションとコンシーラーを1つにした“ファンシーラー”が登場　敏感肌も使える低刺激処方 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "コーセーのスキンケアブランド「雪肌精（SEKKISEI）」は9月16日、低刺激処方の“クリアウェルネス”シリーズからファンデーションの均一な仕上がりとコンシーラーのカバー力を備える“エアリースキンヴェール ファンシーラー”（全3色、各8mL、1980円※編集部調べ）を発売する。同アイテムを使用することによってベースメイクを何層も重ねることなく、肌悩みを隠しながら広範囲でムラのない均一な肌を実現する…"
+    },
+    {
+      "id": "2026-07-16-unknown-9a2d4997",
+      "brand": "ファンケル",
+      "product_line": "",
+      "released_at": "2026-07-16",
+      "source_url": "https://www.wwdjapan.com/articles/2451743",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/16103401/20270716%E3%83%95%E3%82%A1%E3%83%B3%E3%82%B1%E3%83%ABog.jpg",
+      "ogp_title": "【2026年秋コスメ】「ファンケル」がチョコレートをイメージした定メイクコレクションを発売　ルージュやアイカラー、ハイライターなど3種 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
+      "ogp_description": "「ファンケル（FANCL）」は8月18日、チョコレートをイメージした秋限定メイクコレクションを発売する。ルージュやアイカラー、ハイライターの全3アイテムをラインアップする。秋冬トレンドの深みのあるカラーに遊び心あるアクセントカラーを効かせ、トレンド感のある彩りを添えた。"
+    },
     {
       "id": "2026-07-16-laneige-12134c7f",
       "brand": "LANEIGE",
