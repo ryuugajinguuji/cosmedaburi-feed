@@ -416,18 +416,24 @@ export function brandSlug(brand) {
 const PRICE_REGEX = /[¥￥][\s]*([\d,]+)|(\d[\d,]+)\s*円/g;
 
 /**
- * テキストから最初の価格（>=1）を抽出
+ * テキストから価格（>=1）を抽出
+ * - 金額が2つ以上検出された場合は不採用（複数SKUの誤表示防止・D11）
+ * - 「編集部調べ」をタイトルに含む場合は不採用（公式発表でない可能性・D11。呼び出し元はRSSタイトルを渡す）
+ * - ラベルは非断定の「発売時価格（目安）」（D11）
  * @returns {{ price_jpy: number, price_label: string } | null}
  */
 export function extractPrice(text) {
+  if (text.includes("編集部調べ")) return null;
   PRICE_REGEX.lastIndex = 0;
+  const prices = [];
   let match;
   while ((match = PRICE_REGEX.exec(text)) !== null) {
     const raw = (match[1] || match[2]).replace(/,/g, "");
     const n = parseInt(raw, 10);
-    if (n >= 1) return { price_jpy: n, price_label: "公式発表価格" };
+    if (n >= 1) prices.push(n);
   }
-  return null;
+  if (prices.length !== 1) return null; // 0件 or 複数SKU疑い（2件以上）は不採用
+  return { price_jpy: prices[0], price_label: "発売時価格（目安）" };
 }
 
 // ---- 多色語検出 ----
@@ -536,10 +542,10 @@ export function generateId(releasedAt, brand, title) {
 
 // ---- OGP画像取得 ----
 
-// OGP取得用のブラウザ系UA（bot UAはCDN/WAFに403で弾かれるサイトが多いため。
-// RSS取得側のUA＝ソース別 user_agent 機構はこの定数の対象外）
+// 正直なbot UA（B6・2026-07-17）: OGP取得・RSS取得の共通既定UA。
+// ブラウザ偽装はしない。新UAで403を返すソースは sources.yml 側で除外する。
 export const OGP_UA =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
+  "CosmeDaburiBot/1.0 (+https://github.com/ryuugajinguuji/cosmedaburi-feed)";
 
 /** og:xxx の meta content を抽出（property/content の属性順は両対応） */
 function extractMetaContent(html, property) {
@@ -549,18 +555,30 @@ function extractMetaContent(html, property) {
   return m ? m[1] : null;
 }
 
-/** OGPテキスト正規化: エンティティデコード（既存decodeHtmlEntities再利用）→trim→maxLen超は切り詰め＋「…」。空はnull */
-function normalizeOgpText(raw, maxLen) {
+// グラフェム単位の切り詰め（M-1・依存ゼロ: Node 20標準の Intl.Segmenter のみ）。
+// UTF-16コードユニット単位の slice はサロゲートペア・結合文字（濁点 U+3099 / ZWJ絵文字）を
+// 分断して孤立サロゲートを生むため、書記素クラスタ（グラフェム）単位で数えて切る。
+const GRAPHEME_SEGMENTER = new Intl.Segmenter("ja", { granularity: "grapheme" });
+
+/** 文字列を maxGraphemes グラフェムで切り詰め。超過時のみ末尾に「…」を付ける */
+export function truncateGraphemes(s, maxGraphemes) {
+  const graphemes = [...GRAPHEME_SEGMENTER.segment(s)];
+  if (graphemes.length <= maxGraphemes) return s;
+  return graphemes.slice(0, maxGraphemes).map((g) => g.segment).join("") + "…";
+}
+
+/** OGPテキスト正規化: エンティティデコード（既存decodeHtmlEntities再利用）→trim→maxGraphemes超はグラフェム単位で切り詰め＋「…」。空はnull */
+function normalizeOgpText(raw, maxGraphemes) {
   if (raw == null) return null;
   const s = decodeHtmlEntities(raw).trim();
   if (s === "") return null;
-  return s.length > maxLen ? s.slice(0, maxLen) + "…" : s;
+  return truncateGraphemes(s, maxGraphemes);
 }
 
 /**
  * URLのHTMLからOGPメタ（og:image / og:title / og:description）を1回のfetchで抽出
  * - imageUrl: httpsのみ採用（従来のfetchOgpImage互換）
- * - title: 120字で切り詰め / description: 200字で切り詰め（超過時は末尾「…」）
+ * - title: 120グラフェムで切り詰め / description: 80グラフェムで切り詰め（超過時は末尾「…」・著作権対応B5・M-1）
  * @param {string} url
  * @param {Function} fetchFn
  * @returns {Promise<{ imageUrl: string|null, title: string|null, description: string|null }>}
@@ -580,7 +598,7 @@ export async function fetchOgpMeta(url, fetchFn) {
     return {
       imageUrl: imgUrl && imgUrl.startsWith("https://") ? imgUrl : null,
       title: normalizeOgpText(extractMetaContent(html, "og:title"), 120),
-      description: normalizeOgpText(extractMetaContent(html, "og:description"), 200),
+      description: normalizeOgpText(extractMetaContent(html, "og:description"), 80),
     };
   } catch {
     return empty;
@@ -589,11 +607,10 @@ export async function fetchOgpMeta(url, fetchFn) {
 
 // ---- RSS フェッチ ----
 
-export async function fetchRss(url, fetchFn, userAgent) {
+export async function fetchRss(url, fetchFn) {
   const res = await fetchFn(url, {
-    // ソース側で user_agent 指定があればそれを使う（WWDJAPAN は CloudFront が
-    // bot風UAに403を返すためブラウザ系UA必須 — spec25 appendix §3）
-    headers: { "User-Agent": userAgent || "CosmeDaburiBot/1.0" },
+    // 常に正直なbot UA（OGP_UAと統一・B6）。UA上書き機構は撤去済み＝偽装UA復活は構造的に不可能（L-1）
+    headers: { "User-Agent": OGP_UA },
     signal: AbortSignal.timeout(15000),
   });
   if (!res.ok) throw new Error(`RSS fetch failed: ${res.status} ${url}`);
@@ -674,12 +691,12 @@ export async function collect({
   const sourceStats = []; // { name, fetched } — 採用数は充足後に集計
 
   for (const source of sources) {
-    const { name, rss_url, user_agent } = source;
+    const { name, rss_url } = source;
     console.log(`[collect] フェッチ: ${name} (${rss_url})`);
 
     let xml;
     try {
-      xml = await fetchRss(rss_url, fetchFn, user_agent);
+      xml = await fetchRss(rss_url, fetchFn);
     } catch (err) {
       console.error(`[collect] RSS取得失敗: ${name} — ${err.message}`);
       continue;

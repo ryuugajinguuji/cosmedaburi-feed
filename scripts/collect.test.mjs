@@ -33,6 +33,7 @@ import {
   extractBrand,
   fetchOgpMeta,
   fetchRss,
+  truncateGraphemes,
   collect,
   parseYaml,
   isKnownBrand,
@@ -162,7 +163,7 @@ describe("価格抽出（extractPrice）", () => {
     const r = extractPrice("リップ ¥1,980 新発売");
     assert.ok(r);
     assert.equal(r.price_jpy, 1980);
-    assert.equal(r.price_label, "公式発表価格");
+    assert.equal(r.price_label, "発売時価格（目安）");
   });
   test("円表記", () => {
     const r = extractPrice("リップ 2,530円（税込）");
@@ -180,6 +181,14 @@ describe("価格抽出（extractPrice）", () => {
     if (r !== null) {
       assert.ok(r.price_jpy >= 1);
     }
+  });
+  test("金額が2つ以上なら不採用（複数SKU誤表示防止・D11）", () => {
+    const r = extractPrice("リップ ¥1,980 / グロス ¥2,200 同時発売");
+    assert.equal(r, null);
+  });
+  test("「編集部調べ」をタイトルに含む場合は不採用（D11）", () => {
+    const r = extractPrice("リップ 1,980円（編集部調べ）");
+    assert.equal(r, null);
   });
 });
 
@@ -396,23 +405,23 @@ describe("OGPメタ取得（fetchOgpMeta）", () => {
     assert.equal(result.description, '"D" と \'E\'');
   });
 
-  test("titleは120字で切り詰め＋末尾…", async () => {
+  test("titleは120グラフェムで切り詰め＋末尾…（M-1）", async () => {
     const long = "あ".repeat(130);
     const mockFetch = pageWith(`<meta property="og:title" content="${long}">`);
     const result = await fetchOgpMeta("https://example.com", mockFetch);
     assert.equal(result.title, "あ".repeat(120) + "…");
   });
 
-  test("descriptionは200字で切り詰め＋末尾…", async () => {
-    const long = "い".repeat(210);
+  test("descriptionは80グラフェムで切り詰め＋末尾…（著作権対応B5・M-1）", async () => {
+    const long = "い".repeat(90);
     const mockFetch = pageWith(`<meta property="og:description" content="${long}">`);
     const result = await fetchOgpMeta("https://example.com", mockFetch);
-    assert.equal(result.description, "い".repeat(200) + "…");
+    assert.equal(result.description, "い".repeat(80) + "…");
   });
 
-  test("ちょうど120字/200字は切り詰めない", async () => {
+  test("ちょうど120/80グラフェムは切り詰めない", async () => {
     const t = "う".repeat(120);
-    const d = "え".repeat(200);
+    const d = "え".repeat(80);
     const mockFetch = pageWith(
       `<meta property="og:title" content="${t}"><meta property="og:description" content="${d}">`
     );
@@ -468,8 +477,51 @@ describe("OGPメタ取得（fetchOgpMeta）", () => {
     assert.deepEqual(result, { imageUrl: null, title: null, description: null });
     assert.equal(called, false);
   });
+});
 
-  test("OGP取得はブラウザ系UA（OGP_UA）で行われる", async () => {
+// ---- グラフェム安全な切り詰め（truncateGraphemes・M-1） ----
+describe("グラフェム安全な切り詰め（truncateGraphemes）", () => {
+  const graphemeCount = (s) =>
+    [...new Intl.Segmenter("ja", { granularity: "grapheme" }).segment(s)].length;
+
+  test("サロゲートペア絵文字を跨ぐ切り詰めで孤立サロゲートが出ない", () => {
+    // 「🎨」はUTF-16で2コードユニット。90絵文字=180ユニットだが90グラフェム
+    const s = "🎨".repeat(90);
+    const r = truncateGraphemes(s, 80);
+    assert.equal(r, "🎨".repeat(80) + "…");
+    assert.ok(r.isWellFormed(), "孤立サロゲートが含まれる");
+    // 旧方式（コードユニットslice）ならペアの真ん中で切れて isWellFormed=false になるケース
+    assert.equal(s.slice(0, 81).isWellFormed(), false, "前提: 旧方式では分断されるデータであること");
+  });
+
+  test("結合文字（濁点U+3099）を跨ぐ切り詰めでグラフェムが分断されない", () => {
+    // 「か」+ 結合用濁点 U+3099 = 分解形の「が」（2コードユニット・1グラフェム）
+    const unit = "\u304b\u3099";
+    const s = unit.repeat(85);
+    const r = truncateGraphemes(s, 80);
+    assert.equal(r, unit.repeat(80) + "…");
+    assert.ok(r.isWellFormed());
+    // 末尾グラフェムが基底文字「か」だけで切れていない（…の直前が濁点付きで完結）
+    assert.equal(r.at(-2), "\u3099");
+  });
+
+  test("ZWJ絵文字（家族👨‍👩‍👧‍👦）を跨ぐ切り詰めでZWJ列が分断されない", () => {
+    const family = "👨‍👩‍👧‍👦"; // 11コードユニット・1グラフェム
+    const s = "あ".repeat(79) + family + "い".repeat(10); // 80グラフェム目が家族絵文字
+    const r = truncateGraphemes(s, 80);
+    assert.equal(r, "あ".repeat(79) + family + "…");
+    assert.ok(r.isWellFormed());
+    assert.equal(graphemeCount(r), 81); // 80グラフェム＋「…」
+    assert.ok(!r.endsWith("‍…"), "ZWJ直後で分断されている");
+  });
+
+  test("maxGraphemes以下はそのまま（…を付けない）", () => {
+    assert.equal(truncateGraphemes("🎨".repeat(80), 80), "🎨".repeat(80));
+    assert.equal(truncateGraphemes("あいう", 80), "あいう");
+    assert.equal(truncateGraphemes("", 80), "");
+  });
+
+  test("OGP取得は正直なbot UA（OGP_UA）で行われる（B6）", async () => {
     let capturedOpts = null;
     const mockFetch = async (url, opts) => {
       capturedOpts = opts;
@@ -481,7 +533,8 @@ describe("OGPメタ取得（fetchOgpMeta）", () => {
     };
     const result = await fetchOgpMeta("https://example.com", mockFetch);
     assert.equal(result.imageUrl, "https://example.com/img.jpg");
-    assert.ok(OGP_UA.startsWith("Mozilla/5.0"), "OGP_UAはブラウザ系であること");
+    assert.ok(OGP_UA.startsWith("CosmeDaburiBot/"), "OGP_UAは正直なbot UAであること（ブラウザ偽装禁止）");
+    assert.ok(OGP_UA.includes("https://github.com/ryuugajinguuji/cosmedaburi-feed"), "UAに連絡先URLを含むこと");
     assert.equal(capturedOpts.headers["User-Agent"], OGP_UA);
   });
 });
@@ -962,29 +1015,31 @@ describe("parseYaml（ネストブロック付き配列の複数エントリ）"
   });
 });
 
-// ---- fetchRss UA対応（spec25 Task3・WWDJAPANはブラウザ系UA必須） ----
-describe("fetchRss User-Agent対応", () => {
+// ---- fetchRss UA（常に正直なbot UA＝OGP_UAと統一・B6。上書き機構は撤去済み・L-1） ----
+describe("fetchRss User-Agent（上書き機構なし）", () => {
   const RSS = '<?xml version="1.0"?><rss><channel></channel></rss>';
 
-  test("user_agent指定時はその値がヘッダに渡る", async () => {
-    let capturedOpts = null;
-    const fetchFn = async (url, opts) => {
-      capturedOpts = opts;
-      return { ok: true, status: 200, text: async () => RSS };
-    };
-    const ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0.0.0";
-    await fetchRss("https://example.com/feed", fetchFn, ua);
-    assert.equal(capturedOpts.headers["User-Agent"], ua);
-  });
-
-  test("user_agent未指定時は既定のCosmeDaburiBot UA", async () => {
+  test("常に既定のCosmeDaburiBot UA（OGP_UAと統一・B6）", async () => {
     let capturedOpts = null;
     const fetchFn = async (url, opts) => {
       capturedOpts = opts;
       return { ok: true, status: 200, text: async () => RSS };
     };
     await fetchRss("https://example.com/feed", fetchFn);
-    assert.equal(capturedOpts.headers["User-Agent"], "CosmeDaburiBot/1.0");
+    assert.equal(capturedOpts.headers["User-Agent"], OGP_UA);
+  });
+
+  test("UA上書き機構が存在しない: 第3引数に偽装UAを渡してもOGP_UAのまま（L-1）", async () => {
+    let capturedOpts = null;
+    const fetchFn = async (url, opts) => {
+      capturedOpts = opts;
+      return { ok: true, status: 200, text: async () => RSS };
+    };
+    const spoofed = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0.0.0";
+    await fetchRss("https://example.com/feed", fetchFn, spoofed);
+    assert.equal(capturedOpts.headers["User-Agent"], OGP_UA);
+    // シグネチャ上もUA引数を受け取らない（url, fetchFn の2引数のみ）
+    assert.equal(fetchRss.length, 2);
   });
 });
 
@@ -997,27 +1052,22 @@ describe("新ソース入場ゲート（sources.yml実設定×appendix実例）"
     return s;
   };
 
-  test("sources.yml は6ソース定義（PR TIMES＋新5ソース）", () => {
-    assert.equal(sources.length, 6);
+  test("sources.yml は5ソース定義（PR TIMES＋メディア4・WWDJAPANは正直UAで403のため除外＝B6）", () => {
+    assert.equal(sources.length, 5);
   });
 
-  test("WWDJAPAN: user_agentキーが設定されている（CloudFront 403対策）", () => {
-    const s = byName("WWDJAPAN");
-    assert.ok(typeof s.user_agent === "string" && s.user_agent.includes("Mozilla"));
+  test("WWDJAPAN は除外済み（正直UAで403・B6 2026-07-17）", () => {
+    assert.equal(sources.find((s) => s.name.startsWith("WWDJAPAN")), undefined);
   });
 
-  test("WWDJAPAN: 採用例（キュレル オイル美容液 発売）→ pass", () => {
-    const r = admissionGate(
-      "「キュレル」がオイル美容液を発売　ブランド初、オイル製剤とセラミドケア技術を融合",
-      byName("WWDJAPAN"),
-    );
-    assert.equal(r.pass, true);
-    assert.equal(r.category, "skincare");
-  });
-
-  test("WWDJAPAN: 除外例（業界ニュース）→ skip", () => {
-    const r = admissionGate("百貨店の秋冬展示会が開幕　業界関係者が来場", byName("WWDJAPAN"));
-    assert.equal(r.pass, false);
+  test("user_agent キーがどのソースにも存在しない（UA上書き機構は撤去済み・L-1/B6）", () => {
+    for (const s of sources) {
+      assert.equal(
+        s.user_agent,
+        undefined,
+        `${s.name} に user_agent が設定されている（fetchRss に上書き機構は無く、設定しても無効）`,
+      );
+    }
   });
 
   test("ELLE: 採用例（バレンシアガ 香水コレクション）→ pass=info", () => {

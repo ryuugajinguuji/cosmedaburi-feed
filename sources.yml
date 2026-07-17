@@ -1,6 +1,12 @@
 # sources.yml — 自動収集ソース定義（spec23 §2）
 # 追加後1週間は出力を目視確認すること（spec23 §9）
 #
+# ソース追加前の必須手順（B6・2026-07-17）:
+#   1. 対象サイトの robots.txt を確認し、RSS URL へのアクセスが禁止されていないことを記録する
+#   2. 利用規約（転載・自動取得に関する条項）を確認し、確認日と結論をこのファイルのコメントに記録する
+#   3. 取得は正直な UA（CosmeDaburiBot/1.0）で行う。bot UA に 403 を返すソースは追加しない
+#      （ブラウザUA偽装での回避は禁止。403 になったソースはコメントアウトで除外し、理由と日付を残す）
+#
 # PR TIMES の美容専用RSS(rdf/beauty_new_info.rdf)は404のため、
 # 全業種混載の index.rdf を require_match ゲートでフィルタして使用する。
 #   require_match=true: category_rules（lip/eye/...）にも
@@ -56,7 +62,7 @@
       - 日焼け止め
   fallback_category: info
 
-# ---- 以下、メディア系5ソース（spec25 appendix 2026-07-03 調査・全fetch/規約確認済み）----
+# ---- 以下、メディア系ソース（spec25 appendix 2026-07-03 調査・全fetch/規約確認済み。WWDJAPANは2026-07-17に除外）----
 # 共通方針（appendix §3）:
 #   - 全ソース require_match=true（専門フィードでも業界・人事・セレブ記事が混ざる）
 #   - 転載なし・事実データ（ブランド/発売日/リンク/og:image URL参照）のみ抽出
@@ -64,57 +70,59 @@
 #     （PR TIMES 同様・マイナビ等の実例タイトル「〜コスメ35選」対応）
 #   - category_rules は PR TIMES と同一（色カテゴリ判定は全ソース共通）
 
-- name: WWDJAPAN ビューティ
-  rss_url: https://www.wwdjapan.com/category/beauty/feed
-  # bot風UAはCloudFrontが403を返すためブラウザ系UA必須（appendix §1-1）
-  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
-  require_match: true
-  admission_info_keywords:
-    - コスメ
-    - 新色
-    - 新作
-    - 限定
-    - 発売
-    - コレクション
-  category_rules:
-    lip:
-      - リップ
-      - 口紅
-      - ティント
-      - ルージュ
-      - グロス
-      - リップスティック
-      - リップカラー
-      - リップクリーム
-    eye:
-      - アイシャドウ
-      - アイシャドー
-      - マスカラ
-      - アイライナー
-      - アイブロウ
-      - 眉マスカラ
-    cheek:
-      - チーク
-      - ブラッシュ
-      - ハイライター
-    base:
-      - ファンデーション
-      - ファンデ
-      - 下地
-      - BBクリーム
-      - CCクリーム
-      - コンシーラー
-      - パウダー
-    skincare:
-      - 乳液
-      - 化粧水
-      - 美容液
-      - クリーム
-      - セラム
-      - 保湿
-      - UVケア
-      - 日焼け止め
-  fallback_category: info
+# ---- 除外: WWDJAPAN ビューティ（B6・2026-07-17）----
+# 正直UA（CosmeDaburiBot/1.0 +リポジトリURL）で RSS URL へ fetch した結果 403（CloudFront）。
+# 従来はブラウザ系UA偽装（user_agent 上書き）で回避していたが、UA正直化の方針決定により
+# 偽装は廃止し本ソースを除外する。bot UA を許可する配信が確認できたら再有効化を検討。
+# - name: WWDJAPAN ビューティ
+#   rss_url: https://www.wwdjapan.com/category/beauty/feed
+#   require_match: true
+#   admission_info_keywords:
+#     - コスメ
+#     - 新色
+#     - 新作
+#     - 限定
+#     - 発売
+#     - コレクション
+#   category_rules:
+#     lip:
+#       - リップ
+#       - 口紅
+#       - ティント
+#       - ルージュ
+#       - グロス
+#       - リップスティック
+#       - リップカラー
+#       - リップクリーム
+#     eye:
+#       - アイシャドウ
+#       - アイシャドー
+#       - マスカラ
+#       - アイライナー
+#       - アイブロウ
+#       - 眉マスカラ
+#     cheek:
+#       - チーク
+#       - ブラッシュ
+#       - ハイライター
+#     base:
+#       - ファンデーション
+#       - ファンデ
+#       - 下地
+#       - BBクリーム
+#       - CCクリーム
+#       - コンシーラー
+#       - パウダー
+#     skincare:
+#       - 乳液
+#       - 化粧水
+#       - 美容液
+#       - クリーム
+#       - セラム
+#       - 保湿
+#       - UVケア
+#       - 日焼け止め
+#   fallback_category: info
 
 - name: ELLE ジャポン ビューティ
   rss_url: https://www.elle.com/jp/rss/beauty.xml/
