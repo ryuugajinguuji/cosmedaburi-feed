@@ -1,7 +1,20 @@
 {
-  "version": 73,
-  "generated_at": "2026-07-17T12:45:15.515Z",
+  "version": 74,
+  "generated_at": "2026-07-18T02:11:32.493Z",
   "items": [
+    {
+      "id": "2026-07-17-unknown-130744bd",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-17",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001093.000002194.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2194/1093/2194-1093-0357b2760250d2a435a5d19bc8a45c74-2206x1045.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "肌ノイズを徹底遮断※1！それぞれの肌悩みに特化した、粗のないきれいな肌印象が続くコンシーラーが新登場",
+      "ogp_description": "株式会社伊勢半のプレスリリース（2026年7月17日 15時00分）肌ノイズを徹底遮断※1！それぞれの肌悩みに特化した、粗のないきれいな肌印象が続くコンシーラー…"
+    },
     {
       "id": "2026-07-17-unknown-b30a46d0",
       "brand": "ラネージュ",
