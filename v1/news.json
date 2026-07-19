@@ -1,7 +1,20 @@
 {
-  "version": 75,
-  "generated_at": "2026-07-19T06:12:23.892Z",
+  "version": 76,
+  "generated_at": "2026-07-19T10:26:55.705Z",
   "items": [
+    {
+      "id": "2026-07-19-nars-86041faf",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-07-19",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000473.000022808.html",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/22808/473/22808-473-0e0155e74ef415e887ec13e2be636de2-2025x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "NARSの新たなノアールが紡ぐ、誰も真似できない眼差し。一本一本に圧倒的な立体感を宿し、周囲の視線を惹きつける「NARS ノートリアス マスカラ」が誕生。",
+      "ogp_description": "資生堂ジャパン株式会社のプレスリリース（2026年7月19日 14時00分）NARSの新たなノアールが紡ぐ、誰も真似できない眼差し。一本一本に圧倒的な立体感を宿…"
+    },
     {
       "id": "2026-07-19-nars-478e3e30",
       "brand": "NARS",
