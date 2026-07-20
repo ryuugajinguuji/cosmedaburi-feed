@@ -1,7 +1,33 @@
 {
-  "version": 76,
-  "generated_at": "2026-07-19T10:26:55.705Z",
+  "version": 77,
+  "generated_at": "2026-07-20T02:44:27.316Z",
   "items": [
+    {
+      "id": "2026-07-19-unknown-0fdd1285",
+      "brand": "資生堂",
+      "product_line": "",
+      "released_at": "2026-07-19",
+      "source_url": "https://cancam.jp/archives/1746772",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/20/th_4193_b3s12_212.jpg",
+      "ogp_title": "【資生堂 HAKU・7/21発売】寝る前のひと塗りで翌朝つるん♡透明感爆上げナイトマスク",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月21日（火） ブランド：資生堂 HAKU 商品名： 薬用"
+    },
+    {
+      "id": "2026-07-19-unknown-dc2e9301",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-19",
+      "source_url": "https://oggi.jp/6764867",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2025/10/kuzurenikui.jpg",
+      "ogp_title": "汗に強いおすすめファンデーション【2026年】猛暑でも崩さないベースメイク術も | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-19-nars-86041faf",
       "brand": "NARS",
