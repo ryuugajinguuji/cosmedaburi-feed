@@ -1,7 +1,20 @@
 {
-  "version": 77,
-  "generated_at": "2026-07-20T02:44:27.316Z",
+  "version": 78,
+  "generated_at": "2026-07-21T02:27:27.084Z",
   "items": [
+    {
+      "id": "2026-07-21-canmake-0440a311",
+      "brand": "CANMAKE",
+      "product_line": "",
+      "released_at": "2026-07-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000257.000019685.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/19685/257/19685-257-f92ecea065f96552a9a1bfa8701e90d9-3281x1845.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【CANMAKE TOKYO】むちぷるティントが夜空を彩る♪『おジャ魔女どれみ　Magical Drone Show 2026〜も〜っと！ピリカピリララ♪バースデーナイト〜』特別協賛決定！",
+      "ogp_description": "株式会社 井田ラボラトリーズのプレスリリース（2026年7月21日 10時00分）【CANMAKE TOKYO】むちぷるティントが夜空を彩る♪『おジャ魔女どれみ…"
+    },
     {
       "id": "2026-07-19-unknown-0fdd1285",
       "brand": "資生堂",
