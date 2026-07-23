@@ -1,6 +1,6 @@
 {
-  "version": 78,
-  "generated_at": "2026-07-21T02:27:27.084Z",
+  "version": 79,
+  "generated_at": "2026-07-23T11:08:26.300Z",
   "items": [
     {
       "id": "2026-07-21-canmake-0440a311",
@@ -66,6 +66,19 @@
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/22808/476/22808-476-eca7388d7685d9b28d7a070534054621-405x529.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "リップメイクに、妥協なき新基準を。緻密なラインからドラマチックな立体感まで、すべてを1本で叶えるマルチユースな「NARS リップライナー」が登場。",
       "ogp_description": "資生堂ジャパン株式会社のプレスリリース（2026年7月19日 13時00分）リップメイクに、妥協なき新基準を。緻密なラインからドラマチックな立体感まで、すべてを…"
+    },
+    {
+      "id": "2026-07-17-unknown-c938551d",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-17",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001094.000002194.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2194/1094/2194-1094-6ca5a802f642a8139e0a88a7e65f40ef-1189x1189.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "最強※１ロング×目元拡大※2！植毛級の長さを叶えるマスカラが新発売",
+      "ogp_description": "株式会社伊勢半のプレスリリース（2026年7月17日 17時00分）最強※１ロング×目元拡大※2！植毛級の長さを叶えるマスカラが新発売"
     },
     {
       "id": "2026-07-17-unknown-130744bd",
