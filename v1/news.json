@@ -1,7 +1,20 @@
 {
-  "version": 81,
-  "generated_at": "2026-07-24T06:07:54.166Z",
+  "version": 82,
+  "generated_at": "2026-07-24T11:02:46.132Z",
   "items": [
+    {
+      "id": "2026-07-24-unknown-2bd24fff",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-24",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000009.000056179.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/56179/9/56179-9-6b838f15d53c670e50aa4b644143e45a-1600x900.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": ".fav アイブロウワックスに「ロジンフリー ソフトワックス」が登場。まつげエクステ・アイビューティー商材メーカー 松風が7月21日発売",
+      "ogp_description": "株式会社松風のプレスリリース（2026年7月21日 11時00分）.fav アイブロウワックスに「ロジンフリー ソフトワックス」が登場。まつげエクステ・アイビュ…"
+    },
     {
       "id": "2026-07-24-rmk-fedceb0b",
       "brand": "RMK",
