@@ -1,7 +1,22 @@
 {
-  "version": 80,
-  "generated_at": "2026-07-24T02:28:18.193Z",
+  "version": 81,
+  "generated_at": "2026-07-24T06:07:54.166Z",
   "items": [
+    {
+      "id": "2026-07-24-rmk-fedceb0b",
+      "brand": "RMK",
+      "product_line": "",
+      "hex": "E8823A",
+      "hex_origin": "estimated",
+      "released_at": "2026-07-24",
+      "source_url": "https://woman.mynavi.jp/article/260724-2_1160320-2/",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/2rmk-brush13.jpg",
+      "ogp_title": "アラサーの肌色にマッチ。RMK「ピュア コンプレクション ブラッシュ」の熟したオレンジで彩るじゅわっとチーク",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-23-missha-dbcfb9a5",
       "brand": "MISSHA",
