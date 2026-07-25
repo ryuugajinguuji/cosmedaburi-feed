@@ -1,7 +1,20 @@
 {
-  "version": 82,
-  "generated_at": "2026-07-24T11:02:46.132Z",
+  "version": 83,
+  "generated_at": "2026-07-25T10:25:52.364Z",
   "items": [
+    {
+      "id": "2026-07-25-unknown-a3de4ea5",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-25",
+      "source_url": "https://oggi.jp/7897013",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/main-kate.jpg",
+      "ogp_title": "クオリティもコスパも優秀！【リップモンスターの夏限定カラー】ツヤ感青パール | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-24-unknown-2bd24fff",
       "brand": "unknown",
