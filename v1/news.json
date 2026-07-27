@@ -1,7 +1,20 @@
 {
-  "version": 83,
-  "generated_at": "2026-07-25T10:25:52.364Z",
+  "version": 84,
+  "generated_at": "2026-07-27T02:41:08.045Z",
   "items": [
+    {
+      "id": "2026-07-27-unknown-d7ea0f0f",
+      "brand": "ディオール",
+      "product_line": "",
+      "released_at": "2026-07-27",
+      "source_url": "https://oggi.jp/7897870",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/eyelash-main.jpg",
+      "ogp_title": "ディオールのマスカラベース×ホットカーラーでつくる1日ヘタらない上向きまつ毛 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-07-25-unknown-a3de4ea5",
       "brand": "unknown",
