@@ -1,7 +1,20 @@
 {
-  "version": 84,
-  "generated_at": "2026-07-27T02:41:08.045Z",
+  "version": 85,
+  "generated_at": "2026-07-28T06:07:16.234Z",
   "items": [
+    {
+      "id": "2026-07-28-unknown-b9385e95",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-28",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000096.000072221.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72221/96/72221-96-b89ffa17e91dcb43d92c07cd144ede06-1605x903.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "「劇場版 魔法少女まどか☆マギカ［新編］叛逆の物語」より、きらりんしずくシール付きマルチBOXが8月第2週よりプライズで登場！TVアニメ『魔法少女まどか☆マギカ』リップ＆チークチャームも再販決定！",
+      "ogp_description": "株式会社エス・トラストのプレスリリース（2026年7月28日 12時00分）「劇場版 魔法少女まどか☆マギカ［新編］叛逆の物語」より、きらりんしずくシール付きマ…"
+    },
     {
       "id": "2026-07-27-unknown-d7ea0f0f",
       "brand": "ディオール",
