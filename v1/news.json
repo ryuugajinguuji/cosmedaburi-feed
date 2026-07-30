@@ -1,7 +1,20 @@
 {
-  "version": 85,
-  "generated_at": "2026-07-28T06:07:16.234Z",
+  "version": 86,
+  "generated_at": "2026-07-30T02:07:36.718Z",
   "items": [
+    {
+      "id": "2026-07-30-unknown-a27e0acb",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-30",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000237.000038322.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/38322/237/38322-237-8833c26d6b632fb9a639f580fec402c2-1800x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "《期間限定コラボ ! immy immy ×THE_B 》人気リッププランパーから着想を得た2026年夏限定のアサイースムージー「Glossy Acai Berry」が8月6日（木）より新登場！",
+      "ogp_description": "株式会社エスモードアートのプレスリリース（2026年7月30日 09時00分）《期間限定コラボ ! immy immy ×THE_B 》人気リッププランパーから…"
+    },
     {
       "id": "2026-07-28-unknown-b9385e95",
       "brand": "unknown",
