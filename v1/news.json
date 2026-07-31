@@ -1,7 +1,20 @@
 {
-  "version": 86,
-  "generated_at": "2026-07-30T02:07:36.718Z",
+  "version": 87,
+  "generated_at": "2026-07-31T02:35:02.134Z",
   "items": [
+    {
+      "id": "2026-07-31-unknown-723a2323",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-07-31",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000045.000074502.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/74502/45/74502-45-6f84dd24b99195a4283906c1be9ab9a0-3900x2605.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "≠ME（ノットイコールミー）メンバーの鈴木瞳美さんが、束感マスカラで人気のアイメイクブランド【キングダム/kingdom】の新ミューズに就任！",
+      "ogp_description": "株式会社黒龍堂のプレスリリース（2026年7月31日 10時00分）≠ME（ノットイコールミー）メンバーの鈴木瞳美さんが、束感マスカラで人気のアイメイクブランド…"
+    },
     {
       "id": "2026-07-30-unknown-a27e0acb",
       "brand": "unknown",
