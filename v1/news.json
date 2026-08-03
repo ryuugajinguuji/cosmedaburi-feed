@@ -1,7 +1,20 @@
 {
-  "version": 88,
-  "generated_at": "2026-08-03T02:34:37.425Z",
+  "version": 89,
+  "generated_at": "2026-08-03T12:21:25.807Z",
   "items": [
+    {
+      "id": "2026-08-03-unknown-8ad2354b",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-03",
+      "source_url": "https://woman.mynavi.jp/article/260803_12000673/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/08/001-1-1.jpg",
+      "ogp_title": "唇ぽってり、神ビジュリップに胸キュン。CipiCipi新作リッププランパーで恋する唇に",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-03-paul-joe-9db750b2",
       "brand": "PAUL & JOE",
