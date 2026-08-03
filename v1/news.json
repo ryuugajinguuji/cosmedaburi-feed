@@ -1,7 +1,61 @@
 {
-  "version": 87,
-  "generated_at": "2026-07-31T02:35:02.134Z",
+  "version": 88,
+  "generated_at": "2026-08-03T02:34:37.425Z",
   "items": [
+    {
+      "id": "2026-08-03-paul-joe-9db750b2",
+      "brand": "PAUL & JOE",
+      "product_line": "",
+      "released_at": "2026-08-03",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000019.000169347.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/169347/19/169347-19-dffa6c585c51018b91e5d313737fe379-2160x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【PAUL & JOE BEAUTE】ティント ルージュ発売を記念して「オリジナル ぬいぐるみ ティント ホルダー」のノベルティをプレゼント！",
+      "ogp_description": "株式会社アルビオンのプレスリリース（2026年8月3日 10時00分）【PAUL & JOE BEAUTE】ティント ルージュ発売を記念して「オリジナル ぬいぐ…"
+    },
+    {
+      "id": "2026-08-02-unknown-9e71e9b7",
+      "brand": "ランコム",
+      "product_line": "",
+      "hex": "F4A7B9",
+      "hex_origin": "estimated",
+      "released_at": "2026-08-02",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73239073/2026christmascoffret-nd-lancome-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/5cb98bbc-392a-48d3-aad3-1b6bc8be9b2b.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【ランコム×クリスマスコフレ2026】発売日＆予約日は？｜ピンクの宮殿をテーマにした豪華なホリデー",
+      "ogp_description": "「ランコム」の2026年ホリデー コレクシオン情報を全部見せ！　美しすぎる限定アイパレットやハイライターのほか、現品ばかりの豪華コフレ、アドベントカレンダーにも…"
+    },
+    {
+      "id": "2026-08-02-unknown-cdbbf138",
+      "brand": "ポーラ",
+      "product_line": "",
+      "released_at": "2026-08-02",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73225114/2026christmascoffret-nd-pola-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/fef41f20-4263-48a0-a5f3-f8cae0e28f04.jpg?crop=1.00xw:0.710xh;0,0.156xh&amp;resize=1200:*",
+      "ogp_title": "【ポーラ×クリスマスコフレ2026】発売日＆予約日は？｜「B.A」の選べる贅沢コフレが今年もお目見え",
+      "ogp_description": "「ポーラ」の2026年ホリデーコレクション情報をお届け！　ブランド最高峰の「B.A」から、贅沢なラインナップを体感できるスキンケアコフレが登場。"
+    },
+    {
+      "id": "2026-08-02-unknown-d542cd29",
+      "brand": "イプサ",
+      "product_line": "",
+      "released_at": "2026-08-02",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g71928870/2026christmascoffret-nd-ipsa-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/8ed4d5cc-0f4c-476a-894f-b41815330e4d.jpg?crop=1.00xw:0.741xh;0,0.149xh&amp;resize=1200:*",
+      "ogp_title": "【イプサ×クリスマスコフレ2026】発売日＆予約日は？｜新「アクア」が巾着ポーチ付きセットになって登場",
+      "ogp_description": "「イプサ」の2026年ホリデーコレクション情報を全部見せ！　今年リニューアルした名品化粧水入りコフレのほか、限定アイシャドウパレットも登場。"
+    },
     {
       "id": "2026-07-31-unknown-723a2323",
       "brand": "unknown",
