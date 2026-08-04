@@ -1,7 +1,20 @@
 {
-  "version": 90,
-  "generated_at": "2026-08-04T02:13:42.869Z",
+  "version": 91,
+  "generated_at": "2026-08-04T06:08:43.282Z",
   "items": [
+    {
+      "id": "2026-08-04-unknown-ad8438f4",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-04",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000116.000044623.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/44623/116/44623-116-354423d4ca81bf220f0fde10501f3379-2025x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【M·A·C】グロー プレイシリーズから光で遊ぶ”おもち”質感ハイライト新登場　リップバーム新色も",
+      "ogp_description": "ELCジャパン合同会社　M・A・C事業部のプレスリリース（2026年8月4日 12時00分）【M·A·C】グロー プレイシリーズから光で遊ぶ”おもち”質感ハイラ…"
+    },
     {
       "id": "2026-08-03-unknown-6a689574",
       "brand": "unknown",
