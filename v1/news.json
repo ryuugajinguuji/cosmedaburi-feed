@@ -1,7 +1,20 @@
 {
-  "version": 92,
-  "generated_at": "2026-08-04T11:22:09.071Z",
+  "version": 93,
+  "generated_at": "2026-08-05T06:05:09.544Z",
   "items": [
+    {
+      "id": "2026-08-05-unknown-e5b83533",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-05",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000286.000034765.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/34765/286/34765-286-31bc23cdec1ba8772dfcb0dfaa8b347d-2896x1843.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "50代以上女性の「似合う口紅がわからない」に応える読者の声から生まれた “大人の正解リップ”「ハルメク モイストグロウ リップ」を8月5日より発売開始",
+      "ogp_description": "株式会社ハルメクホールディングスのプレスリリース（2026年8月5日 11時00分）50代以上女性の「似合う口紅がわからない」に応える読者の声から生まれた “大…"
+    },
     {
       "id": "2026-08-04-nars-e67723d9",
       "brand": "NARS",
