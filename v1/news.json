@@ -1,7 +1,46 @@
 {
-  "version": 93,
-  "generated_at": "2026-08-05T06:05:09.544Z",
+  "version": 94,
+  "generated_at": "2026-08-06T06:08:53.482Z",
   "items": [
+    {
+      "id": "2026-08-06-laneige-f7c81373",
+      "brand": "LANEIGE",
+      "product_line": "",
+      "released_at": "2026-08-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000370.000021350.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/21350/370/21350-370-9a936a6608ee88a8b3a30b6f7842d237-652x923.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "[LANEIGE]人気のリップケアシリーズの限定フレーバー 「アサイーマンゴースムージー」の発売を記念し、TOKYO JUICEと期間限定コラボレーションを実施！",
+      "ogp_description": "アモーレパシフィックジャパン株式会社のプレスリリース（2026年8月6日 11時00分）[LANEIGE]人気のリップケアシリーズの限定フレーバー 「アサイーマ…"
+    },
+    {
+      "id": "2026-08-06-unknown-2322f955",
+      "brand": "エトヴォス",
+      "product_line": "",
+      "released_at": "2026-08-06",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73351317/2026christmascoffret-nd-etvos-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/3e1f9045-fbee-41c8-85a1-99c20dc4c62c.jpg?crop=0.917xw:0.648xh;0.0358xw,0.303xh&amp;resize=1200:*",
+      "ogp_title": "【エトヴォス×クリスマスコフレ2026】発売日＆予約日は？｜すべて限定色のメイクアップキット",
+      "ogp_description": "「エトヴォス」の2026年ホリデーコレクション情報をお届け！　ツイードの繊細な色と光のニュアンスにインスパイアされた、メイクアップコフレが登場。"
+    },
+    {
+      "id": "2026-08-06-unknown-ac18eac7",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000242.000016854.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16854/242/16854-242-32581039f64b19d977903e9bbb350b2f-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "ラブ・ライナー アイブロウシリーズがリニューアル！新たに0.9mm極細芯も登場し、なりたい眉で選べる全4種へ。",
+      "ogp_description": "ｍｓｈ株式会社のプレスリリース（2026年8月6日 13時00分）ラブ・ライナー アイブロウシリーズがリニューアル！新たに0.9mm極細芯も登場し、なりたい眉で…"
+    },
     {
       "id": "2026-08-05-unknown-e5b83533",
       "brand": "unknown",
