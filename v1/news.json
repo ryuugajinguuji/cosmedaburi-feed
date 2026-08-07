@@ -1,7 +1,20 @@
 {
-  "version": 95,
-  "generated_at": "2026-08-07T02:32:11.289Z",
+  "version": 96,
+  "generated_at": "2026-08-07T05:10:52.966Z",
   "items": [
+    {
+      "id": "2026-08-07-unknown-1c89dc16",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-07",
+      "source_url": "https://woman.mynavi.jp/article/260807-3_12000673/",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/08/001-1-2.jpg",
+      "ogp_title": "【注目韓国コスメ18選】Lakaのチーク、アイドル御用達2aNパレットも！　SNSでも話題のコスメをレビュー",
+      "ogp_description": "「最近このブランドがアツい！」「今季の新作、何買った？」「がんばらずにきれいになりたい……」最新コスメやメイクトレンドを、コスメ大好きなライター・よしかわとマイ…"
+    },
     {
       "id": "2026-08-07-canmake-974a630c",
       "brand": "CANMAKE",
