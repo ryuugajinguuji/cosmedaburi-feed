@@ -1,7 +1,20 @@
 {
-  "version": 94,
-  "generated_at": "2026-08-06T06:08:53.482Z",
+  "version": 95,
+  "generated_at": "2026-08-07T02:32:11.289Z",
   "items": [
+    {
+      "id": "2026-08-07-canmake-974a630c",
+      "brand": "CANMAKE",
+      "product_line": "",
+      "released_at": "2026-08-07",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001075.000003436.html",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/3436/1075/3436-1075-cfb633123961879ff3e654134386e94d-595x595.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "8月は、PLAZAコスメの祭典「PLAZA BEAUTY MONTH」！「Flower Knows」のPLAZA限定“チャームコスメ”や「CANMAKE」限定色の復刻再販など、大注目の新作コスメが続々",
+      "ogp_description": "株式会社スタイリングライフ・ホールディングス　プラザスタイル カンパニーのプレスリリース（2026年8月7日 10時00分）8月は、PLAZAコスメの祭典「PL…"
+    },
     {
       "id": "2026-08-06-laneige-f7c81373",
       "brand": "LANEIGE",
