@@ -1,7 +1,20 @@
 {
-  "version": 96,
-  "generated_at": "2026-08-07T05:10:52.966Z",
+  "version": 97,
+  "generated_at": "2026-08-08T04:33:35.794Z",
   "items": [
+    {
+      "id": "2026-08-08-unknown-ad5a800c",
+      "brand": "無印良品",
+      "product_line": "",
+      "released_at": "2026-08-08",
+      "source_url": "https://woman.mynavi.jp/article/260808-2_1190537/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/main-60.jpg",
+      "ogp_title": "【無印良品】「ほめられかぼちゃ」シリーズの季節限定お菓子が全10種が登場",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-07-unknown-1c89dc16",
       "brand": "unknown",
