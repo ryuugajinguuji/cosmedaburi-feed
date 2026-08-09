@@ -963,10 +963,10 @@
    "product_line": "ウォータリーティントリップ",
    "color_code": "01",
    "color_name": "ナチュラルピンク",
-   "hex": "#D88088",
+   "hex": "#C94749",
    "texture": "sheer",
    "shimmer_intensity": null,
-   "hex_origin": "estimated",
+   "hex_origin": "swatch",
    "category": "lip"
   },
   {
@@ -974,10 +974,10 @@
    "product_line": "ウォータリーティントリップ",
    "color_code": "02",
    "color_name": "コーラルレッド",
-   "hex": "#D84838",
+   "hex": "#920411",
    "texture": "sheer",
    "shimmer_intensity": null,
-   "hex_origin": "estimated",
+   "hex_origin": "swatch",
    "category": "lip"
   },
   {
@@ -985,10 +985,10 @@
    "product_line": "ウォータリーティントリップ",
    "color_code": "05",
    "color_name": "プラムレッド",
-   "hex": "#A02840",
+   "hex": "#AF2B3B",
    "texture": "sheer",
    "shimmer_intensity": null,
-   "hex_origin": "estimated",
+   "hex_origin": "swatch",
    "category": "lip"
   },
   {
@@ -996,10 +996,10 @@
    "product_line": "ウォータリーティントリップ",
    "color_code": "07",
    "color_name": "ビターレッド",
-   "hex": "#901828",
+   "hex": "#823737",
    "texture": "sheer",
    "shimmer_intensity": null,
-   "hex_origin": "estimated",
+   "hex_origin": "swatch",
    "category": "lip"
   },
   {
@@ -1007,10 +1007,10 @@
    "product_line": "ウォータリーティントリップ",
    "color_code": "09",
    "color_name": "ピオニーピンク",
-   "hex": "#C85868",
+   "hex": "#CC979E",
    "texture": "sheer",
    "shimmer_intensity": null,
-   "hex_origin": "estimated",
+   "hex_origin": "swatch",
    "category": "lip"
   },
   {
