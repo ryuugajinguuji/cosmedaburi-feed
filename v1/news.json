@@ -1,7 +1,20 @@
 {
-  "version": 100,
-  "generated_at": "2026-08-12T01:43:39.699Z",
+  "version": 101,
+  "generated_at": "2026-08-12T05:12:00.342Z",
   "items": [
+    {
+      "id": "2026-08-12-unknown-d64f58a2",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-12",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000007.000025536.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/25536/7/25536-7-383bebd735d7d1e9cd13b4b04c5a545b-1254x1254.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "「気仙沼クリルオイル」、「三陸ルージュクリル」としてリニューアル発売",
+      "ogp_description": "株式会社KESEMO MARINUSのプレスリリース（2026年8月11日 14時03分）「気仙沼クリルオイル」、「三陸ルージュクリル」としてリニューアル発売"
+    },
     {
       "id": "2026-08-12-unknown-7ff96e57",
       "brand": "unknown",
