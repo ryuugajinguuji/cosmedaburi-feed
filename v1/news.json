@@ -1,7 +1,20 @@
 {
-  "version": 99,
-  "generated_at": "2026-08-10T05:03:00.510Z",
+  "version": 100,
+  "generated_at": "2026-08-12T01:43:39.699Z",
   "items": [
+    {
+      "id": "2026-08-12-unknown-7ff96e57",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-12",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000025.000102682.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/102682/25/102682-25-8872114587d99c5ef3caf12b3778f42f-720x570.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【ロージーローザ】8月12日発売！全ファンデーション※対応メイクパフ「マルチファンデパフ」に「とがり角」と「アーチ」のついた新形状が新登場！",
+      "ogp_description": "株式会社ロージーローザのプレスリリース（2026年8月12日 09時00分）【ロージーローザ】8月12日発売！全ファンデーション※対応メイクパフ「マルチファンデ…"
+    },
     {
       "id": "2026-08-10-unknown-a9f1de56",
       "brand": "unknown",
