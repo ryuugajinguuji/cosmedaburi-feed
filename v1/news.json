@@ -1,7 +1,20 @@
 {
-  "version": 101,
-  "generated_at": "2026-08-12T05:12:00.342Z",
+  "version": 102,
+  "generated_at": "2026-08-13T05:16:12.108Z",
   "items": [
+    {
+      "id": "2026-08-13-laneige-a7612ab0",
+      "brand": "LANEIGE",
+      "product_line": "",
+      "released_at": "2026-08-13",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000371.000021350.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/21350/371/21350-371-64114bbde07908cf0c790eabe0d807d6-1098x618.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "[LANEIGE] いつでもうるおいチャージ。みずみずしい洋ナシ香る限定フレーバー「洋ナシ」がリップグロウィバームから登場！",
+      "ogp_description": "アモーレパシフィックジャパン株式会社のプレスリリース（2026年8月13日 11時00分）[LANEIGE] いつでもうるおいチャージ。みずみずしい洋ナシ香る限…"
+    },
     {
       "id": "2026-08-12-unknown-d64f58a2",
       "brand": "unknown",
