@@ -1,7 +1,20 @@
 {
-  "version": 102,
-  "generated_at": "2026-08-13T05:16:12.108Z",
+  "version": 103,
+  "generated_at": "2026-08-14T01:43:56.949Z",
   "items": [
+    {
+      "id": "2026-08-14-unknown-05311a9a",
+      "brand": "セルヴォーク",
+      "product_line": "",
+      "released_at": "2026-08-14",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73292218/2026christmascoffret-nd-celvoke-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f7ad37ed-58c7-4a80-afe8-e70d6b854700.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【セルヴォーク×クリスマスコフレ2026】発売日＆予約日は？｜「ヘイップ」コラボのパレットやチャームコスメが登場",
+      "ogp_description": "「セルヴォーク」の2026年ホリデーコレクション情報をお届け！　注目ヘアアクセサリーブランド「ヘイップ（heyep）」とコラボし、モードで遊び心あふれる限定コス…"
+    },
     {
       "id": "2026-08-13-laneige-a7612ab0",
       "brand": "LANEIGE",
