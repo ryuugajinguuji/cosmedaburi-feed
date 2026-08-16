@@ -1,7 +1,20 @@
 {
-  "version": 103,
-  "generated_at": "2026-08-14T01:43:56.949Z",
+  "version": 104,
+  "generated_at": "2026-08-16T01:07:51.011Z",
   "items": [
+    {
+      "id": "2026-08-15-unknown-79fd5484",
+      "brand": "ジバンシイ",
+      "product_line": "",
+      "released_at": "2026-08-15",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73329417/2026christmascoffret-nd-givenchy-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/3849fec6-dccc-4546-85a7-505e27a1ff7b.jpg?crop=1.00xw:0.504xh;0,0.354xh&amp;resize=1200:*",
+      "ogp_title": "【ジバンシイ×クリスマスコフレ2026】発売日＆予約日は？｜真夜中の鐘とともに開く「ジバンシイポスト」がテーマ！",
+      "ogp_description": "「パルファム ジバンシイ」の2026年ホリデーコレクション情報をお届け！　ゴールドに煌めく特別なパッケージをまとった人気ハイライターの限定カラーや、宝石のような…"
+    },
     {
       "id": "2026-08-14-unknown-05311a9a",
       "brand": "セルヴォーク",
