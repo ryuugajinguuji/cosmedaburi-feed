@@ -1,7 +1,20 @@
 {
-  "version": 105,
-  "generated_at": "2026-08-17T01:05:54.054Z",
+  "version": 106,
+  "generated_at": "2026-08-17T04:09:57.819Z",
   "items": [
+    {
+      "id": "2026-08-17-unknown-5f5a80e1",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-17",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000119.000019175.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/19175/119/19175-119-0c03eb68af4beaa5759089e7a16824db-3840x2160.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【メイクアップフォーエバー】ピュアな発色が表情を彩る、アイコニックなシングルアイシャドウ「アーティスト ピュアカラー アイシャドウ」2026年9月1日(火)新発売！",
+      "ogp_description": "エル・シー・エス株式会社のプレスリリース（2026年8月17日 11時00分）【メイクアップフォーエバー】ピュアな発色が表情を彩る、アイコニックなシングルアイシ…"
+    },
     {
       "id": "2026-08-16-unknown-53a222f5",
       "brand": "ナチュラグラッセ",
