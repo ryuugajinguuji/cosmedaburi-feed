@@ -1,7 +1,46 @@
 {
-  "version": 106,
-  "generated_at": "2026-08-17T04:09:57.819Z",
+  "version": 107,
+  "generated_at": "2026-08-18T04:04:43.539Z",
   "items": [
+    {
+      "id": "2026-08-18-unknown-c79fc236",
+      "brand": "ディオール",
+      "product_line": "",
+      "released_at": "2026-08-18",
+      "source_url": "https://www.elle.com/jp/beauty/a73437751/rouge-dior-peter-interview-2608/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/716f614c-0aa7-4b8d-b59a-47bde378da8a.png?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "秋リップの本命はマット！ 「ディオール」ピーター・フィリップスが仕掛けるクリエイションの裏側",
+      "ogp_description": "今季勢いに乗るマットリップの楽しみ方からベースメイクの話まで。ビューティ界のキーパーソンの類まれな感性に接近。"
+    },
+    {
+      "id": "2026-08-18-unknown-314528f0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-18",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000643.000014810.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/14810/643/14810-643-178eaef764225cb82a7c33820ee23583-1765x1585.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "24時間¹美しさが続く新密着ブラー リップ登場",
+      "ogp_description": "パルファン・クリスチャン・ディオール・ジャポン株式会社のプレスリリース（2026年8月18日 10時24分）24時間¹美しさが続く新密着ブラー リップ登場"
+    },
+    {
+      "id": "2026-08-18-unknown-363c9736",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-18",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000105.000082086.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/82086/105/82086-105-3f550f8ab2fbfd628f398a42d7d9301c-2048x1100.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "まるで光をまとったような艶ロングまつげ！ピメルから初のお湯オフタイプ『うそつき艶伸びマスカラ』登場。",
+      "ogp_description": "株式会社pdcのプレスリリース（2026年8月18日 10時00分）まるで光をまとったような艶ロングまつげ！ピメルから初のお湯オフタイプ『うそつき艶伸びマスカラ…"
+    },
     {
       "id": "2026-08-17-unknown-5f5a80e1",
       "brand": "unknown",
