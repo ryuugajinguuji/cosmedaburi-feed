@@ -1,7 +1,20 @@
 {
-  "version": 107,
-  "generated_at": "2026-08-18T04:04:43.539Z",
+  "version": 108,
+  "generated_at": "2026-08-19T01:04:40.132Z",
   "items": [
+    {
+      "id": "2026-08-18-unknown-f94f3437",
+      "brand": "アルビオン",
+      "product_line": "",
+      "released_at": "2026-08-18",
+      "source_url": "https://cancam.jp/archives/1752480",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/08/19/th_flatop.jpg",
+      "ogp_title": "【アルビオン フラルネ・8/18発売】肌状態に合わせて選ぼう♡新作洗顔＆クレンジングをチェック",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：8月18日（火） ブランド：アルビオン 商品名：フラルネ コ"
+    },
     {
       "id": "2026-08-18-unknown-c79fc236",
       "brand": "ディオール",
