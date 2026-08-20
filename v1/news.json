@@ -1,7 +1,20 @@
 {
-  "version": 108,
-  "generated_at": "2026-08-19T01:04:40.132Z",
+  "version": 109,
+  "generated_at": "2026-08-20T04:05:41.490Z",
   "items": [
+    {
+      "id": "2026-08-19-unknown-8dc1ae20",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-19",
+      "source_url": "https://cancam.jp/archives/1752483",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/08/20/1ca6d2689707565bcc3aa5ee8852d46f.jpg",
+      "ogp_title": "【コスメデコルテ・8/21発売】コンシーラーパレットが進化＆時短で贅沢ケアがかなうクレンジング",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：8月21日（金） ブランド：コスメデコルテ 商品名：トーン＆"
+    },
     {
       "id": "2026-08-18-unknown-f94f3437",
       "brand": "アルビオン",
