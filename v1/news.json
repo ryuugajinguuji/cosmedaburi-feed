@@ -1,7 +1,20 @@
 {
-  "version": 109,
-  "generated_at": "2026-08-20T04:05:41.490Z",
+  "version": 110,
+  "generated_at": "2026-08-20T09:32:18.389Z",
   "items": [
+    {
+      "id": "2026-08-20-unknown-fb9e4d7a",
+      "brand": "ジバンシイ",
+      "product_line": "",
+      "released_at": "2026-08-20",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000425.000002434.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2434/425/2434-425-f73c5232521035a4dd5e7e831e2b4e9c-2000x2000.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【ジバンシイ】新しい時代を告げるクチュールアイコン『ルージュ・ジバンシイ』から、新たに2製品が登場！",
+      "ogp_description": "LVMHフレグランスブランズ株式会社のプレスリリース（2026年8月20日 15時00分）【ジバンシイ】新しい時代を告げるクチュールアイコン『ルージュ・ジバンシ…"
+    },
     {
       "id": "2026-08-19-unknown-8dc1ae20",
       "brand": "unknown",
