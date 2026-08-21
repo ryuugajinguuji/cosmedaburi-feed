@@ -1,7 +1,20 @@
 {
-  "version": 111,
-  "generated_at": "2026-08-21T01:08:02.407Z",
+  "version": 112,
+  "generated_at": "2026-08-21T04:07:46.670Z",
   "items": [
+    {
+      "id": "2026-08-21-unknown-4ce12afd",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000107.000155846.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/155846/107/155846-107-e57226883aab9a954dc7012b29acdbda-2027x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "SHEGLAMから、ひんやりぷるんとした新感覚アイシャドウ「Lunar Jelly Frosty Eyeshadow Stick」が8月20日（木）より発売開始！",
+      "ogp_description": "SHEIN JAPAN 株式会社のプレスリリース（2026年8月21日 11時00分）SHEGLAMから、ひんやりぷるんとした新感覚アイシャドウ「Lunar J…"
+    },
     {
       "id": "2026-08-21-kanebo-2e8395e5",
       "brand": "KANEBO",
