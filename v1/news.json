@@ -1,7 +1,33 @@
 {
-  "version": 110,
-  "generated_at": "2026-08-20T09:32:18.389Z",
+  "version": 111,
+  "generated_at": "2026-08-21T01:08:02.407Z",
   "items": [
+    {
+      "id": "2026-08-21-kanebo-2e8395e5",
+      "brand": "KANEBO",
+      "product_line": "",
+      "released_at": "2026-08-21",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73349746/2026christmascoffret-nd-kanebo-2608-hns/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/476c841b-91bc-4fe0-8aec-13d4349f8ac5.jpg?crop=1.00xw:0.705xh;0,0.183xh&amp;resize=1200:*",
+      "ogp_title": "【KANEBO×クリスマスコフレ2026】発売日＆予約日は？｜人気リップの限定色や、お得なキット類に要注目",
+      "ogp_description": "「KANEBO」の2026年ホリデーコレクション情報を全部見せ！　あの“バズリップ”をはじめとする限定コスメや、人気スキンケアにトライできるコフレが登場。"
+    },
+    {
+      "id": "2026-08-21-unknown-002c9a00",
+      "brand": "ルナソル",
+      "product_line": "",
+      "released_at": "2026-08-21",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73423367/2026christmascoffret-nd-lunasol-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/94caf02e-bbeb-4c76-9eba-a42a81c803e4.jpg?crop=1.00xw:0.504xh;0,0.245xh&amp;resize=1200:*",
+      "ogp_title": "【ルナソル×クリスマスコフレ2026】発売日＆予約日は？｜動くたびに色とりどりの光がゆらめくホリデーコレクション",
+      "ogp_description": "「ルナソル」の2026年ホリデーコレクション情報をお届け！　角度によって多彩に輝く限定アイカラーパレットやチーク、リップをチェック。"
+    },
     {
       "id": "2026-08-20-unknown-fb9e4d7a",
       "brand": "ジバンシイ",
