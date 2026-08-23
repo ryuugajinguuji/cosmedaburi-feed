@@ -1,7 +1,20 @@
 {
-  "version": 112,
-  "generated_at": "2026-08-21T04:07:46.670Z",
+  "version": 113,
+  "generated_at": "2026-08-23T01:14:09.545Z",
   "items": [
+    {
+      "id": "2026-08-22-nars-c1d2163e",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-08-22",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73410769/2026christmascoffret-nd-nars-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/04bd3b1d-bbaf-49e6-912e-f3ae202a0ca8.jpg?crop=1.00xw:0.786xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【NARS（ナーズ）×クリスマスコフレ2026】発売日＆予約日は？｜アルプスをテーマにした幻想的なコレクション",
+      "ogp_description": "「ナーズ」の2026年ホリデーコレクション情報をお届け！　雪のような澄んだ輝きとゲレンデで火照ったような血色感を叶える限定アイテムが勢揃い。"
+    },
     {
       "id": "2026-08-21-unknown-4ce12afd",
       "brand": "unknown",
