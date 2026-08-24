@@ -1,7 +1,33 @@
 {
-  "version": 113,
-  "generated_at": "2026-08-23T01:14:09.545Z",
+  "version": 114,
+  "generated_at": "2026-08-24T01:07:00.955Z",
   "items": [
+    {
+      "id": "2026-08-24-unknown-89dc86f5",
+      "brand": "シュウ ウエムラ",
+      "product_line": "",
+      "released_at": "2026-08-24",
+      "source_url": "https://woman.mynavi.jp/article/260823-2_12000673/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/08/R0020057.jpg",
+      "ogp_title": "自己流メイク、いつまで続ける？　平日は日焼け止め＆リップだけだったOLがシュウ ウエムラの限定サービスで変身！",
+      "ogp_description": "マイナビウーマンでは読者パートナーと一緒に、ワークショップを開催したり、話題のスポットに行ったり、エンタメ最新作を楽しんだり……毎日を豊かにするヒントを求めて日…"
+    },
+    {
+      "id": "2026-08-23-ysl-12a757b8",
+      "brand": "YSL",
+      "product_line": "",
+      "released_at": "2026-08-23",
+      "source_url": "https://cancam.jp/archives/1752795",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/08/24/th_ysl_dmi_skfc_ps_youth-reload-26_digital-still-life_trio_serumcreamessenceingredient_landscape_1920x1080px_rgb.jpg",
+      "ogp_title": "【YSL BEAUTY・9/4発売】「ピュアショット」よりメイク映えに着目した新シリーズが誕生！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：8月26日（水）先行発売（9月4日（金）全国発売） ブランド"
+    },
     {
       "id": "2026-08-22-nars-c1d2163e",
       "brand": "NARS",
