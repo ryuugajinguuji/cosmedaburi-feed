@@ -1,7 +1,20 @@
 {
-  "version": 115,
-  "generated_at": "2026-08-24T04:12:22.770Z",
+  "version": 116,
+  "generated_at": "2026-08-25T01:06:03.716Z",
   "items": [
+    {
+      "id": "2026-08-24-unknown-d42f3893",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-24",
+      "source_url": "https://oggi.jp/7919740",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/08/260818jm11.jpg",
+      "ogp_title": "ジョンマスターオーガニックが「mojojojo」とコラボ、リップカーム・リップカームホルダー・キーホルダー・ポーチのセットをオンライン限定発売 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-24-unknown-f0814d11",
       "brand": "無印良品",
