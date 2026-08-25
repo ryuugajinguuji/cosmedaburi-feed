@@ -1,7 +1,20 @@
 {
-  "version": 116,
-  "generated_at": "2026-08-25T01:06:03.716Z",
+  "version": 117,
+  "generated_at": "2026-08-25T04:06:40.354Z",
   "items": [
+    {
+      "id": "2026-08-25-unknown-c87bdca2",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-25",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000198.000069643.html",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/69643/198/69643-198-6d629b3c6d3bf5b90c5211ca1cdd44c1-3900x3900.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "美しさに、今というニュアンスを。FEMMUE〈ファミュ〉のル・ルージュからクラシックカラーにモダンな一滴を添えた、2つの新色が登場。",
+      "ogp_description": "株式会社アリエルトレーディングのプレスリリース（2026年8月25日 10時00分）美しさに、今というニュアンスを。FEMMUE〈ファミュ〉のル・ルージュからク…"
+    },
     {
       "id": "2026-08-24-unknown-d42f3893",
       "brand": "unknown",
