@@ -1,7 +1,20 @@
 {
-  "version": 117,
-  "generated_at": "2026-08-25T04:06:40.354Z",
+  "version": 118,
+  "generated_at": "2026-08-25T09:33:10.232Z",
   "items": [
+    {
+      "id": "2026-08-25-unknown-57cd2ae6",
+      "brand": "花王",
+      "product_line": "",
+      "released_at": "2026-08-25",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000677.000070897.html",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/70897/677/70897-677-77432440817e85cf1404a3fe9887ef26-2000x1567.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "花王、北欧で「Curél（キュレル）」を発売　欧州における化粧品事業の成長を加速",
+      "ogp_description": "花王株式会社のプレスリリース（2026年8月25日 15時10分）花王、北欧で「Curél（キュレル）」を発売　欧州における化粧品事業の成長を加速"
+    },
     {
       "id": "2026-08-25-unknown-c87bdca2",
       "brand": "unknown",
@@ -53,6 +66,19 @@
       "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/08/R0020057.jpg",
       "ogp_title": "自己流メイク、いつまで続ける？　平日は日焼け止め＆リップだけだったOLがシュウ ウエムラの限定サービスで変身！",
       "ogp_description": "マイナビウーマンでは読者パートナーと一緒に、ワークショップを開催したり、話題のスポットに行ったり、エンタメ最新作を楽しんだり……毎日を豊かにするヒントを求めて日…"
+    },
+    {
+      "id": "2026-08-23-unknown-aa5afee3",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-08-23",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/a73168360/2026christmascoffret-nd-allbrands-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f416759f-9302-4eee-9e1a-f32b9aee6a3b.jpg?crop=1xw:1xh;center,top&amp;resize=1200:*",
+      "ogp_title": "【2026年クリスマスコフレ】人気ブランドのホリデーコレクション限定コスメ・コフレ一覧",
+      "ogp_description": "「ジバンシイ」「ランコム」「SHISEIDO」「M･A･C」「ポール ＆ ジョー ボーテ」「KANEBO」「ルナソル」「ナーズ」など、人気デパコスの2026年ホ…"
     },
     {
       "id": "2026-08-23-ysl-12a757b8",
