@@ -1,7 +1,20 @@
 {
-  "version": 118,
-  "generated_at": "2026-08-25T09:33:10.232Z",
+  "version": 119,
+  "generated_at": "2026-08-26T01:08:02.409Z",
   "items": [
+    {
+      "id": "2026-08-25-unknown-7eced851",
+      "brand": "エスティ ローダー",
+      "product_line": "",
+      "released_at": "2026-08-25",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73469208/2026christmascoffret-nd-esteelauder-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f7c7f689-efc9-4e16-90c0-574f41364e76.jpg?crop=1.00xw:0.412xh;0,0.316xh&amp;resize=1200:*",
+      "ogp_title": "【エスティ ローダー×クリスマスコフレ2026】発売日＆予約日は？｜豪華11点入りのポーチ付きキットが登場",
+      "ogp_description": "「エスティ ローダー」の2026年ホリデーコレクション第1弾情報をお届け！　 スキンケアから限定コスメまでがインする、贅沢なコフレに要注目。"
+    },
     {
       "id": "2026-08-25-unknown-57cd2ae6",
       "brand": "花王",
