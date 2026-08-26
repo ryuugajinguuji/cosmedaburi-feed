@@ -1,7 +1,20 @@
 {
-  "version": 120,
-  "generated_at": "2026-08-26T04:08:39.112Z",
+  "version": 121,
+  "generated_at": "2026-08-26T09:39:23.565Z",
   "items": [
+    {
+      "id": "2026-08-26-osaji-f62a3353",
+      "brand": "OSAJI",
+      "product_line": "",
+      "released_at": "2026-08-26",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73527910/2026christmascoffret-nd-osaji-2608-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/0ecd9607-04e3-47d0-a2c2-a7dbc974fe36.jpg?crop=1.00xw:0.753xh;0,0.178xh&amp;resize=1200:*",
+      "ogp_title": "【OSAJI（オサジ）×クリスマスコフレ2026】発売日＆予約日は？｜ミナ ペルホネンと贈る、北欧の森の香り",
+      "ogp_description": "「OSAJI（オサジ）」の2026年ホリデーコレクション情報をお届け！　「ミナ ペルホネン」とコラボした、心と肌をいたわるスキンケアとハンドケアの限定キットが登…"
+    },
     {
       "id": "2026-08-26-unknown-059ea6a6",
       "brand": "unknown",
