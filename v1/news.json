@@ -1,7 +1,20 @@
 {
-  "version": 119,
-  "generated_at": "2026-08-26T01:08:02.409Z",
+  "version": 120,
+  "generated_at": "2026-08-26T04:08:39.112Z",
   "items": [
+    {
+      "id": "2026-08-26-unknown-059ea6a6",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-26",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000056.000009645.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/9645/56/9645-56-dfd4a93316086145cc110fa1aadc9d3f-2219x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "＜9/3発売＞トリック級のぷっくり感！2in1「パウダー×コンシーラー」の涙袋アイテムが新登場！",
+      "ogp_description": "クオレ株式会社のプレスリリース（2026年8月26日 10時30分）＜9/3発売＞トリック級のぷっくり感！2in1「パウダー×コンシーラー」の涙袋アイテムが新登…"
+    },
     {
       "id": "2026-08-25-unknown-7eced851",
       "brand": "エスティ ローダー",
