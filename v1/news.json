@@ -1,7 +1,20 @@
 {
-  "version": 121,
-  "generated_at": "2026-08-26T09:39:23.565Z",
+  "version": 122,
+  "generated_at": "2026-08-27T07:15:14.089Z",
   "items": [
+    {
+      "id": "2026-08-26-unknown-0910cd42",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-26",
+      "source_url": "https://oggi.jp/7923428",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/08/oggi2610main.jpg",
+      "ogp_title": "きれいめシンプル派、「ベーシックの更新」は絶妙ニュアンスカラーにお任せ♡【Oggi10月号】永遠の定番配色をブラッシュアップ！ | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-26-osaji-f62a3353",
       "brand": "OSAJI",
