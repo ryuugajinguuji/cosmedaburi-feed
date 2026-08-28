@@ -1,7 +1,20 @@
 {
-  "version": 123,
-  "generated_at": "2026-08-28T09:28:32.687Z",
+  "version": 124,
+  "generated_at": "2026-08-28T20:42:21.065Z",
   "items": [
+    {
+      "id": "2026-08-28-nars-f620da3f",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-08-28",
+      "source_url": "https://oggi.jp/7923494",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/08/cosme-1.jpg",
+      "ogp_title": "働く私に、リフレッシュと透明感を♡「オフィシーヌ・ユニヴェルセル・ビュリー」のソープ＆「NARS」のチーク〈働く私のmyコスメ#18〉 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-28-nars-ac15f565",
       "brand": "NARS",
