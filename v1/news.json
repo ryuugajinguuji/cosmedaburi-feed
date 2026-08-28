@@ -1,7 +1,33 @@
 {
-  "version": 122,
-  "generated_at": "2026-08-27T07:15:14.089Z",
+  "version": 123,
+  "generated_at": "2026-08-28T09:28:32.687Z",
   "items": [
+    {
+      "id": "2026-08-28-nars-ac15f565",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-08-28",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000488.000022808.html",
+      "note": "",
+      "category": "eye",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/22808/488/22808-488-0e0155e74ef415e887ec13e2be636de2-2025x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "NARSの新たなノアールが紡ぐ、誰も真似できない眼差し。一本一本に圧倒的な立体感を宿し、周囲の視線を惹きつける「NARS ノートリアス マスカラ」が誕生。＜本日予約開始＞",
+      "ogp_description": "資生堂ジャパン株式会社のプレスリリース（2026年8月28日 17時50分）NARSの新たなノアールが紡ぐ、誰も真似できない眼差し。一本一本に圧倒的な立体感を宿…"
+    },
+    {
+      "id": "2026-08-27-unknown-9be7edea",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-27",
+      "source_url": "https://cancam.jp/archives/1752806",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/08/28/cmtop.jpg",
+      "ogp_title": "【キャンメイク・8月下旬発売】ナチュラル盛れの立役者♡新作下まぶた用コスメ＆人気マスカラ新色が登場",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：8月下旬 ブランド：キャンメイク 商品名：エアリーエクステン"
+    },
     {
       "id": "2026-08-26-unknown-0910cd42",
       "brand": "unknown",
