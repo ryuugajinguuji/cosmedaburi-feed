@@ -1,7 +1,20 @@
 {
-  "version": 124,
-  "generated_at": "2026-08-28T20:42:21.065Z",
+  "version": 125,
+  "generated_at": "2026-08-30T03:35:10.693Z",
   "items": [
+    {
+      "id": "2026-08-29-unknown-55250f9d",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-29",
+      "source_url": "https://cancam.jp/archives/1756595",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/08/30/8a4ed0d71b73516483c574e092834175.jpg",
+      "ogp_title": "【エルメス・8/24&9/1一部限定発売】待望のリップマスク＆限定リップコレクションが登場",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー ©Scheltens & Abbenes 発売日：8月24日"
+    },
     {
       "id": "2026-08-28-nars-f620da3f",
       "brand": "NARS",
