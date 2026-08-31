@@ -1,7 +1,20 @@
 {
-  "version": 125,
-  "generated_at": "2026-08-30T03:35:10.693Z",
+  "version": 126,
+  "generated_at": "2026-08-31T03:34:35.703Z",
   "items": [
+    {
+      "id": "2026-08-31-unknown-563085e6",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-08-31",
+      "source_url": "https://oggi.jp/7925549",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/08/260825chatop1.jpg",
+      "ogp_title": "シャネル「プルミエール」チェーンブレスレットにゴールドカラーのレザーを通した限定モデルを発売 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-29-unknown-55250f9d",
       "brand": "unknown",
