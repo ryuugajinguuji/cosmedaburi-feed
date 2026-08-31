@@ -1,7 +1,46 @@
 {
-  "version": 126,
-  "generated_at": "2026-08-31T03:34:35.703Z",
+  "version": 127,
+  "generated_at": "2026-08-31T16:43:02.781Z",
   "items": [
+    {
+      "id": "2026-08-31-unknown-9489ba03",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-08-31",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000327.000012459.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/327/12459-327-aab6812f000b93d78674d8cb277a58a4-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【ランコム】マットなのに軽やか、うるおい長続き。新ホイップ ブラー リップ『イドル リップ カドルブラー』が誕生！2026年9月4日（金）全国発売。",
+      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年8月31日 12時32分）【ランコム】マットなのに軽やか、うるおい長続き。新ホイップ ブラー リップ『イドル リ…"
+    },
+    {
+      "id": "2026-08-31-unknown-4ea42bb7",
+      "brand": "アルビオン",
+      "product_line": "",
+      "released_at": "2026-08-31",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73506485/2026christmascoffret-nd-albion-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/89ed363f-6041-42e5-ae0d-040a88edf98f.jpg?crop=0.902xw:0.637xh;0.0391xw,0.140xh&amp;resize=1200:*",
+      "ogp_title": "【アルビオン×クリスマスコフレ2026】発売日＆予約日は？｜優美なロージィメイクが叶うコフレ",
+      "ogp_description": "「アルビオン」の2026年ホリデーコレクション情報をお届け！　コフレだけの限定色も入った豪華なメイクアップキットが登場。"
+    },
+    {
+      "id": "2026-08-31-unknown-c184a40f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-08-31",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73494129/2026christmascoffret-nd-clarins-2609-hns/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/b27852cd-def6-4570-a844-dde9711c6e7d.jpg?crop=1.00xw:0.502xh;0,0.283xh&amp;resize=1200:*",
+      "ogp_title": "【クラランス×クリスマスコフレ2026】発売日＆予約日は？｜ツイードポーチ付きコフレやリップオイルの限定色も！",
+      "ogp_description": "「クラランス」の2026年ホリデーコレクション第1弾の情報をお届け！　名品「ダブル セーラム」シリーズが、ツイードのポーチ付きセットになってお目見え。"
+    },
     {
       "id": "2026-08-31-unknown-563085e6",
       "brand": "シャネル",
