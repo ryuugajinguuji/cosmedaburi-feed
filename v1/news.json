@@ -1,7 +1,20 @@
 {
-  "version": 127,
-  "generated_at": "2026-08-31T16:43:02.781Z",
+  "version": 128,
+  "generated_at": "2026-09-01T08:48:47.761Z",
   "items": [
+    {
+      "id": "2026-09-01-unknown-601baf49",
+      "brand": "ゲラン",
+      "product_line": "",
+      "released_at": "2026-09-01",
+      "source_url": "https://woman.mynavi.jp/article/260901-4_12000673/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/001.jpg",
+      "ogp_title": "心震える香りの体験。ゲラン伝説の名香「ルール ブルー」を再解釈した新香水・限定リップケース登場",
+      "ogp_description": null
+    },
     {
       "id": "2026-08-31-unknown-9489ba03",
       "brand": "ランコム",
