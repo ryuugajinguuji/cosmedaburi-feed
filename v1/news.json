@@ -1,7 +1,20 @@
 {
-  "version": 129,
-  "generated_at": "2026-09-02T08:01:35.407Z",
+  "version": 130,
+  "generated_at": "2026-09-02T13:14:26.301Z",
   "items": [
+    {
+      "id": "2026-09-02-unknown-7795db1f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000232.000024046.html",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24046/232/24046-232-967419a84af53ffdaaa2e15353bfa5a9-1920x860.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【MARK & LONA × ASICS】ブラッシュカモが目を惹く「GEL-KAYANO ACE 3 – DISRUPT FIELD」誕生。",
+      "ogp_description": "株式会社キューブのプレスリリース（2026年9月2日 17時00分）【MARK & LONA × ASICS】ブラッシュカモが目を惹く「GEL-KAYANO A…"
+    },
     {
       "id": "2026-09-02-unknown-65f9a6b8",
       "brand": "unknown",
