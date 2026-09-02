@@ -1,7 +1,20 @@
 {
-  "version": 128,
-  "generated_at": "2026-09-01T08:48:47.761Z",
+  "version": 129,
+  "generated_at": "2026-09-02T08:01:35.407Z",
   "items": [
+    {
+      "id": "2026-09-02-unknown-65f9a6b8",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000013.000183614.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/183614/13/183614-13-6fdbc64fa0d067a80529d8b63616c480-1600x1600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "メンズ眉毛サロンkegirai、年間15万人以上の施術実績から生まれたアイブロウ専用ワックス「EMIA（エミア）」を発売",
+      "ogp_description": "K2株式会社のプレスリリース（2026年8月31日 07時11分）メンズ眉毛サロンkegirai、年間15万人以上の施術実績から生まれたアイブロウ専用ワックス「…"
+    },
     {
       "id": "2026-09-01-unknown-601baf49",
       "brand": "ゲラン",
