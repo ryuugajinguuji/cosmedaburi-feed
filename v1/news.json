@@ -1,7 +1,20 @@
 {
-  "version": 130,
-  "generated_at": "2026-09-02T13:14:26.301Z",
+  "version": 131,
+  "generated_at": "2026-09-03T02:54:03.402Z",
   "items": [
+    {
+      "id": "2026-09-02-rmk-57ac118c",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-09-02",
+      "source_url": "https://cancam.jp/archives/1756613",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/03/rmktop.jpg",
+      "ogp_title": "【RMK・9/4発売】秋の新リップはデイリーマットの最適解♡炭酸泡リップ美容液も新しい！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：9月4日（金） ブランド：RMK 商品名：ルミマット リップ"
+    },
     {
       "id": "2026-09-02-unknown-7795db1f",
       "brand": "unknown",
