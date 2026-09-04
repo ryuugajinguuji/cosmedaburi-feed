@@ -1,7 +1,61 @@
 {
-  "version": 131,
-  "generated_at": "2026-09-03T02:54:03.402Z",
+  "version": 132,
+  "generated_at": "2026-09-04T02:52:52.006Z",
   "items": [
+    {
+      "id": "2026-09-04-unknown-54edb4e5",
+      "brand": "アディクション",
+      "product_line": "",
+      "released_at": "2026-09-04",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73541585/2026christmascoffret-nd-addiction-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/523105ea-c88f-4394-adf7-49ab1eca9014.jpg?crop=0.873xw:0.655xh;0.0440xw,0.230xh&amp;resize=1200:*",
+      "ogp_title": "【アディクション×クリスマスコフレ2026】発売日＆予約日は？｜TOGAとのドリームコラボに注目！",
+      "ogp_description": "「アディクション」の2026年ホリデーコレクション情報をお届け！　「トーガ アーカイブス」とのコラボが実現した第1弾と、冬の煌めきを表現した第2弾がラインアップ…"
+    },
+    {
+      "id": "2026-09-04-unknown-7f09597e",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-04",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000438.000076505.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/76505/438/76505-438-6611981cff33e7791084a253f9fc1641-3200x1600.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "“リップノリ”に着目した「スキンバリアＣリップエッセンス」が日本上陸　「メイク前乳液」のOngredientsが作った「メイク前リップケア」",
+      "ogp_description": "株式会社韓国高麗人蔘社のプレスリリース（2026年9月4日 11時00分）“リップノリ”に着目した「スキンバリアＣリップエッセンス」が日本上陸　「メイク前乳液」…"
+    },
+    {
+      "id": "2026-09-03-unknown-a2284d1a",
+      "brand": "イヴ・サンローラン",
+      "product_line": "",
+      "hex": "800020",
+      "hex_origin": "estimated",
+      "released_at": "2026-09-03",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73540639/2026christmascoffret-nd-yslb-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/65b387b3-a23e-4ffe-8d30-f566b29e8ce3.jpg?crop=1.00xw:0.893xh;0,0.0636xh&amp;resize=1200:*",
+      "ogp_title": "【イヴ・サンローラン×クリスマスコフレ2026】発売日＆予約日は？｜バーガンディーとゴールドが煌めく世界",
+      "ogp_description": "「イヴ・サンローラン（YSL BEAUTY）」の2026年ホリデーコレクション情報を全部見せ！　伝説のパーティをイメージした限定コスメやアドベントカレンダー、豪…"
+    },
+    {
+      "id": "2026-09-03-unknown-77cc8763",
+      "brand": "コスメデコルテ",
+      "product_line": "",
+      "released_at": "2026-09-03",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73510221/2026christmascoffret-nd-decorte-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/147e65ff-aeef-4535-89af-78dbfbc2a73d.jpg?crop=1.00xw:0.708xh;0,0.0736xh&amp;resize=1200:*",
+      "ogp_title": "【コスメデコルテ×クリスマスコフレ2026】発売日＆予約日は？｜幻想的な不思議の国に誘う、特別なコレクション",
+      "ogp_description": "「コスメデコルテ（DECORTÉ）」の2026年ホリデーコレクション情報をお届け！　「Alice in DECORTÉ Wonderland」をテーマにしたアド…"
+    },
     {
       "id": "2026-09-02-rmk-57ac118c",
       "brand": "RMK",
