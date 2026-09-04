@@ -1,7 +1,20 @@
 {
-  "version": 132,
-  "generated_at": "2026-09-04T02:52:52.006Z",
+  "version": 133,
+  "generated_at": "2026-09-04T13:09:36.912Z",
   "items": [
+    {
+      "id": "2026-09-04-unknown-47a6dfb0",
+      "brand": "セルヴォーク",
+      "product_line": "",
+      "released_at": "2026-09-04",
+      "source_url": "https://oggi.jp/7927543",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/08/starwars.jpg",
+      "ogp_title": "思わずジャケ買い！セルヴォークと「スター・ウォーズ」がコラボした限定コスメ | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-04-unknown-54edb4e5",
       "brand": "アディクション",
