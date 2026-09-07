@@ -1,7 +1,20 @@
 {
-  "version": 133,
-  "generated_at": "2026-09-04T13:09:36.912Z",
+  "version": 134,
+  "generated_at": "2026-09-07T08:31:27.743Z",
   "items": [
+    {
+      "id": "2026-09-07-unknown-ae90522b",
+      "brand": "ランコム",
+      "product_line": "",
+      "released_at": "2026-09-07",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000330.000012459.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/330/12459-330-05fb56462d245f1e9fa77b9d6f86b01d-2393x1346.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【ランコム】大人気グロス『ジューシー チューブ』が好評につき販路拡大！全国のセミセルフ・コスメセレクトショップ計55店舗にて順次展開スタート",
+      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年9月7日 13時42分）【ランコム】大人気グロス『ジューシー チューブ』が好評につき販路拡大！全国のセミセルフ・…"
+    },
     {
       "id": "2026-09-04-unknown-47a6dfb0",
       "brand": "セルヴォーク",
