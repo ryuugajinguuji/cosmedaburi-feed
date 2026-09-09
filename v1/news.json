@@ -1,7 +1,46 @@
 {
-  "version": 134,
-  "generated_at": "2026-09-07T08:31:27.743Z",
+  "version": 135,
+  "generated_at": "2026-09-09T03:02:18.659Z",
   "items": [
+    {
+      "id": "2026-09-09-dhc-906b80b6",
+      "brand": "DHC",
+      "product_line": "",
+      "released_at": "2026-09-09",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000498.000030413.html",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/30413/498/30413-498-3c10356efbc96f185b9b7d1e4062d55a-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "「DHC ディープ クレンジング オイル ブーストケア」がベストコスメ等13冠！",
+      "ogp_description": "株式会社ディーエイチシーのプレスリリース（2026年9月9日 10時00分）「DHC ディープ クレンジング オイル ブーストケア」がベストコスメ等13冠！"
+    },
+    {
+      "id": "2026-09-09-unknown-1a60b70f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-09",
+      "source_url": "https://woman.mynavi.jp/article/260909-2_12300425-3/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/HR_index.jpg",
+      "ogp_title": "モダンな秋カラーで唇にシーズンムードを。Her lip to BEAUTYの美容成分90％以上配合リップに新色が登場",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-09-08-three-32e9dd4f",
+      "brand": "THREE",
+      "product_line": "",
+      "released_at": "2026-09-08",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73589714/2026christmascoffret-nd-three-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/047b199e-c3ff-404d-9ad4-5e25b75e6375.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【THREE（スリー）×クリスマスコフレ2026】発売日＆予約日は？｜冬の煌めきと透明感に満ちあふれたホリデーコレクション",
+      "ogp_description": "「THREE（スリー）」の2026年ホリデーコレクション情報をお届け！　人気ハイライター＆チークベースの限定色や、ホリデーだけの単色アイシャドウ、美容液成分配合…"
+    },
     {
       "id": "2026-09-07-unknown-ae90522b",
       "brand": "ランコム",
