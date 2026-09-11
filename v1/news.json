@@ -1,7 +1,20 @@
 {
-  "version": 135,
-  "generated_at": "2026-09-09T03:02:18.659Z",
+  "version": 136,
+  "generated_at": "2026-09-11T02:57:58.769Z",
   "items": [
+    {
+      "id": "2026-09-11-osaji-bbc0cb22",
+      "brand": "OSAJI",
+      "product_line": "",
+      "released_at": "2026-09-11",
+      "source_url": "https://woman.mynavi.jp/article/260911-2_12000673/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/002-7.jpg",
+      "ogp_title": "年齢を重ねることすら楽しみになる。OSAJIのエイジングケアがリニューアル！　新作「hisn」に込められた思い",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-09-dhc-906b80b6",
       "brand": "DHC",
