@@ -1,7 +1,20 @@
 {
-  "version": 136,
-  "generated_at": "2026-09-11T02:57:58.769Z",
+  "version": 137,
+  "generated_at": "2026-09-11T13:14:59.576Z",
   "items": [
+    {
+      "id": "2026-09-11-unknown-85ceb103",
+      "brand": "無印良品",
+      "product_line": "",
+      "released_at": "2026-09-11",
+      "source_url": "https://oggi.jp/7932771",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/09/asano2.jpg",
+      "ogp_title": "血色アップにかかせない！M・A・Cの「おもちチーク」と無印良品の「万能リップ」 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-11-osaji-bbc0cb22",
       "brand": "OSAJI",
