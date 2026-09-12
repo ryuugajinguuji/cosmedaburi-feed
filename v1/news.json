@@ -1,7 +1,20 @@
 {
-  "version": 137,
-  "generated_at": "2026-09-11T13:14:59.576Z",
+  "version": 138,
+  "generated_at": "2026-09-12T03:04:56.479Z",
   "items": [
+    {
+      "id": "2026-09-11-ysl-9e236c13",
+      "brand": "YSL",
+      "product_line": "",
+      "released_at": "2026-09-11",
+      "source_url": "https://cancam.jp/archives/1758447",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/12/ysltop.jpg",
+      "ogp_title": "【YSL BEAUTY・9/18限定発売】パリのカフェをイメージしたカフェカラーコレクションで旬顔に♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：9月18日（金） ブランド：YSL BEAUTY 商品名：ク"
+    },
     {
       "id": "2026-09-11-unknown-85ceb103",
       "brand": "無印良品",
