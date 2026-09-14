@@ -1,7 +1,46 @@
 {
-  "version": 138,
-  "generated_at": "2026-09-12T03:04:56.479Z",
+  "version": 139,
+  "generated_at": "2026-09-14T03:19:44.812Z",
   "items": [
+    {
+      "id": "2026-09-14-unknown-973375f1",
+      "brand": "ソフィーナ",
+      "product_line": "",
+      "released_at": "2026-09-14",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000304.000072864.html",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/304/72864-304-a5594aef6485007f991af48c7fdcdad6-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "ベースメイクの仕上げに ほおにひと塗り プリマヴィスタから初のチークカラー登場！ほのつや血色感で、夕方まで明るい顔印象つづく「ソフィーナ　プリマヴィスタ　血色スキンフィクサー」",
+      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年9月14日 11時00分）ベースメイクの仕上げに ほおにひと塗り プリマヴィスタか…"
+    },
+    {
+      "id": "2026-09-14-unknown-ae1f86d4",
+      "brand": "クレ・ド・ポー",
+      "product_line": "",
+      "released_at": "2026-09-14",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73637236/2026christmascoffret-nd-cpb-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/d05d5586-2d99-4965-aa85-77dbfd88d32d.jpg?crop=0.984xw:0.984xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【クレ・ド・ポー ボーテ×クリスマスコフレ2026】発売日＆予約日は？｜“流れ星”がテーマの限定色＆限定パッケージ",
+      "ogp_description": "「クレ・ド・ポー ボーテ」の2026年ホリデーコレクション情報を全部見せ！　ユキコ ノリタケ氏とコラボした幻想的な限定アイテムが登場。"
+    },
+    {
+      "id": "2026-09-13-three-08b03851",
+      "brand": "THREE",
+      "product_line": "",
+      "released_at": "2026-09-13",
+      "source_url": "https://cancam.jp/archives/1758449",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/14/5a51a95988fff0d1d2ef44b994afa52f.jpg",
+      "ogp_title": "【THREE・9/25限定発売】「秋の月」をイメージした香りで忙しい毎日にひといきを♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：9月25日（金） ブランド：THREE 商品名：エッセンシャ"
+    },
     {
       "id": "2026-09-11-ysl-9e236c13",
       "brand": "YSL",
