@@ -1,7 +1,20 @@
 {
-  "version": 139,
-  "generated_at": "2026-09-14T03:19:44.812Z",
+  "version": 140,
+  "generated_at": "2026-09-14T15:39:53.151Z",
   "items": [
+    {
+      "id": "2026-09-14-unknown-858cc85b",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-14",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000390.000056376.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/56376/390/56376-390-d626eac6be7f956637d586253ba1d015-1200x800.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "SINN PURETÉからブランド初のカラーメイク「リップスタッチ オイルティント」を発売。レモンケーキの香りを纏う、とろ蜜オイルティント。",
+      "ogp_description": "株式会社JIMOSのプレスリリース（2026年9月14日 12時00分）SINN PURETÉからブランド初のカラーメイク「リップスタッチ オイルティント」を発…"
+    },
     {
       "id": "2026-09-14-unknown-973375f1",
       "brand": "ソフィーナ",
