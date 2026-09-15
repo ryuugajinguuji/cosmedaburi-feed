@@ -1,7 +1,20 @@
 {
-  "version": 140,
-  "generated_at": "2026-09-14T15:39:53.151Z",
+  "version": 141,
+  "generated_at": "2026-09-15T08:50:27.920Z",
   "items": [
+    {
+      "id": "2026-09-15-unknown-c4753c5c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-15",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000081.000090819.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/90819/81/90819-81-4b88d52a79a3236d3a20adce2d0c85e5-3840x2160.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "＜プラダ ビューティ＞体温でとろけて濃密な潤いで満たす、極上のジェリーバーム。「プラダ リップ ジェリー」登場。",
+      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年9月15日 10時00分）＜プラダ ビューティ＞体温でとろけて濃密な潤いで満たす、極上のジェリーバーム。「プラダ…"
+    },
     {
       "id": "2026-09-14-unknown-858cc85b",
       "brand": "unknown",
