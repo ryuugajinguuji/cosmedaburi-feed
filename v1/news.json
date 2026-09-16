@@ -1,7 +1,20 @@
 {
-  "version": 141,
-  "generated_at": "2026-09-15T08:50:27.920Z",
+  "version": 142,
+  "generated_at": "2026-09-16T08:44:19.152Z",
   "items": [
+    {
+      "id": "2026-09-16-unknown-a284d334",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-16",
+      "source_url": "https://woman.mynavi.jp/article/260916-2_12300425-4/",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/tipel01.jpg",
+      "ogp_title": "パンダ目、ちょい付きマスカラ……アイメイクの“よくある失敗”をピンポイントでお直しできるリムーバーが登場",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-15-unknown-c4753c5c",
       "brand": "unknown",
