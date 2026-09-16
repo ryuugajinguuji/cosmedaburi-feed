@@ -1,7 +1,20 @@
 {
-  "version": 142,
-  "generated_at": "2026-09-16T08:44:19.152Z",
+  "version": 143,
+  "generated_at": "2026-09-16T14:02:10.808Z",
   "items": [
+    {
+      "id": "2026-09-16-nars-478e3e30",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-09-16",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000500.000022808.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/22808/500/22808-500-eca7388d7685d9b28d7a070534054621-405x529.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "リップメイクに、妥協なき新基準を。緻密なラインからドラマチックな立体感まで、すべてを1本で叶えるマルチユースな「NARS リップライナー」が登場。",
+      "ogp_description": "資生堂ジャパン株式会社のプレスリリース（2026年9月14日 10時40分）リップメイクに、妥協なき新基準を。緻密なラインからドラマチックな立体感まで、すべてを…"
+    },
     {
       "id": "2026-09-16-unknown-a284d334",
       "brand": "unknown",
