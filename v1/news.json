@@ -1,7 +1,20 @@
 {
-  "version": 144,
-  "generated_at": "2026-09-17T03:23:27.296Z",
+  "version": 145,
+  "generated_at": "2026-09-17T08:47:56.266Z",
   "items": [
+    {
+      "id": "2026-09-17-unknown-693ecd56",
+      "brand": "無印良品",
+      "product_line": "",
+      "released_at": "2026-09-17",
+      "source_url": "https://woman.mynavi.jp/article/260917-2_12300425-2/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/muji_index.jpg",
+      "ogp_title": "【無印良品】秋冬に備える1枚。肌あたりとあたたかさにこだわった「あったか綿」シリーズ発売",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-17-suqqu-f8b87360",
       "brand": "SUQQU",
