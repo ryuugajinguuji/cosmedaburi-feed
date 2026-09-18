@@ -1,7 +1,20 @@
 {
-  "version": 145,
-  "generated_at": "2026-09-17T08:47:56.266Z",
+  "version": 146,
+  "generated_at": "2026-09-18T03:09:40.243Z",
   "items": [
+    {
+      "id": "2026-09-18-rmk-2fe969e0",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-09-18",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73684340/2026christmascoffret-nd-rmk-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/4548ffcf-c2f9-4aa9-8d32-0782a0c9999b.jpg?crop=1.00xw:0.716xh;0,0.126xh&amp;resize=1200:*",
+      "ogp_title": "【RMK×クリスマスコフレ2026】発売日＆予約日は？｜静けさと色気が交差する「After Hours Nude」がテーマ",
+      "ogp_description": "「RMK」の2026年ホリデーコレクション情報を全部見せ！　モーブやヌーディトーンの限定メイクアップキットや、人気のベースメイクコフレをいち早くチェックして。"
+    },
     {
       "id": "2026-09-17-unknown-693ecd56",
       "brand": "無印良品",
