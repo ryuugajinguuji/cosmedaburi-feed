@@ -1,7 +1,20 @@
 {
-  "version": 146,
-  "generated_at": "2026-09-18T03:09:40.243Z",
+  "version": 147,
+  "generated_at": "2026-09-19T03:05:40.629Z",
   "items": [
+    {
+      "id": "2026-09-18-unknown-db724491",
+      "brand": "ディオール",
+      "product_line": "",
+      "released_at": "2026-09-18",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73663345/2026christmascoffret-nd-dior-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/3dd77ac3-0a26-43a0-8d83-6c6f2f785b0e.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【ディオール×クリスマスコフレ2026】予約日＆発売日は？｜“メダリオン”が輝く幻想的なコスメに要注目",
+      "ogp_description": "「DIOR（ディオール）」の2026年ホリデー コレクション情報を一挙お届け！　“メダリオン”モチーフの美しすぎる限定コスメや、2in1リップの限定色など、今年…"
+    },
     {
       "id": "2026-09-18-rmk-2fe969e0",
       "brand": "RMK",
