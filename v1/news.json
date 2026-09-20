@@ -1,7 +1,33 @@
 {
-  "version": 147,
-  "generated_at": "2026-09-19T03:05:40.629Z",
+  "version": 148,
+  "generated_at": "2026-09-20T03:21:58.763Z",
   "items": [
+    {
+      "id": "2026-09-19-unknown-2611a07d",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-09-19",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73652636/2026christmascoffret-nd-chanel-2609-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f63c953a-b7c9-47b4-9039-4e48352375be.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【シャネル×クリスマスコフレ2026】発売日は？｜雪山バカンスに誘う魔法のようなコレクション",
+      "ogp_description": "「CHANEL（シャネル）」の2026年ホリデーコレクション情報をお届け！　ガブリエル シャネルが愛した土地サンモリッツを舞台にした、限定メイクアップコレクショ…"
+    },
+    {
+      "id": "2026-09-19-unknown-d4d1de00",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-19",
+      "source_url": "https://cancam.jp/archives/1758453",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/20/th_Prada_Beauty_26_Lip-Jelly_AOG_1_16x9_MULTIPLE_EANS.jpg",
+      "ogp_title": "【PRADA BEAUTY・10/2全国発売】新感覚のプラダ  リップ ジェリーはビジュも機能も大優勝♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：9月25日（金）先行発売、10月2日（金）全国発売 ブランド"
+    },
     {
       "id": "2026-09-18-unknown-db724491",
       "brand": "ディオール",
