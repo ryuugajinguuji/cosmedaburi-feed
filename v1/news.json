@@ -1,7 +1,20 @@
 {
-  "version": 148,
-  "generated_at": "2026-09-20T03:21:58.763Z",
+  "version": 149,
+  "generated_at": "2026-09-21T03:17:08.256Z",
   "items": [
+    {
+      "id": "2026-09-21-unknown-90a0eb8f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000067.000125370.html",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/125370/67/125370-67-189f93f55cab12f817b7b19bd0daa876-1080x1440.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "韓国コスメブランド「Heart Percent（ハートパーセント）」、人気の「ドットオンムードリップペンシル」ミニサイズを10月上旬より全国のドラッグストアにて発売！（一部店舗除く）",
+      "ogp_description": "株式会社月架世交易のプレスリリース（2026年9月20日 18時00分）韓国コスメブランド「Heart Percent（ハートパーセント）」、人気の「ドットオン…"
+    },
     {
       "id": "2026-09-19-unknown-2611a07d",
       "brand": "シャネル",
