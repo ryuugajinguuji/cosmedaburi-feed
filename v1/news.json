@@ -1,7 +1,20 @@
 {
-  "version": 152,
-  "generated_at": "2026-09-24T14:01:19.268Z",
+  "version": 153,
+  "generated_at": "2026-09-25T03:23:33.639Z",
   "items": [
+    {
+      "id": "2026-09-25-unknown-0a47c02f",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-25",
+      "source_url": "https://woman.mynavi.jp/article/260925-2_12000673-3/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/09/001-1-2.jpg",
+      "ogp_title": "お仕事メイクにも秋らしさを！ コスメオタクが選ぶ2026年秋の新作リップ14選",
+      "ogp_description": "「最近このブランドがアツい！」「今季の新作、何買った？」「がんばらずにきれいになりたい……」最新コスメやメイクトレンドを、コスメ大好きなライター・よしかわとマイ…"
+    },
     {
       "id": "2026-09-24-unknown-30666603",
       "brand": "キャンメイク",
@@ -2619,22 +2632,6 @@
       "released_at": "2026-05-27",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
       "note": "低彩度のヌーディベージュ。パール入りの水光ツヤティント。",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
-      "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのよ…",
-      "tier": 1
-    },
-    {
-      "id": "2026-0527-opera-glowtint-414",
-      "brand": "OPERA",
-      "product_line": "グロウリップティント",
-      "color_code": "414",
-      "color_name": "プラムドロップ",
-      "hex": "8A6B7A",
-      "hex_origin": "estimated",
-      "released_at": "2026-05-27",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000024212.html",
-      "note": "低彩度の夏プラム。シルバーラメがきらめく軽やかな水光ティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/24212/138/24212-138-b7527e22beb6bc407feee3f9b552e492-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのようなツヤ質感と、透けるミューテッドカラーを掛け合わせた“甘さ控えめキャンディリップ”。",
       "ogp_description": "イミュ株式会社のプレスリリース（2026年5月20日 11時00分）オペラ「グロウリップティント」から、夏限定色の低彩度なプラムとベージュを発売！キャンディのよ…",
