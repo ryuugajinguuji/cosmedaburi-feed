@@ -1,7 +1,22 @@
 {
-  "version": 154,
-  "generated_at": "2026-09-26T03:28:47.480Z",
+  "version": 155,
+  "generated_at": "2026-09-27T14:33:26.125Z",
   "items": [
+    {
+      "id": "2026-09-27-unknown-070b81b1",
+      "brand": "unknown",
+      "product_line": "",
+      "hex": "A0695A",
+      "hex_origin": "estimated",
+      "released_at": "2026-09-27",
+      "source_url": "https://cancam.jp/archives/1764745",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/24/bac5e54a-4f44-4eb6-bfe6-3799cd2ac2f6top.jpg",
+      "ogp_title": "【山下美月×広尾リップ】ココアブラウンのスフレリップで洒落顔へシフト！",
+      "ogp_description": "今注目の、ヘルシー美人な「日比谷線ガール」。この秋の日比谷線ガールは、ふんわりマットな唇で品よくアップデート！"
+    },
     {
       "id": "2026-09-25-ysl-99027033",
       "brand": "YSL",
@@ -2616,22 +2631,6 @@
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
       "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集…",
-      "tier": 1
-    },
-    {
-      "id": "2026-0531-canmake-muchipuru-08",
-      "brand": "CANMAKE",
-      "product_line": "むちぷるティント",
-      "color_code": "08",
-      "color_name": "サクラロール",
-      "hex": "EFA0B0",
-      "hex_origin": "estimated",
-      "released_at": "2026-05-31",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000250.000019685.html",
-      "note": "白みを含むやわらかなミルキーピンク。むっちりボリューム感の出るティント。",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/19685/250/19685-250-83525d6e9defadc9237c6bde8a44027a-3900x2925.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "【キャンメイク】高カバー×薄膜感！美肌仕上げリキッドコンシーラーが新登場！むっちりボリュームUP※×艶ティント「むちぷるティント」のやわらかミルキーな新色も2026年5月下旬より発売",
-      "ogp_description": "株式会社 井田ラボラトリーズのプレスリリース（2026年5月21日 10時00分）【キャンメイク】高カバー×薄膜感！美肌仕上げリキッドコンシーラーが新登場！むっ…",
       "tier": 1
     }
   ]
