@@ -1,7 +1,20 @@
 {
-  "version": 155,
-  "generated_at": "2026-09-27T14:33:26.125Z",
+  "version": 156,
+  "generated_at": "2026-09-28T17:21:22.714Z",
   "items": [
+    {
+      "id": "2026-09-28-unknown-f22d30ad",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-09-28",
+      "source_url": "https://cancam.jp/archives/1763780",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/18/DMA-3634512824800.jpg",
+      "ogp_title": "爆美女が沼る「水彩画チークって？」【韓国メイクの巨匠・ジョンセンムル先生のこだわりが満載】",
+      "ogp_description": "韓国メイク界の第一人者として、数々のスターのメイクを手がけるジョンセンムル先生が、CanCam読者を代表するi"
+    },
     {
       "id": "2026-09-27-unknown-070b81b1",
       "brand": "unknown",
@@ -2612,22 +2625,6 @@
       "released_at": "2026-06-06",
       "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
       "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
-      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集…",
-      "tier": 1
-    },
-    {
-      "id": "2026-0606-pyt-genba-09",
-      "brand": "Pyt",
-      "product_line": "GENBAリップティント",
-      "color_code": "09",
-      "color_name": "シュガーローズ",
-      "hex": "C07080",
-      "hex_origin": "estimated",
-      "released_at": "2026-06-06",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
-      "note": "グレイッシュで甘さ控えめのミュートローズ。色持ち重視のティント。",
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
       "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集…",
