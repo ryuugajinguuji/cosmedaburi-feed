@@ -1,7 +1,20 @@
 {
-  "version": 156,
-  "generated_at": "2026-09-28T17:21:22.714Z",
+  "version": 157,
+  "generated_at": "2026-09-30T03:56:42.791Z",
   "items": [
+    {
+      "id": "2026-09-29-rom-nd-7a64512a",
+      "brand": "rom&nd",
+      "product_line": "",
+      "released_at": "2026-09-29",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000445.000076505.html",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/76505/445/76505-445-4e865b7556d9cf60a7954f3ae00a3687-3200x1600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "ブランドローンチ10周年を迎えるrom&ndから“大切な親友”へ贈る　「ザ ジューシーラスティングティント」新色3色を発売",
+      "ogp_description": "株式会社韓国高麗人蔘社のプレスリリース（2026年9月29日 15時00分）ブランドローンチ10周年を迎えるrom&ndから“大切な親友”へ贈る　「ザ ジューシ…"
+    },
     {
       "id": "2026-09-28-unknown-f22d30ad",
       "brand": "unknown",
@@ -2613,22 +2626,6 @@
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f0f9842d-78c3-452a-b6c3-038891761698.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
       "ogp_title": "【エディターYOGGYの勝手にアゲコスメ！】夏らしさ満点のサマーリップを楽しみたい ！",
       "ogp_description": "トレンド感を手っ取り早くかなえるなら、やっぱりリップは欠かせない！ 今季も質感やケア効果にこだわった優秀なアイテムがより取り見取り。『エル・ジャポン』7月号より…"
-    },
-    {
-      "id": "2026-0606-pyt-genba-07",
-      "brand": "Pyt",
-      "product_line": "GENBAリップティント",
-      "color_code": "07",
-      "color_name": "シナモン",
-      "hex": "B87060",
-      "hex_origin": "estimated",
-      "released_at": "2026-06-06",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000037.000086073.html",
-      "note": "赤みを含んだやわらかなシナモンブラウン。軽い水分膜タイプのティント。",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/86073/37/86073-37-abedec18a2c3b9682d000f0450033ed6-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集める定番アイテムに新展開Pyt「GENBAリップティント」から新色5色が登場",
-      "ogp_description": "STORiiY株式会社のプレスリリース（2026年5月26日 10時00分）K-POPの第一線で活躍するメイクアップアーティスト・ダソム監修プロの現場で支持を集…",
-      "tier": 1
     }
   ]
 }
