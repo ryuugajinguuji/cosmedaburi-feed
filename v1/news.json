@@ -1,7 +1,48 @@
 {
-  "version": 159,
-  "generated_at": "2026-10-01T10:20:15.152Z",
+  "version": 160,
+  "generated_at": "2026-10-01T16:00:07.368Z",
   "items": [
+    {
+      "id": "2026-10-01-unknown-a33e5699",
+      "brand": "ボビイ ブラウン",
+      "product_line": "",
+      "hex": "A0695A",
+      "hex_origin": "estimated",
+      "released_at": "2026-10-01",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73770177/2026christmascoffret-nd-bobbibrown-2610-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/7604d74d-ac35-41c4-8a26-09e5132b8354.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【ボビイ ブラウン×クリスマスコフレ2026】発売日＆予約日は？｜名画をあしらった眼福コスメに注目！",
+      "ogp_description": "「ボビイ ブラウン」の2026年ホリデーコレクション情報をお届け！　世界有数の美術館、NYのメトロポリタン美術館（The Met）とコラボしたアートなコスメが勢…"
+    },
+    {
+      "id": "2026-10-01-unknown-6497a052",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000809.000041232.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/41232/809/41232-809-b979c96e59f8b0d8eb8d6dc1fcf85aa8-600x396.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "会話後も縦ジワレスを持続できるリッププランパーを開発",
+      "ogp_description": "株式会社コーセーのプレスリリース（2026年10月1日 10時00分）会話後も縦ジワレスを持続できるリッププランパーを開発"
+    },
+    {
+      "id": "2026-10-01-unknown-fb526192",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-01",
+      "source_url": "https://oggi.jp/7943019",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/09/main-prada.jpg",
+      "ogp_title": "自然な仕上がりもビジュアルもたまらない【プラダ タッチ】の新感覚チーク | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-01-unknown-cafad513",
       "brand": "unknown",
@@ -2584,45 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22002441/20260622_canmake_og.jpg",
       "ogp_title": "【2026年夏コスメ】「キャンメイク」夏限定3アイテムが登場　“むにゅっと”生チークや再販“ジューシー涙袋”パレットなど - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「キャンメイク（CANMAKE）」は7月下旬、夏の肌を彩る限定アイテムを発売する。2024年2月下旬に限定発売し支持を集めた涙袋用アイシャドウパレット“プランぷ…"
-    },
-    {
-      "id": "2026-06-21-ysl-babc238e",
-      "brand": "YSL",
-      "product_line": "",
-      "released_at": "2026-06-21",
-      "source_url": "https://www.wwdjapan.com/articles/2428911",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21233303/20260621_YSL_og.jpg",
-      "ogp_title": "「YSL」が多幸感あふれる“ラブライト コレクション”を限定発売　限定デザインのアイシャドウ＆クッションファンデ＆リップ - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「イヴ・サンローラン（YVES SAINT LAURENT）」（以下、YSL）は8月21日、メイクアップコレクション“YSL ラブライトコレクション”を全国で限…"
-    },
-    {
-      "id": "2026-06-21-unknown-bd9e7aa9",
-      "brand": "ラネージュ",
-      "product_line": "",
-      "released_at": "2026-06-21",
-      "source_url": "https://www.wwdjapan.com/articles/2334159",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/19105113/og2228.jpg",
-      "ogp_title": "「YSL」も「トーン」も「ラネージュ」も！リップアイテムに注目！　今週発売のビューティーアイテム11選（6/22〜6/28） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は6月22〜28日に発売するアイテムを紹介します。今週はリップアイテムが続々。「イヴ…"
-    },
-    {
-      "id": "2026-06-21-unknown-0f297b59",
-      "brand": "エクセル",
-      "product_line": "",
-      "released_at": "2026-06-21",
-      "source_url": "https://www.wwdjapan.com/articles/2428768",
-      "note": "",
-      "category": "eye",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21162720/20260621_EXCEL_og.jpg",
-      "ogp_title": "「エクセル」が“ノーミス眉マスカラ”を発売　ふんわり軽やか、失敗知らずの全4色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "常盤薬品工業のメイクアップブランド「エクセル（EXCEL）」は8月4日、失敗知らずの極軽仕上げ眉マスカラ“フェードブロウマスカラ”（全4種、各1320円）をバラ…"
     }
   ]
 }
