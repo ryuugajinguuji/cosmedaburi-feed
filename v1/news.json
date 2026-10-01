@@ -1,7 +1,33 @@
 {
-  "version": 157,
-  "generated_at": "2026-09-30T03:56:42.791Z",
+  "version": 158,
+  "generated_at": "2026-10-01T04:06:36.092Z",
   "items": [
+    {
+      "id": "2026-10-01-unknown-1d82e40d",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000498.000012773.html",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12773/498/12773-498-2864d19cc917bf7110170fa89643070f-510x241.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "ブランド人気NO.1＊「アイムマルチスティックデュアル」から待望の新シリーズ！立体感も血色感も思いのままに「チーク＆ハイライター」が新登場",
+      "ogp_description": "株式会社サン・スマイルのプレスリリース（2026年10月1日 10時10分）ブランド人気NO.1＊「アイムマルチスティックデュアル」から待望の新シリーズ！立体感…"
+    },
+    {
+      "id": "2026-09-30-unknown-091829da",
+      "brand": "無印良品",
+      "product_line": "",
+      "released_at": "2026-09-30",
+      "source_url": "https://oggi.jp/7942280",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/09/nmasm.jpg",
+      "ogp_title": "これからの季節に♡【無印良品 新作】「履き心地しっかりスリッパ」を履いてみました！ | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-09-29-rom-nd-7a64512a",
       "brand": "rom&nd",
@@ -2597,35 +2623,6 @@
       "ogp_title": "【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレーズ ティンテーション』",
       "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年6月16日 11時00分）【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレー…",
       "tier": 1
-    },
-    {
-      "id": "2026-0612-nars-afterglow-287a",
-      "brand": "NARS",
-      "product_line": "アフターグロー リップシャイン",
-      "color_code": "287A",
-      "color_name": "NEW DAWN",
-      "hex": "E88898",
-      "hex_origin": "estimated",
-      "released_at": "2026-06-12",
-      "source_url": "https://www.cosme.com/products/detail.php?product_id=413191",
-      "ogp_image_url": "https://www.cosme.com/upload/save_image/product//00/41/31/90/413190_1.jpg?06121321",
-      "note": "ロージーピンク。ミラーのような光沢感のグロス（限定パッケージ）。",
-      "ogp_title": "アフターグロー リップシャイン / NARS(ナーズ)(リップグロス, メイクアップ)の通販 - アットコスメ公式通販【アットコスメショッピング】",
-      "ogp_description": "NARS(ナーズ)のリップグロス, メイクアップ「アフターグロー リップシャイン / 287A NEW DAWN / 5.5mL」を購入できる@cosme公式通…",
-      "tier": 1
-    },
-    {
-      "id": "2026-06-11-unknown-ac46cd6b",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-06-11",
-      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/a71533613/yoggycosme-sumer-lip-26-06/",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f0f9842d-78c3-452a-b6c3-038891761698.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
-      "ogp_title": "【エディターYOGGYの勝手にアゲコスメ！】夏らしさ満点のサマーリップを楽しみたい ！",
-      "ogp_description": "トレンド感を手っ取り早くかなえるなら、やっぱりリップは欠かせない！ 今季も質感やケア効果にこだわった優秀なアイテムがより取り見取り。『エル・ジャポン』7月号より…"
     }
   ]
 }
