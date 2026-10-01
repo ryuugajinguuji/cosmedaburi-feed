@@ -1,7 +1,20 @@
 {
-  "version": 158,
-  "generated_at": "2026-10-01T04:06:36.092Z",
+  "version": 159,
+  "generated_at": "2026-10-01T10:20:15.152Z",
   "items": [
+    {
+      "id": "2026-10-01-unknown-cafad513",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-01",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000068.000125370.html",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/125370/68/125370-68-6ba790b26d2b19c7dc028b82aaabc079-1281x1921.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "韓国コスメブランド「Heart Percent（ハートパーセント）」、10月9日（金）より「ドットオンムードリップペンシル」新色3色が日本のオフライン店舗に登場！",
+      "ogp_description": "株式会社月架世交易のプレスリリース（2026年10月1日 18時00分）韓国コスメブランド「Heart Percent（ハートパーセント）」、10月9日（金）よ…"
+    },
     {
       "id": "2026-10-01-unknown-1d82e40d",
       "brand": "unknown",
@@ -2610,19 +2623,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21162720/20260621_EXCEL_og.jpg",
       "ogp_title": "「エクセル」が“ノーミス眉マスカラ”を発売　ふんわり軽やか、失敗知らずの全4色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "常盤薬品工業のメイクアップブランド「エクセル（EXCEL）」は8月4日、失敗知らずの極軽仕上げ眉マスカラ“フェードブロウマスカラ”（全4種、各1320円）をバラ…"
-    },
-    {
-      "id": "2026-06-16-unknown-5ecd8377",
-      "brand": "ランコム",
-      "product_line": "",
-      "released_at": "2026-06-16",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000321.000012459.html",
-      "note": "",
-      "category": "lip",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12459/321/12459-321-e6c2155078a11e75423f481aacb23b1a-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレーズ ティンテーション』",
-      "ogp_description": "日本ロレアル株式会社のプレスリリース（2026年6月16日 11時00分）【ランコム】大胆なツヤで唇を染める、美容液ティントリップ『ラプソリュ ルージュ グレー…",
-      "tier": 1
     }
   ]
 }
