@@ -1,7 +1,20 @@
 {
-  "version": 160,
-  "generated_at": "2026-10-01T16:00:07.368Z",
+  "version": 161,
+  "generated_at": "2026-10-02T04:01:10.711Z",
   "items": [
+    {
+      "id": "2026-10-02-unknown-1567c1b5",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-02",
+      "source_url": "https://woman.mynavi.jp/article/261002-2_12000673-2/",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/001-2.jpg",
+      "ogp_title": "この秋にオフィスメイクで使いたいアイシャドウ＆チーク16選。コスメオタク厳選、2026年秋新作カラーコスメをレビュー",
+      "ogp_description": "「最近このブランドがアツい！」「今季の新作、何買った？」「がんばらずにきれいになりたい……」最新コスメやメイクトレンドを、コスメ大好きなライター・よしかわとマイ…"
+    },
     {
       "id": "2026-10-01-unknown-a33e5699",
       "brand": "ボビイ ブラウン",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22122458/2an.jpg",
       "ogp_title": "セブン-イレブン限定「2aN」ミニコスメ第2弾　新色アイパレット＆ハート型2色チークが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "韓国発のカラーメイクブランド「トゥーエーエヌ（2aN）」は6月27日、セブン‐イレブン限定ライン“フロム トゥーエーエヌ（from 2aN）”の第2弾アイテムを…"
-    },
-    {
-      "id": "2026-06-22-unknown-31890d68",
-      "brand": "キャンメイク",
-      "product_line": "",
-      "released_at": "2026-06-22",
-      "source_url": "https://www.wwdjapan.com/articles/2428988",
-      "note": "",
-      "category": "cheek",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22002441/20260622_canmake_og.jpg",
-      "ogp_title": "【2026年夏コスメ】「キャンメイク」夏限定3アイテムが登場　“むにゅっと”生チークや再販“ジューシー涙袋”パレットなど - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「キャンメイク（CANMAKE）」は7月下旬、夏の肌を彩る限定アイテムを発売する。2024年2月下旬に限定発売し支持を集めた涙袋用アイシャドウパレット“プランぷ…"
     }
   ]
 }
