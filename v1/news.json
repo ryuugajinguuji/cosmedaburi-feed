@@ -1,7 +1,33 @@
 {
-  "version": 161,
-  "generated_at": "2026-10-02T04:01:10.711Z",
+  "version": 162,
+  "generated_at": "2026-10-02T09:57:22.070Z",
   "items": [
+    {
+      "id": "2026-10-02-espoir-92e386dd",
+      "brand": "espoir",
+      "product_line": "",
+      "released_at": "2026-10-02",
+      "source_url": "https://woman.mynavi.jp/article/261002-2_12000673-3/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/001-3.jpg",
+      "ogp_title": "平日メイクこれ1本でいいじゃん！　espoirの新作BBに感動。カラー選びもできるイベントが渋谷ロフトで開催中",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-10-02-unknown-4059fa63",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-02",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000069.000125370.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/125370/69/125370-69-f79c04e8139bc1488f04e7af7f1c098e-1081x1351.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "日韓コスメブランド「LoNLy（ロンリー）」、人気リップ「キャンドルライトジュレティント」に秋の新色2色が登場！",
+      "ogp_description": "株式会社月架世交易のプレスリリース（2026年10月2日 18時00分）日韓コスメブランド「LoNLy（ロンリー）」、人気リップ「キャンドルライトジュレティント…"
+    },
     {
       "id": "2026-10-02-unknown-1567c1b5",
       "brand": "unknown",
@@ -2599,32 +2625,6 @@
       "ogp_title": "本当に売れたコスメ発表！リップ部門・総合1位は「シャネル」「ケイト」「RMK」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフで首位に輝いた「シャネル（CHANEL）」“ル ルージュ デュオ ウルトラ トゥニュ”は、リップカラーと…",
       "tier": 1
-    },
-    {
-      "id": "2026-06-23-unknown-ab2fcd19",
-      "brand": "シャネル",
-      "product_line": "",
-      "released_at": "2026-06-23",
-      "source_url": "https://www.elle.com/jp/beauty/a71657056/chanel-radio-shine-fm-event-2606/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/dcf02b36-4afc-4803-b252-9eb9d9b38fed.png?crop=0.984xw:0.984xh;0,0&amp;resize=1200:*",
-      "ogp_title": "「シャネル」の期間限定「CHANEL RADIO SHINE FM」とは？ J-WAVE（81.3 FM）で豪華ゲストを迎えた特別ラジオ番組もOA！",
-      "ogp_description": "「シャネル」アンバサダーの小松菜奈さんや小田切ヒロさんなど、豪華ゲストを迎えた特別ラジオ番組も J-WAVEでオンエア！ 表参道に期間限定「CHANEL RAD…"
-    },
-    {
-      "id": "2026-06-22-unknown-a078934e",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-06-22",
-      "source_url": "https://www.wwdjapan.com/articles/2429437",
-      "note": "",
-      "category": "cheek",
-      "tier": 3,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/22122458/2an.jpg",
-      "ogp_title": "セブン-イレブン限定「2aN」ミニコスメ第2弾　新色アイパレット＆ハート型2色チークが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "韓国発のカラーメイクブランド「トゥーエーエヌ（2aN）」は6月27日、セブン‐イレブン限定ライン“フロム トゥーエーエヌ（from 2aN）”の第2弾アイテムを…"
     }
   ]
 }
