@@ -1,7 +1,22 @@
 {
-  "version": 163,
-  "generated_at": "2026-10-06T04:50:01.578Z",
+  "version": 164,
+  "generated_at": "2026-10-06T15:41:45.294Z",
   "items": [
+    {
+      "id": "2026-10-06-unknown-27e9a4e2",
+      "brand": "unknown",
+      "product_line": "",
+      "hex": "CC3366",
+      "hex_origin": "estimated",
+      "released_at": "2026-10-06",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000212.000034254.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/34254/212/34254-212-ca66bc233bd654dc244eb8bca6a7fc53-3000x1869.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "累計850万本*¹突破！大人気リップケアシリーズから可憐で甘酸っぱい香り、チェリーが新登場！しっとり、うるぷる唇に。",
+      "ogp_description": "レブロン株式会社のプレスリリース（2026年10月6日 11時10分）累計850万本*¹突破！大人気リップケアシリーズから可憐で甘酸っぱい香り、チェリーが新登場…"
+    },
     {
       "id": "2026-10-05-unknown-c56f2de4",
       "brand": "アルマーニ ビューティ",
@@ -2612,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18140321/08_BLUSH.jpg",
       "ogp_title": "本当に売れたコスメ発表！チーク部門・新商品1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとECで1位に輝いたのは「スック（SUQQU）」“コンプレクション フェイス カラー”。複数のオイルと水分が織…"
-    },
-    {
-      "id": "2026-06-24-unknown-b41f4ad7",
-      "brand": "キャンメイク",
-      "product_line": "",
-      "released_at": "2026-06-24",
-      "source_url": "https://www.wwdjapan.com/articles/2397807",
-      "note": "",
-      "category": "cheek",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/23111356/08_BLUSH-2.jpg",
-      "ogp_title": "本当に売れたコスメ発表！チーク部門・総合1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフとECで首位に輝いた「スック（SUQQU）」“ブラーリング カラー ブラッシュ”は、するする広がる微細な…"
     }
   ]
 }
