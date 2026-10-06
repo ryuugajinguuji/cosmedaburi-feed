@@ -1,7 +1,20 @@
 {
-  "version": 162,
-  "generated_at": "2026-10-02T09:57:22.070Z",
+  "version": 163,
+  "generated_at": "2026-10-06T04:50:01.578Z",
   "items": [
+    {
+      "id": "2026-10-05-unknown-c56f2de4",
+      "brand": "アルマーニ ビューティ",
+      "product_line": "",
+      "released_at": "2026-10-05",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73935693/2026christmascoffret-nd-armanibeauty-2610-hns/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/c2a4fecb-15b6-4032-af0b-23bfda7d7d59.png?crop=1.00xw:0.893xh;0,0.0405xh&amp;resize=1200:*",
+      "ogp_title": "【アルマーニ ビューティ×クリスマスコフレ2026】発売日＆予約日は？｜名品リップや名香が勢揃い",
+      "ogp_description": "「アルマーニ ビューティ」の2026年ホリデーコレクション情報をお届け！　アイコンリップや香水が入った豪華アドベントカレンダーや、人気フレグランス「ユーロン」の…"
+    },
     {
       "id": "2026-10-02-espoir-92e386dd",
       "brand": "espoir",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/23111356/08_BLUSH-2.jpg",
       "ogp_title": "本当に売れたコスメ発表！チーク部門・総合1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフとECで首位に輝いた「スック（SUQQU）」“ブラーリング カラー ブラッシュ”は、するする広がる微細な…"
-    },
-    {
-      "id": "2026-06-24-rmk-1519f167",
-      "brand": "RMK",
-      "product_line": "",
-      "released_at": "2026-06-24",
-      "source_url": "https://www.wwdjapan.com/articles/2397793",
-      "note": "",
-      "category": "lip",
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18115417/07_Lip-Makeup-3.jpg",
-      "ogp_title": "本当に売れたコスメ発表！リップ部門・総合1位は「シャネル」「ケイト」「RMK」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "【べストコスメ2026上半期】 総合の百貨店・セミセルフで首位に輝いた「シャネル（CHANEL）」“ル ルージュ デュオ ウルトラ トゥニュ”は、リップカラーと…",
-      "tier": 1
     }
   ]
 }
