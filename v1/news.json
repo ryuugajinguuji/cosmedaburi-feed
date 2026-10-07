@@ -1,7 +1,20 @@
 {
-  "version": 164,
-  "generated_at": "2026-10-06T15:41:45.294Z",
+  "version": 165,
+  "generated_at": "2026-10-07T04:15:53.495Z",
   "items": [
+    {
+      "id": "2026-10-07-unknown-e8006f42",
+      "brand": "マキアージュ",
+      "product_line": "",
+      "released_at": "2026-10-07",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000003213.000005794.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/5794/3213/5794-3213-42249bc1e7e74ba8450cfd7660950bd7-3900x2334.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "美容液仕立ての粉感レスパウダーで、瞬時につや・透明感復活。マキアージュ”つやリメイク美容液パウダー”　～2026年11月21日（土）発売～",
+      "ogp_description": "株式会社資生堂のプレスリリース（2026年10月7日 11時00分）美容液仕立ての粉感レスパウダーで、瞬時につや・透明感復活。マキアージュ”つやリメイク美容液パ…"
+    },
     {
       "id": "2026-10-06-unknown-27e9a4e2",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18110138/07_Lip-Makeup-1.jpg",
       "ogp_title": "本当に売れたコスメ発表！リップ部門・新商品1位は「ディオール」「ケイト」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとEC1位は「ディオール（DIOR）」“ディオール アディクト リップ グロウ オイル”。豊富なカラー展開のリ…"
-    },
-    {
-      "id": "2026-06-24-unknown-88b9dcb2",
-      "brand": "キャンメイク",
-      "product_line": "",
-      "released_at": "2026-06-24",
-      "source_url": "https://www.wwdjapan.com/articles/2397803",
-      "note": "",
-      "category": "cheek",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18140321/08_BLUSH.jpg",
-      "ogp_title": "本当に売れたコスメ発表！チーク部門・新商品1位は「スック」「キャンメイク」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとECで1位に輝いたのは「スック（SUQQU）」“コンプレクション フェイス カラー”。複数のオイルと水分が織…"
     }
   ]
 }
