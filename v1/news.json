@@ -1,7 +1,20 @@
 {
-  "version": 165,
-  "generated_at": "2026-10-07T04:15:53.495Z",
+  "version": 166,
+  "generated_at": "2026-10-07T10:27:21.089Z",
   "items": [
+    {
+      "id": "2026-10-07-rmk-7c5b615a",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-10-07",
+      "source_url": "https://cancam.jp/archives/1764352",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/10/06/th_rmktop.jpg",
+      "ogp_title": "【RMK・10/16予約開始】超豪華キットが揃った限定コレクション♡【10/30&11/13発売】",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：10月16日（金）予約開始、10月30日（金）＆11月13日"
+    },
     {
       "id": "2026-10-07-unknown-e8006f42",
       "brand": "マキアージュ",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/24203227/20260624_lsyuuemura_og.jpg",
       "ogp_title": "「シュウ ウエムラ」が“疑似肌パウダー”を発売　肌とメイクの一体化を追求したテクノロジーを採用 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「シュウ ウエムラ（SHU UEMURA）」は9月4日、肌に吸い付き一体化する“新感覚 疑似肌パウダー”と銘打った“アンリミテッド セラム スムース パウダー”…"
-    },
-    {
-      "id": "2026-06-24-unknown-8255cee8",
-      "brand": "ケイト",
-      "product_line": "",
-      "released_at": "2026-06-24",
-      "source_url": "https://www.wwdjapan.com/articles/2397790",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/05/18110138/07_Lip-Makeup-1.jpg",
-      "ogp_title": "本当に売れたコスメ発表！リップ部門・新商品1位は「ディオール」「ケイト」 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "【べストコスメ2026上半期】 百貨店・セミセルフとEC1位は「ディオール（DIOR）」“ディオール アディクト リップ グロウ オイル”。豊富なカラー展開のリ…"
     }
   ]
 }
