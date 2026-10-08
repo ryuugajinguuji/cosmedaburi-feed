@@ -1,7 +1,20 @@
 {
-  "version": 167,
-  "generated_at": "2026-10-07T16:06:00.123Z",
+  "version": 168,
+  "generated_at": "2026-10-08T04:28:04.714Z",
   "items": [
+    {
+      "id": "2026-10-07-laneige-400b2a65",
+      "brand": "LANEIGE",
+      "product_line": "",
+      "released_at": "2026-10-07",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g73971683/2026christmascoffret-nd-laneige-2610-hns/",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/0e615562-3fc9-4c4f-844f-35900d67c50a.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【LANEIGE（ラネージュ）×クリスマスコフレ2026】発売日＆予約日は？｜人気リップケアの限定版＆キットが登場",
+      "ogp_description": "「LANEIGE（ラネージュ）」の2026年ホリデーコレクション情報を全部見せ！　冬の唇を華やかなカラーと香りで彩りながら、集中保湿できる限定品＆キットが勢揃い…"
+    },
     {
       "id": "2026-10-07-unknown-d99fecf0",
       "brand": "unknown",
@@ -2613,19 +2626,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25132330/og_rmk20160618-1.jpg",
       "ogp_title": "「RMK」から新ルースパウダーが登場　なりたい肌印象で選べる4種をラインアップ - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「RMK」は９月4日、新ルースパウダーを発売する。色と質感でなりたい肌印象をかなえる4種（各4400円、リフィル 3300円）をラインアップする。",
-      "tier": 1
-    },
-    {
-      "id": "2026-06-25-unknown-c1ce7d50",
-      "brand": "イプサ",
-      "product_line": "",
-      "released_at": "2026-06-25",
-      "source_url": "https://www.wwdjapan.com/articles/2430989",
-      "note": "",
-      "category": "base",
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23132208/20260623_ipsa_og.jpg",
-      "ogp_title": "「イプサ」から肌悩みに着目した美容液ファンデーションが登場　うる艶肌を演出 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「イプサ（IPSA）」は9月3日、毛穴、肌荒れ、乾燥などの肌悩みに着想した“セラム ファウンデイション” ［SPF30・PA＋＋＋］（全4色、各30mL、各66…",
       "tier": 1
     }
   ]
