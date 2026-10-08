@@ -1,7 +1,20 @@
 {
-  "version": 168,
-  "generated_at": "2026-10-08T04:28:04.714Z",
+  "version": 169,
+  "generated_at": "2026-10-08T16:08:02.404Z",
   "items": [
+    {
+      "id": "2026-10-08-unknown-23aaf1bf",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-08",
+      "source_url": "https://oggi.jp/7953836",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/928472042.jpg",
+      "ogp_title": "ひと塗りで空気を変える、秋の「モードマット」なリップ5選 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-07-laneige-400b2a65",
       "brand": "LANEIGE",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23142151/20260623_Her-lip-to-BEAUTY_og.jpg",
       "ogp_title": "【2026年夏コスメ】「ハーリップトゥ ビューティ」が“アーリー モーニング”の香りを冷感ボディーミストに　数量限定発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "小嶋陽菜が手がける「ハーリップトゥ ビューティ（HER LIP TO BEAUTY）」は6月27日、同ブランドで人気の香り“アーリー モーニング（EARLY M…"
-    },
-    {
-      "id": "2026-06-25-rmk-0ba7371d",
-      "brand": "RMK",
-      "product_line": "",
-      "released_at": "2026-06-25",
-      "source_url": "https://www.wwdjapan.com/articles/2433550",
-      "note": "",
-      "category": "base",
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25132330/og_rmk20160618-1.jpg",
-      "ogp_title": "「RMK」から新ルースパウダーが登場　なりたい肌印象で選べる4種をラインアップ - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「RMK」は９月4日、新ルースパウダーを発売する。色と質感でなりたい肌印象をかなえる4種（各4400円、リフィル 3300円）をラインアップする。",
-      "tier": 1
     }
   ]
 }
