@@ -1,7 +1,20 @@
 {
-  "version": 169,
-  "generated_at": "2026-10-08T16:08:02.404Z",
+  "version": 170,
+  "generated_at": "2026-10-09T04:31:56.815Z",
   "items": [
+    {
+      "id": "2026-10-09-unknown-62484cd9",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-09",
+      "source_url": "https://woman.mynavi.jp/article/261009-2_12000673/",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/001-5.jpg",
+      "ogp_title": "秋のファンデーション、働く女子はどれを選ぶべき？　コスメオタクがガチで使いたい2026年秋の新作ファンデーション11選",
+      "ogp_description": "「最近このブランドがアツい！」「今季の新作、何買った？」「がんばらずにきれいになりたい……」最新コスメやメイクトレンドを、コスメ大好きなライター・よしかわとマイ…"
+    },
     {
       "id": "2026-10-08-unknown-23aaf1bf",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/25152124/20260625_kate_og.jpg",
       "ogp_title": "「ケイト」が“0.06mm極細繊維”ブラシを発売　マツキヨココカラ＆公式限定品 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "グローバルメイクアップブランド「ケイト（KATE）」は7月25日、骨格陰影ブラシシリーズから、フェイスパウダー＆パウダーファンデーション用の“パウダーブラシ”（…"
-    },
-    {
-      "id": "2026-06-25-unknown-3ecbfaae",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-06-25",
-      "source_url": "https://www.wwdjapan.com/articles/2431210",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/23142151/20260623_Her-lip-to-BEAUTY_og.jpg",
-      "ogp_title": "【2026年夏コスメ】「ハーリップトゥ ビューティ」が“アーリー モーニング”の香りを冷感ボディーミストに　数量限定発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "小嶋陽菜が手がける「ハーリップトゥ ビューティ（HER LIP TO BEAUTY）」は6月27日、同ブランドで人気の香り“アーリー モーニング（EARLY M…"
     }
   ]
 }
