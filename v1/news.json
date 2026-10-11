@@ -1,7 +1,20 @@
 {
-  "version": 172,
-  "generated_at": "2026-10-10T15:03:10.222Z",
+  "version": 173,
+  "generated_at": "2026-10-11T03:56:48.766Z",
   "items": [
+    {
+      "id": "2026-10-10-unknown-3fea7fc1",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-10",
+      "source_url": "https://oggi.jp/7955850",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/261007bstop1.jpg",
+      "ogp_title": "ビルケンシュトック｜新作スリップオンサンダルと定番メリージェーンがふわもこシアリングで、各2色を展開 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-10-unknown-e7694e00",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/26101614/OG-266.jpg",
       "ogp_title": "「ランコム」「アディクション」「ボタニスト」「プレディア」で梅雨に負けない肌と髪を育む！　今週発売のビューティーアイテム16選(6/29〜7/5） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は6月29〜7月5日に発売するアイテムを紹介します。梅雨真っ只中のこの時期は、髪の膨…"
-    },
-    {
-      "id": "2026-06-28-unknown-1b9c3756",
-      "brand": "レブロン",
-      "product_line": "",
-      "released_at": "2026-06-28",
-      "source_url": "https://www.wwdjapan.com/articles/2435606",
-      "note": "",
-      "category": "base",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/26162123/reburonn%E3%81%8Ag.jpg",
-      "ogp_title": "「レブロン」が自分に合う肌色にブレンドできるコンシーラーパレットを発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「レブロン」は7月13日、自分に合う肌色にブレンドできる高密着コンシーラーパレット“レブロン カラーステイ ロングウエア コンシーラー パレット”（全3色、17…"
     }
   ]
 }
