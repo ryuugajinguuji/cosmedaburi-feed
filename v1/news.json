@@ -1,7 +1,20 @@
 {
-  "version": 173,
-  "generated_at": "2026-10-11T03:56:48.766Z",
+  "version": 174,
+  "generated_at": "2026-10-12T04:17:28.918Z",
   "items": [
+    {
+      "id": "2026-10-12-kate-0d5f1612",
+      "brand": "KATE",
+      "product_line": "",
+      "released_at": "2026-10-12",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000938.000016220.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16220/938/16220-938-abc9578622d5550909623e17f15cb554-3900x2759.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "累計出荷数4,200万本※1を突破したKATE「リップモンスターシリーズ」から高保湿タイプの「リップモンスターQ」新登場。",
+      "ogp_description": "株式会社カネボウ化粧品のプレスリリース（2026年10月12日 10時00分）累計出荷数4,200万本※1を突破したKATE「リップモンスターシリーズ」から高保…"
+    },
     {
       "id": "2026-10-10-unknown-3fea7fc1",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/29163013/OG-221.jpg",
       "ogp_title": "「ヴァレンティノ ビューティ」が光を拡大する艶玉リップ“スパイク ヴァレンティノ シャイン”全7色を発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「ヴァレンティノ ビューティ（VALENTINO BEAUTY）」は7月8日、朝露の水滴が持つ光を拡散・拡大する“マグニファイング効果”に着想を得たフォーミュラ…"
-    },
-    {
-      "id": "2026-06-28-unknown-beb8e0f9",
-      "brand": "ランコム",
-      "product_line": "",
-      "released_at": "2026-06-28",
-      "source_url": "https://www.wwdjapan.com/articles/2334263",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/26101614/OG-266.jpg",
-      "ogp_title": "「ランコム」「アディクション」「ボタニスト」「プレディア」で梅雨に負けない肌と髪を育む！　今週発売のビューティーアイテム16選(6/29〜7/5） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は6月29〜7月5日に発売するアイテムを紹介します。梅雨真っ只中のこの時期は、髪の膨…"
     }
   ]
 }
