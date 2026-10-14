@@ -1,7 +1,33 @@
 {
-  "version": 174,
-  "generated_at": "2026-10-12T04:17:28.918Z",
+  "version": 175,
+  "generated_at": "2026-10-14T14:20:01.704Z",
   "items": [
+    {
+      "id": "2026-10-14-unknown-eb732431",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-14",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000338.000084518.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/84518/338/84518-338-0be14832884312dfc8b1b075bf6f2d7a-1080x1350.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "1本で簡単、韓国風・垢抜けリップが完成！軽やかな付け心地なのに、ガラス玉のようなツヤをまとったぷるんとした唇に。こだわりの低彩度カラーで、旬の可愛さを楽しめるリップオイル",
+      "ogp_description": "株式会社Rainmakersのプレスリリース（2026年10月14日 11時00分）1本で簡単、韓国風・垢抜けリップが完成！軽やかな付け心地なのに、ガラス玉のよ…"
+    },
+    {
+      "id": "2026-10-14-unknown-51e193fb",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-14",
+      "source_url": "https://oggi.jp/7958989",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/matte-lip.jpg",
+      "ogp_title": "働く30代向け最新トレンド【マットリップ】2026秋冬新作おすすめ11選 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-12-kate-0d5f1612",
       "brand": "KATE",
@@ -2601,32 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/30165449/main-130.jpg",
       "ogp_title": "「シンピュルテ」がブランド初のカラーメイクを発売　レモンケーキの香りをまとった“とろ蜜”オイルティント全5色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「シンピュルテ（SINN PURETE）」は9月14日、艶、発色、色持、・潤いをかなえる“とろ蜜”オイルティント“リップスタッチ オイルティント”全5色を発売す…"
-    },
-    {
-      "id": "2026-07-01-unknown-5ed57361",
-      "brand": "シャネル",
-      "product_line": "",
-      "released_at": "2026-07-01",
-      "source_url": "https://www.elle.com/jp/beauty/a71789488/chanel-radio-shine-fm-event-2607/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/8784d193-f621-4652-a9d1-7b20cb6c9f8f.png?crop=0.984xw:0.984xh;0,0&amp;resize=1200:*",
-      "ogp_title": "小松菜奈さんなど豪華セレブが集結！「シャネル」限定イベント「CHANEL RADIO SHINE FM」に密着",
-      "ogp_description": "ちゃんみなさんによる一夜限りのライブパフォーマンスも！ 小松菜奈さんや橋本愛さんら豪華セレブが来場した「シャネル」限定イベントの全貌に接近。"
-    },
-    {
-      "id": "2026-06-30-unknown-b1eaf9af",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-06-30",
-      "source_url": "https://www.wwdjapan.com/articles/2437934",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/29163013/OG-221.jpg",
-      "ogp_title": "「ヴァレンティノ ビューティ」が光を拡大する艶玉リップ“スパイク ヴァレンティノ シャイン”全7色を発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「ヴァレンティノ ビューティ（VALENTINO BEAUTY）」は7月8日、朝露の水滴が持つ光を拡散・拡大する“マグニファイング効果”に着想を得たフォーミュラ…"
     }
   ]
 }
