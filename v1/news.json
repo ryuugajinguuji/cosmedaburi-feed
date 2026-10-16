@@ -1,7 +1,20 @@
 {
-  "version": 175,
-  "generated_at": "2026-10-14T14:20:01.704Z",
+  "version": 176,
+  "generated_at": "2026-10-16T03:05:46.414Z",
   "items": [
+    {
+      "id": "2026-10-16-unknown-c95e5b47",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-16",
+      "source_url": "https://woman.mynavi.jp/article/261016-3_12000673/",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/001-8.jpg",
+      "ogp_title": "秋冬のメイク崩れ対策をコスメオタクが考えてみた。2026年秋新作下地・パウダー・コンシーラーおすすめ20選",
+      "ogp_description": "「最近このブランドがアツい！」「今季の新作、何買った？」「がんばらずにきれいになりたい……」最新コスメやメイクトレンドを、コスメ大好きなライター・よしかわとマイ…"
+    },
     {
       "id": "2026-10-14-unknown-eb732431",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_title": "SOFINA Primavistaの「角層ケア*¹下地」からくすみをカバーし明るい印象へ導く、新色登場「ソフィーナ　プリマヴィスタ　角層保水プライマー（クリアラベンダー）」",
       "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年7月2日 11時00分）SOFINA Primavistaの「角層ケア*¹下地」か…",
       "tier": 1
-    },
-    {
-      "id": "2026-07-01-unknown-6c125e5e",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-01",
-      "source_url": "https://www.wwdjapan.com/articles/2439455",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/30165449/main-130.jpg",
-      "ogp_title": "「シンピュルテ」がブランド初のカラーメイクを発売　レモンケーキの香りをまとった“とろ蜜”オイルティント全5色 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「シンピュルテ（SINN PURETE）」は9月14日、艶、発色、色持、・潤いをかなえる“とろ蜜”オイルティント“リップスタッチ オイルティント”全5色を発売す…"
     }
   ]
 }
