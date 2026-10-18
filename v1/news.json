@@ -1,7 +1,22 @@
 {
-  "version": 176,
-  "generated_at": "2026-10-16T03:05:46.414Z",
+  "version": 177,
+  "generated_at": "2026-10-18T12:58:32.346Z",
   "items": [
+    {
+      "id": "2026-10-18-unknown-c6a4bc4a",
+      "brand": "unknown",
+      "product_line": "",
+      "hex": "FF7F6E",
+      "hex_origin": "estimated",
+      "released_at": "2026-10-18",
+      "source_url": "https://cancam.jp/archives/1766226",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/09/30/4829740294.jpg",
+      "ogp_title": "【山下美月×中目黒リップ】肩の力を抜いた日はコーラルベージュのスフレリップを♡",
+      "ogp_description": "今注目の、ヘルシー美人な「日比谷線ガール」。この秋の日比谷線ガールは、ふんわりマットな唇で品よくアップデート！"
+    },
     {
       "id": "2026-10-16-unknown-c95e5b47",
       "brand": "unknown",
@@ -2612,21 +2627,6 @@
       "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/04/ysltop.jpg",
       "ogp_title": "【YSL BEAUTY・7/24全国発売】全色推せる♡歴代のランウェイ着想の新作コレクション",
       "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月24日（金） ブランド：YSL 商品名：クチュール ミニ"
-    },
-    {
-      "id": "2026-07-02-unknown-7d2664b0",
-      "brand": "ソフィーナ",
-      "product_line": "",
-      "hex": "B57EDC",
-      "hex_origin": "estimated",
-      "released_at": "2026-07-02",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000285.000072864.html",
-      "note": "",
-      "category": "base",
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/285/72864-285-6c13b94251f22a9404d757995d1fdd51-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "SOFINA Primavistaの「角層ケア*¹下地」からくすみをカバーし明るい印象へ導く、新色登場「ソフィーナ　プリマヴィスタ　角層保水プライマー（クリアラベンダー）」",
-      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年7月2日 11時00分）SOFINA Primavistaの「角層ケア*¹下地」か…",
-      "tier": 1
     }
   ]
 }
