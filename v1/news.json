@@ -1,7 +1,20 @@
 {
-  "version": 177,
-  "generated_at": "2026-10-18T12:58:32.346Z",
+  "version": 178,
+  "generated_at": "2026-10-20T03:22:03.129Z",
   "items": [
+    {
+      "id": "2026-10-20-unknown-97e2abc2",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-20",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g74174405/2026christmascoffret-nd-rmsbeauty-2610-hns/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/6b16b76d-3186-43cf-b8fd-2337aea49293.jpg?crop=1.00xw:0.502xh;0,0.285xh&amp;resize=1200:*",
+      "ogp_title": "【rms beauty×クリスマスコフレ2026】発売日＆予約日は？｜美ベース＆リップを叶える2種のキット",
+      "ogp_description": "「rms beauty（アールエムエス ビューティー）」の2026年ホリデーコレクション情報をお届け！　ベースメイクを格上げするポーチ付きキットや、人気のリップ…"
+    },
     {
       "id": "2026-10-18-unknown-c6a4bc4a",
       "brand": "unknown",
@@ -2614,19 +2627,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/03162842/ssk.jpg",
       "ogp_title": "「ソフィーナ プリマヴィスタ」の化粧下地“角層保水プライマー”、新色のクリアラベンダーが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "花王の「プリマヴィスタ（PRIMAVISTA）」と「ソフィーナ（SOFINA）」の技術を融合したベースメイクブランド「ソフィーナ プリマヴィスタ（SOFINA …"
-    },
-    {
-      "id": "2026-07-04-ysl-07353f1a",
-      "brand": "YSL",
-      "product_line": "",
-      "released_at": "2026-07-04",
-      "source_url": "https://cancam.jp/archives/1741635",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/04/ysltop.jpg",
-      "ogp_title": "【YSL BEAUTY・7/24全国発売】全色推せる♡歴代のランウェイ着想の新作コレクション",
-      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月24日（金） ブランド：YSL 商品名：クチュール ミニ"
     }
   ]
 }
