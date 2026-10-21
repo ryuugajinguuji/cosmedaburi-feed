@@ -1,7 +1,33 @@
 {
-  "version": 178,
-  "generated_at": "2026-10-20T03:22:03.129Z",
+  "version": 179,
+  "generated_at": "2026-10-21T03:16:37.125Z",
   "items": [
+    {
+      "id": "2026-10-21-unknown-7e6e3db0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-21",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000121.000067594.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/67594/121/67594-121-e017dfbfec14d7590ae418e253acf541-1920x1280.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "「リップのつやだけ落ちた」そんな時はコレ！ひと塗りでぷっくりシールみたいな唇に大復活！追いつや＆つや足しできる“ちゅるんつや復活グロス”が限定で登場！",
+      "ogp_description": "株式会社エリザベスのプレスリリース（2026年10月21日 10時30分）「リップのつやだけ落ちた」そんな時はコレ！ひと塗りでぷっくりシールみたいな唇に大復活！…"
+    },
+    {
+      "id": "2026-10-21-unknown-f91cca34",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-21",
+      "source_url": "https://woman.mynavi.jp/article/261021-2_12000673-2/",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/006-9.jpg",
+      "ogp_title": "とろけるタッチで、ぷっくりツヤ唇に。色名までかわいいポール ＆ ジョー ボーテ新リップを全色見せ！",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-20-unknown-97e2abc2",
       "brand": "unknown",
@@ -2599,34 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/06125822/b6.jpg",
       "ogp_title": "「アンドビー」がマットハイライターを発売　人気UVプライマーの限定クールタイプも - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「アンドビー（&BE）」は7月15日、ブランド初となるマット質感のパウダーハイライターをはじめ、人気リップスティックやクリームチークの新色を発売する。また、数量…"
-    },
-    {
-      "id": "2026-07-05-unknown-052300ec",
-      "brand": "シャネル",
-      "product_line": "",
-      "released_at": "2026-07-05",
-      "source_url": "https://www.wwdjapan.com/articles/2429890",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/03143848/%E3%81%8Ag%E3%80%8D.jpg",
-      "ogp_title": "「シャネル」の夏メイクや「YSL」のリキッドリップが登場　今週発売のビューティーアイテム6選【7/6〜7/12】 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は7月6〜12日に発売するアイテムを紹介します。今週は「シャネル（CHANEL）」の…"
-    },
-    {
-      "id": "2026-07-04-unknown-48fe0ce7",
-      "brand": "ソフィーナ",
-      "product_line": "",
-      "hex": "B57EDC",
-      "hex_origin": "estimated",
-      "released_at": "2026-07-04",
-      "source_url": "https://www.wwdjapan.com/articles/2442146",
-      "note": "",
-      "category": "base",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/03162842/ssk.jpg",
-      "ogp_title": "「ソフィーナ プリマヴィスタ」の化粧下地“角層保水プライマー”、新色のクリアラベンダーが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "花王の「プリマヴィスタ（PRIMAVISTA）」と「ソフィーナ（SOFINA）」の技術を融合したベースメイクブランド「ソフィーナ プリマヴィスタ（SOFINA …"
     }
   ]
 }
