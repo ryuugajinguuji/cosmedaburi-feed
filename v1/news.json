@@ -1,7 +1,20 @@
 {
-  "version": 179,
-  "generated_at": "2026-10-21T03:16:37.125Z",
+  "version": 180,
+  "generated_at": "2026-10-21T08:45:26.799Z",
   "items": [
+    {
+      "id": "2026-10-21-shiro-a669bdbd",
+      "brand": "SHIRO",
+      "product_line": "",
+      "released_at": "2026-10-21",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g74198604/2026christmascoffret-nd-shiro-2610-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/12238cd6-1967-4bc7-9206-66995371d36b.jpg?crop=1.00xw:1.00xh;0,0&amp;resize=1200:*",
+      "ogp_title": "【SHIRO（シロ）×クリスマスコフレ2026】発売日＆予約日は？｜「旅」テーマのアドベントカレンダー＆コフレ",
+      "ogp_description": "「SHIRO（シロ）」の2026年ホリデーコレクション情報をお届け！　海外限定の香りや、限定復刻アイテムが手に入るチャンス。"
+    },
     {
       "id": "2026-10-21-unknown-7e6e3db0",
       "brand": "unknown",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/06/30/0d40a5e4a645fc6b96e767d64ac0878e.jpg",
       "ogp_title": "【デジャヴュお試し】気温30度で検証。最新マスカラ下地で“まつパ級のカール”をキープできるのか！？",
       "ogp_description": "まつ毛パーマのような美カールが続く最新マスカラ下地 ↑もともと短い中央の毛もしっかり上がった！ 全体的に"
-    },
-    {
-      "id": "2026-07-06-unknown-017e0255",
-      "brand": "アンドビー",
-      "product_line": "",
-      "released_at": "2026-07-06",
-      "source_url": "https://www.wwdjapan.com/articles/2443009",
-      "note": "",
-      "category": "cheek",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/06125822/b6.jpg",
-      "ogp_title": "「アンドビー」がマットハイライターを発売　人気UVプライマーの限定クールタイプも - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「アンドビー（&BE）」は7月15日、ブランド初となるマット質感のパウダーハイライターをはじめ、人気リップスティックやクリームチークの新色を発売する。また、数量…"
     }
   ]
 }
