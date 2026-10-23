@@ -1,7 +1,20 @@
 {
-  "version": 181,
-  "generated_at": "2026-10-22T03:15:12.338Z",
+  "version": 182,
+  "generated_at": "2026-10-23T14:03:49.969Z",
   "items": [
+    {
+      "id": "2026-10-23-unknown-c0ca3981",
+      "brand": "ラネージュ",
+      "product_line": "",
+      "released_at": "2026-10-23",
+      "source_url": "https://oggi.jp/7962455",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/cb_akika_20260901_00.jpg",
+      "ogp_title": "寝る前の唇ケアはSNSでバズり続けているラネージュの「リップスリーピングマスク」で！ | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-22-unknown-27e66c50",
       "brand": "unknown",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/001-6.jpg",
       "ogp_title": "赤みが出た日も、カサつく日も。ETVOSの新作化粧下地で肌がゆらぐ日のメイクに前向きになれた話",
       "ogp_description": null
-    },
-    {
-      "id": "2026-07-06-unknown-d167ee72",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-06",
-      "source_url": "https://www.wwdjapan.com/articles/2426376",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/06201620/20260707_three_01.jpg",
-      "ogp_title": "【2026年秋コスメ】「スリー」が秋コレクション全3型を発売　カトラリー着想のアプリケーターを搭載したリップが登場 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「スリー（THREE）」は8月7日、2026年秋コレクション“センス オブ ザ スカイ”を発売する。空の持つ余白を独自の解釈で提案する今回のコレクションは新たに…"
     }
   ]
 }
