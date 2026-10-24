@@ -1,7 +1,20 @@
 {
-  "version": 182,
-  "generated_at": "2026-10-23T14:03:49.969Z",
+  "version": 183,
+  "generated_at": "2026-10-24T03:14:45.249Z",
   "items": [
+    {
+      "id": "2026-10-23-unknown-8632f10e",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-23",
+      "source_url": "https://oggi.jp/7966219",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/s_AdobeStock_481315671.jpg",
+      "ogp_title": "ダウンについたファンデーションの落とし方｜襟や首元を自宅でケアする方法【専門家監修】 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-10-23-unknown-c0ca3981",
       "brand": "ラネージュ",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/08/434491b115f01f590980668f4d4472a3.jpg",
       "ogp_title": "【コスメデコルテ・7/16発売】名品「ルージュデコルテ」にソフトマットな上品リップが仲間入り！",
       "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月16日（木） ブランド：コスメデコルテ 商品名：ルージュ"
-    },
-    {
-      "id": "2026-07-07-etvos-d436e7d2",
-      "brand": "ETVOS",
-      "product_line": "",
-      "released_at": "2026-07-07",
-      "source_url": "https://woman.mynavi.jp/article/260707_12000673-3/",
-      "note": "",
-      "category": "base",
-      "tier": 1,
-      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/07/001-6.jpg",
-      "ogp_title": "赤みが出た日も、カサつく日も。ETVOSの新作化粧下地で肌がゆらぐ日のメイクに前向きになれた話",
-      "ogp_description": null
     }
   ]
 }
