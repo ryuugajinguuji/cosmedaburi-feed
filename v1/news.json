@@ -1,7 +1,20 @@
 {
-  "version": 183,
-  "generated_at": "2026-10-24T03:14:45.249Z",
+  "version": 184,
+  "generated_at": "2026-10-25T03:09:56.317Z",
   "items": [
+    {
+      "id": "2026-10-25-unknown-9ab810d5",
+      "brand": "ミシャ",
+      "product_line": "",
+      "released_at": "2026-10-25",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000322.000023609.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/23609/322/23609-322-cfb55bae225553d8dca88e0d5312470d-648x450.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "メイクアップアーティスト兵藤小百合がミシャと初の共同開発。ミシャM プロ ブレンディング コンシーラー パレット開発秘話。",
+      "ogp_description": "株式会社ミシャジャパンのプレスリリース（2026年10月24日 20時00分）メイクアップアーティスト兵藤小百合がミシャと初の共同開発。ミシャM プロ ブレンデ…"
+    },
     {
       "id": "2026-10-23-unknown-8632f10e",
       "brand": "unknown",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/138734/40/138734-40-8eac70dd47a37bfa68712698593b2c89-1747x685.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "「LUNA」から新作のチークとリップティントが登場！『メルテッドチークバーム』と『シロップグロウティント』発売開始",
       "ogp_description": "Aekyung Ind. Co.,Ltd.のプレスリリース（2026年7月8日 13時00分）「LUNA」から新作のチークとリップティントが登場！『メルテッドチ…"
-    },
-    {
-      "id": "2026-07-07-unknown-643fd7f5",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-07",
-      "source_url": "https://cancam.jp/archives/1743519",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/07/08/434491b115f01f590980668f4d4472a3.jpg",
-      "ogp_title": "【コスメデコルテ・7/16発売】名品「ルージュデコルテ」にソフトマットな上品リップが仲間入り！",
-      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：7月16日（木） ブランド：コスメデコルテ 商品名：ルージュ"
     }
   ]
 }
