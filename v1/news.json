@@ -1,7 +1,20 @@
 {
-  "version": 184,
-  "generated_at": "2026-10-25T03:09:56.317Z",
+  "version": 185,
+  "generated_at": "2026-10-26T03:10:05.406Z",
   "items": [
+    {
+      "id": "2026-10-25-three-b2e0c486",
+      "brand": "THREE",
+      "product_line": "",
+      "released_at": "2026-10-25",
+      "source_url": "https://cancam.jp/archives/1767693",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/10/26/threetop.jpg",
+      "ogp_title": "【THREE・10/30限定発売】こなれ感満点♡きらめき＆透明感で1年のラストを締めくくる！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：10月30日（金） ブランド：THREE 商品名：シマリング"
+    },
     {
       "id": "2026-10-25-unknown-9ab810d5",
       "brand": "ミシャ",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/08113040/20260708_kate_og.jpg",
       "ogp_title": "「ケイト」が歌舞伎とコラボ　尾上右近起用で“陰影メイク”アピール＆新製品も発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "グローバルメイクブランド「ケイト（KATE）」は7月8日から、日本の伝統芸能である歌舞伎の思想に共鳴したグローバルプロモーション“KABUKE 型破りであれ。”…"
-    },
-    {
-      "id": "2026-07-08-unknown-17bd1190",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-08",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000040.000138734.html",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/138734/40/138734-40-8eac70dd47a37bfa68712698593b2c89-1747x685.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "「LUNA」から新作のチークとリップティントが登場！『メルテッドチークバーム』と『シロップグロウティント』発売開始",
-      "ogp_description": "Aekyung Ind. Co.,Ltd.のプレスリリース（2026年7月8日 13時00分）「LUNA」から新作のチークとリップティントが登場！『メルテッドチ…"
     }
   ]
 }
