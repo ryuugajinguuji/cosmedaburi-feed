@@ -1,7 +1,20 @@
 {
-  "version": 185,
-  "generated_at": "2026-10-26T03:10:05.406Z",
+  "version": 186,
+  "generated_at": "2026-10-27T03:40:30.032Z",
   "items": [
+    {
+      "id": "2026-10-27-kanebo-d65963ef",
+      "brand": "KANEBO",
+      "product_line": "",
+      "released_at": "2026-10-27",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000697.000070897.html",
+      "note": "",
+      "category": "base",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/70897/697/70897-697-33ca6a68c160e624c39b09587f1e195e-1909x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "グローバルプレステージブランド「KANEBO（カネボウ）」、“素肌に化ける”ファンデーションに新たな提案　新発想*¹「動的ラスティング」の「カネボウ　オールデイ　ウェア」を発売",
+      "ogp_description": "花王株式会社のプレスリリース（2026年10月27日 10時10分）グローバルプレステージブランド「KANEBO（カネボウ）」、“素肌に化ける”ファンデーション…"
+    },
     {
       "id": "2026-10-25-three-b2e0c486",
       "brand": "THREE",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/06073400/%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A-2.jpg",
       "ogp_title": "「ロムアンド」韓国で話題の“豆乳エディション”が日本上陸　眉マスカラやリップの限定色を発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「ロムアンド（ROM&ND）」は、韓国で話題を集めた限定コレクション“豆乳エディション”を日本で数量限定発売する。8月29日に全国のロフト（LOFT）、プラザ（…"
-    },
-    {
-      "id": "2026-07-08-unknown-091de2b1",
-      "brand": "ケイト",
-      "product_line": "",
-      "released_at": "2026-07-08",
-      "source_url": "https://www.wwdjapan.com/articles/2445357",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/08113040/20260708_kate_og.jpg",
-      "ogp_title": "「ケイト」が歌舞伎とコラボ　尾上右近起用で“陰影メイク”アピール＆新製品も発売 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "グローバルメイクブランド「ケイト（KATE）」は7月8日から、日本の伝統芸能である歌舞伎の思想に共鳴したグローバルプロモーション“KABUKE 型破りであれ。”…"
     }
   ]
 }
