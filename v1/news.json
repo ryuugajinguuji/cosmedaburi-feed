@@ -1,7 +1,20 @@
 {
-  "version": 188,
-  "generated_at": "2026-10-28T03:56:47.098Z",
+  "version": 189,
+  "generated_at": "2026-10-28T15:44:00.674Z",
   "items": [
+    {
+      "id": "2026-10-28-unknown-23d65ed8",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-10-28",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000030.000183614.html",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/183614/30/183614-30-482c5ecae0854647b08d52e0f4fef576-1600x1600.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "アイブロウ専用ワックス「EMIA」、事業者より月100個販売に到達！購入者の口コミで目立ったのは「金木犀のほのかな香り」",
+      "ogp_description": "K2株式会社のプレスリリース（2026年10月28日 12時00分）アイブロウ専用ワックス「EMIA」、事業者より月100個販売に到達！購入者の口コミで目立った…"
+    },
     {
       "id": "2026-10-28-kate-64cf948b",
       "brand": "KATE",
@@ -2612,19 +2625,6 @@
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/d6d18449-7438-4898-8a47-90c3ab260073.png?crop=1.00xw:0.503xh;0,0.184xh&amp;resize=1200:*",
       "ogp_title": "パルファム ジバンシイ（PARFUMS GIVENCHY）新作コスメ【2026秋冬】",
       "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-3b727ace",
-      "brand": "ゲラン",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000341.000018096.html",
-      "note": "",
-      "category": "base",
-      "tier": 1,
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/18096/341/18096-341-fcc220e67c3679ab33118fa9ef3a5d38-2065x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "【ゲラン】〈パリュール ゴールド〉シリーズから、ブラックビーハニー*を配合した待望の美容液ファンデーションが発売。",
-      "ogp_description": "ゲラン株式会社のプレスリリース（2026年7月10日 11時00分）【ゲラン】〈パリュール ゴールド〉シリーズから、ブラックビーハニー*を配合した待望の美容液フ…"
     }
   ]
 }
