@@ -1,7 +1,20 @@
 {
-  "version": 191,
-  "generated_at": "2026-11-03T05:18:51.022Z",
+  "version": 192,
+  "generated_at": "2026-11-03T16:49:49.452Z",
   "items": [
+    {
+      "id": "2026-11-03-unknown-0a0739e6",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-03",
+      "source_url": "https://oggi.jp/7971927",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/429857209.jpg",
+      "ogp_title": "仕事のブラッシュアップ、アイディア出しまで！京谷麻矢さんの思考を形にする「セルフ会議」の実践術 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-11-02-ysl-3b7be877",
       "brand": "YSL",
@@ -2611,19 +2624,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/b7546484-9e3b-4321-9518-ace6a1f10998.png?crop=1.00xw:0.502xh;0,0.220xh&amp;resize=1200:*",
       "ogp_title": "ルナソル（LUNASOL）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-mimc-724d43b7",
-      "brand": "MiMC",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828171/mimc-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/af797906-b714-49b3-8362-a513da2a9f86.png?crop=1.00xw:0.502xh;0,0.249xh&amp;resize=1200:*",
-      "ogp_title": "エムアイエムシー（MiMC）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
