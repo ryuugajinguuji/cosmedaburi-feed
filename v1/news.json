@@ -1,7 +1,20 @@
 {
-  "version": 190,
-  "generated_at": "2026-10-30T04:20:32.911Z",
+  "version": 191,
+  "generated_at": "2026-11-03T05:18:51.022Z",
   "items": [
+    {
+      "id": "2026-11-02-ysl-3b7be877",
+      "brand": "YSL",
+      "product_line": "",
+      "released_at": "2026-11-02",
+      "source_url": "https://cancam.jp/archives/1770202",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/11/02/th_ysltop.jpg",
+      "ogp_title": "【YSL BEAUTY・11/4先行限定発売】ラグジュアリーな限定ギフトセット、全部見せます♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：11月4日（水）公式オンライン ブティック・表参道フラッグシ"
+    },
     {
       "id": "2026-10-29-unknown-2b6ad32a",
       "brand": "unknown",
@@ -2611,19 +2624,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/af797906-b714-49b3-8362-a513da2a9f86.png?crop=1.00xw:0.502xh;0,0.249xh&amp;resize=1200:*",
       "ogp_title": "エムアイエムシー（MiMC）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-nars-30d07254",
-      "brand": "NARS",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828377/nars-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/dc329f40-046b-4345-beb7-dadc87161d59.png?crop=1.00xw:0.503xh;0,0.256xh&amp;resize=1200:*",
-      "ogp_title": "ナーズ（NARS）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
