@@ -1,7 +1,20 @@
 {
-  "version": 192,
-  "generated_at": "2026-11-03T16:49:49.452Z",
+  "version": 193,
+  "generated_at": "2026-11-04T04:48:48.388Z",
   "items": [
+    {
+      "id": "2026-11-03-unknown-b96f1209",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-03",
+      "source_url": "https://oggi.jp/7969868",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/10/Office-casual2.jpg",
+      "ogp_title": "スタイリスト伊藤舞子さんが教える、通勤コーデをブラッシュアップする〝いい感じ〟のオフィスカジュアル服 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-11-03-unknown-0a0739e6",
       "brand": "unknown",
@@ -2611,19 +2624,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/726377ff-af6f-483a-b601-f4741fab5615.png?crop=1.00xw:0.502xh;0,0.197xh&amp;resize=1200:*",
       "ogp_title": "カネボウ（KANEBO）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-lunasol-4e8efaea",
-      "brand": "LUNASOL",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71829160/lunasol-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/b7546484-9e3b-4321-9518-ace6a1f10998.png?crop=1.00xw:0.502xh;0,0.220xh&amp;resize=1200:*",
-      "ogp_title": "ルナソル（LUNASOL）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
