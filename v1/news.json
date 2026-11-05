@@ -1,7 +1,20 @@
 {
-  "version": 194,
-  "generated_at": "2026-11-05T05:03:41.600Z",
+  "version": 195,
+  "generated_at": "2026-11-05T17:06:32.738Z",
   "items": [
+    {
+      "id": "2026-11-05-unknown-413468e0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-05",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001141.000002194.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/2194/1141/2194-1141-4b858ca0811ea69ff690ed68c4ae1454-1675x965.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "気分を上げて、ぷるんとうるおう唇へ ホリデーを彩るまばゆいきらめきを与える限定リップオイルが登場！",
+      "ogp_description": "株式会社伊勢半のプレスリリース（2026年11月5日 13時00分）気分を上げて、ぷるんとうるおう唇へ ホリデーを彩るまばゆいきらめきを与える限定リップオイルが…"
+    },
     {
       "id": "2026-11-05-unknown-abc74d8d",
       "brand": "エテュセ",
@@ -2611,19 +2624,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/7c7cd006-9803-4881-adef-5bfbd20103cf.png?crop=1.00xw:0.501xh;0,0.180xh&amp;resize=1200:*",
       "ogp_title": "アナ スイ コスメティックス（ANNA SUI）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-d6f400d9",
-      "brand": "セルヴォーク",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828116/celvoke-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f4882bf5-ab59-47aa-b96d-5a1091cdd686.png?crop=1.00xw:0.502xh;0,0.244xh&amp;resize=1200:*",
-      "ogp_title": "セルヴォーク（CELVOKE）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
