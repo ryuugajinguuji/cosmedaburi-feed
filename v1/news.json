@@ -1,7 +1,33 @@
 {
-  "version": 193,
-  "generated_at": "2026-11-04T04:48:48.388Z",
+  "version": 194,
+  "generated_at": "2026-11-05T05:03:41.600Z",
   "items": [
+    {
+      "id": "2026-11-05-unknown-abc74d8d",
+      "brand": "エテュセ",
+      "product_line": "",
+      "released_at": "2026-11-05",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000199.000030935.html",
+      "note": "",
+      "category": "lip",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/30935/199/30935-199-32f80571926387d6b21fd7b53d97663b-3900x2601.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【本日発売】エテュセ26.WINTER とろける密着保湿「リップエッセンス ホット」全国発売 ／ 「エスターバニー」コラボパッケージ「マスカラベース EB」PLAZA先行発売 開始",
+      "ogp_description": "株式会社エテュセのプレスリリース（2026年11月5日 12時00分）【本日発売】エテュセ26.WINTER とろける密着保湿「リップエッセンス ホット」全国発…"
+    },
+    {
+      "id": "2026-11-04-unknown-1c9e3033",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-04",
+      "source_url": "https://cancam.jp/archives/1770245",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/11/05/th_Eyebrow-Styling-Mascara.jpg",
+      "ogp_title": "【HBL BEAUTY・11/5限定発売】大人気の眉マスカラがラメ入り特別仕様に！",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：11月5日（木） ブランド：HBL BEAUTY 商品名：ア"
+    },
     {
       "id": "2026-11-03-unknown-b96f1209",
       "brand": "unknown",
@@ -2598,32 +2624,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/f4882bf5-ab59-47aa-b96d-5a1091cdd686.png?crop=1.00xw:0.502xh;0,0.244xh&amp;resize=1200:*",
       "ogp_title": "セルヴォーク（CELVOKE）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-89558796",
-      "brand": "シャネル",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828189/chanel-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/1a40fa83-2be7-43c0-9927-b7a58e7c3062.png?crop=1.00xw:0.502xh;0,0.210xh&amp;resize=1200:*",
-      "ogp_title": "シャネル（CHANEL）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-kanebo-ef340018",
-      "brand": "KANEBO",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71829086/kanebo-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/726377ff-af6f-483a-b601-f4741fab5615.png?crop=1.00xw:0.502xh;0,0.197xh&amp;resize=1200:*",
-      "ogp_title": "カネボウ（KANEBO）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
