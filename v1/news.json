@@ -1,7 +1,46 @@
 {
-  "version": 196,
-  "generated_at": "2026-11-06T11:15:08.798Z",
+  "version": 197,
+  "generated_at": "2026-11-07T04:37:18.004Z",
   "items": [
+    {
+      "id": "2026-11-07-unknown-6b8740eb",
+      "brand": "花王",
+      "product_line": "",
+      "released_at": "2026-11-07",
+      "source_url": "https://woman.mynavi.jp/article/261107-2_12000673-3/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/main-34.jpg",
+      "ogp_title": "ぐっすり眠って翌朝すっきり！　花王「めぐりズム 睡眠シリーズ」アイマスク・首もとシート限定発売",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-11-07-wonjungyo-5b595258",
+      "brand": "Wonjungyo",
+      "product_line": "",
+      "released_at": "2026-11-07",
+      "source_url": "https://woman.mynavi.jp/article/261107-2_12000673-2/",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cdn0.mynvwm.com/wp-content/uploads/2026/10/main-1.png",
+      "ogp_title": "＜Wonjungyo＞大人気のダイヤモンドライナーに「ピンキーレモン」新登場！　シリーズ史上最大量のエッセンスの大人気部分用パックも限定再販",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-11-07-unknown-91d6f997",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-07",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000056.000138734.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/138734/56/138734-56-e86a845dadd4924f74ff3f9ff6583361-1567x1045.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "韓国No.1*¹コンシーラーブランド「LUNA」の「LUNA MAKEUP BAR POP-UP & EVENT」に「LUNA」のグローバルアンバサダーを務めるREI(IVE)が登壇！",
+      "ogp_description": "Aekyung Ind. Co.,Ltd.のプレスリリース（2026年11月7日 08時30分）韓国No.1*¹コンシーラーブランド「LUNA」の「LUNA M…"
+    },
     {
       "id": "2026-11-06-nars-20b9d775",
       "brand": "NARS",
@@ -2583,47 +2622,6 @@
       "tier": 3,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/950c57bd-1b8e-4acd-a0c0-2707f2041a44.png?crop=0.967xw:0.484xh;0.0155xw,0.0138xh&amp;resize=1200:*",
       "ogp_title": "人気ブランドの新作アイシャドウ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-89db5d64",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71846714/lipstick-2026fw/",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/bd9b8b09-9a8a-4c63-8ecb-caec425347e4.png?crop=1.00xw:0.503xh;0,0.188xh&amp;resize=1200:*",
-      "ogp_title": "人気ブランドの新作リップ・グロス【2026秋冬】",
-      "ogp_description": "エル デジタル エディターがおすすめする人気ブランドの2026秋冬リップ・グロス。"
-    },
-    {
-      "id": "2026-07-10-unknown-9e5d2fce",
-      "brand": "エスプリーク",
-      "product_line": "",
-      "hex": "F4A7B9",
-      "hex_origin": "estimated",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.wwdjapan.com/articles/2428482",
-      "note": "",
-      "category": "base",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/06/21081049/OG2%E6%9E%9A_-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-1.jpg",
-      "ogp_title": "「エスプリーク」の“裏ごしファンデ”に新色登場　血色ピンクベージュなど - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「エスプリーク（ESPRIQUE）」は8月21日、美容液クッションファンデーション“アクアリー スキンウエア”シリーズから、“アクアリー スキンウエア カバー”…"
-    },
-    {
-      "id": "2026-07-10-addiction-b683e09f",
-      "brand": "ADDICTION",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71813491/addiction-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/1c8fbaeb-ff33-4e2d-9592-664fabaa0fd4.png?crop=1.00xw:0.502xh;0,0.279xh&amp;resize=1200:*",
-      "ogp_title": "アディクション（ADDICTION）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
