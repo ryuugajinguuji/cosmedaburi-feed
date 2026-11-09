@@ -1,7 +1,33 @@
 {
-  "version": 197,
-  "generated_at": "2026-11-07T04:37:18.004Z",
+  "version": 198,
+  "generated_at": "2026-11-09T04:37:38.735Z",
   "items": [
+    {
+      "id": "2026-11-09-unknown-25eb3d90",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-09",
+      "source_url": "https://oggi.jp/7974530",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/11/cb_fjn_20260902_00.jpg",
+      "ogp_title": "実店舗は日本未上陸！イタリア発「KIKO MILANO」の人気リップ。刻印サービスも | Oggi.jp",
+      "ogp_description": null
+    },
+    {
+      "id": "2026-11-08-unknown-dddb0b1e",
+      "brand": "シャネル",
+      "product_line": "",
+      "released_at": "2026-11-08",
+      "source_url": "https://oggi.jp/7974457",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/11/261101chatop1.jpg",
+      "ogp_title": "シャネル｜4つのラッキーモチーフをダイヤモンドが囲む“お守りネックレス”からマザーオブパールの新作が登場 | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-11-07-unknown-6b8740eb",
       "brand": "花王",
@@ -2596,32 +2622,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/553495b5-9832-42e8-982c-2690a1b540f0.png?crop=1.00xw:0.502xh;0,0.238xh&amp;resize=1200:*",
       "ogp_title": "シュウ ウエムラ（SHU UEMURA）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-snidel-beauty-702bf059",
-      "brand": "SNIDEL BEAUTY",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71814333/snidel-beauty-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/4ba6053d-c9c5-4eb0-ab77-f6f70daf4cfe.png?crop=1.00xw:0.503xh;0,0.254xh&amp;resize=1200:*",
-      "ogp_title": "スナイデル ビューティ（SNIDEL BEAUTY）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-0dbd0252",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71845532/eyeshadow-2026fw/",
-      "note": "",
-      "category": "eye",
-      "tier": 3,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/950c57bd-1b8e-4acd-a0c0-2707f2041a44.png?crop=0.967xw:0.484xh;0.0155xw,0.0138xh&amp;resize=1200:*",
-      "ogp_title": "人気ブランドの新作アイシャドウ【2026秋冬】",
       "ogp_description": null
     }
   ]
