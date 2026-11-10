@@ -1,7 +1,20 @@
 {
-  "version": 198,
-  "generated_at": "2026-11-09T04:37:38.735Z",
+  "version": 199,
+  "generated_at": "2026-11-10T11:28:15.027Z",
   "items": [
+    {
+      "id": "2026-11-10-unknown-2d4182c3",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-10",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000002179.000016207.html",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/16207/2179/16207-2179-6122268aaf97ae7252498614d194ee36-1920x1280.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "【サザンビーチホテル＆リゾート沖縄】12月ディナー限定「ボイルズワイガニ食べ放題」！「赤」がテーマの「ウィンターブッフェ～ルージュ～」を12月1日（火）より開催",
+      "ogp_description": "株式会社ホテルマネージメントジャパンのプレスリリース（2026年11月9日 19時10分）【サザンビーチホテル＆リゾート沖縄】12月ディナー限定「ボイルズワイガ…"
+    },
     {
       "id": "2026-11-09-unknown-25eb3d90",
       "brand": "unknown",
@@ -2609,19 +2622,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/3a47f356-a2ad-46d5-a0fb-35eb8688accd.png?crop=1.00xw:0.502xh;0,0.248xh&amp;resize=1200:*",
       "ogp_title": "アールエムケー（RMK）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-9c69b188",
-      "brand": "シュウ ウエムラ",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71829163/shu-uemura-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/553495b5-9832-42e8-982c-2690a1b540f0.png?crop=1.00xw:0.502xh;0,0.238xh&amp;resize=1200:*",
-      "ogp_title": "シュウ ウエムラ（SHU UEMURA）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
