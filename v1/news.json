@@ -1,7 +1,20 @@
 {
-  "version": 199,
-  "generated_at": "2026-11-10T11:28:15.027Z",
+  "version": 200,
+  "generated_at": "2026-11-12T05:43:22.064Z",
   "items": [
+    {
+      "id": "2026-11-12-unknown-b6fd4c11",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-12",
+      "source_url": "https://woman.mynavi.jp/article/261112-6_12000673-2/",
+      "note": "",
+      "category": "eye",
+      "tier": 3,
+      "ogp_image_url": "https://woman.mynavi.jp/wp-content/uploads/2026/11/kao01-1.jpg",
+      "ogp_title": "強力なカールキープ力が好評！　ケープ FOR ACTIVEのカールキープ特化型マスカラ下地に新色が登場",
+      "ogp_description": null
+    },
     {
       "id": "2026-11-10-unknown-2d4182c3",
       "brand": "unknown",
@@ -2609,19 +2622,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/52d3b73c-d1db-4035-8bf5-79e83fbc83c3.png?crop=1.00xw:0.500xh;0,0.251xh&amp;resize=1200:*",
       "ogp_title": "ポール ＆ ジョー（PAUL & JOE）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-rmk-611a3f9c",
-      "brand": "RMK",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71829087/rmk-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/3a47f356-a2ad-46d5-a0fb-35eb8688accd.png?crop=1.00xw:0.502xh;0,0.248xh&amp;resize=1200:*",
-      "ogp_title": "アールエムケー（RMK）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
