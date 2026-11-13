@@ -1,7 +1,33 @@
 {
-  "version": 200,
-  "generated_at": "2026-11-12T05:43:22.064Z",
+  "version": 201,
+  "generated_at": "2026-11-13T05:00:28.096Z",
   "items": [
+    {
+      "id": "2026-11-13-unknown-0cbb7ff0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-13",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000057.000138734.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/138734/57/138734-57-48a43cc6a3dbcd7031203eca5a818f64-1440x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "韓国No.1*¹コンシーラーブランド「LUNA」が渋谷にて​「LUNA　MAKEUP BAR POP-UP EVENT」を開催、 2日間で1,676名以上が来場！​",
+      "ogp_description": "Aekyung Ind. Co.,Ltd.のプレスリリース（2026年11月13日 12時00分）韓国No.1*¹コンシーラーブランド「LUNA」が渋谷にて​「…"
+    },
+    {
+      "id": "2026-11-12-rmk-59e12517",
+      "brand": "RMK",
+      "product_line": "",
+      "released_at": "2026-11-12",
+      "source_url": "https://cancam.jp/archives/1771805",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/11/13/4c6178a66a89b1faf35d742c638741d3.jpg",
+      "ogp_title": "【RMK・11/13限定発売】フローラルシトラス香るボディケアコレクションは忙しい毎日のプチご褒美に♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：11月13日（金） ブランド：RMK 商品名：ボディ シャワ"
+    },
     {
       "id": "2026-11-12-unknown-b6fd4c11",
       "brand": "unknown",
@@ -2596,32 +2622,6 @@
       "tier": 3,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/12df7917-8ad0-43d3-83d4-2e554ef758f2.png?crop=1.00xw:0.503xh;0,0.204xh&amp;resize=1200:*",
       "ogp_title": "人気ブランドの新作チーク【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-ef2aa2dc",
-      "brand": "ケイト",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.wwdjapan.com/articles/2447680",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/10133655/kateog.jpg",
-      "ogp_title": "「ケイト」とUSJの共創アトラクションが再登場　“ハロウイーン・ホラー・ナイト”15周年で限定オープン - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「ケイト（KATE）」は9月11日〜11月8日、昨年反響を集めたユニバーサル・スタジオ・ジャパン（以下、USJ）との共創アトラクション“18番地の魔女 ～感情と…"
-    },
-    {
-      "id": "2026-07-10-paul-joe-4894f989",
-      "brand": "PAUL & JOE",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71829017/paul-joe-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/52d3b73c-d1db-4035-8bf5-79e83fbc83c3.png?crop=1.00xw:0.500xh;0,0.251xh&amp;resize=1200:*",
-      "ogp_title": "ポール ＆ ジョー（PAUL & JOE）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
