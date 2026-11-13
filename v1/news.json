@@ -1,7 +1,20 @@
 {
-  "version": 201,
-  "generated_at": "2026-11-13T05:00:28.096Z",
+  "version": 202,
+  "generated_at": "2026-11-13T11:19:53.679Z",
   "items": [
+    {
+      "id": "2026-11-13-unknown-aec6c7f0",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-13",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000150.000061176.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/61176/150/61176-150-28637c148ac3feca622b27c6dd5f8034-1200x700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "『楽天ベストコスメ2026』でAiロボティクスグループが4冠受賞！Brighte「ELEKI LIFT」1位・「ELEKI BRUSH＋」3位、SPICARE「V3ファンデーション」2部門で1位を獲得",
+      "ogp_description": "Aiロボティクス株式会社のプレスリリース（2026年11月13日 15時35分）『楽天ベストコスメ2026』でAiロボティクスグループが4冠受賞！Brighte…"
+    },
     {
       "id": "2026-11-13-unknown-0cbb7ff0",
       "brand": "unknown",
@@ -2609,19 +2622,6 @@
       "tier": 2,
       "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/29ad76bc-10cf-4617-a5f1-ff362258f0b5.png?crop=0.998xw:0.500xh;0.00163xw,0.197xh&amp;resize=1200:*",
       "ogp_title": "ジル スチュアート ビューティ（JILL STUART BEAUTY）新作コスメ【2026秋冬】",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-unknown-c89293cc",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71847194/blush-2026fw/",
-      "note": "",
-      "category": "cheek",
-      "tier": 3,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/12df7917-8ad0-43d3-83d4-2e554ef758f2.png?crop=1.00xw:0.503xh;0,0.204xh&amp;resize=1200:*",
-      "ogp_title": "人気ブランドの新作チーク【2026秋冬】",
       "ogp_description": null
     }
   ]
