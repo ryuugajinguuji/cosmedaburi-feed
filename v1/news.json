@@ -1,7 +1,20 @@
 {
-  "version": 202,
-  "generated_at": "2026-11-13T11:19:53.679Z",
+  "version": 203,
+  "generated_at": "2026-11-15T11:18:52.277Z",
   "items": [
+    {
+      "id": "2026-11-15-unknown-d50b074c",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-15",
+      "source_url": "https://cancam.jp/archives/1772746",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/11/09/948302ae67fad0d98e48ea7a8a4e896a.jpg",
+      "ogp_title": "【Girls²（ガールズガールズ）】歌っても踊っても崩れない♡ そのビジュ強のヒミツは…リップにあり！？",
+      "ogp_description": "無敵のビジュと実力を兼ね備えた、7人組ガールズ・パフォーマンスグループ、Girls²(ガールズガールズ)。メン"
+    },
     {
       "id": "2026-11-13-unknown-aec6c7f0",
       "brand": "unknown",
@@ -2609,19 +2622,6 @@
       "tier": 3,
       "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/8526941.jpg",
       "ogp_title": "リップメイクは〝土台と口角への気配り〟で「好印象が宿る唇」 | Oggi.jp",
-      "ogp_description": null
-    },
-    {
-      "id": "2026-07-10-jill-stuart-effab217",
-      "brand": "JILL STUART",
-      "product_line": "",
-      "released_at": "2026-07-10",
-      "source_url": "https://www.elle.com/jp/beauty/cosme/g71828539/jill-stuart-beauty-cosme-2026fw/",
-      "note": "",
-      "category": "info",
-      "tier": 2,
-      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/29ad76bc-10cf-4617-a5f1-ff362258f0b5.png?crop=0.998xw:0.500xh;0.00163xw,0.197xh&amp;resize=1200:*",
-      "ogp_title": "ジル スチュアート ビューティ（JILL STUART BEAUTY）新作コスメ【2026秋冬】",
       "ogp_description": null
     }
   ]
