@@ -1,7 +1,20 @@
 {
-  "version": 203,
-  "generated_at": "2026-11-15T11:18:52.277Z",
+  "version": 204,
+  "generated_at": "2026-11-16T11:50:47.834Z",
   "items": [
+    {
+      "id": "2026-11-16-unknown-c0d4b569",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-16",
+      "source_url": "https://www.elle.com/jp/beauty/makeup-skincare/g74395870/2026christmascoffret-nd-louisvuitton-2611-hns/",
+      "note": "",
+      "category": "info",
+      "tier": 3,
+      "ogp_image_url": "https://hips.hearstapps.com/hmg-prod/images/fc0db911-dddc-477c-a7f5-bff5b4ccaa59.jpg?crop=1.00xw:0.282xh;0,0.480xh&amp;resize=1200:*",
+      "ogp_title": "【ラ・ボーテ ルイ・ヴィトン×クリスマスコフレ2026】発売日は？｜「モノグラム・ルージュ」を讃える限定エディション",
+      "ogp_description": "「ラ・ボーテ ルイ・ヴィトン」の2026年ホリデー限定エディション情報をお届け！　特別感あふれるバーニッシュド・レッドをテーマにしたパッケージ＆シェードに要注目…"
+    },
     {
       "id": "2026-11-15-unknown-d50b074c",
       "brand": "unknown",
@@ -2610,19 +2623,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/09153405/87c3edaf-5be0-42d4-847c-4e0fbfeab951.jpg",
       "ogp_title": "「デジャヴュ」の眉マスカラ初の限定色“シアーピンク”が登場　主張しすぎないピンクニュアンス - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「デジャヴュ（DEJAVU）」は7月10日、シアーな色づきとパサつかないしっとり質感をかなえる眉マスカラ“シアーカラーブロウ”初の限定色、“シアーピンク”（99…"
-    },
-    {
-      "id": "2026-07-11-unknown-d2313a79",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-11",
-      "source_url": "https://oggi.jp/7890519",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/07/8526941.jpg",
-      "ogp_title": "リップメイクは〝土台と口角への気配り〟で「好印象が宿る唇」 | Oggi.jp",
-      "ogp_description": null
     }
   ]
 }
