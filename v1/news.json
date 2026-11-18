@@ -1,7 +1,20 @@
 {
-  "version": 205,
-  "generated_at": "2026-11-18T05:52:43.527Z",
+  "version": 206,
+  "generated_at": "2026-11-18T12:00:01.053Z",
   "items": [
+    {
+      "id": "2026-11-18-nars-9c606767",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-11-18",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000507.000022808.html",
+      "note": "",
+      "category": "cheek",
+      "tier": 1,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/22808/507/22808-507-f0f51df465ad3d52012c891ef409792a-3240x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "NARS 2026年下期ベストコスメ受賞情報「ライトリフレクティング セラムクッションファンデーション」「ライトリフレクティング ルミナイジングスティック」「ブラッシュ N」が複数のベストコスメを受賞",
+      "ogp_description": "資生堂ジャパン株式会社のプレスリリース（2026年11月18日 18時54分）NARS 2026年下期ベストコスメ受賞情報「ライトリフレクティング セラムクッシ…"
+    },
     {
       "id": "2026-11-17-nars-f93ff1a0",
       "brand": "NARS",
@@ -2608,19 +2621,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/10104301/0710OG.jpg",
       "ogp_title": "「セルヴォーク」×「スター・ウォーズ」や「コスメデコルテ」新ルージュなど！　今週発売のビューティーアイテム８選(7/13〜7/19） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は7月13〜19日に発売するアイテムを紹介します。毎週さまざまなコラボコレクションが…"
-    },
-    {
-      "id": "2026-07-12-unknown-612091be",
-      "brand": "ラネージュ",
-      "product_line": "",
-      "released_at": "2026-07-12",
-      "source_url": "https://www.wwdjapan.com/articles/2448011",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/10160846/laneige-og.jpg",
-      "ogp_title": "「ラネージュ」の人気リップケアから“ちいかわ”デザインのパッケージが数量限定で登場　フタに貼れるステッカー付き - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「ラネージュ（LANEIGE）」は7月16日、“マツキヨココカラ ちいかわとびきりサマーキャンペーン”に連動し、 “リップスリーピングマスク”（全3種、20g、…"
     }
   ]
 }
