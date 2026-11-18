@@ -1,7 +1,20 @@
 {
-  "version": 204,
-  "generated_at": "2026-11-16T11:50:47.834Z",
+  "version": 205,
+  "generated_at": "2026-11-18T05:52:43.527Z",
   "items": [
+    {
+      "id": "2026-11-17-nars-f93ff1a0",
+      "brand": "NARS",
+      "product_line": "",
+      "released_at": "2026-11-17",
+      "source_url": "https://cancam.jp/archives/1771812",
+      "note": "",
+      "category": "info",
+      "tier": 2,
+      "ogp_image_url": "https://cancam.jp/wp-content/uploads/2026/11/18/th_NARStop.jpg",
+      "ogp_title": "【NARS・11/20限定発売】ホリデー限定コスメ大集合！ミニコスメセットはギフトにも♡",
+      "ogp_description": "新作コスメをチェック！│コスメカレンダー 発売日：11月20日（金） ブランド：NARS 商品名：ミニ インセ"
+    },
     {
       "id": "2026-11-16-unknown-c0d4b569",
       "brand": "unknown",
@@ -2608,21 +2621,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/10160846/laneige-og.jpg",
       "ogp_title": "「ラネージュ」の人気リップケアから“ちいかわ”デザインのパッケージが数量限定で登場　フタに貼れるステッカー付き - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「ラネージュ（LANEIGE）」は7月16日、“マツキヨココカラ ちいかわとびきりサマーキャンペーン”に連動し、 “リップスリーピングマスク”（全3種、20g、…"
-    },
-    {
-      "id": "2026-07-12-unknown-a734e155",
-      "brand": "デジャヴュ",
-      "product_line": "",
-      "hex": "F4A7B9",
-      "hex_origin": "estimated",
-      "released_at": "2026-07-12",
-      "source_url": "https://www.wwdjapan.com/articles/2446997",
-      "note": "",
-      "category": "eye",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/09153405/87c3edaf-5be0-42d4-847c-4e0fbfeab951.jpg",
-      "ogp_title": "「デジャヴュ」の眉マスカラ初の限定色“シアーピンク”が登場　主張しすぎないピンクニュアンス - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "「デジャヴュ（DEJAVU）」は7月10日、シアーな色づきとパサつかないしっとり質感をかなえる眉マスカラ“シアーカラーブロウ”初の限定色、“シアーピンク”（99…"
     }
   ]
 }
