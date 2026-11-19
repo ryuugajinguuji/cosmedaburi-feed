@@ -1,7 +1,20 @@
 {
-  "version": 206,
-  "generated_at": "2026-11-18T12:00:01.053Z",
+  "version": 207,
+  "generated_at": "2026-11-19T17:57:59.949Z",
   "items": [
+    {
+      "id": "2026-11-19-unknown-229aafcf",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-19",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000672.000012860.html",
+      "note": "",
+      "category": "cheek",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/12860/672/12860-672-a2d1d621813fbdafeadd69e87a056826-902x454.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "東海テレビ「Edge」が初の事業伴走支援を実施、中日金型の新規事業金型教育システム「マナガタ」のブラッシュアップを支援",
+      "ogp_description": "東海テレビ放送株式会社のプレスリリース（2026年11月19日 13時00分）東海テレビ「Edge」が初の事業伴走支援を実施、中日金型の新規事業金型教育システム…"
+    },
     {
       "id": "2026-11-18-nars-9c606767",
       "brand": "NARS",
@@ -2608,19 +2621,6 @@
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/70897/663/70897-663-640de89fd81199ad493d26f0a47daa17-1519x823.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ　ティントカラージェル』 『リーゼ　泡カラー』新発売",
       "ogp_description": "花王株式会社のプレスリリース（2026年7月13日 10時40分）花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ…"
-    },
-    {
-      "id": "2026-07-12-unknown-47d246f0",
-      "brand": "コスメデコルテ",
-      "product_line": "",
-      "released_at": "2026-07-12",
-      "source_url": "https://www.wwdjapan.com/articles/2334270",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/02/10104301/0710OG.jpg",
-      "ogp_title": "「セルヴォーク」×「スター・ウォーズ」や「コスメデコルテ」新ルージュなど！　今週発売のビューティーアイテム８選(7/13〜7/19） - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
-      "ogp_description": "ビューティアイテムの発売情報を「WWDJAPAN」的視点でピックアップ！今回は7月13〜19日に発売するアイテムを紹介します。毎週さまざまなコラボコレクションが…"
     }
   ]
 }
