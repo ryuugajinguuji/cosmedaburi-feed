@@ -1,7 +1,20 @@
 {
-  "version": 208,
-  "generated_at": "2026-11-20T05:41:19.039Z",
+  "version": 209,
+  "generated_at": "2026-11-20T11:58:12.868Z",
   "items": [
+    {
+      "id": "2026-11-20-unknown-f2a89610",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-20",
+      "source_url": "https://oggi.jp/7979965",
+      "note": "",
+      "category": "lip",
+      "tier": 3,
+      "ogp_image_url": "https://oggi.jp/wp-content/uploads/2026/11/lip.jpg",
+      "ogp_title": "タイのばらまき土産には、手頃でかわいい「パウチ型リップ」がおすすめ | Oggi.jp",
+      "ogp_description": null
+    },
     {
       "id": "2026-11-20-unknown-b3607433",
       "brand": "unknown",
@@ -2608,19 +2621,6 @@
       "ogp_image_url": "https://media.wwdjapan.com/wp-content/uploads/2026/07/13111120/OG-53.jpg",
       "ogp_title": "「ティルティル」が皮脂テカリを抑え潤いを与えるセラムパウダーを発売　クリアとパールの2タイプ　 - WWDJAPAN ‐ 最新ファッション＆ビューティニュース情報",
       "ogp_description": "「ティルティル（TIRTIR）」は7月24日、皮脂テカリを抑え、つけている間も潤いが続く“ティルティル ハイドラヴェール セラムパウダー”（全2種、各10g、各…"
-    },
-    {
-      "id": "2026-07-13-unknown-8664792b",
-      "brand": "unknown",
-      "product_line": "",
-      "released_at": "2026-07-13",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000119860.html",
-      "note": "",
-      "category": "lip",
-      "tier": 3,
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/119860/31/119860-31-57a651dc34052f2c6f52a34ac82bcc45-640x417.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売",
-      "ogp_description": "日仏商事株式会社のプレスリリース（2026年7月13日 15時00分）レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売"
     }
   ]
 }
