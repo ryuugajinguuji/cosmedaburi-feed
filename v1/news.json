@@ -1,7 +1,20 @@
 {
-  "version": 207,
-  "generated_at": "2026-11-19T17:57:59.949Z",
+  "version": 208,
+  "generated_at": "2026-11-20T05:41:19.039Z",
   "items": [
+    {
+      "id": "2026-11-20-unknown-b3607433",
+      "brand": "unknown",
+      "product_line": "",
+      "released_at": "2026-11-20",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000312.000072864.html",
+      "note": "",
+      "category": "base",
+      "tier": 3,
+      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/72864/312/72864-312-f4cb61f836dbe03bc7ad0b44e04e7e9e-1080x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "ogp_title": "集英社MAQUIA「ベストコスメ2026下半期」にてSOFINA Primavista『生肌カバーバーム ファンデーション』が「パウダリー＆バームファンデーション部門1位」を受賞",
+      "ogp_description": "花王株式会社（Kao Beauty Brands）のプレスリリース（2026年11月20日 11時00分）集英社MAQUIA「ベストコスメ2026下半期」にてS…"
+    },
     {
       "id": "2026-11-19-unknown-229aafcf",
       "brand": "unknown",
@@ -2608,19 +2621,6 @@
       "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/119860/31/119860-31-57a651dc34052f2c6f52a34ac82bcc45-640x417.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
       "ogp_title": "レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売",
       "ogp_description": "日仏商事株式会社のプレスリリース（2026年7月13日 15時00分）レ・ヴェルジェ・ボワロン、新商品「ピューレ ルバーブ ルージュ」を発売"
-    },
-    {
-      "id": "2026-07-13-unknown-37f6e3db",
-      "brand": "花王",
-      "product_line": "",
-      "released_at": "2026-07-13",
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000663.000070897.html",
-      "note": "",
-      "category": "lip",
-      "tier": 1,
-      "ogp_image_url": "https://prcdn.freetls.fastly.net/release_image/70897/663/70897-663-640de89fd81199ad493d26f0a47daa17-1519x823.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
-      "ogp_title": "花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ　ティントカラージェル』 『リーゼ　泡カラー』新発売",
-      "ogp_description": "花王株式会社のプレスリリース（2026年7月13日 10時40分）花王「Liese（リーゼ）」から、花王史上最高峰*¹のアフターカラートリートメントつき『リーゼ…"
     }
   ]
 }
